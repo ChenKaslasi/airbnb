@@ -1,12 +1,12 @@
 {
-  "homes": [
+  "spaces": [
     {
       "_id": "1001265",
       "name": "Ocean View Waikiki Marina w/prkg",
       "listingUrl": "https://www.airbnb.com/rooms/1001265",
-      "aboutHouse": "Great studio located on Ala Moana across the street from Yacht Harbor and near Ala Moana Shopping Center. Studio kitchette, parking, wifi, TV, A/C. Amenities include pool, hot tub and tennis. Sweet ocean views with nice ocean breezes.",
-      "description": "A short distance from Honolulu's billion dollar mall, and the same distance to Waikiki. Parking included. A great location that work perfectly for business, education, or simple visit. Experience Yacht Harbor views and 5 Star Hilton Hawaiian Village. Great studio located on Ala Moana across the street from Yacht Harbor and near Ala Moana Shopping Center. Studio kitchette, parking, wifi, TV, A/C. Amenities include pool, hot tub and tennis. Sweet ocean views with nice ocean breezes. Pool, hot tub and tennis We try our best at creating, simple responsive management which never bothers the guest. You can breath ocean as well as aloha. Honolulu does have a very good air conditioned bus system.",
-      "houseType": "Condominium",
+      "locationDesc": "Great studio located on Ala Moana across the street from Yacht Harbor and near Ala Moana Shopping Center. Studio kitchette, parking, wifi, TV, A/C. Amenities include pool, hot tub and tennis. Sweet ocean views with nice ocean breezes.",
+      "spaceDesc": "A short distance from Honolulu's billion dollar mall, and the same distance to Waikiki. Parking included. A great location that work perfectly for business, education, or simple visit. Experience Yacht Harbor views and 5 Star Hilton Hawaiian Village. Great studio located on Ala Moana across the street from Yacht Harbor and near Ala Moana Shopping Center. Studio kitchette, parking, wifi, TV, A/C. Amenities include pool, hot tub and tennis. Sweet ocean views with nice ocean breezes. Pool, hot tub and tennis We try our best at creating, simple responsive management which never bothers the guest. You can breath ocean as well as aloha. Honolulu does have a very good air conditioned bus system.",
+      "spaceType": "Condominium",
       "roomType": "Entire home/apt",
       "cancellationPolicy": "strict 14 with grace period",
       "capacity": 2,
@@ -52,13 +52,13 @@
         "Step-free access"
       ],
       "price": 115,
-      "imgs": {
-        "main": "https://a0.muscache.com/im/pictures/15037101/5aff14a7_original.jpg?aki_policy=large",
-        "img1": "https://a0.muscache.com/im/pictures/09d9181c-7a5e-4746-97c1-bde5136cf317.jpg?im_w=720",
-        "img2": "https://a0.muscache.com/im/pictures/b70cf500-d43d-444b-9533-092b74a64157.jpg?im_w=720",
-        "img3": "https://a0.muscache.com/im/pictures/f73394c2-19f7-4fef-9149-c68f4c65b1a2.jpg?im_w=720",
-        "img4": "https://a0.muscache.com/im/pictures/15037118/90333328_original.jpg?im_w=720"
-      },
+      "imgs": [
+        "https://a0.muscache.com/im/pictures/15037101/5aff14a7_original.jpg?aki_policy=large",
+        "https://a0.muscache.com/im/pictures/09d9181c-7a5e-4746-97c1-bde5136cf317.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/b70cf500-d43d-444b-9533-092b74a64157.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f73394c2-19f7-4fef-9149-c68f4c65b1a2.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/15037118/90333328_original.jpg?im_w=720"
+      ],
       "host": {
         "id": "5448114",
         "name": "David",
@@ -76,7 +76,7 @@
         "country": "United States",
         "coordinates": {
           "lat": 21.28634,
-          "long": -157.83919
+          "lng": -157.83919
         }
       },
       "review_scores": {
@@ -97,7 +97,7 @@
             "img": "",
             "name": "Jacqui"
           },
-          "comments": "Our stay was excellent.  The place had a breath taking view.  David was very accommodating with our hotel stay, parking availability and all of our concerns & questions.  He did above and beyond what anyone would want.  He's a man of his word and very professional.  We highly recommend for everyone to stay in all of the places he recommended.  Thank you David for a accommodating our wonderful and memorable stay in Honolulu, Hawaii.  God Bless!  Henry & Jacqui (SF, CA)"
+          "txt": "Our stay was excellent.  The place had a breath taking view.  David was very accommodating with our hotel stay, parking availability and all of our concerns & questions.  He did above and beyond what anyone would want.  He's a man of his word and very professional.  We highly recommend for everyone to stay in all of the places he recommended.  Thank you David for a accommodating our wonderful and memorable stay in Honolulu, Hawaii.  God Bless!  Henry & Jacqui (SF, CA)"
         },
         {
           "id": "4908312",
@@ -107,7 +107,7 @@
             "img": "",
             "name": "Khoren"
           },
-          "comments": "Tell others in the Airbnb community about your stay."
+          "txt": "Tell others in the Airbnb community about your stay."
         },
         {
           "id": "7099260",
@@ -117,7 +117,7 @@
             "img": "",
             "name": "Nick"
           },
-          "comments": "This is everything we expected and hoped for in a sub-$100/night condo stay in Waikiki. This definitely isn't the Ritz, and if you're looking for a luxury get-away, you're barking up the wrong tree. However, if you're like we were: first time visitors on a budget with humble taste, then this place is perfect. The location is a tiny bit removed from the touristy Beachwalk shopping area, but not so far as to preclude you from limbering up for a spirited walk over there. And by the marina, you're actually quite close to the Ala Moana mall. So, the location is good. The place itself is a modest studio setup, but perfectly adequate with a good sized bed for a couple, enough space for your luggage, and a kitchenette and bathroom that though tight, is perfectly fine. There's also cable and internet if you're looking for homey creature comforts. It was also fantastic to have a free parking space included, an air conditioning wall unit, and the panoramic window view was pretty cool, though you only really get a peak of the beach. Also, David was very good about staying in contact with us the day we arrived to get acclimated, and we did not have further occasion to require his services the rest of our stay, so our contact was minimal, but satisfactory ... no problem there. The minor quibbles we had were pretty thin walls, so we would often hear the murmur of the neighbors' TVs. Also, there seemed to be two elevators working the entire building, so they could take quite a while to pop up. Again though, if you're like us, your #1 priorities are spend a minimal amount of time in your room, get out to experience Hawaii, come back to a sanitary place to sleep at night, all while staying within a reasonable budget. This place fit the bill, and we would recommend it to anyone with the same priorities."
+          "txt": "This is everything we expected and hoped for in a sub-$100/night condo stay in Waikiki. This definitely isn't the Ritz, and if you're looking for a luxury get-away, you're barking up the wrong tree. However, if you're like we were: first time visitors on a budget with humble taste, then this place is perfect. The location is a tiny bit removed from the touristy Beachwalk shopping area, but not so far as to preclude you from limbering up for a spirited walk over there. And by the marina, you're actually quite close to the Ala Moana mall. So, the location is good. The place itself is a modest studio setup, but perfectly adequate with a good sized bed for a couple, enough space for your luggage, and a kitchenette and bathroom that though tight, is perfectly fine. There's also cable and internet if you're looking for homey creature comforts. It was also fantastic to have a free parking space included, an air conditioning wall unit, and the panoramic window view was pretty cool, though you only really get a peak of the beach. Also, David was very good about staying in contact with us the day we arrived to get acclimated, and we did not have further occasion to require his services the rest of our stay, so our contact was minimal, but satisfactory ... no problem there. The minor quibbles we had were pretty thin walls, so we would often hear the murmur of the neighbors' TVs. Also, there seemed to be two elevators working the entire building, so they could take quite a while to pop up. Again though, if you're like us, your #1 priorities are spend a minimal amount of time in your room, get out to experience Hawaii, come back to a sanitary place to sleep at night, all while staying within a reasonable budget. This place fit the bill, and we would recommend it to anyone with the same priorities."
         },
         {
           "id": "8363944",
@@ -127,7 +127,7 @@
             "img": "",
             "name": "Jean"
           },
-          "comments": "Fantastic location! Everything in the condo was great and David was lovely and super easy to deal with. Would recommend!"
+          "txt": "Fantastic location! Everything in the condo was great and David was lovely and super easy to deal with. Would recommend!"
         },
         {
           "id": "8905060",
@@ -137,7 +137,7 @@
             "img": "",
             "name": "Dhaval"
           },
-          "comments": "The flat is ok for a couple . Location of flat is awesome. Its close to the waikiki beach, Ala Moana park and shoppings . Parking was 20 bucks/day . Overall nice place."
+          "txt": "The flat is ok for a couple . Location of flat is awesome. Its close to the waikiki beach, Ala Moana park and shoppings . Parking was 20 bucks/day . Overall nice place."
         },
         {
           "id": "9392425",
@@ -147,7 +147,7 @@
             "img": "",
             "name": "Carol "
           },
-          "comments": "We stayed 23 days in December in \"Ocean view Waikiki Marina\". Our stay was great, the apartment is very well located, clean and comfortable. David and Nicole were very attentive and helped us at all. Loved our vacation in Hawaii and want to return soon. \r\n\r\nAloha!"
+          "txt": "We stayed 23 days in December in \"Ocean view Waikiki Marina\". Our stay was great, the apartment is very well located, clean and comfortable. David and Nicole were very attentive and helped us at all. Loved our vacation in Hawaii and want to return soon. \r\n\r\nAloha!"
         },
         {
           "id": "9496168",
@@ -157,7 +157,7 @@
             "img": "",
             "name": "Sophie  Lo"
           },
-          "comments": "If you're looking to spend most of your time in Hawaii outside (and not inside your room or your hotel, like with the Waikiki resort complexes) then this apartment will do the trick. It's definitely not luxurious but has the basics and is in a great location. It fits 2 people but more would be cramped. \nYou can hit the beach in as little as 5 mns walking or get to central Waikiki beach in 15-20 mns walking.  It's also easy to catch a bus to visit something outside Waikiki. There is a convenience store nearby, as well as several breakfast and restaurant options. The apartment has a small kitchen with cooking utensils but we ended up mostly eating dinners out. \nDavid was courteous and likely very knowledgeable about the area but we didn't ask him for suggestions, we ended up just using our guide book. \nOverall if you want to experience Waikiki without spending a fortune or being pampered, this is a great option. Mahalo David!"
+          "txt": "If you're looking to spend most of your time in Hawaii outside (and not inside your room or your hotel, like with the Waikiki resort complexes) then this apartment will do the trick. It's definitely not luxurious but has the basics and is in a great location. It fits 2 people but more would be cramped. \nYou can hit the beach in as little as 5 mns walking or get to central Waikiki beach in 15-20 mns walking.  It's also easy to catch a bus to visit something outside Waikiki. There is a convenience store nearby, as well as several breakfast and restaurant options. The apartment has a small kitchen with cooking utensils but we ended up mostly eating dinners out. \nDavid was courteous and likely very knowledgeable about the area but we didn't ask him for suggestions, we ended up just using our guide book. \nOverall if you want to experience Waikiki without spending a fortune or being pampered, this is a great option. Mahalo David!"
         },
         {
           "id": "9770517",
@@ -167,7 +167,7 @@
             "img": "",
             "name": "Tj"
           },
-          "comments": "Great location, adequate for a short stay, free parking too!"
+          "txt": "Great location, adequate for a short stay, free parking too!"
         },
         {
           "id": "10423465",
@@ -177,7 +177,7 @@
             "img": "",
             "name": "Rose"
           },
-          "comments": "David was there to meet us as soon as we arrived from the airport and was very friendly. He communicated with us before we arrived as well. The apartment was very nice, great location, clean and exactly what we were looking for. Location has a nice pool area."
+          "txt": "David was there to meet us as soon as we arrived from the airport and was very friendly. He communicated with us before we arrived as well. The apartment was very nice, great location, clean and exactly what we were looking for. Location has a nice pool area."
         },
         {
           "id": "10956151",
@@ -187,7 +187,7 @@
             "img": "",
             "name": "Susan"
           },
-          "comments": "Thoroughly enjoyed our stay. The condo is in a great location if you want to be in or near Waikiki and Ala Moana. It's a small studio, and not luxurious, but great if you want a functional, reasonably comfortable and very affordable base for exploring Oahu. The parking space is wonderful if you rent a car, as otherwise you're looking at an additional $15-$20 a day. The building is right on Ala Moana Blvd so it's noisy if you keep the windows open, but that's also true of many high-price Waikiki hotel rooms. Air conditioning is a bit noisy; I slept with earplugs but my boyfriend didn't need them (I'm a light sleeper and use them at home). The condo has a full size fridge, small cooktop, microwave, coffee maker, coffee press, beach chairs, some knackered beach mats, towels, pots, plates, etc.. Wifi is a plus. The bathroom appears quite recently updated, and though small is nice - great shower. \r\n\r\nCons: There's no lanai and the view is very partial, but to us those were small things. Elevators were sometimes very slow and occasionally out of commission, which was a hassle and a bit concerning.\r\n\r\nWe never actually met David. All was handled by text and email. He instructed us to get someone to let us in to the building, which seemed a bit dodgy, but in the end it was no problem, and he said to call if there was any issue. Condo door was unlocked and keys were on the table.\r\n\r\nI would consider staying here again if I plan to stay in the Waikiki vicinity. \r\n\r\n"
+          "txt": "Thoroughly enjoyed our stay. The condo is in a great location if you want to be in or near Waikiki and Ala Moana. It's a small studio, and not luxurious, but great if you want a functional, reasonably comfortable and very affordable base for exploring Oahu. The parking space is wonderful if you rent a car, as otherwise you're looking at an additional $15-$20 a day. The building is right on Ala Moana Blvd so it's noisy if you keep the windows open, but that's also true of many high-price Waikiki hotel rooms. Air conditioning is a bit noisy; I slept with earplugs but my boyfriend didn't need them (I'm a light sleeper and use them at home). The condo has a full size fridge, small cooktop, microwave, coffee maker, coffee press, beach chairs, some knackered beach mats, towels, pots, plates, etc.. Wifi is a plus. The bathroom appears quite recently updated, and though small is nice - great shower. \r\n\r\nCons: There's no lanai and the view is very partial, but to us those were small things. Elevators were sometimes very slow and occasionally out of commission, which was a hassle and a bit concerning.\r\n\r\nWe never actually met David. All was handled by text and email. He instructed us to get someone to let us in to the building, which seemed a bit dodgy, but in the end it was no problem, and he said to call if there was any issue. Condo door was unlocked and keys were on the table.\r\n\r\nI would consider staying here again if I plan to stay in the Waikiki vicinity. \r\n\r\n"
         },
         {
           "id": "11063672",
@@ -197,7 +197,7 @@
             "img": "",
             "name": "Tami"
           },
-          "comments": "If you are looking for a home base with the basics to lay your head at night and have breakfast in and then head out for the day this fits the bill. It's close to Waikiki and the downtown area but not in the thick of things so if you're looking to avoid the 24/7 hustle and bustle then this might work for you. There is a basic kitchenette and eating area. Accessories for enjoying the sand and surf are available for use, pool, and hot tub as well, and secure parking which is a plus.\r\n\r\nIf you're looking for expansive ocean views, a room to hang out and relax in with up to date decor, and where you can easily meet and get to know people staying in the complex then this wouldn't be for you. The dependability of the elevators, particularly during high winds, is a bit of a concern.\r\n\r\nI never met David, things were handled via airbnb email. I spoke with him on the phone when my plans changed and he was flexible in changing the dates of the original reservation.\r\n"
+          "txt": "If you are looking for a home base with the basics to lay your head at night and have breakfast in and then head out for the day this fits the bill. It's close to Waikiki and the downtown area but not in the thick of things so if you're looking to avoid the 24/7 hustle and bustle then this might work for you. There is a basic kitchenette and eating area. Accessories for enjoying the sand and surf are available for use, pool, and hot tub as well, and secure parking which is a plus.\r\n\r\nIf you're looking for expansive ocean views, a room to hang out and relax in with up to date decor, and where you can easily meet and get to know people staying in the complex then this wouldn't be for you. The dependability of the elevators, particularly during high winds, is a bit of a concern.\r\n\r\nI never met David, things were handled via airbnb email. I spoke with him on the phone when my plans changed and he was flexible in changing the dates of the original reservation.\r\n"
         },
         {
           "id": "11326297",
@@ -207,7 +207,7 @@
             "img": "",
             "name": "Christopher"
           },
-          "comments": "Our stay here was great and just as we expected!  The apartment was in a really fantastic location and was very convenient.  It is a small, simple, and nice apartment with a cool view.  As a bonus, we talked with some other people that lived there that gave us great pointers about what to do during our stay there.  The included parking was also extremely convenient!  Check in and check out was simple, David's communication was outstanding, and he was very accommodating.  I would not hesitate to stay here again."
+          "txt": "Our stay here was great and just as we expected!  The apartment was in a really fantastic location and was very convenient.  It is a small, simple, and nice apartment with a cool view.  As a bonus, we talked with some other people that lived there that gave us great pointers about what to do during our stay there.  The included parking was also extremely convenient!  Check in and check out was simple, David's communication was outstanding, and he was very accommodating.  I would not hesitate to stay here again."
         },
         {
           "id": "13172738",
@@ -217,7 +217,7 @@
             "img": "",
             "name": "Robert"
           },
-          "comments": "The reservation was canceled 21 days before arrival. This is an automated posting."
+          "txt": "The reservation was canceled 21 days before arrival. This is an automated posting."
         }
       ]
     }
