@@ -13,6 +13,15 @@
 
 .ratio-poster { @include aspect-ratio(100, 150); }
 
+.home-container{
+    // background-color: rgb(146, 233, 202);
+    padding: 0 80px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
 // layout helpers 
 
 .flex {
