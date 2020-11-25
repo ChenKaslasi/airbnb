@@ -1,32 +1,16 @@
-/* 1 */
 {
   "_id" : "10021707",
-  "listing_url" : "https://www.airbnb.com/rooms/10021707",
   "name" : "Private Room in Bushwick",
-  "summary" : "Here exists a very cozy room for rent in a shared 4-bedroom apartment. It is located one block off of the JMZ at Myrtle Broadway.  The neighborhood is diverse and appeals to a variety of people.",
-  "space" : "",
-  "description" : "Here exists a very cozy room for rent in a shared 4-bedroom apartment. It is located one block off of the JMZ at Myrtle Broadway.  The neighborhood is diverse and appeals to a variety of people.",
-  "neighborhood_overview" : "",
-  "notes" : "",
-  "transit" : "",
-  "access" : "",
-  "interaction" : "",
-  "house_rules" : "",
-  "property_type" : "Apartment",
-  "room_type" : "Private room",
-  "bed_type" : "Real Bed",
-  "minimum_nights" : "14",
-  "maximum_nights" : "1125",
+  "listing_url" : "https://www.airbnb.com/rooms/10021707",
+  "locationDesc" : "Here exists a very cozy room for rent in a shared 4-bedroom apartment. It is located one block off of the JMZ at Myrtle Broadway.  The neighborhood is diverse and appeals to a variety of people.",
+  "spaceDesc" : "Here exists a very cozy room for rent in a shared 4-bedroom apartment. It is located one block off of the JMZ at Myrtle Broadway.  The neighborhood is diverse and appeals to a variety of people.",
+  "spaceType" : "Apartment",
+  "roomType" : "Private room",
   "cancellation_policy" : "flexible",
-  "last_scraped" : ISODate("2019-03-06T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-06T05:00:00.000Z"),
-  "first_review" : ISODate("2016-01-31T05:00:00.000Z"),
-  "last_review" : ISODate("2016-01-31T05:00:00.000Z"),
-  "accommodates" : 1,
+  "capacity" : 1,
   "bedrooms" : 1,
   "beds" : 1,
-  "number_of_reviews" : 1,
-  "bathrooms" : NumberDecimal("1.5"),
+  "bathrooms" : "1.5",
   "amenities" : [ 
       "Internet", 
       "Wifi", 
@@ -39,108 +23,69 @@
       "Essentials", 
       "Lock on bedroom door"
   ],
-  "price" : NumberDecimal("40.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("1"),
-  "images" : {
-      "thumbnail_url" : "",
-      "medium_url" : "",
-      "picture_url" : "https://a0.muscache.com/im/pictures/72844c8c-fec2-440e-a752-bba9b268c361.jpg?aki_policy=large",
-      "xl_picture_url" : ""
-  },
+  "price" : 40.00,
+  "imgs" : [
+    "https://a0.muscache.com/im/pictures/72844c8c-fec2-440e-a752-bba9b268c361.jpg?aki_policy=large",
+    "https://a0.muscache.com/im/pictures/bb4fc649-2b2c-4cc3-be10-d155f855af3f.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/a3b1fd53-7295-44eb-a98c-52d8356bf6ca.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/be3e5492-7a15-45ba-ad0b-636f65f9df9d.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/e8f35e22-cd06-4993-bed5-d9bb62fb97f2.jpg?im_w=720"
+  ],
   "host" : {
-      "host_id" : "11275734",
-      "host_url" : "https://www.airbnb.com/users/show/11275734",
-      "host_name" : "Josh",
-      "host_location" : "New York, New York, United States",
-      "host_about" : "",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "Bushwick",
-      "host_is_superhost" : false,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : true,
-      "host_listings_count" : 1,
-      "host_total_listings_count" : 1,
-      "host_verifications" : [ 
-          "email", 
-          "phone", 
-          "reviews", 
-          "kba"
-      ]
+      "id" : "11275734",
+      "name" : "Josh",
+      "about" : "",
+      "thumbnail_url" : "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_small",
+      "picture_url" : "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_x_medium",
+      "isSuperhost" : false,
+      "identityVerified" : true
   },
   "address" : {
       "street" : "Brooklyn, NY, United States",
-      "suburb" : "Brooklyn",
-      "government_area" : "Bushwick",
-      "market" : "New York",
+      "city" : "Brooklyn",
       "country" : "United States",
-      "country_code" : "US",
-      "location" : {
-          "type" : "Point",
-          "coordinates" : [ 
-              -73.93615, 
-              40.69791
-          ],
-          "is_location_exact" : true
+      "coordinates" : {
+        "lat" : -73.93615, 
+        "lng" :40.69791
       }
   },
-  "availability" : {
-      "availability_30" : 0,
-      "availability_60" : 0,
-      "availability_90" : 0,
-      "availability_365" : 0
-  },
-  "review_scores" : {
-      "review_scores_accuracy" : 10,
-      "review_scores_cleanliness" : 10,
-      "review_scores_checkin" : 10,
-      "review_scores_communication" : 10,
-      "review_scores_location" : 8,
-      "review_scores_value" : 8,
-      "review_scores_rating" : 100
+  "reviewScores" : {
+      "accuracy" : 10,
+      "cleanliness" : 10,
+      "checkin" : 10,
+      "communication" : 10,
+      "location" : 8,
+      "value" : 8,
+      "rating" : 100
   },
   "reviews" : [ 
       {
           "_id" : "61050713",
-          "date" : ISODate("2016-01-31T05:00:00.000Z"),
-          "listing_id" : "10021707",
-          "reviewer_id" : "52006105",
-          "reviewer_name" : "Antoine",
-          "comments" : "Josh was out of town during my 1 month stay. His roommates greeted and helped get me settled. They were great hosts and all around cool people. I'm a Brooklynite, but have never lived in Bushwick.\r\nIf you're looking for an hip, authentic, and convenient Brooklyn experience, this spot is for you.  You can literally see the Subway platform from Josh's window. Also a couple steps away from anything you could possibly need... restaurants, juice bar, organic grocery, etc. "
+          "date" : "2016-01-31T05:00:00.000Z",
+          "by" : {
+            "id" : "52006105",
+            "name" : "Antoine",
+            "img" : "https://a0.muscache.com/im/pictures/user/13dadf83-f5a3-4d5a-94a2-e3330259d619.jpg?im_w=240"
+          },
+          "txt" : "Josh was out of town during my 1 month stay. His roommates greeted and helped get me settled. They were great hosts and all around cool people. I'm a Brooklynite, but have never lived in Bushwick.\r\nIf you're looking for an hip, authentic, and convenient Brooklyn experience, this spot is for you.  You can literally see the Subway platform from Josh's window. Also a couple steps away from anything you could possibly need... restaurants, juice bar, organic grocery, etc. "
       }
   ]
 }
 
-/* 2 */
 {
-  "_id" : "1003530",
-  "listing_url" : "https://www.airbnb.com/rooms/1003530",
+  "id" : "1003530",
   "name" : "New York City - Upper West Side Apt",
-  "summary" : "",
-  "space" : "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement.",
-  "description" : "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement. New York City! Great neighborhood - many terrific restaurants, bakeries, bagelries. Within easy walking distance are restaurants with the cuisines from India, Thailand, Japan, China, Mexico, South America and Europe.  As well as the many small independent stores that line Broadway, there chain stores such as Urban Outfitters (clothing), Whole Foods (groceries), Sephora (cosmetics), Michaels (crafts), and Modell's (sporting goods). Equidistant to Central Park and Riverside Park which have walking/running/biking trails as well as tennis and racquet ball courts. 10-15 blocks from Columbia University between Broadway and Amsterdam. The International Hostel across the street is an airport shuttle bus and double-decker tour bus stop.  The Hostel also has services available to the neighborhood such as lectures, brochures, etc. Convenientl",
-  "neighborhood_overview" : "Great neighborhood - many terrific restaurants, bakeries, bagelries. Within easy walking distance are restaurants with the cuisines from India, Thailand, Japan, China, Mexico, South America and Europe.  As well as the many small independent stores that line Broadway, there chain stores such as Urban Outfitters (clothing), Whole Foods (groceries), Sephora (cosmetics), Michaels (crafts), and Modell's (sporting goods). Equidistant to Central Park and Riverside Park which have walking/running/biking trails as well as tennis and racquet ball courts. 10-15 blocks from Columbia University between Broadway and Amsterdam. The International Hostel across the street is an airport shuttle bus and double-decker tour bus stop.  The Hostel also has services available to the neighborhood such as lectures, brochures, etc.",
-  "notes" : "My cat, Samantha, are in and out during the summer.  The apt is layed out in such a  way that each bedroom is very private.",
-  "transit" : "Conveniently located near 1, 2, 3, B & C subway lines. Also buses on Columbus Avenue (downtown), Amsterdam Avenue (uptown), and Broadway (uptown/downtown). Also near origination/termination of M60 bus which goes to/from LaGuardia Airport.",
-  "access" : "New York City!",
-  "interaction" : "",
-  "house_rules" : "No smoking is permitted in the apartment. All towels that are used should be placed in the bath tub upon departure. I have a cat, Samantha, who can stay or go, whichever is preferred.   Please text me upon departure.",
-  "property_type" : "Apartment",
-  "room_type" : "Private room",
-  "bed_type" : "Real Bed",
-  "minimum_nights" : "12",
-  "maximum_nights" : "360",
+  "listing_url" : "https://www.airbnb.com/rooms/1003530",
+  "locationDesc" : "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement.",
+  "spaceDesc" : "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement. New York City! Great neighborhood - many terrific restaurants, bakeries, bagelries. Within easy walking distance are restaurants with the cuisines from India, Thailand, Japan, China, Mexico, South America and Europe.  As well as the many small independent stores that line Broadway, there chain stores such as Urban Outfitters (clothing), Whole Foods (groceries), Sephora (cosmetics), Michaels (crafts), and Modell's (sporting goods). Equidistant to Central Park and Riverside Park which have walking/running/biking trails as well as tennis and racquet ball courts. 10-15 blocks from Columbia University between Broadway and Amsterdam. The International Hostel across the street is an airport shuttle bus and double-decker tour bus stop.  The Hostel also has services available to the neighborhood such as lectures, brochures, etc. Convenientl",
+  "spaceType" : "Apartment",
+  "roomType" : "Private room",
   "cancellation_policy" : "strict_14_with_grace_period",
-  "last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
-  "first_review" : ISODate("2013-04-29T04:00:00.000Z"),
-  "last_review" : ISODate("2018-08-12T04:00:00.000Z"),
-  "accommodates" : 2,
+  "capacity" : 2,
   "bedrooms" : 1,
   "beds" : 1,
   "number_of_reviews" : 70,
-  "bathrooms" : NumberDecimal("1.0"),
+  "bathrooms" : 1,
   "amenities" : [ 
       "Internet", 
       "Wifi", 
@@ -154,34 +99,28 @@
       "Dryer", 
       "translation missing: en.hosting_amenity_50"
   ],
-  "price" : NumberDecimal("135.00"),
-  "security_deposit" : NumberDecimal("0.00"),
-  "cleaning_fee" : NumberDecimal("135.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("1"),
-  "images" : {
-      "thumbnail_url" : "",
-      "medium_url" : "",
-      "picture_url" : "https://a0.muscache.com/im/pictures/15074036/a97119ed_original.jpg?aki_policy=large",
-      "xl_picture_url" : ""
-  },
+  "price" : 135.00,
+  "imgs" : [
+      "https://a0.muscache.com/im/pictures/f2558078-70cb-4808-abb8-da693da75341.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/3e659307-169d-4afc-86d1-e150fc4e375a.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/8ea686cf-5953-4330-ba9d-14fc52d2447b.jpg?im_w=720",
+      "https://a0.muscache.com/im/pictures/30dccc7a-be8f-4f5f-8dcc-5cddf2a77254.jpg?im_w=720",
+    ],
   "host" : {
-      "host_id" : "454250",
-      "host_url" : "https://www.airbnb.com/users/show/454250",
-      "host_name" : "Greta",
-      "host_location" : "New York, New York, United States",
-      "host_about" : "By now I have lived longer in the city than the country however I feel equally at home in each. I like to keep one foot in each and help others to do the same!",
-      "host_response_time" : "within an hour",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/pictures/f1022be4-e72a-4b35-b6d2-3d2736ddaff9.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/pictures/f1022be4-e72a-4b35-b6d2-3d2736ddaff9.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "",
-      "host_response_rate" : 100,
-      "host_is_superhost" : true,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : true,
-      "host_listings_count" : 3,
-      "host_total_listings_count" : 3,
-      "host_verifications" : [ 
+      "id" : "454250",
+      "name" : "Greta",
+      "about" : "By now I have lived longer in the city than the country however I feel equally at home in each. I like to keep one foot in each and help others to do the same!",
+      "response_time" : "within an hour",
+      "thumbnail_url" : "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?im_w=240",
+      "picture_url" : "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?aki_policy=profile_medium", ----
+      "neighbourhood" : "",
+      "response_rate" : 100,
+      "is_superhost" : true,
+      "has_profile_pic" : true,
+      "identity_verified" : true,
+      "listings_count" : 3,
+      "total_listings_count" : 3,
+      "verifications" : [ 
           "email", 
           "phone", 
           "reviews", 
@@ -224,563 +163,563 @@
   "reviews" : [ 
       {
           "_id" : "4351675",
-          "date" : ISODate("2013-04-29T04:00:00.000Z"),
+          "date" : "2013-04-29T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "3708459",
-          "reviewer_name" : "Josh",
-          "comments" : "i had a really pleasant stay at greta's place. the location is super convenient -- and the area is fun, with lots of hidden gems. the apartment was comfortable and charming. greta was accommodating and hospitable and left some great cupcakes in the fridge. i give this place a strong endorsement."
+          "id" : "3708459",
+          "name" : "Josh",
+          "txt" : "i had a really pleasant stay at greta's place. the location is super convenient -- and the area is fun, with lots of hidden gems. the apartment was comfortable and charming. greta was accommodating and hospitable and left some great cupcakes in the fridge. i give this place a strong endorsement."
       }, 
       {
           "_id" : "4848277",
-          "date" : ISODate("2013-05-28T04:00:00.000Z"),
+          "date" : "2013-05-28T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "4609491",
-          "reviewer_name" : "Ralf",
-          "comments" : "Greta has been a great host, and her apartment a great place to stay. Perfectly located for our adventures around NYC, it is a place full of character and, as I see it, a very authentic NY Apartment that makes you feel at home imediately. Great neighbourhood, great infrastructure around the apartment block. Very good for a perfect stay."
+          "id" : "4609491",
+          "name" : "Ralf",
+          "txt" : "Greta has been a great host, and her apartment a great place to stay. Perfectly located for our adventures around NYC, it is a place full of character and, as I see it, a very authentic NY Apartment that makes you feel at home imediately. Great neighbourhood, great infrastructure around the apartment block. Very good for a perfect stay."
       }, 
       {
           "_id" : "5094175",
-          "date" : ISODate("2013-06-11T04:00:00.000Z"),
+          "date" : "2013-06-11T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "6741662",
-          "reviewer_name" : "Mame",
-          "comments" : "Greta was wonderful. We arrived late at night and she made sure we were able to get in. We also had to transfer to a hotel for work, and she allowed us to keep our belongings there until 3 so we wouldn't be carting our luggage until we needed to. The apartment was clean and large and in a wonderful neighborhood. She had lists and menus of places to eat. I couldn't have been happier with our arrangement. Thanks Greta!"
+          "id" : "6741662",
+          "name" : "Mame",
+          "txt" : "Greta was wonderful. We arrived late at night and she made sure we were able to get in. We also had to transfer to a hotel for work, and she allowed us to keep our belongings there until 3 so we wouldn't be carting our luggage until we needed to. The apartment was clean and large and in a wonderful neighborhood. She had lists and menus of places to eat. I couldn't have been happier with our arrangement. Thanks Greta!"
       }, 
       {
           "_id" : "5497796",
-          "date" : ISODate("2013-07-02T04:00:00.000Z"),
+          "date" : "2013-07-02T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "474156",
-          "reviewer_name" : "Lars",
-          "comments" : "Greta's place is very well located, so close to the MTA 1 line, which takes you up and down Manhattan, which was perfect for me.  It was an easy 3 minute walk and be on your way to anywhere in NY. \r\nThe shower is something else, the best water pressure I have experienced in a long time.\r\nI thought the decor was cool and eclectic, Greta must have an artistic streak. The Murphy bed was comfortable, and the AC unit (not pictured) kept it nice and cool.  \r\nAlthough I didn't meet her, she arranged for a neighbor to meet me and show me in. He was cool and so were any other neighbors that I met. \r\nShe also left a list of suggestions where to shop and eat, along with menus which was helpful when I needed a late night meal. \r\nHighly recommended. \r\n"
+          "id" : "474156",
+          "name" : "Lars",
+          "txt" : "Greta's place is very well located, so close to the MTA 1 line, which takes you up and down Manhattan, which was perfect for me.  It was an easy 3 minute walk and be on your way to anywhere in NY. \r\nThe shower is something else, the best water pressure I have experienced in a long time.\r\nI thought the decor was cool and eclectic, Greta must have an artistic streak. The Murphy bed was comfortable, and the AC unit (not pictured) kept it nice and cool.  \r\nAlthough I didn't meet her, she arranged for a neighbor to meet me and show me in. He was cool and so were any other neighbors that I met. \r\nShe also left a list of suggestions where to shop and eat, along with menus which was helpful when I needed a late night meal. \r\nHighly recommended. \r\n"
       }, 
       {
           "_id" : "6933005",
-          "date" : ISODate("2013-08-31T04:00:00.000Z"),
+          "date" : "2013-08-31T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "6067127",
-          "reviewer_name" : "Nicole",
-          "comments" : "I had a wonderful stay at Greta's NYC apartment. The apartment was clean and comfortable. She was a wonderful and informative host. I felt very welcomed in her home."
+          "id" : "6067127",
+          "name" : "Nicole",
+          "txt" : "I had a wonderful stay at Greta's NYC apartment. The apartment was clean and comfortable. She was a wonderful and informative host. I felt very welcomed in her home."
       }, 
       {
           "_id" : "7205029",
-          "date" : ISODate("2013-09-10T04:00:00.000Z"),
+          "date" : "2013-09-10T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "7743438",
-          "reviewer_name" : "Ute",
-          "comments" : "Hi Greta,\r\nyou have a wonderful place. We had a great time an felt really comfortable - little bit like beeing home in NY :)\r\nEverything worked out pretty good, also the connection to La Guardia Airport was perfect.\r\n\r\nThanks again :)\r\n"
+          "id" : "7743438",
+          "name" : "Ute",
+          "txt" : "Hi Greta,\r\nyou have a wonderful place. We had a great time an felt really comfortable - little bit like beeing home in NY :)\r\nEverything worked out pretty good, also the connection to La Guardia Airport was perfect.\r\n\r\nThanks again :)\r\n"
       }, 
       {
           "_id" : "7464858",
-          "date" : ISODate("2013-09-21T04:00:00.000Z"),
+          "date" : "2013-09-21T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "8543724",
-          "reviewer_name" : "Drew",
-          "comments" : "Greta was very welcoming and helpful. Prompt email communication.\r\n\r\nA great stay for those in town to see Broadway shows, shopping or sight seeing the West Side. A few minutes walking and I was in Central Park.\r\n\r\nA definite recommendation."
+          "id" : "8543724",
+          "name" : "Drew",
+          "txt" : "Greta was very welcoming and helpful. Prompt email communication.\r\n\r\nA great stay for those in town to see Broadway shows, shopping or sight seeing the West Side. A few minutes walking and I was in Central Park.\r\n\r\nA definite recommendation."
       }, 
       {
           "_id" : "7515354",
-          "date" : ISODate("2013-09-23T04:00:00.000Z"),
+          "date" : "2013-09-23T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "1683177",
-          "reviewer_name" : "Don",
-          "comments" : "Greta was flexible about our sign-in time, helpful as we arrived, and kind to return to us a bag that we left in her apartment.  The apartment is wonderfully located for transportation and things to do.  It is compact and comfy, full of interesting books and prints.  The bed is quite firm."
+          "id" : "1683177",
+          "name" : "Don",
+          "txt" : "Greta was flexible about our sign-in time, helpful as we arrived, and kind to return to us a bag that we left in her apartment.  The apartment is wonderfully located for transportation and things to do.  It is compact and comfy, full of interesting books and prints.  The bed is quite firm."
       }, 
       {
           "_id" : "7871931",
-          "date" : ISODate("2013-10-07T04:00:00.000Z"),
+          "date" : "2013-10-07T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "2871729",
-          "reviewer_name" : "Heidi",
-          "comments" : "We spent three nights in Greta’s apartment. Her kitchen is fully-equipped and the sleeping arrangements are extremely comfortable. Greta is a very accommodating host and easy to communicate with. She was very gracious about our later-than-expected arrival and allowed us to stay in her apartment on our departure day until we left for an early evening flight. Her apartment is very well-located, with food markets, drug stores, restaurants and coffee shops within a block of her building. The building is ½ block from the #1 subway line, enabling easy access to all parts of Manhattan."
+          "id" : "2871729",
+          "name" : "Heidi",
+          "txt" : "We spent three nights in Greta’s apartment. Her kitchen is fully-equipped and the sleeping arrangements are extremely comfortable. Greta is a very accommodating host and easy to communicate with. She was very gracious about our later-than-expected arrival and allowed us to stay in her apartment on our departure day until we left for an early evening flight. Her apartment is very well-located, with food markets, drug stores, restaurants and coffee shops within a block of her building. The building is ½ block from the #1 subway line, enabling easy access to all parts of Manhattan."
       }, 
       {
           "_id" : "8136769",
-          "date" : ISODate("2013-10-17T04:00:00.000Z"),
+          "date" : "2013-10-17T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "7811780",
-          "reviewer_name" : "Julia",
-          "comments" : "We enjoyed our stay in Greta's apartment very much. The location is perfect, near Central Park, Broadway and everything, and the apartment is extremely cosy. Greta was very welcoming and helpful. We had a great time and felt really comfortable. Thanks :-)\r\n"
+          "id" : "7811780",
+          "name" : "Julia",
+          "txt" : "We enjoyed our stay in Greta's apartment very much. The location is perfect, near Central Park, Broadway and everything, and the apartment is extremely cosy. Greta was very welcoming and helpful. We had a great time and felt really comfortable. Thanks :-\r\n"
       }, 
       {
           "_id" : "8210485",
-          "date" : ISODate("2013-10-21T04:00:00.000Z"),
+          "date" : "2013-10-21T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "8119019",
-          "reviewer_name" : "Diane",
-          "comments" : "Our stay are Greta's was wonderful- she was so accomodating and welcoming.  Her apartment is lovely and such a great place to unwind from the hurried family weekend weekend we had.  Greta even accomodated the joining of my niece and nephew for one of the two nights with no problem.. Thank you so much, Greta, for your hospitality!  "
+          "id" : "8119019",
+          "name" : "Diane",
+          "txt" : "Our stay are Greta's was wonderful- she was so accomodating and welcoming.  Her apartment is lovely and such a great place to unwind from the hurried family weekend weekend we had.  Greta even accomodated the joining of my niece and nephew for one of the two nights with no problem.. Thank you so much, Greta, for your hospitality!  "
       }, 
       {
           "_id" : "8478870",
-          "date" : ISODate("2013-11-02T04:00:00.000Z"),
+          "date" : "2013-11-02T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "8140760",
-          "reviewer_name" : "Linda",
-          "comments" : "Greta was a gracious and accommodating host, even coming over during our stay to reset the wifi connections.  The location of the apartment is ideal, basically half a short block to the subway.  Her list of neighborhood restaurants was very helpful and we sampled as many as we were able to. She has everything organized well."
+          "id" : "8140760",
+          "name" : "Linda",
+          "txt" : "Greta was a gracious and accommodating host, even coming over during our stay to reset the wifi connections.  The location of the apartment is ideal, basically half a short block to the subway.  Her list of neighborhood restaurants was very helpful and we sampled as many as we were able to. She has everything organized well."
       }, 
       {
           "_id" : "8587648",
-          "date" : ISODate("2013-11-06T05:00:00.000Z"),
+          "date" : "2013-11-06T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "9307997",
-          "reviewer_name" : "Maureen",
-          "comments" : "Greta's apartment was comfortable and clean and the neighborhood was easily accessible to museums and other locations. A bit noisy at night."
+          "id" : "9307997",
+          "name" : "Maureen",
+          "txt" : "Greta's apartment was comfortable and clean and the neighborhood was easily accessible to museums and other locations. A bit noisy at night."
       }, 
       {
           "_id" : "8768655",
-          "date" : ISODate("2013-11-17T05:00:00.000Z"),
+          "date" : "2013-11-17T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "9464736",
-          "reviewer_name" : "George",
-          "comments" : "Greta was extremely helpful throughout this process!  Communication was maintained throughout the process and throughout our stay.  She was able to answer any questions we had and even gave suggestions for us.  Her instructions were awesome and the information left at her apartment were great!  There was even a binder with additional information like places to eat and places to go.  She even took the time to make sure we knew how to use the radiator!  Being from Hawaii, we had no knowledge about radiators and how to use them - we really appreciated her thoughtfulness!"
+          "id" : "9464736",
+          "name" : "George",
+          "txt" : "Greta was extremely helpful throughout this process!  Communication was maintained throughout the process and throughout our stay.  She was able to answer any questions we had and even gave suggestions for us.  Her instructions were awesome and the information left at her apartment were great!  There was even a binder with additional information like places to eat and places to go.  She even took the time to make sure we knew how to use the radiator!  Being from Hawaii, we had no knowledge about radiators and how to use them - we really appreciated her thoughtfulness!"
       }, 
       {
           "_id" : "9179262",
-          "date" : ISODate("2013-12-11T05:00:00.000Z"),
+          "date" : "2013-12-11T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "9405167",
-          "reviewer_name" : "Whitney",
-          "comments" : "Greta's apartment was homey, clean and just the right size for two (probably even three) people. Greta was extremely helpful in getting us settled and providing information about the neighborhood....etc. Murphy bed was very firm but comfortable. Great water pressure in shower. Apt is close to everything and  the neighborhood has so much to offer. I would definitely recommend Greta's place.  "
+          "id" : "9405167",
+          "name" : "Whitney",
+          "txt" : "Greta's apartment was homey, clean and just the right size for two (probably even three people. Greta was extremely helpful in getting us settled and providing information about the neighborhood....etc. Murphy bed was very firm but comfortable. Great water pressure in shower. Apt is close to everything and  the neighborhood has so much to offer. I would definitely recommend Greta's place.  "
       }, 
       {
           "_id" : "9428838",
-          "date" : ISODate("2013-12-28T05:00:00.000Z"),
+          "date" : "2013-12-28T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "10297643",
-          "reviewer_name" : "Deborah & Tim",
-          "comments" : "The apartment is very homey - it felt like I was staying in a friend's apartment. The bed is surprisingly comfy and firm (I have never slept in a Murphy bed before) and the shower had plenty of hot water and great pressure. Greta was very communicative and friendly, and was also incredibly accommodating when I had something come up unexpectedly and needed to stay a couple hours longer than I anticipated. Overall all it was a very cozy stay in a great location!"
+          "id" : "10297643",
+          "name" : "Deborah & Tim",
+          "txt" : "The apartment is very homey - it felt like I was staying in a friend's apartment. The bed is surprisingly comfy and firm (I have never slept in a Murphy bed before) and the shower had plenty of hot water and great pressure. Greta was very communicative and friendly, and was also incredibly accommodating when I had something come up unexpectedly and needed to stay a couple hours longer than I anticipated. Overall all it was a very cozy stay in a great location!"
       }, 
       {
           "_id" : "9543118",
-          "date" : ISODate("2014-01-02T05:00:00.000Z"),
+          "date" : "2014-01-02T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "8828184",
-          "reviewer_name" : "Catherine",
-          "comments" : "The location of this appartment was ideal! Just minutes away the subway and walking distance from Central Park, Riverside Park, and many good restaurants on Broadway. A quaint appartment, with a lot of cachet. I recommend it!!"
+          "id" : "8828184",
+          "name" : "Catherine",
+          "txt" : "The location of this appartment was ideal! Just minutes away the subway and walking distance from Central Park, Riverside Park, and many good restaurants on Broadway. A quaint appartment, with a lot of cachet. I recommend it!!"
       }, 
       {
           "_id" : "20872115",
-          "date" : ISODate("2014-10-06T04:00:00.000Z"),
+          "date" : "2014-10-06T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "7838233",
-          "reviewer_name" : "Brandon",
-          "comments" : "What a delightful apartment!  I plan to stay here next time I bring family to New York. I would describe the apartment as a very warm, personal, comfortable and homey place to stay. It’s a corner apartment with good light, lots of books and  very good energy. Plus, the beds are quite comfortable. My daughter exclaimed “Hey Dad, come lie down in this one. You’ll never want to get up!”\r\n\r\nThe neighborhood was incredibly well located and enjoyable. The train stops  a half block away, and there are numerous excellent restaurants and conveniences close by. Greta, the host, provides a first-rate list of recommendations.\r\n\r\nGreta was a personable, helpful and extremely welcoming host. She was very quick to respond to my online inquiries and, once we arrived, to any further requests for advice.\r\n"
+          "id" : "7838233",
+          "name" : "Brandon",
+          "txt" : "What a delightful apartment!  I plan to stay here next time I bring family to New York. I would describe the apartment as a very warm, personal, comfortable and homey place to stay. It’s a corner apartment with good light, lots of books and  very good energy. Plus, the beds are quite comfortable. My daughter exclaimed “Hey Dad, come lie down in this one. You’ll never want to get up!”\r\n\r\nThe neighborhood was incredibly well located and enjoyable. The train stops  a half block away, and there are numerous excellent restaurants and conveniences close by. Greta, the host, provides a first-rate list of recommendations.\r\n\r\nGreta was a personable, helpful and extremely welcoming host. She was very quick to respond to my online inquiries and, once we arrived, to any further requests for advice.\r\n"
       }, 
       {
           "_id" : "22257920",
-          "date" : ISODate("2014-11-02T04:00:00.000Z"),
+          "date" : "2014-11-02T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "4034556",
-          "reviewer_name" : "Aparna",
-          "comments" : "Greta was a lovely host! She was communicative, helpful and flexible during the booking process and very responsive and friendly when we were at her place in NYC. The house is charming and comfortable, and very conveniently located right by the 1 train. We were two of us and only used one room, but the house can fit another person or two. \r\nFor anyone visiting NYC and looking to be in the city but not in the midst of the city noise, this is a great place to stay! You can be downtown in 20 minutes. "
+          "id" : "4034556",
+          "name" : "Aparna",
+          "txt" : "Greta was a lovely host! She was communicative, helpful and flexible during the booking process and very responsive and friendly when we were at her place in NYC. The house is charming and comfortable, and very conveniently located right by the 1 train. We were two of us and only used one room, but the house can fit another person or two. \r\nFor anyone visiting NYC and looking to be in the city but not in the midst of the city noise, this is a great place to stay! You can be downtown in 20 minutes. "
       }, 
       {
           "_id" : "23415037",
-          "date" : ISODate("2014-11-30T05:00:00.000Z"),
+          "date" : "2014-11-30T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "22685675",
-          "reviewer_name" : "Karolina",
-          "comments" : "I stayed at Greta's place for 3 days! It was a really pleasant stay! The bed was really comfortable. The place was clean and cozy. A minute from the subway station! I didnt meet Greta in person, but we were communicating all the time and she was really helpful and kind with everything I needed! I would love to stay again the next time! :) i surely recommend it! "
+          "id" : "22685675",
+          "name" : "Karolina",
+          "txt" : "I stayed at Greta's place for 3 days! It was a really pleasant stay! The bed was really comfortable. The place was clean and cozy. A minute from the subway station! I didnt meet Greta in person, but we were communicating all the time and she was really helpful and kind with everything I needed! I would love to stay again the next time! :) i surely recommend it! "
       }, 
       {
           "_id" : "23924172",
-          "date" : ISODate("2014-12-14T05:00:00.000Z"),
+          "date" : "2014-12-14T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "16534063",
-          "reviewer_name" : "Paul",
-          "comments" : "Staying at Greta's apartment was delightful!  It's a wonderful, quirky New York apartment -- very compact, but also very comfy and accurately portrayed in the pictures.  The Murphy (fold-down) bed has a very thick memory foam mattress that is extremely comfortable.  Samantha (the cat) was a sweet little presence, but she kept mostly to herself so we barely saw her.  The location is great, less than a block to the 1 line, and there are several nice restaurants in the neighborhood.  Finally, Greta herself was a perfect host:  kind but not intrusive, thoughtful in her preparations for guests, and available should any problems arise (though none did).  A great airbnb experience!"
+          "id" : "16534063",
+          "name" : "Paul",
+          "txt" : "Staying at Greta's apartment was delightful!  It's a wonderful, quirky New York apartment -- very compact, but also very comfy and accurately portrayed in the pictures.  The Murphy (fold-down) bed has a very thick memory foam mattress that is extremely comfortable.  Samantha (the cat) was a sweet little presence, but she kept mostly to herself so we barely saw her.  The location is great, less than a block to the 1 line, and there are several nice restaurants in the neighborhood.  Finally, Greta herself was a perfect host:  kind but not intrusive, thoughtful in her preparations for guests, and available should any problems arise (though none did).  A great airbnb experience!"
       }, 
       {
           "_id" : "28737168",
-          "date" : ISODate("2015-03-29T04:00:00.000Z"),
+          "date" : "2015-03-29T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "29115141",
-          "reviewer_name" : "Catherine",
-          "comments" : "Greta was a great host.  She met us late on Friday and explained everything about the apartment which we found very comfortable and fun.  I would highly recommend this apartment to anyone.  It is not luxurious but well-equipped and I loved the location, near Central Park and easy walk to museums.\r\n"
+          "id" : "29115141",
+          "name" : "Catherine",
+          "txt" : "Greta was a great host.  She met us late on Friday and explained everything about the apartment which we found very comfortable and fun.  I would highly recommend this apartment to anyone.  It is not luxurious but well-equipped and I loved the location, near Central Park and easy walk to museums.\r\n"
       }, 
       {
           "_id" : "29274122",
-          "date" : ISODate("2015-04-06T04:00:00.000Z"),
+          "date" : "2015-04-06T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "18417452",
-          "reviewer_name" : "Paul",
-          "comments" : "Apt is beautifully as advertised, a comfortable place and beds, kitchen and bath. Arrival and departure were really well coordinated by host, the lovely Greta. Location is fabulously convenient on upper West side by subway, Amsterdam and Broadway restaurants, bars and history. We'd stay here again.  "
+          "id" : "18417452",
+          "name" : "Paul",
+          "txt" : "Apt is beautifully as advertised, a comfortable place and beds, kitchen and bath. Arrival and departure were really well coordinated by host, the lovely Greta. Location is fabulously convenient on upper West side by subway, Amsterdam and Broadway restaurants, bars and history. We'd stay here again.  "
       }, 
       {
           "_id" : "29610000",
-          "date" : ISODate("2015-04-10T04:00:00.000Z"),
+          "date" : "2015-04-10T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "27919376",
-          "reviewer_name" : "Anika",
-          "comments" : "Greta was a lovely host, making sure we settled in well and could contact her easily if there were any problems. \r\nThe apartment is cosy with very comfortable beds and a well equipped kitchen in case you need a place to cook. It is also a nice neighborhood, with a lot of great places to eat nearby and it is a minute away from a subway station, so you are well connected to the rest of the city. We had a great time! "
+          "id" : "27919376",
+          "name" : "Anika",
+          "txt" : "Greta was a lovely host, making sure we settled in well and could contact her easily if there were any problems. \r\nThe apartment is cosy with very comfortable beds and a well equipped kitchen in case you need a place to cook. It is also a nice neighborhood, with a lot of great places to eat nearby and it is a minute away from a subway station, so you are well connected to the rest of the city. We had a great time! "
       }, 
       {
           "_id" : "29775810",
-          "date" : ISODate("2015-04-12T04:00:00.000Z"),
+          "date" : "2015-04-12T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "20415509",
-          "reviewer_name" : "Jane",
-          "comments" : "My daughter and I stayed the weekend at Gretas place.  Greta was herself away for the weekend but everything was in great shape for us to stay and Greta was very available by phone for any questions.  Everything was very tidy and clean..comfy beds and good shower.  It was like home.  The location in the city is perfect..close to the park and subway.  I highly recommend Gretas home for aNew York stay!"
+          "id" : "20415509",
+          "name" : "Jane",
+          "txt" : "My daughter and I stayed the weekend at Gretas place.  Greta was herself away for the weekend but everything was in great shape for us to stay and Greta was very available by phone for any questions.  Everything was very tidy and clean..comfy beds and good shower.  It was like home.  The location in the city is perfect..close to the park and subway.  I highly recommend Gretas home for aNew York stay!"
       }, 
       {
           "_id" : "30732097",
-          "date" : ISODate("2015-04-26T04:00:00.000Z"),
+          "date" : "2015-04-26T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "10570759",
-          "reviewer_name" : "Lakshmi",
-          "comments" : "Greta is an amazing host and her apartment was super convenient for my stay in Manhattan. Here are my reasons:\r\nFirst - she as a person made me feel super welcome. I requested her a really early check in and she agreed (which was helpful because I took a red eye from Seattle). She also allowed me to keep my bags after my check out time so I could pick it up before my flight.\r\nSecond - her apartment location is SUPER convenient. Right next to the #1 and pretty close to B and C lines. NYC is all about location is this fits perfectly.\r\nThird - her apartment gives the feel of a typical NYC apartment. It is tiny but has everything you need. Two beds, a great shower, clean towels, and a kitchen (which I didn't use). Safe building with elevator. \r\n\r\nI would totally stay here again.  "
+          "id" : "10570759",
+          "name" : "Lakshmi",
+          "txt" : "Greta is an amazing host and her apartment was super convenient for my stay in Manhattan. Here are my reasons:\r\nFirst - she as a person made me feel super welcome. I requested her a really early check in and she agreed (which was helpful because I took a red eye from Seattle). She also allowed me to keep my bags after my check out time so I could pick it up before my flight.\r\nSecond - her apartment location is SUPER convenient. Right next to the #1 and pretty close to B and C lines. NYC is all about location is this fits perfectly.\r\nThird - her apartment gives the feel of a typical NYC apartment. It is tiny but has everything you need. Two beds, a great shower, clean towels, and a kitchen (which I didn't use). Safe building with elevator. \r\n\r\nI would totally stay here again.  "
       }, 
       {
           "_id" : "31196460",
-          "date" : ISODate("2015-05-03T04:00:00.000Z"),
+          "date" : "2015-05-03T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "43102",
-          "reviewer_name" : "Catherine Et Albert",
-          "comments" : "Greta was a fantastic host, we had a problem with a lost luggage at JFK and she helped us to coordinate the delivery. We also arrived later than scheduled in Manhattan, Greta was waiting for us, she welcomed us very friendly. The apartment is very nice and bright, the bed is very comfortable. Nice building with elevator, perfect location, between Riverside Park and Central Park, a block from the subway, lot of nice restaurants all around, we had a fantastic stay! Greta est une hôte fantastique, nous avons eu un problème de baggage à JFK et Greta nous a aidé à coordonner la livraison. Nous sommes arrivés plus tard que prévu et Greta nous a accueilli très chaleureseument. L'appartement est parfaitement situé, a un block du métro et entre Cantral Park et Riverside Park, il y a un ascenceur. Nombreux restaurants tout autour! Parfait nous recommandons vivement."
+          "id" : "43102",
+          "name" : "Catherine Et Albert",
+          "txt" : "Greta was a fantastic host, we had a problem with a lost luggage at JFK and she helped us to coordinate the delivery. We also arrived later than scheduled in Manhattan, Greta was waiting for us, she welcomed us very friendly. The apartment is very nice and bright, the bed is very comfortable. Nice building with elevator, perfect location, between Riverside Park and Central Park, a block from the subway, lot of nice restaurants all around, we had a fantastic stay! Greta est une hôte fantastique, nous avons eu un problème de baggage à JFK et Greta nous a aidé à coordonner la livraison. Nous sommes arrivés plus tard que prévu et Greta nous a accueilli très chaleureseument. L'appartement est parfaitement situé, a un block du métro et entre Cantral Park et Riverside Park, il y a un ascenceur. Nombreux restaurants tout autour! Parfait nous recommandons vivement."
       }, 
       {
           "_id" : "31845940",
-          "date" : ISODate("2015-05-10T04:00:00.000Z"),
+          "date" : "2015-05-10T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "14717479",
-          "reviewer_name" : "Samantha",
-          "comments" : "We had a great stay with Greta.  She was a good communicator, flexible, and her apartment is a good value for the neighborhood.  We will definitely think about staying with her again."
+          "id" : "14717479",
+          "name" : "Samantha",
+          "txt" : "We had a great stay with Greta.  She was a good communicator, flexible, and her apartment is a good value for the neighborhood.  We will definitely think about staying with her again."
       }, 
       {
           "_id" : "33677946",
-          "date" : ISODate("2015-05-31T04:00:00.000Z"),
+          "date" : "2015-05-31T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "31114625",
-          "reviewer_name" : "Rebecca",
-          "comments" : "My stay at Greta's place was perfect! The space is exactly as described, and was very clean and welcoming. Greta was very responsive to me, and even helped me figure out how to pick up the keys with my late arrival. Thank you!"
+          "id" : "31114625",
+          "name" : "Rebecca",
+          "txt" : "My stay at Greta's place was perfect! The space is exactly as described, and was very clean and welcoming. Greta was very responsive to me, and even helped me figure out how to pick up the keys with my late arrival. Thank you!"
       }, 
       {
           "_id" : "36960183",
-          "date" : ISODate("2015-07-03T04:00:00.000Z"),
+          "date" : "2015-07-03T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "33119724",
-          "reviewer_name" : "Thomas",
-          "comments" : "Greta was an excellent hostess and was very accommodating. She took care of the little things that made a difference such as providing an extra set of keys and having the air conditioning on prior to my arrival. The apartment was clean and very comfortable. It instantly felt like \"home\". The location of the apartment was great! There are multiple grocery stores, restaurants, bars, etc. within a very short walking distance. The subway stop was very conveniently located as was Central Park and Riverside Park, which are both beautiful places for an afternoon walk. I would and have recommended this listing to friends that are traveling to the city and I would stay there again without hesitation. "
+          "id" : "33119724",
+          "name" : "Thomas",
+          "txt" : "Greta was an excellent hostess and was very accommodating. She took care of the little things that made a difference such as providing an extra set of keys and having the air conditioning on prior to my arrival. The apartment was clean and very comfortable. It instantly felt like \"home\". The location of the apartment was great! There are multiple grocery stores, restaurants, bars, etc. within a very short walking distance. The subway stop was very conveniently located as was Central Park and Riverside Park, which are both beautiful places for an afternoon walk. I would and have recommended this listing to friends that are traveling to the city and I would stay there again without hesitation. "
       }, 
       {
           "_id" : "37555310",
-          "date" : ISODate("2015-07-08T04:00:00.000Z"),
+          "date" : "2015-07-08T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "6352182",
-          "reviewer_name" : "Murray",
-          "comments" : "Greta is an excellent Airbnb host! She is warm, accommodating and very well organized. Her apt is located close to all amenities, Central and Riverside Parks, and bus/subway stops. The apt is clean, more spacious than expected, well stocked with anything you could possibly need, and has very comfortable beds and a first rate shower. I was travelling with my soon-to-be 17 year old daughter so she was thrilled to have her own bedroom! This is not fancy accommodation but warm and homey and probably a good representation of how an average New Yorker lives, although I suspect not many are as organized as Greta. Much recommended!"
+          "id" : "6352182",
+          "name" : "Murray",
+          "txt" : "Greta is an excellent Airbnb host! She is warm, accommodating and very well organized. Her apt is located close to all amenities, Central and Riverside Parks, and bus/subway stops. The apt is clean, more spacious than expected, well stocked with anything you could possibly need, and has very comfortable beds and a first rate shower. I was travelling with my soon-to-be 17 year old daughter so she was thrilled to have her own bedroom! This is not fancy accommodation but warm and homey and probably a good representation of how an average New Yorker lives, although I suspect not many are as organized as Greta. Much recommended!"
       }, 
       {
           "_id" : "48783685",
-          "date" : ISODate("2015-09-28T04:00:00.000Z"),
+          "date" : "2015-09-28T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "43967256",
-          "reviewer_name" : "Judy",
-          "comments" : "I have used airbnb in NYC several times, and this, by far, was my best experience.  The location is on a quiet street and on the same block as a major subway line.  You can't get any better than that.  The apartment has all the conveniences of a home - everything you'd need in a kitchen, extremely comfortable mattress, cable TV, air conditioning, wifi, great water pressure.  \r\n\r\nGreata goes way out of her way to make your stay as enjoyable as possible.  Her recommendations are outstanding and the check-in and check-out were  extremely easy.  This is a five star host and you won't go wrong with this choice for a stay in NYC. \r\n"
+          "id" : "43967256",
+          "name" : "Judy",
+          "txt" : "I have used airbnb in NYC several times, and this, by far, was my best experience.  The location is on a quiet street and on the same block as a major subway line.  You can't get any better than that.  The apartment has all the conveniences of a home - everything you'd need in a kitchen, extremely comfortable mattress, cable TV, air conditioning, wifi, great water pressure.  \r\n\r\nGreata goes way out of her way to make your stay as enjoyable as possible.  Her recommendations are outstanding and the check-in and check-out were  extremely easy.  This is a five star host and you won't go wrong with this choice for a stay in NYC. \r\n"
       }, 
       {
           "_id" : "53270568",
-          "date" : ISODate("2015-11-07T05:00:00.000Z"),
+          "date" : "2015-11-07T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "21960218",
-          "reviewer_name" : "Nicky",
-          "comments" : "This is my second time staying at Greta's apartment. The best place to stay in NYC by far. There is a subway on the same street as the apartment, a two minute walk away (the 1 line) and multiple places to eat close by. There is also a CVS , Walgreens, grocery and liquor store within walking distance as well. The apartment is very clean and the bed is very comfortable. Checking in and out as easy as Greta is very flexible. The apartment is very spacious with a nice kitchen and lots of room in the fridge. I hope to continue to stay here every time I visit New York! "
+          "id" : "21960218",
+          "name" : "Nicky",
+          "txt" : "This is my second time staying at Greta's apartment. The best place to stay in NYC by far. There is a subway on the same street as the apartment, a two minute walk away (the 1 line) and multiple places to eat close by. There is also a CVS , Walgreens, grocery and liquor store within walking distance as well. The apartment is very clean and the bed is very comfortable. Checking in and out as easy as Greta is very flexible. The apartment is very spacious with a nice kitchen and lots of room in the fridge. I hope to continue to stay here every time I visit New York! "
       }, 
       {
           "_id" : "57574836",
-          "date" : ISODate("2015-12-27T05:00:00.000Z"),
+          "date" : "2015-12-27T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "50466815",
-          "reviewer_name" : "Obaseki",
-          "comments" : "Greta place is amazing and blissful. She was understand to our delayed scheduled. Her place is home away from home. Her details description gave us point of interest to visit. If I was to go to NYC again I would check Greta place available first."
+          "id" : "50466815",
+          "name" : "Obaseki",
+          "txt" : "Greta place is amazing and blissful. She was understand to our delayed scheduled. Her place is home away from home. Her details description gave us point of interest to visit. If I was to go to NYC again I would check Greta place available first."
       }, 
       {
           "_id" : "58775965",
-          "date" : ISODate("2016-01-05T05:00:00.000Z"),
+          "date" : "2016-01-05T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "2692640",
-          "reviewer_name" : "Federica",
-          "comments" : "We had a wonderful experience staying at Greta's flat. She is an amazing host: disposable, kind and always ready to answer back to our necessities, including late check-in and check-out. The flat itself is a true newyorker's one, warm, stylish and excellentlty connected with the subway. We strongly suggest it for everyone!"
+          "id" : "2692640",
+          "name" : "Federica",
+          "txt" : "We had a wonderful experience staying at Greta's flat. She is an amazing host: disposable, kind and always ready to answer back to our necessities, including late check-in and check-out. The flat itself is a true newyorker's one, warm, stylish and excellentlty connected with the subway. We strongly suggest it for everyone!"
       }, 
       {
           "_id" : "63209635",
-          "date" : ISODate("2016-02-21T05:00:00.000Z"),
+          "date" : "2016-02-21T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "4823592",
-          "reviewer_name" : "Lucinda",
-          "comments" : "Greta was very welcoming and flexible.  My friend and I slept well in comfortable beds under soft cotton sheets in this lovely quiet flat on the upper west side.  We walked to the Museum of Natural History and hopped on the subway (less than one block away!) to go downtown.  Greta's place offered a sweet artful respite from the rush of the city."
+          "id" : "4823592",
+          "name" : "Lucinda",
+          "txt" : "Greta was very welcoming and flexible.  My friend and I slept well in comfortable beds under soft cotton sheets in this lovely quiet flat on the upper west side.  We walked to the Museum of Natural History and hopped on the subway (less than one block away!) to go downtown.  Greta's place offered a sweet artful respite from the rush of the city."
       }, 
       {
           "_id" : "70519082",
-          "date" : ISODate("2016-04-18T04:00:00.000Z"),
+          "date" : "2016-04-18T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "59943151",
-          "reviewer_name" : "H",
-          "comments" : "Greta was as amazing as her beautiful home!  The check in and check out process was easy.  Greta's communication was super convenient as she used text messaging and email to keep in constant communication.  Her apartment is beautifully decorated, extremely comfortable, and very welcoming.   The neighborhood is safe with stores and restaurants within a short walking distance.  I highly recommend Greta's apartment for renting.  You won't be disappointed."
+          "id" : "59943151",
+          "name" : "H",
+          "txt" : "Greta was as amazing as her beautiful home!  The check in and check out process was easy.  Greta's communication was super convenient as she used text messaging and email to keep in constant communication.  Her apartment is beautifully decorated, extremely comfortable, and very welcoming.   The neighborhood is safe with stores and restaurants within a short walking distance.  I highly recommend Greta's apartment for renting.  You won't be disappointed."
       }, 
       {
           "_id" : "71843260",
-          "date" : ISODate("2016-04-29T04:00:00.000Z"),
+          "date" : "2016-04-29T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "31368654",
-          "reviewer_name" : "Peter",
-          "comments" : "What can we say? Greta is a delight and her place is perfect. The beds are comfortable, the kitchen is an eat-in and the bathroom is classic New York. The building is almost 150 years old and holds up. The location is perfect, a block to the 1 train and four blocks from the bus to LA Guardia. Everything was perfect and we already miss Samantha. Thank you Greta and we hope to be able to stay there in the future."
+          "id" : "31368654",
+          "name" : "Peter",
+          "txt" : "What can we say? Greta is a delight and her place is perfect. The beds are comfortable, the kitchen is an eat-in and the bathroom is classic New York. The building is almost 150 years old and holds up. The location is perfect, a block to the 1 train and four blocks from the bus to LA Guardia. Everything was perfect and we already miss Samantha. Thank you Greta and we hope to be able to stay there in the future."
       }, 
       {
           "_id" : "82291166",
-          "date" : ISODate("2016-06-27T04:00:00.000Z"),
+          "date" : "2016-06-27T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "4543077",
-          "reviewer_name" : "Stuart",
-          "comments" : "Easy to make arrangements, was readily available for questions, and flexible about arriving and departing. Highly recommend this Upper West Side accommodation."
+          "id" : "4543077",
+          "name" : "Stuart",
+          "txt" : "Easy to make arrangements, was readily available for questions, and flexible about arriving and departing. Highly recommend this Upper West Side accommodation."
       }, 
       {
           "_id" : "84121201",
-          "date" : ISODate("2016-07-05T04:00:00.000Z"),
+          "date" : "2016-07-05T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "62507392",
-          "reviewer_name" : "Jean",
-          "comments" : "Greta and I communicated regularly before my trip,she was prompt and helpful. She met me at the apartment and was very welcoming,filled me in on all I needed to know. The apartment is so lovely and convenient and cosy and beautiful! Great area. I'd love to come back."
+          "id" : "62507392",
+          "name" : "Jean",
+          "txt" : "Greta and I communicated regularly before my trip,she was prompt and helpful. She met me at the apartment and was very welcoming,filled me in on all I needed to know. The apartment is so lovely and convenient and cosy and beautiful! Great area. I'd love to come back."
       }, 
       {
           "_id" : "85258241",
-          "date" : ISODate("2016-07-10T04:00:00.000Z"),
+          "date" : "2016-07-10T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "42965012",
-          "reviewer_name" : "Gwen",
-          "comments" : "Greta went out of her way to assist us with difficult flight times and luggage which really made things easier for us. The area was good and as everyone notes, great for the subway, which works far better than the tourist buses which barely move at times with traffic. Lots of eateries etc handy. "
+          "id" : "42965012",
+          "name" : "Gwen",
+          "txt" : "Greta went out of her way to assist us with difficult flight times and luggage which really made things easier for us. The area was good and as everyone notes, great for the subway, which works far better than the tourist buses which barely move at times with traffic. Lots of eateries etc handy. "
       }, 
       {
           "_id" : "86034388",
-          "date" : ISODate("2016-07-14T04:00:00.000Z"),
+          "date" : "2016-07-14T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "53587610",
-          "reviewer_name" : "Nesta",
-          "comments" : "Throughout, all Greta's communications were prompt, friendly and helpful.  We felt very prepared and welcome in her apartment, which is charming, comfortable and well located - a real 'home-from-home' to return to after a hot day's sight-seeing.  It was fun to have a brief swap over with the previous visitors (agreed previously by email with Greta).   Many thanks for a great stay. "
+          "id" : "53587610",
+          "name" : "Nesta",
+          "txt" : "Throughout, all Greta's communications were prompt, friendly and helpful.  We felt very prepared and welcome in her apartment, which is charming, comfortable and well located - a real 'home-from-home' to return to after a hot day's sight-seeing.  It was fun to have a brief swap over with the previous visitors (agreed previously by email with Greta).   Many thanks for a great stay. "
       }, 
       {
           "_id" : "86519833",
-          "date" : ISODate("2016-07-16T04:00:00.000Z"),
+          "date" : "2016-07-16T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "576347",
-          "reviewer_name" : "Ifeoma",
-          "comments" : "This was a unique apartment in an excellent location. Great for anyone having business at Columbia University. Close to restaurants, transportation. Highly recommend. "
+          "id" : "576347",
+          "name" : "Ifeoma",
+          "txt" : "This was a unique apartment in an excellent location. Great for anyone having business at Columbia University. Close to restaurants, transportation. Highly recommend. "
       }, 
       {
           "_id" : "88541809",
-          "date" : ISODate("2016-07-24T04:00:00.000Z"),
+          "date" : "2016-07-24T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "54217384",
-          "reviewer_name" : "Terri",
-          "comments" : "Greta is a wonderful Host. Very honest, helpful. Great to work with. The neighborhood was awesome, close to subway, parks. Fabulous bagel store. The house is cute, quaint. Your really get the feel of what it's like to live there. I recommend this place. My daughter and I had a great time."
+          "id" : "54217384",
+          "name" : "Terri",
+          "txt" : "Greta is a wonderful Host. Very honest, helpful. Great to work with. The neighborhood was awesome, close to subway, parks. Fabulous bagel store. The house is cute, quaint. Your really get the feel of what it's like to live there. I recommend this place. My daughter and I had a great time."
       }, 
       {
           "_id" : "89504780",
-          "date" : ISODate("2016-07-28T04:00:00.000Z"),
+          "date" : "2016-07-28T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "6273647",
-          "reviewer_name" : "Ralf",
-          "comments" : "short version: if available, take it! more details: Greta is a great host. very helpful and pragmatic about arrival and departure to accommodate travellers plans as best as possible. the apartment is very cosy and you feel like visiting a good friend or relative big apple. location between 2 subway lines and a 10min walk from central park is just great. a whole foods and other shops are on the way to get all necesseties. building is well maintained and clean like the whole neighborhood. surprisingly quite for the central location. we habe been there in july and were able to manage the heat well by the window aircons to have a good night sleep. Greta always replied immediately in the outmost helpful way during preparation and stay. thank you Greta! we will hopefully be back soon :)\n"
+          "id" : "6273647",
+          "name" : "Ralf",
+          "txt" : "short version: if available, take it! more details: Greta is a great host. very helpful and pragmatic about arrival and departure to accommodate travellers plans as best as possible. the apartment is very cosy and you feel like visiting a good friend or relative big apple. location between 2 subway lines and a 10min walk from central park is just great. a whole foods and other shops are on the way to get all necesseties. building is well maintained and clean like the whole neighborhood. surprisingly quite for the central location. we habe been there in july and were able to manage the heat well by the window aircons to have a good night sleep. Greta always replied immediately in the outmost helpful way during preparation and stay. thank you Greta! we will hopefully be back soon :)\n"
       }, 
       {
           "_id" : "90261939",
-          "date" : ISODate("2016-07-31T04:00:00.000Z"),
+          "date" : "2016-07-31T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "57249998",
-          "reviewer_name" : "Annesca",
-          "comments" : "Greta went through a lot of trouble to accommodate our flight times and make our arrival and departure as convenient as possible. Much appreciated!"
+          "id" : "57249998",
+          "name" : "Annesca",
+          "txt" : "Greta went through a lot of trouble to accommodate our flight times and make our arrival and departure as convenient as possible. Much appreciated!"
       }, 
       {
           "_id" : "92084727",
-          "date" : ISODate("2016-08-07T04:00:00.000Z"),
+          "date" : "2016-08-07T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "24815450",
-          "reviewer_name" : "Julien",
-          "comments" : "Nous avons apprécié la flexibilité de Greta pour répondre à nos questions et la localisation de l appartement très proche du métro.\r\n"
+          "id" : "24815450",
+          "name" : "Julien",
+          "txt" : "Nous avons apprécié la flexibilité de Greta pour répondre à nos questions et la localisation de l appartement très proche du métro.\r\n"
       }, 
       {
           "_id" : "94083156",
-          "date" : ISODate("2016-08-14T04:00:00.000Z"),
+          "date" : "2016-08-14T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "42965012",
-          "reviewer_name" : "Gwen",
-          "comments" : "Our second stay at Greta's on the last leg of our holiday, the city was oh so hot and humid but fortunately her air conditioning was equal to the task. The subway entrance close to the apartment was manned and easy to buy and top up your pass, it is the only way to travel around the city. On leaving for the airport, after both our stays we had only to wait a minute on the corner with our luggage to get a taxi to the airport. Once again Greta allowed us to arrive and leave at times that suited us with our luggage which didn't leave us stranded for hours with difficult flight times from Australia which was a great relief, thanks so much Greta!"
+          "id" : "42965012",
+          "name" : "Gwen",
+          "txt" : "Our second stay at Greta's on the last leg of our holiday, the city was oh so hot and humid but fortunately her air conditioning was equal to the task. The subway entrance close to the apartment was manned and easy to buy and top up your pass, it is the only way to travel around the city. On leaving for the airport, after both our stays we had only to wait a minute on the corner with our luggage to get a taxi to the airport. Once again Greta allowed us to arrive and leave at times that suited us with our luggage which didn't leave us stranded for hours with difficult flight times from Australia which was a great relief, thanks so much Greta!"
       }, 
       {
           "_id" : "98202715",
-          "date" : ISODate("2016-08-29T04:00:00.000Z"),
+          "date" : "2016-08-29T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "20316967",
-          "reviewer_name" : "Jenny",
-          "comments" : "We had a wonderful stay in NYC. Greta was a wonderful host, excellent communication, very helpful and accommodating. The location was perfect for us near restaurants and Columbia. We would love to stay there again. Thank You Greta!"
+          "id" : "20316967",
+          "name" : "Jenny",
+          "txt" : "We had a wonderful stay in NYC. Greta was a wonderful host, excellent communication, very helpful and accommodating. The location was perfect for us near restaurants and Columbia. We would love to stay there again. Thank You Greta!"
       }, 
       {
           "_id" : "98674131",
-          "date" : ISODate("2016-09-01T04:00:00.000Z"),
+          "date" : "2016-09-01T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "54784830",
-          "reviewer_name" : "Terri",
-          "comments" : "The apartment is in a nice neighbor. The Italian restaurant next store was good. Communication with Greta was exceptional. We would definitely stay here again."
+          "id" : "54784830",
+          "name" : "Terri",
+          "txt" : "The apartment is in a nice neighbor. The Italian restaurant next store was good. Communication with Greta was exceptional. We would definitely stay here again."
       }, 
       {
           "_id" : "99485043",
-          "date" : ISODate("2016-09-05T04:00:00.000Z"),
+          "date" : "2016-09-05T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "59943151",
-          "reviewer_name" : "H",
-          "comments" : "This was my second stay at Greta's place, and it was absolutely wonderful.  The apartment is clean, comfortable, and very well organized.  I especially love the decor and comfortable bedding. The neighborhood is safe and very convenient with easy access to bus lines and rail.  There is also a wide variety of restaurants within walking distance.  Greta is a very attentive and responsive hostess.  You will not be disappointed with her or her wonderful home.  I highly recommend!"
+          "id" : "59943151",
+          "name" : "H",
+          "txt" : "This was my second stay at Greta's place, and it was absolutely wonderful.  The apartment is clean, comfortable, and very well organized.  I especially love the decor and comfortable bedding. The neighborhood is safe and very convenient with easy access to bus lines and rail.  There is also a wide variety of restaurants within walking distance.  Greta is a very attentive and responsive hostess.  You will not be disappointed with her or her wonderful home.  I highly recommend!"
       }, 
       {
           "_id" : "101291814",
-          "date" : ISODate("2016-09-12T04:00:00.000Z"),
+          "date" : "2016-09-12T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "5919533",
-          "reviewer_name" : "Jean And Letitia",
-          "comments" : "We had a great stay in New York City. Greta's apartment was perfect, great location just three blocks from Central Park and 1 block from major subway lines. The apartment was spacious, clean, quiet and welcoming. Thank you for making our new York experience even better. I greatly recommend Greta's place. She even let us stay until 2pm the day of departure. Thank you\r\nJean"
+          "id" : "5919533",
+          "name" : "Jean And Letitia",
+          "txt" : "We had a great stay in New York City. Greta's apartment was perfect, great location just three blocks from Central Park and 1 block from major subway lines. The apartment was spacious, clean, quiet and welcoming. Thank you for making our new York experience even better. I greatly recommend Greta's place. She even let us stay until 2pm the day of departure. Thank you\r\nJean"
       }, 
       {
           "_id" : "106551953",
-          "date" : ISODate("2016-10-06T04:00:00.000Z"),
+          "date" : "2016-10-06T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "47795517",
-          "reviewer_name" : "Vicki",
-          "comments" : "We thoroughly enjoyed our stay in New York. Greta's place was a home away from home. The location was ideal with subway station, shops and restaurants just a few minutes  walk, even an Italian restaurant next door.  Central Park only 2 blocks away. Greta is very obliging and helpful especially her flexibility with our late flights.  If we ever make it back to New York would definitely love to stay at Greta's again."
+          "id" : "47795517",
+          "name" : "Vicki",
+          "txt" : "We thoroughly enjoyed our stay in New York. Greta's place was a home away from home. The location was ideal with subway station, shops and restaurants just a few minutes  walk, even an Italian restaurant next door.  Central Park only 2 blocks away. Greta is very obliging and helpful especially her flexibility with our late flights.  If we ever make it back to New York would definitely love to stay at Greta's again."
       }, 
       {
           "_id" : "117029086",
-          "date" : ISODate("2016-12-04T05:00:00.000Z"),
+          "date" : "2016-12-04T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "103606558",
-          "reviewer_name" : "Rachel And Jeff",
-          "comments" : "Great location close to subway & everything you would possibly need! Greta was very accommodating & if we stay in NYC again we will definitely be looking into booking her place first ;)"
+          "id" : "103606558",
+          "name" : "Rachel And Jeff",
+          "txt" : "Great location close to subway & everything you would possibly need! Greta was very accommodating & if we stay in NYC again we will definitely be looking into booking her place first ;)"
       }, 
       {
           "_id" : "121690051",
-          "date" : ISODate("2016-12-18T05:00:00.000Z"),
+          "date" : "2016-12-18T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "205255",
-          "reviewer_name" : "Jill",
-          "comments" : "Great place for families! Nice location (we even found on-street parking easily), and great neighborhood for restaurants. "
+          "id" : "205255",
+          "name" : "Jill",
+          "txt" : "Great place for families! Nice location (we even found on-street parking easily), and great neighborhood for restaurants. "
       }, 
       {
           "_id" : "123299700",
-          "date" : ISODate("2016-12-28T05:00:00.000Z"),
+          "date" : "2016-12-28T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "97224933",
-          "reviewer_name" : "Sarah Michele",
-          "comments" : "Fantastic location and value. Host is very accommodating and responsive."
+          "id" : "97224933",
+          "name" : "Sarah Michele",
+          "txt" : "Fantastic location and value. Host is very accommodating and responsive."
       }, 
       {
           "_id" : "125121514",
-          "date" : ISODate("2017-01-04T05:00:00.000Z"),
+          "date" : "2017-01-04T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "23113137",
-          "reviewer_name" : "Kim",
-          "comments" : "Greta is an amazing host with a very cute apartment. She was very responsive to our questions and provided us with a lot of information about the area. The location was amazing, so close the the 1 and Starbucks, DD and grocery stores. Would 100% stay here again if I returned to New York. "
+          "id" : "23113137",
+          "name" : "Kim",
+          "txt" : "Greta is an amazing host with a very cute apartment. She was very responsive to our questions and provided us with a lot of information about the area. The location was amazing, so close the the 1 and Starbucks, DD and grocery stores. Would 100% stay here again if I returned to New York. "
       }, 
       {
           "_id" : "144377714",
-          "date" : ISODate("2017-04-15T04:00:00.000Z"),
+          "date" : "2017-04-15T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "18142306",
-          "reviewer_name" : "Tracy",
-          "comments" : "Greta's place is comfortable and homey.  Each of the three bedrooms has a door, which is a real treat in a big city! A true New York apartment experience!  Birds singing in the trees outside, comfy beds, loads of restaurants and grocery nearby. Lovely easy walks to Central Park, Riverside Park. Subway stop right on the corner. We took Lyft around due to my mom's use of a wheelchair in the streets. Drivers made good time to and from lower Manhattan via larger roads. Elevator made it easy to get to and from the 4th floor apartment, and being on the 4th floor removed us from the street a bit. "
+          "id" : "18142306",
+          "name" : "Tracy",
+          "txt" : "Greta's place is comfortable and homey.  Each of the three bedrooms has a door, which is a real treat in a big city! A true New York apartment experience!  Birds singing in the trees outside, comfy beds, loads of restaurants and grocery nearby. Lovely easy walks to Central Park, Riverside Park. Subway stop right on the corner. We took Lyft around due to my mom's use of a wheelchair in the streets. Drivers made good time to and from lower Manhattan via larger roads. Elevator made it easy to get to and from the 4th floor apartment, and being on the 4th floor removed us from the street a bit. "
       }, 
       {
           "_id" : "156378118",
-          "date" : ISODate("2017-05-30T04:00:00.000Z"),
+          "date" : "2017-05-30T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "120945155",
-          "reviewer_name" : "Adrian",
-          "comments" : "Overall a very nice apartment in a nice location. Plenty of restaurants in the area. Greta was a friendly and forthcoming host"
+          "id" : "120945155",
+          "name" : "Adrian",
+          "txt" : "Overall a very nice apartment in a nice location. Plenty of restaurants in the area. Greta was a friendly and forthcoming host"
       }, 
       {
           "_id" : "158625916",
-          "date" : ISODate("2017-06-07T04:00:00.000Z"),
+          "date" : "2017-06-07T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "39779933",
-          "reviewer_name" : "Sandrina",
-          "comments" : "Great host, great Appartement, great location. Again any time. "
+          "id" : "39779933",
+          "name" : "Sandrina",
+          "txt" : "Great host, great Appartement, great location. Again any time. "
       }, 
       {
           "_id" : "166479697",
-          "date" : ISODate("2017-07-03T04:00:00.000Z"),
+          "date" : "2017-07-03T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "13818466",
-          "reviewer_name" : "Jeremy",
-          "comments" : "The place was so conveniently located at a mere 1-2 minutes walk from the subway. It was very cozy, everything was neat and tidy and really made us feel like we were home. Greta went the extra mile to help us with the check-in, and was super fast and responsive and made sure we didn't lack anything! My go-to airbnb place of choice for the next time we'll be in town. "
+          "id" : "13818466",
+          "name" : "Jeremy",
+          "txt" : "The place was so conveniently located at a mere 1-2 minutes walk from the subway. It was very cozy, everything was neat and tidy and really made us feel like we were home. Greta went the extra mile to help us with the check-in, and was super fast and responsive and made sure we didn't lack anything! My go-to airbnb place of choice for the next time we'll be in town. "
       }, 
       {
           "_id" : "175167108",
-          "date" : ISODate("2017-07-28T04:00:00.000Z"),
+          "date" : "2017-07-28T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "22834501",
-          "reviewer_name" : "Kayla",
-          "comments" : "Greta's place was perfect. We were in a three-week program at Columbia and walked into class each day. The place was spacious and quiet. Air conditioning was perfect in the hot New York summer! Would 100% stay again."
+          "id" : "22834501",
+          "name" : "Kayla",
+          "txt" : "Greta's place was perfect. We were in a three-week program at Columbia and walked into class each day. The place was spacious and quiet. Air conditioning was perfect in the hot New York summer! Would 100% stay again."
       }, 
       {
           "_id" : "177406415",
-          "date" : ISODate("2017-08-02T04:00:00.000Z"),
+          "date" : "2017-08-02T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "20960360",
-          "reviewer_name" : "Noel",
-          "comments" : "Lovely and homely apartment right in the heart of uptown Manhattan. Has a subway station on the same block, surrounded by great eats and just a couple of streets away from Central Park. Totally would come back when we visit New York again."
+          "id" : "20960360",
+          "name" : "Noel",
+          "txt" : "Lovely and homely apartment right in the heart of uptown Manhattan. Has a subway station on the same block, surrounded by great eats and just a couple of streets away from Central Park. Totally would come back when we visit New York again."
       }, 
       {
           "_id" : "179377561",
-          "date" : ISODate("2017-08-07T04:00:00.000Z"),
+          "date" : "2017-08-07T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "91436256",
-          "reviewer_name" : "Rob",
-          "comments" : "Greta's apartment is perfect for a couple who want to stay away from the noisy downtown area. The neighbourhood is peaceful, but has some good taverns and restaurants as well. Greta could not be any more helpful, going way beyond to get an item we left at the apartment to us. We cannot recommend Greta,s  highly enough."
+          "id" : "91436256",
+          "name" : "Rob",
+          "txt" : "Greta's apartment is perfect for a couple who want to stay away from the noisy downtown area. The neighbourhood is peaceful, but has some good taverns and restaurants as well. Greta could not be any more helpful, going way beyond to get an item we left at the apartment to us. We cannot recommend Greta,s  highly enough."
       }, 
       {
           "_id" : "182396917",
-          "date" : ISODate("2017-08-14T04:00:00.000Z"),
+          "date" : "2017-08-14T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "45877006",
-          "reviewer_name" : "Joan",
-          "comments" : "It was lovely to have Greta to greet us. We thoroughly enjoyed our stay in New York and in her apartment."
+          "id" : "45877006",
+          "name" : "Joan",
+          "txt" : "It was lovely to have Greta to greet us. We thoroughly enjoyed our stay in New York and in her apartment."
       }, 
       {
           "_id" : "187129145",
-          "date" : ISODate("2017-08-26T04:00:00.000Z"),
+          "date" : "2017-08-26T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "42556498",
-          "reviewer_name" : "Linda",
-          "comments" : "Gretas Appartement ist wirklich schön und gemütlich. Wir waren super zufrieden! Die Lage ist perfekt um zügig in Richtung Downtown oder in den Central Park zu gelangen. Falls man mit dem Auto anreist ist das Parken auf der Straße kostenlos. Auch Check-In und Kommunikation liefen völlig reibungslos. Sehr zu empfehlen!"
+          "id" : "42556498",
+          "name" : "Linda",
+          "txt" : "Gretas Appartement ist wirklich schön und gemütlich. Wir waren super zufrieden! Die Lage ist perfekt um zügig in Richtung Downtown oder in den Central Park zu gelangen. Falls man mit dem Auto anreist ist das Parken auf der Straße kostenlos. Auch Check-In und Kommunikation liefen völlig reibungslos. Sehr zu empfehlen!"
       }, 
       {
           "_id" : "201967739",
-          "date" : ISODate("2017-10-09T04:00:00.000Z"),
+          "date" : "2017-10-09T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "13818466",
-          "reviewer_name" : "Jeremy",
-          "comments" : "This was our 2nd stay at Greta's place and we loved it just as much as the first time we stayed. Again, great location (1 min walk from the subway), and we even managed to find free parking around! The place is really cozy and it's starting to feel like our 2nd home in NYC. Good shower, kitchen, separate bedrooms and a nice neighborhood close to central park. What more can you need? Highly recommended!"
+          "id" : "13818466",
+          "name" : "Jeremy",
+          "txt" : "This was our 2nd stay at Greta's place and we loved it just as much as the first time we stayed. Again, great location (1 min walk from the subway), and we even managed to find free parking around! The place is really cozy and it's starting to feel like our 2nd home in NYC. Good shower, kitchen, separate bedrooms and a nice neighborhood close to central park. What more can you need? Highly recommended!"
       }, 
       {
           "_id" : "223508188",
-          "date" : ISODate("2018-01-01T05:00:00.000Z"),
+          "date" : "2018-01-01T05:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "14723761",
-          "reviewer_name" : "Bruna",
-          "comments" : "We had a really great time at Greta’s apartment! First of all she was very nice with us since the beggining, helping with all our doubts. The apartment is near of Central Park and a lot of stores and restaurants. It’s a calm local neighborhood, to live your days in the city like a real new yorker :) . The place was very clean, the shower was good and beds was confortable. The heater sistem worked very well and kept us warm always - it was very important, because the temperatures was very low during our stay there. We definetelly recomend this place to stay! "
+          "id" : "14723761",
+          "name" : "Bruna",
+          "txt" : "We had a really great time at Greta’s apartment! First of all she was very nice with us since the beggining, helping with all our doubts. The apartment is near of Central Park and a lot of stores and restaurants. It’s a calm local neighborhood, to live your days in the city like a real new yorker :) . The place was very clean, the shower was good and beds was confortable. The heater sistem worked very well and kept us warm always - it was very important, because the temperatures was very low during our stay there. We definetelly recomend this place to stay! "
       }, 
       {
           "_id" : "245763661",
-          "date" : ISODate("2018-03-23T04:00:00.000Z"),
+          "date" : "2018-03-23T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "60691725",
-          "reviewer_name" : "Andrea",
-          "comments" : "Loved the stay here. Greta is a wonderful host. The room is spacious and you have everything you need. The neighborhood is beautiful, lots of restaurants nearby, and the red train is literally next to the apartment. \nDefinitely recommended."
+          "id" : "60691725",
+          "name" : "Andrea",
+          "txt" : "Loved the stay here. Greta is a wonderful host. The room is spacious and you have everything you need. The neighborhood is beautiful, lots of restaurants nearby, and the red train is literally next to the apartment. \nDefinitely recommended."
       }, 
       {
           "_id" : "306501176",
-          "date" : ISODate("2018-08-12T04:00:00.000Z"),
+          "date" : "2018-08-12T04:00:00.000Z",
           "listing_id" : "1003530",
-          "reviewer_id" : "174551190",
-          "reviewer_name" : "Elena",
-          "comments" : "greta was a super host! the house really nice and well kept. the bed is very comfortable and equipped with everything. the neighborhood is very safe and close to all amenities: the metro, supermarkets, main attractions, restaurants. Greta made sure that my stay was unforgettable, always present but never intrusive and respectful of privacy. it has always been helpful for every kind of need. thanks to greta for making my stay beautiful. surely if i go back to new york i will definitely come back here."
+          "id" : "174551190",
+          "name" : "Elena",
+          "txt" : "greta was a super host! the house really nice and well kept. the bed is very comfortable and equipped with everything. the neighborhood is very safe and close to all amenities: the metro, supermarkets, main attractions, restaurants. Greta made sure that my stay was unforgettable, always present but never intrusive and respectful of privacy. it has always been helpful for every kind of need. thanks to greta for making my stay beautiful. surely if i go back to new york i will definitely come back here."
       }
   ]
 }
@@ -805,15 +744,15 @@
   "minimum_nights" : "3",
   "maximum_nights" : "1125",
   "cancellation_policy" : "strict_14_with_grace_period",
-  "last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
-  "first_review" : ISODate("2016-01-03T05:00:00.000Z"),
-  "last_review" : ISODate("2018-02-18T05:00:00.000Z"),
+  "last_scraped" : "2019-03-07T05:00:00.000Z",
+  "calendar_last_scraped" : "2019-03-07T05:00:00.000Z",
+  "first_review" : "2016-01-03T05:00:00.000Z",
+  "last_review" : "2018-02-18T05:00:00.000Z",
   "accommodates" : 4,
   "bedrooms" : 0,
   "beds" : 2,
   "number_of_reviews" : 5,
-  "bathrooms" : NumberDecimal("1.0"),
+  "bathrooms" : "1.0",
   "amenities" : [ 
       "TV", 
       "Cable TV", 
@@ -839,9 +778,9 @@
       "Hair dryer", 
       "Iron"
   ],
-  "price" : NumberDecimal("205.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("1"),
+  "price" : "205.00",
+  "extra_people" : "0.00",
+  "guests_included" : "1",
   "images" : {
       "thumbnail_url" : "",
       "medium_url" : "",
@@ -849,22 +788,22 @@
       "xl_picture_url" : ""
   },
   "host" : {
-      "host_id" : "47554473",
-      "host_url" : "https://www.airbnb.com/users/show/47554473",
-      "host_name" : "Mae",
-      "host_location" : "US",
-      "host_about" : "",
-      "host_response_time" : "within a few hours",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/pictures/c680ce22-d6ec-4b00-8ef3-b5b7fc0d76f2.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/pictures/c680ce22-d6ec-4b00-8ef3-b5b7fc0d76f2.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "Greenpoint",
-      "host_response_rate" : 100,
-      "host_is_superhost" : false,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : false,
-      "host_listings_count" : 13,
-      "host_total_listings_count" : 13,
-      "host_verifications" : [ 
+      "id" : "47554473",
+      "url" : "https://www.airbnb.com/users/show/47554473",
+      "name" : "Mae",
+      "location" : "US",
+      "about" : "",
+      "response_time" : "within a few hours",
+      "thumbnail_url" : "https://a0.muscache.com/im/pictures/c680ce22-d6ec-4b00-8ef3-b5b7fc0d76f2.jpg?aki_policy=profile_small",
+      "picture_url" : "https://a0.muscache.com/im/pictures/c680ce22-d6ec-4b00-8ef3-b5b7fc0d76f2.jpg?aki_policy=profile_x_medium",
+      "neighbourhood" : "Greenpoint",
+      "response_rate" : 100,
+      "is_superhost" : false,
+      "has_profile_pic" : true,
+      "identity_verified" : false,
+      "listings_count" : 13,
+      "total_listings_count" : 13,
+      "verifications" : [ 
           "email", 
           "phone", 
           "google", 
@@ -907,43 +846,43 @@
   "reviews" : [ 
       {
           "_id" : "58665374",
-          "date" : ISODate("2016-01-03T05:00:00.000Z"),
+          "date" : "2016-01-03T05:00:00.000Z",
           "listing_id" : "10057826",
-          "reviewer_id" : "22162519",
-          "reviewer_name" : "Alex",
-          "comments" : "I could not have found a better place to stay in Brooklyn. I have nothing but positive things to say about this place. Definitely recommend staying here and would stay again."
+          "id" : "22162519",
+          "name" : "Alex",
+          "txt" : "I could not have found a better place to stay in Brooklyn. I have nothing but positive things to say about this place. Definitely recommend staying here and would stay again."
       }, 
       {
           "_id" : "88420503",
-          "date" : ISODate("2016-07-24T04:00:00.000Z"),
+          "date" : "2016-07-24T04:00:00.000Z",
           "listing_id" : "10057826",
-          "reviewer_id" : "20282871",
-          "reviewer_name" : "Dina",
-          "comments" : "My husband, son and I were fortunate enough to have discovered the Henry Norman Hotel for our recent stay in Greenpoint Brooklyn. Even though we booked our room through Airbnb, we were welcome to all the amenities the hotel had to offer.  We were pleased from our arrival at the hotel, where the exterior was as pretty as the interior and greeted by Robert whose very pleasant demeanor was refreshing.  Each of the staff at the hotel were very professional and accommodating but Robert stood out from the rest.  I was unfortunate enough to have left my phone at a nearby shop after returning via the hotel shuttle, when notifying the front desk to see if I had left my phone in the back seat, Robert quickly responded with his assistance in searching for the item, then driving us immediately to the last location while he assured us he would be outside waiting so we would not have to walk back. I did in fact find my phone at that location (thanks to a good Samaritan) and Robert refused to take compensation for his kindness.  The only thing I would do differently on our next stay is to spend the extra for the room with the patio, as the view from the hotel is quite nice and the breezes up there were wonderful.  We not only will be back to visit the lovely hotel but will gladly recommend it to all who might be vising the Greenpoint area. "
+          "id" : "20282871",
+          "name" : "Dina",
+          "txt" : "My husband, son and I were fortunate enough to have discovered the Henry Norman Hotel for our recent stay in Greenpoint Brooklyn. Even though we booked our room through Airbnb, we were welcome to all the amenities the hotel had to offer.  We were pleased from our arrival at the hotel, where the exterior was as pretty as the interior and greeted by Robert whose very pleasant demeanor was refreshing.  Each of the staff at the hotel were very professional and accommodating but Robert stood out from the rest.  I was unfortunate enough to have left my phone at a nearby shop after returning via the hotel shuttle, when notifying the front desk to see if I had left my phone in the back seat, Robert quickly responded with his assistance in searching for the item, then driving us immediately to the last location while he assured us he would be outside waiting so we would not have to walk back. I did in fact find my phone at that location (thanks to a good Samaritan) and Robert refused to take compensation for his kindness.  The only thing I would do differently on our next stay is to spend the extra for the room with the patio, as the view from the hotel is quite nice and the breezes up there were wonderful.  We not only will be back to visit the lovely hotel but will gladly recommend it to all who might be vising the Greenpoint area. "
       }, 
       {
           "_id" : "92234102",
-          "date" : ISODate("2016-08-08T04:00:00.000Z"),
+          "date" : "2016-08-08T04:00:00.000Z",
           "listing_id" : "10057826",
-          "reviewer_id" : "19466953",
-          "reviewer_name" : "Rosana",
-          "comments" : "Great place!!"
+          "id" : "19466953",
+          "name" : "Rosana",
+          "txt" : "Great place!!"
       }, 
       {
           "_id" : "207168650",
-          "date" : ISODate("2017-10-28T04:00:00.000Z"),
+          "date" : "2017-10-28T04:00:00.000Z",
           "listing_id" : "10057826",
-          "reviewer_id" : "95604783",
-          "reviewer_name" : "Marie",
-          "comments" : "I am disappointed of my trip in the hotel. The room is well&clean but the staff not helpful. Indeed, because of a flight schedule change, I asked the Airbnb host and the welcome desk of the hotel how I could manage my last night cancellation to be refund. I did exactly what they asked me to do and have been informed two days after that they refused my request of refunding... Despite the policy rules, I found it very dishonest and not correct at all as I have asked them before doing the cancellation on Airbnb and the flight confirmation.\nMoreover, I felt insulted when they made me left the welcome desk to go to the basement in order to let other clients of the hotel believe everything is perfect (I was calm and just trying to solve the issue).\nSo to conclude, the room ok but bad experience in this Airbnb that is an hotel!"
+          "id" : "95604783",
+          "name" : "Marie",
+          "txt" : "I am disappointed of my trip in the hotel. The room is well&clean but the staff not helpful. Indeed, because of a flight schedule change, I asked the Airbnb host and the welcome desk of the hotel how I could manage my last night cancellation to be refund. I did exactly what they asked me to do and have been informed two days after that they refused my request of refunding... Despite the policy rules, I found it very dishonest and not correct at all as I have asked them before doing the cancellation on Airbnb and the flight confirmation.\nMoreover, I felt insulted when they made me left the welcome desk to go to the basement in order to let other clients of the hotel believe everything is perfect (I was calm and just trying to solve the issue).\nSo to conclude, the room ok but bad experience in this Airbnb that is an hotel!"
       }, 
       {
           "_id" : "236131644",
-          "date" : ISODate("2018-02-18T05:00:00.000Z"),
+          "date" : "2018-02-18T05:00:00.000Z",
           "listing_id" : "10057826",
-          "reviewer_id" : "11623469",
-          "reviewer_name" : "Adam",
-          "comments" : "we rented the suite at the henry norman hotel, and it was lovely"
+          "id" : "11623469",
+          "name" : "Adam",
+          "txt" : "we rented the suite at the henry norman hotel, and it was lovely"
       }
   ]
 }
