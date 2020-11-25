@@ -21,10 +21,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-#app {
-  text-align: center;
-}
-
-</style>
