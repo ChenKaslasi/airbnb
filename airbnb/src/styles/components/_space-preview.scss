@@ -1,0 +1,13 @@
+.space-preview {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 160px;
+            width: 240px;
+            border-radius: 10px;
+        }
+    }
+}

@@ -28,7 +28,6 @@ export const spaceStore = {
             context.commit({type:'setSpaces', spaces})
         },
         async filterSpaces(context,{filterBy}) {
-            console.log('FILTER BY',filterBy);
             const spaces = await spaceService.query(filterBy);
             context.commit({type:'setSpaces', spaces})
         },

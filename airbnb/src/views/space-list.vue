@@ -1,34 +1,38 @@
 <template>
-  <div class="about">
-    <h1>This is The List page</h1>
-    <section v-if="getSpaces">
-      <pre v-for="space in getSpaces" :key="space._id"> {{
-        space.address.city
-      }}</pre>
+  <section class="space-list" v-if="filterBy">
+    <h1>Stays in {{ filterBy }}</h1>
+    <section class="card-container">
+      <ul>
+        <li v-for="space in getSpaces" :key="space._id">
+          <space-preview :space="space"></space-preview>
+        </li>
+      </ul>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>
+import spacePreview from "../cmps/space-preview.cmp.vue";
 export default {
+  components: { spacePreview },
   data() {
     return {
+      filterBy: "",
     };
   },
   async created() {
     const filterBy = this.$route.params.city;
-    console.log(filterBy, "filterBy!!");
-    this.spaces = await this.$store.dispatch({
+    this.filterBy = filterBy;
+    await this.$store.dispatch({
       type: "filterSpaces",
       filterBy,
     });
   },
-  computed:{
-    getSpaces(){
-      return  this.$store.getters.spacesForDisplay
-      
-    }
-  }
+  computed: {
+    getSpaces() {
+      return this.$store.getters.spacesForDisplay;
+    },
+  },
 };
 </script>
 

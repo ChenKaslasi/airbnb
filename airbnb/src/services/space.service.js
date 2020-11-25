@@ -18,7 +18,7 @@ function filterSpaces(filterBy={}){
 }
 
 
-async function query(filter = null) {
+function query(filter = null) {
   var filterStr = '';
   if (filter) {
       filter.toLowerCase()
@@ -26,10 +26,7 @@ async function query(filter = null) {
       // const typeStr = (filter.type === 'All') ? '' : `&type=${filter.type}`;
       // const stockStr = (filter.stock) ? `&inStock=true` : '';
       filterStr = filter
-      console.log(filterStr, 'filter string!!')
   }
-  var spaces= await httpService.get(`spaces?address.city=${filterStr}`)
-  console.log(spaces);
-  return spaces
+  return httpService.get(`spaces?address.city=${filterStr}`)
 }
 
