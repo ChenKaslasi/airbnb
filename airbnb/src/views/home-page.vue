@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <input type="text">
+    <button @click="goToList">push</button>
+
   </div>
 </template>
 
@@ -10,6 +12,12 @@
 export default {
   name: 'Home',
   components: {
+  },
+  methods:{
+    goToList(){
+      this.$router.push('/NewYork')
+    }
   }
+
 }
 </script>
