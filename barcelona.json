@@ -1,742 +1,100 @@
-/* 1 */
 {
-  "_id" : "10082422",
-  "listing_url" : "https://www.airbnb.com/rooms/10082422",
-  "name" : "Nice room in Barcelona Center",
-  "summary" : "Hi!  Cozy double bed room in amazing flat next to Passeig de Sant Joan and to metro stop Verdaguer. 3 streets to Sagrada Familia and 4 streets to Passeig de Gracia. Flat located in the center of the city.  View to Sagrada Familia and Torre Agbar.",
-  "space" : "Nice flat in the central neighboorhood of Eixample.",
-  "description" : "Hi!  Cozy double bed room in amazing flat next to Passeig de Sant Joan and to metro stop Verdaguer. 3 streets to Sagrada Familia and 4 streets to Passeig de Gracia. Flat located in the center of the city.  View to Sagrada Familia and Torre Agbar. Nice flat in the central neighboorhood of Eixample. Ideal couple or 2 friends. Dreta de l'Eixample",
-  "neighborhood_overview" : "Dreta de l'Eixample",
-  "notes" : "",
-  "transit" : "",
-  "access" : "Ideal couple or 2 friends.",
-  "interaction" : "",
-  "house_rules" : "",
-  "property_type" : "Apartment",
-  "room_type" : "Private room",
-  "bed_type" : "Real Bed",
-  "minimum_nights" : "1",
-  "maximum_nights" : "9",
-  "cancellation_policy" : "flexible",
-  "last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "accommodates" : 2,
-  "bedrooms" : 1,
-  "beds" : 2,
-  "number_of_reviews" : 0,
-  "bathrooms" : NumberDecimal("1.0"),
-  "amenities" : [ 
-      "Internet", 
-      "Wifi", 
-      "Kitchen", 
-      "Elevator", 
-      "Heating", 
-      "Washer", 
-      "Shampoo", 
-      "Hair dryer", 
-      "Iron", 
-      "Laptop friendly workspace"
-  ],
-  "price" : NumberDecimal("50.00"),
-  "security_deposit" : NumberDecimal("100.00"),
-  "cleaning_fee" : NumberDecimal("10.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("1"),
-  "images" : {
-      "thumbnail_url" : "",
-      "medium_url" : "",
-      "picture_url" : "https://a0.muscache.com/im/pictures/aed1923a-69a6-4614-99d0-fd5c8f41ebda.jpg?aki_policy=large",
-      "xl_picture_url" : ""
-  },
-  "host" : {
-      "host_id" : "30393403",
-      "host_url" : "https://www.airbnb.com/users/show/30393403",
-      "host_name" : "Anna",
-      "host_location" : "Barcelona, Catalonia, Spain",
-      "host_about" : "I'm Anna, italian. I'm 28, friendly and easygoing.  I love travelling, reading, dancing tango. Can wait to meet new people! :)",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/users/30393403/profile_pic/1427876639/original.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/users/30393403/profile_pic/1427876639/original.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "Dreta de l'Eixample",
-      "host_is_superhost" : false,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : false,
-      "host_listings_count" : 1,
-      "host_total_listings_count" : 1,
-      "host_verifications" : [ 
-          "phone", 
-          "facebook"
-      ]
-  },
-  "address" : {
-      "street" : "Barcelona, Catalunya, Spain",
-      "suburb" : "Eixample",
-      "government_area" : "la Dreta de l'Eixample",
-      "market" : "Barcelona",
-      "country" : "Spain",
-      "country_code" : "ES",
-      "location" : {
-          "type" : "Point",
-          "coordinates" : [ 
-              2.16942, 
-              41.40082
-          ],
-          "is_location_exact" : true
-      }
-  },
-  "availability" : {
-      "availability_30" : 0,
-      "availability_60" : 0,
-      "availability_90" : 0,
-      "availability_365" : 0
-  },
-  "review_scores" : {},
-  "reviews" : []
-}
-
-/* 2 */
-{
-  "_id" : "10558807",
-  "listing_url" : "https://www.airbnb.com/rooms/10558807",
-  "name" : "Park Guell apartment with terrace",
-  "summary" : "Apartment with terrace in a quiet street of Barcelona, 5 minutes walk from Park Güell and 20 minutes by public transport to the city center. Renovated and fully equipped. HUTB-000929",
-  "space" : "The colonial decor and terrace with awning and swing make the apartment a welcoming place. The apartment was reformed at 10.11.2015. Public parking nearby.",
-  "description" : "Apartment with terrace in a quiet street of Barcelona, 5 minutes walk from Park Güell and 20 minutes by public transport to the city center. Renovated and fully equipped. HUTB-000929 The colonial decor and terrace with awning and swing make the apartment a welcoming place. The apartment was reformed at 10.11.2015. Public parking nearby. 24-hour concierge service via phone, mail or (SENSITIVE CONTENTS HIDDEN). Please contact us to report your arrival time to Barcelona at least 24 hours before check-in, to organize your check-in correctly.   Late check-in (after 20: 00h) is an extra cost of 30 euros to pay cash during check-in. It is prohibited to smoke in the apartment. It is requested not to make noises from 22:00. Tourist tax is not included in the price (2,25eur / night / adult, up to 7 nights) which is payable upon arrival. Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is no",
-  "neighborhood_overview" : "Quiet with few tourists in the area. Despite being near the center and Park Güell preserves the authenticity of the local neighborhood with shops, cafes and local tapas bars.",
-  "notes" : "Please contact us to report your arrival time to Barcelona at least 24 hours before check-in, to organize your check-in correctly.   Late check-in (after 20: 00h) is an extra cost of 30 euros to pay cash during It is prohibited to smoke in the apartment. It is requested not to make noises from 22:00. Tourist tax is not included in the price (2.25 € / night / adult, up to 7 nights) which is payable upon arrival.",
-  "transit" : "Bus 24 takes you directly to Plaza Catalunya in 20 minutes. The nearest metro station is Alfons X (line 4, yellow), 7 minutes walk from the apartment; 4 stations from downtown and 7 to the beach.",
-  "access" : "24-hour concierge service via phone, mail or (SENSITIVE CONTENTS HIDDEN). Please contact us to report your arrival time to Barcelona at least 24 hours before check-in, to organize your check-in correctly.   Late check-in (after 20: 00h) is an extra cost of 30 euros to pay cash during check-in. It is prohibited to smoke in the apartment. It is requested not to make noises from 22:00. Tourist tax is not included in the price (2,25eur / night / adult, up to 7 nights) which is payable upon arrival. Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is not allowed. Certainly from the 22: 00h.  Smoking in the apartment is not allowed. Any parties are strictly prohibited.",
-  "interaction" : "Direct contact with the owner via email or phone.",
-  "house_rules" : "Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is not allowed. Certainly from the 22: 00h.  Smoking in the apartment is not allowed. Any parties are strictly prohibited.",
-  "property_type" : "Apartment",
-  "room_type" : "Entire home/apt",
-  "bed_type" : "Real Bed",
-  "minimum_nights" : "2",
-  "maximum_nights" : "1125",
-  "cancellation_policy" : "strict_14_with_grace_period",
-  "last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "first_review" : ISODate("2016-02-23T05:00:00.000Z"),
-  "last_review" : ISODate("2018-12-30T05:00:00.000Z"),
-  "accommodates" : 6,
-  "bedrooms" : 2,
-  "beds" : 3,
-  "number_of_reviews" : 51,
-  "bathrooms" : NumberDecimal("1.0"),
-  "amenities" : [ 
-      "TV", 
-      "Internet", 
-      "Wifi", 
-      "Kitchen", 
-      "Paid parking off premises", 
-      "Smoking allowed", 
-      "Buzzer/wireless intercom", 
-      "Heating", 
-      "Family/kid friendly", 
-      "Washer", 
-      "First aid kit", 
-      "Essentials", 
-      "Hangers", 
-      "Hair dryer", 
-      "Iron", 
-      "translation missing: en.hosting_amenity_50", 
-      "Hot water", 
-      "Bed linens", 
-      "Host greets you"
-  ],
-  "price" : NumberDecimal("85.00"),
-  "security_deposit" : NumberDecimal("100.00"),
-  "cleaning_fee" : NumberDecimal("40.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("6"),
-  "images" : {
-      "thumbnail_url" : "",
-      "medium_url" : "",
-      "picture_url" : "https://a0.muscache.com/im/pictures/305fe78c-c3d6-446e-b2d2-0ed0d0c4267a.jpg?aki_policy=large",
-      "xl_picture_url" : ""
-  },
-  "host" : {
-      "host_id" : "54320669",
-      "host_url" : "https://www.airbnb.com/users/show/54320669",
-      "host_name" : "Alexandra Y Juan",
-      "host_location" : "Barcelona, Catalonia, Spain",
-      "host_about" : "Hola, \r\n\r\nSomos Alexandra y Juan dos amigos que estamos enamorados de Barcelona, nuestras pasiones son viajar y conocer gente por lo que nos encantaría compartir con vosotros nuestros espacios  para que disfrutéis a vuestro gusto de toda la cultura, actualidad y diversidad de ofertas que la ciudad os ofrece.\r\nPara nosotros lo mas importante es que nuestros huéspedes puedan aprovechar al máximo su estancia en Barcelona,  que viváis vuestra historia  reflejada en  rincones únicos de la ciudad y por supuesto nuestra mayor satisfacción es que os sintáis como en casa según lo que busquéis.\r\n\r\nHello, \r\n\r\nWe are Alexandra and Juan two friends who are in love with Barcelona, our passion is to travel and meet new people so we would love to share our spaces with you and that you can enjoy the culture, the present and the diversity of offers that the city has to offer. \r\nFor us the most important thing is that our guests can make the most of their stay in Barcelona, that you live our history full of unique places and of course our greatest satisfaction is that you feel as if you where at home according to what you are looking for.",
-      "host_response_time" : "within an hour",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "Vila de Gràcia",
-      "host_response_rate" : 100,
-      "host_is_superhost" : false,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : true,
-      "host_listings_count" : 12,
-      "host_total_listings_count" : 12,
-      "host_verifications" : [ 
-          "email", 
-          "phone", 
-          "reviews", 
-          "jumio", 
-          "government_id", 
-          "work_email"
-      ]
-  },
-  "address" : {
-      "street" : "Barcelona, Catalunya, Spain",
-      "suburb" : "Can Baro",
-      "government_area" : "Can Baró",
-      "market" : "Barcelona",
-      "country" : "Spain",
-      "country_code" : "ES",
-      "location" : {
-          "type" : "Point",
-          "coordinates" : [ 
-              2.15836, 
-              41.41582
-          ],
-          "is_location_exact" : true
-      }
-  },
-  "availability" : {
-      "availability_30" : 13,
-      "availability_60" : 16,
-      "availability_90" : 27,
-      "availability_365" : 174
-  },
-  "review_scores" : {
-      "review_scores_accuracy" : 8,
-      "review_scores_cleanliness" : 7,
-      "review_scores_checkin" : 8,
-      "review_scores_communication" : 8,
-      "review_scores_location" : 8,
-      "review_scores_value" : 8,
-      "review_scores_rating" : 71
-  },
-  "reviews" : [ 
-      {
-          "_id" : "63512445",
-          "date" : ISODate("2016-02-23T05:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "33300079",
-          "reviewer_name" : "Michael",
-          "comments" : "The apartment is in a nice spot high up in the town with a great view (from til street). \r\nIt is a 15-20 minutte uphill walk from the nearests Metro - but the area is quiet.\r\nThe outside terasse is wounderful - we enjoyed to have breakfast here. There is a nice little shop just next door.\r\nThe apartment and the bed clothes+towels was clean - so even it is a full time/only guest apartment we can recommend it."
-      }, 
-      {
-          "_id" : "70657758",
-          "date" : ISODate("2016-04-19T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "60779279",
-          "reviewer_name" : "Diego",
-          "comments" : "La casa esta muy bien equipada y es realmente muy linda (solo funciona muy mal la conectividad de wife) y queda un poco alejada de los centros turísticos.  El único inconveniente fue que nuestro vuelo se demoro dos horas y al llegar 2 horas mas tarde del horario acordado, pasada las 20.00 se nos cobro 30 euro en el chec kin "
-      }, 
-      {
-          "_id" : "71637673",
-          "date" : ISODate("2016-04-27T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "40190428",
-          "reviewer_name" : "Anita",
-          "comments" : "Our host's friend was outside the property when we arrived, which was a bonus as travelled with our two children. We were shown around the apartment, and shown all guides personally put together by Regina. The apartment was as pictured and the children loved the apartment, we were within 5 mins walk from a local supermarket be warned parents there are a few steep hills slightly difficult with the stroller buggy but a good workout all the same. We were 10-12 mins walk from the subway Alfonso X only 4 stops from the Ramblas which was \"thumbs up\".\r\n\r\nWe loved our stay our two children were very comfortable in the apartment and loved the patio, there were ample playgrounds in close proximity. The neighbourhood was quiet and locals were very helpful. "
-      }, 
-      {
-          "_id" : "77421513",
-          "date" : ISODate("2016-05-31T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "64937258",
-          "reviewer_name" : "Javier",
-          "comments" : "SUCIO Y MUY POCO RECOMENDABLE.\r\nBajo con difícil accesibilidad, absoluta falta de limpieza y con fuerte olor a humedad provocada por guardar las sábanas mojadas dentro del único armario de la casa, recubierto de moho por dentro. Falta de limpieza absoluta en toda la casa que hacía muy incómoda su estancia y más con niños pequeños. El sofá donde supuestamente se podía dormir, tenía una gran mancha que ni se habían molestado en intentar limpiarla. Solo había un único armario recubierto de moho para guardar la ropa, que evidentemente no pudimos utilizar. La ducha estaba negra, picada y oxidada, lo que nos tocó limpiar a nosotros y desinfectarla un poco para poderla utilizar. La cocina llena cubierta por una capa de grasa que la hacía inútil para cocinar cualquier cosa. Escaleras hacia abajo completamente empinadas y estrechas.  Nada más llegar ni rastro de Regina o Juan, nos atendió una persona que ni siquiera sabía hablar bien castellano, por lo que dudo mucho de la existencia de Juan y Regina. Es absolutamente indignante que cuando pagas el apartamento te cobran unos gastos de limpieza que no han efectuado. Para colmo nos cobraron 30 € en concepto de checking. La zona es tranquila aunque bastante alejada del metro, dado que tienes unas cuestas muy empinadas desde la parada más cernada de metro y luego toca subir cuesta arriba unos 15 minutos. De cara a los esfuerzos por parte del anfitrión, absolutamente ninguno. La persona que nos recibió ni siquiera sabía indicarnos donde estaba la tienda más cercana, un parking donde poder dejar el coche e incluso la parada de metro más cernada. Soy usuario de esta web desde hace tiempo, he visitado otros países de Europa usándola y ha sido con creces la peor experiencia que he tenido. Me siento completamente estafado."
-      }, 
-      {
-          "_id" : "81224365",
-          "date" : ISODate("2016-06-21T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "32553722",
-          "reviewer_name" : "Mimi & James",
-          "comments" : "Authentic experience of Barcelona neighbourhood life. Friendly locals, a number of convenience and fruit/veg stores, and an incredible city view from atop the hill."
-      }, 
-      {
-          "_id" : "84379736",
-          "date" : ISODate("2016-07-07T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "74497592",
-          "reviewer_name" : "Lesley",
-          "comments" : "The neighbourhood was very timid and relaxing, a good contrast with the city centre and the beaches, so it provided a great haven for relaxation."
-      }, 
-      {
-          "_id" : "85583567",
-          "date" : ISODate("2016-07-12T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "35685727",
-          "reviewer_name" : "Antonia",
-          "comments" : "L'appartement est sympa et bien équipé, dans un quartier charmant. Il correspond assez bien à l'annonce Airbnb. Il a malheureusement une odeur d'humidité constante et il est tout de même un peu loin du métro ainsi que du parking public. L'hôte nous a donné beaucoup d'informations avant notre arrivée mais nous l'avons pas vu du tout pendant le séjour. J'ai également fait une demande de modification pour la quelle je n'ai jamais reçu un retour. Dans l'ensemble c'était une bonne expérience. "
-      }, 
-      {
-          "_id" : "86132964",
-          "date" : ISODate("2016-07-15T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "30728449",
-          "reviewer_name" : "Katrina",
-          "comments" : "This apartment is perfect for a large family. The rooms are large, clean and cool. The kitchen is basic but serviceable and the outside space is lovely. Maks let us in and showed us around and he was quick to respond to questions throughout the stay. "
-      }, 
-      {
-          "_id" : "90072740",
-          "date" : ISODate("2016-07-31T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "53279609",
-          "reviewer_name" : "Sybile",
-          "comments" : "L'appartement est conforme aux descriptions. C'est sympa on s'y sent presque chez soi. Une légère odeur d'humidité qui est un peu désagréable. Cependant avec les fenêtres grandes ouvertes l'odeur s'en va rapidement."
-      }, 
-      {
-          "_id" : "92971268",
-          "date" : ISODate("2016-08-10T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "71509186",
-          "reviewer_name" : "Delphine",
-          "comments" : "Au départ le concierge était sensé nous recevoir. Une fois arrivées, ni l'hôte, ni le concierge n'ont répondu à nos appels. Heureusement une jeune fille attendait devant le logement qui nous a expliqué que c'était elle qui était sensée nous recevoir mais nous n'étions pas au courant.\r\nHeureusement elle était très gentille, nous a très bien reçu et nous a expliqué le déroulement du séjour.\r\nUne fois dans le logement nous nous sommes aperçus que celui-ci était très poussiéreux et nous avons donc dû faire le ménage car une des personnes était allergique aux acariens. Nous avons également dû acheter des produits pour faire le ménage, car les produits ménagers sur place étaient très limités.\r\nAu niveau des équipements, beaucoup de choses étaient fournies (lave-vaisselle, lave-linge, fer à repasser, sèche cheveux, etc) mais la vaisselle était très limitée pour 3 personnes (manque de verres et de couverts).\r\nAttention il n'y a pas de volets ni de rideaux opaques sur 2 chambres sur 3. Cependant draps de lit et serviettes de toilette sont fournies. Il manque cependant un tapis de douche pour la baignoire.\r\nLes matelas étaient confortables et le quartier très calme mis à part un voisin qui mettait parfois de la musique à fond.\r\nAu niveau de l'emplacement, le logement est très bien situé car à 10 minutes à pied d'une ligne de métro qui dessert tous les endroits importants de la ville (plage, centre ville, quartier gothique, etc).\r\nPar contre, attention pour les personnes qui ont des difficultés à se déplacer car le logement est tout en haut d'une côte très raide.\r\nMalgré tout, nous avons passé un agréable séjour dans ce logement et avons apprécié la terrasse ombragée."
-      }, 
-      {
-          "_id" : "94948954",
-          "date" : ISODate("2016-08-17T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "24660546",
-          "reviewer_name" : "Mari",
-          "comments" : "Muy chulo el apartamento y muy limpio todo bien"
-      }, 
-      {
-          "_id" : "95319691",
-          "date" : ISODate("2016-08-19T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "60783587",
-          "reviewer_name" : "Veerle",
-          "comments" : "Een heel mooi en groot appartement: ideaal om met kinderen naar toe te komen! Alles heel proper en verzorgd."
-      }, 
-      {
-          "_id" : "96297303",
-          "date" : ISODate("2016-08-22T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "39997719",
-          "reviewer_name" : "Sophia",
-          "comments" : "Das informations Material könnte mal wieder sortiert werden ,da alles mehrfach vorhanden ist und man somit nicht mehr weis was aktuell ist .Im hinteren Schlafzimmer neben dem Bad sollte ein blickdichter Vorhang angebracht werden ,da man vom Treppenhausflur Direkt reinschauen kann ,es ist nur ein dünner durchsichtiger Vorhang dran. Leider keine Kaffeemaschine in einer Größe für 6 Personen vorhanden und die andere hat keine Kanne, Auch fehlen Weingläser für mehr als eine Person. aber am schlimmsten war der Gestank ,Moderich ,muffelig kaum zum aushalten ,wir hatten schon überlegt abzubrechen fanden aber in der Größe keine für uns bezahlbare Unterkunft .zudem konnte eine Person von uns nicht mit da sie einen Unfall hatte und Frankreich nicht verlassen durfte aber es gab keine Reduktion ,sehr schade aber was will man erwarten wenn es kommerziell ist .  "
-      }, 
-      {
-          "_id" : "102404254",
-          "date" : ISODate("2016-09-18T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "87978606",
-          "reviewer_name" : "Heidi",
-          "comments" : "5 girls living in the apartment. It is a big place and the distance between the apartment and the city center is ok (you can walk, use metro and bus). When we arrived, all of us noticed a smell all over the apartment - like kind of moldy. This sadly affected our stay in the apartment. The bedding had the smell to, and this was bad! The sink was broken among other thinks. \nOtherwise a big apartment with a little outside teresse. \n- Camilla, Andrea, Cecilie, Kia and Heidi "
-      }, 
-      {
-          "_id" : "104352998",
-          "date" : ISODate("2016-09-26T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "95011222",
-          "reviewer_name" : "Gaelle",
-          "comments" : "Une expérience mitigée.\r\n il est vrai que la rue est calme et que l'on peut profiter de la jolie vue sur Barcelone mais il faudra pour cela monter des pentes raides pour atteindre l'appartement. De plus, dans l'immeuble l'escalier est très étroit et il n'y pas pas d'ascenseur. L'accès peut donc être difficile pour les familles avec enfants en bas age, les personnes agées et les personnes a mobilité reduites surtout qu' il est situé dans l'étages du bas de l'immeuble, sous le rez de chaussé. \r\nLes photos ne sont pas très fidèle a la réalité car l'apparetement manque de luminosité, effet, a part la terrasse, il y a un manque de fenêtres et aucunes de donne sur l’extérieur. La seule autre fenêtre présente dans une des chambres donne sur l'escalier de l'immeuble.  \r\nDu fait de ce manque de fenêtre, l'appartement n'est pas très lumineux et sens le renfermé.\r\nIl y a de plus une mauvaise insonorisation de l'appartement mais cela n'a pas été très gênant car l'immeuble était dans l'ensemble plutôt calme. \r\nPoint positif : hôte sympathique et disponible, proximité du parc Guell et des transports en commun \r\nEtant donné le rapport qualité prix, je pense qu'il convient surtout a un groupe d'amis "
-      }, 
-      {
-          "_id" : "106639082",
-          "date" : ISODate("2016-10-07T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "44517993",
-          "reviewer_name" : "Paul",
-          "comments" : "Regina was communicative before we stayed in the apartment and although she couldn't meet us during our stay, had arranged for someone to do so with keys and information. It's a really nice apartment in a quiet neighbourhood. "
-      }, 
-      {
-          "_id" : "108028513",
-          "date" : ISODate("2016-10-14T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "95280058",
-          "reviewer_name" : "Roberto",
-          "comments" : "The place is spacious located in a nice area of the city"
-      }, 
-      {
-          "_id" : "111075237",
-          "date" : ISODate("2016-10-30T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "82868624",
-          "reviewer_name" : "Cailey",
-          "comments" : "My group of four friends and I had a great stay in Regina's Airbnb. The apartment looked just as it did in the listing and was very clean. Regina was easy to communicate with before our stay and she coordinated for her friend Maks to meet us when we arrived. There was plenty of room for the group of five one the apartment. We thoroughly enjoyed the outdoor terrace and spent our mornings out there to eat the breakfast we had prepared in the well equipped kitchen. We did, however, wish there had been some basic kitchen ingredients like salt, spices, or oil there for us to use. The location was a quick walk to Park Güell and it was nice being in a non touristy area. That did however, mean that it was not as easy to reach the city center. "
-      }, 
-      {
-          "_id" : "124975326",
-          "date" : ISODate("2017-01-03T05:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "97470876",
-          "reviewer_name" : "Martina",
-          "comments" : "Regina é stata sempre molto disponibile a soddisfare le nostre richieste e qualunque problema ci fosse é stata pronta a consigliarci nel migliore dei modi.\r\nLa descrizione dell'annuncio rispecchia verosimilmente l'appartamento che è in sé molto accogliente è provvisto di tutto cioè che serve.\r\nIl quartiere é un po' lontano dal centro, ma percorrendo un tratto a piedi e poi con la metro basta poco per raggiungere il centro città; il servizio taxi é abbastanza economico e comodo da utilizzare dopo l'orario di chiusura della metro.\r\nDetto ciò risulta ovvio che é stata una bellissima esperienza!"
-      }, 
-      {
-          "_id" : "133002328",
-          "date" : ISODate("2017-02-20T05:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "24186632",
-          "reviewer_name" : "Martina",
-          "comments" : "The communication with Regina was perfect. The flat is not really close to the city center, but with metro was it without problem and we had great opportunity to see the sun rise in park guel. I am sure, we would not have this experience without staying here. Thanks."
-      }, 
-      {
-          "_id" : "140194577",
-          "date" : ISODate("2017-03-28T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "14581127",
-          "reviewer_name" : "David",
-          "comments" : "Great location and communication with host, we arrived late and were able to check-in thanks to their flexibility. However, the flat is somewhat dark and has a strong mouldy smell.   "
-      }, 
-      {
-          "_id" : "141673670",
-          "date" : ISODate("2017-04-04T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "73479585",
-          "reviewer_name" : "Tanya",
-          "comments" : "Me and my friends were quite disappointed when we entered the Regina's apartment. First of all, the following guests should know that the pretty view on the pictures is not seen from inside the apartment - not of the windows, no out of the terrace either. That was a big letdown for us. You can see the view only from outside of the building and that's quite confusing. Second, you should know that the mouldy smell on the bedding and the big bedroom are unbearable. Me and my husband couldn't sleep there, it was awful. Fortunately we manage to arrange that problem and sleep in the dining room on the couch that become a bed. The main problem in Regina's apartment is the mouldy smell that she explained is due to the location of the apartment. In spite of all that, Regina was very helpful host. She let us leave our luggage at their family hotel on chek-out day because we had 4 hours to spare before going to the airport. We had a great time mainly on the terrace which is right next to the kitchen. The neighborhood was great - quiet, there is a big market and bus stops very close by. Very easy to get to the city center and even the night buses stopped very close. Bunkers de can Baro are very close to the apartment - 1o min. walk up on the hill. They were spectacular. You'll get a 360 degree view of the city. We had a great time in Barcelona. It's a magical city."
-      }, 
-      {
-          "_id" : "145237409",
-          "date" : ISODate("2017-04-17T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "86273700",
-          "reviewer_name" : "Abdallahi",
-          "comments" : "On a passé un très bon séjour dans ce logement. Regina est très sympathique et flexible...\nJe recommande vivement ce logement."
-      }, 
-      {
-          "_id" : "145858314",
-          "date" : ISODate("2017-04-20T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "125805610",
-          "reviewer_name" : "Gianluca",
-          "comments" : "Un po' lontana dal centro e non troppo ben collegata... Per il resto una discreta casetta"
-      }, 
-      {
-          "_id" : "148146083",
-          "date" : ISODate("2017-04-30T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "22501940",
-          "reviewer_name" : "Elsa",
-          "comments" : "Regina's house was a great place to stay. Its located in a high area which makes it great for an amazing view of the city. And you can easily reach the center with bus or metro. The house is just like shown in the photos, with a beautiful terrace to have your breakfast in the sunny morning. Its well equipped with the essentials and you have a little supermarket nearby to by food. Overall, great place :)"
-      }, 
-      {
-          "_id" : "151334313",
-          "date" : ISODate("2017-05-12T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "13755863",
-          "reviewer_name" : "Luciano",
-          "comments" : "la casa è spaziosa e ci si sta bene anche in 4/5 persone\nspazio esterno molto piacevole e utile, un po' decentrato essere allenati per salire! però la parte alta sopra park guell è molto bella!\nattenzione che è un interrato un po' umido, però si sta bene"
-      }, 
-      {
-          "_id" : "152727911",
-          "date" : ISODate("2017-05-18T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "106253855",
-          "reviewer_name" : "Jessica",
-          "comments" : "The apartment was beutiful, clean and well equiped. Regina was very easy to communicate with and always responded promptly. The aparment is about a 15 min walk to park guell and has a great little grocery store down the elevator and a fantastic view outside  just up the stairs. Be mindful though of the two small flights of stairs down to the aparment they are very small and very steep and narrow. Also be prepared to walk up hill if you go anywhere.  The concierge Alex was wonderful and had great recommendations!"
-      }, 
-      {
-          "_id" : "159146900",
-          "date" : ISODate("2017-06-10T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "71721728",
-          "reviewer_name" : "Keren",
-          "comments" : "The place was clean and was accommodating. There was a smell of mildew as some have said in previous post. The steps going to the apartment are very narrow. The outside terrace was beautiful and a big plus. We had an overall good time there."
-      }, 
-      {
-          "_id" : "162748523",
-          "date" : ISODate("2017-06-22T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "70217721",
-          "reviewer_name" : "Vivek",
-          "comments" : "We really enjoyed staying at her apartment. The rooms were clean and all amenities were fine as well. The connectivity to the city centre was also good. We recommend to stay in her Apartment."
-      }, 
-      {
-          "_id" : "164457919",
-          "date" : ISODate("2017-06-27T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "50497366",
-          "reviewer_name" : "Андрей",
-          "comments" : "Интерьер квартиры соответствует фотографиям. Когда выбирали жильё, то почему-то решили, что фото с видом на Sagrada Familia - это вид из окна квартиры... это не так)))\nРасположение квартиры неудобное. От метро идти в крутую гору около километра (отличная замена спортзалу). Вероятно есть остановка автобуса поближе к квартире, но я не стал разбираться с автобусными маршрутами Барселоны. Такси от набережной - около 20 €.\nРайон тихий. Вроде бы даже безопасный)))\nПо поводу заезда - все хорошо. Встретили, показали, предложили любую помощь. "
-      }, 
-      {
-          "_id" : "168842171",
-          "date" : ISODate("2017-07-10T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "79621778",
-          "reviewer_name" : "Anne-Lise",
-          "comments" : "Appartement très agréable à proximité du Parc Guell, conforme aux photos. \nEndroit très calme. En revanche, le point négatif a été la difficulté pour communiquer avec Régina. A notre arrivée, Régina nous a donné un numéro de téléphone d’une personne qui n’était a priori pas au courant de notre séjour, heureusement qu’une personne se trouvait dans l’appartement pour nous accueillir. De plus, nous n’avons pas eu de connexion Wifi du séjour. \nMais hormis ces quelques problèmes, nous avons passé un agréable moment chez Régina et Juan."
-      }, 
-      {
-          "_id" : "183339497",
-          "date" : ISODate("2017-08-17T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "55799567",
-          "reviewer_name" : "Stephane",
-          "comments" : "Appartement très bien situé\nUne belle montée pour s'y rendre à pied sinon rien à redire hormis le fait que nous n'avons pas eu d'eau chaude pendant 3 jours\nPetit bémol la taxe de séjour 2.55 euros par jour  c'est cher beaucoup trop cher pour des jeunes étudiants"
-      }, 
-      {
-          "_id" : "184048732",
-          "date" : ISODate("2017-08-19T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "62363961",
-          "reviewer_name" : "Margarida",
-          "comments" : "Chegámos ao apartamento e não existia parque gratuito na rua como a descrição do apartamento dizia. Depois de descarregarmos as malas assistimos a uma discussão entre os inquilinos dos apartamentos e a pessoa que nos ia fazer o check in. Tivemos de aguardar com as malas cá fora até que a conversa acabasse e só depois é que entrámos. A pessoa que nos recebeu não foi nada atenciosa ou simpática. A casa estava imunda quando chegamos, cheirava mal, o chão sujo e as roupas de cama com aspeto que tinham sido mudadas há meses. A casa de banho cheirava a mofo, cheia de humidade e as toalhas cheiravam mal. Apesar do espaço ser bonito tinha muitos aspetos negativos por isso não recomendo a ninguém."
-      }, 
-      {
-          "_id" : "188635121",
-          "date" : ISODate("2017-08-30T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "31753106",
-          "reviewer_name" : "Nuno",
-          "comments" : "A casa não foi o que esperávamos, pois entre outras coisas:\n- Tinha um forte odor a humidade (apesar do desumificador), e a ventilação era muito limitada, sentindo-se bastante calor. \n- O nível de limpeza era mau, com algum pó (meia suja debaixo da cama) e os utensílios de limpeza pouco limpos. Também não tivémos certezas sobre a limpeza das toalhas da cozinha, estendidas no estendal quando chegámos.\n- Ambos os colchões estavam em mau estado de conservação, e uma das camas tinha um dos pés solto. \n- Ao nível da cozinha não existiam utensílios suficientes - 2 colheres, 3 garfos, uma tampa de tachos, etc. Na casa de banho faltavam as toalhas de rosto.\nQuanto ao bairro era bastante calmo, e mesmo sendo a 15min do metro, aconselhamos apanhar o autocarro para evitar levar malas encosta acima. \nSitua-se perto do Bunker del Carmel que tem uma vista soberba sobre BCN, e supermercados perto abertos até tarde."
-      }, 
-      {
-          "_id" : "198171789",
-          "date" : ISODate("2017-09-28T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "151410987",
-          "reviewer_name" : "Daniel",
-          "comments" : "Lite långt ifrån centrum och en speciell lukt. Annars inget att klaga på!"
-      }, 
-      {
-          "_id" : "204025934",
-          "date" : ISODate("2017-10-16T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "34441260",
-          "reviewer_name" : "Carlos",
-          "comments" : "Fue una estancia agradable, las camas limpias, la TV funciona bien, el internet va rápido. Solo hay una Habitación privada con puerta ya que la otra tiene solo una cortina de privacidad y las demas personas tienen que pasar por ahí si o si, si te quieres ir a la cocina y el salón, por lo tanto, No hay ninguna intimidad. El apartamento se encuentra en una zona de subida constante ya que esta zona montañosa y esta alejada del metro, supermercados, del centro de la ciudad,...el bus mas cercano es el 24 que te lleva a Plaça Catalunya a 5min caminando. Por lo demás esta bien. Lo recomiendo si quieres un viaje alejado del ruido y tranquilo"
-      }, 
-      {
-          "_id" : "207148389",
-          "date" : ISODate("2017-10-28T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "13088363",
-          "reviewer_name" : "Cédric",
-          "comments" : "Le logement est bien placé, l'accueil est efficace et réactif, immeuble calme, commerces à proximité. Seul bémol les seules toilettes sont dans la seule salle de bain, et c'est handicapant pour 5 personnes. Si vous êtes 3 ou 4 c'est impeccable. Au delà c'est trop petit."
-      }, 
-      {
-          "_id" : "208659619",
-          "date" : ISODate("2017-11-02T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "60886542",
-          "reviewer_name" : "Hervé",
-          "comments" : "Points forts :\nAppartement bien placé (5 mn du parc Güell et 20 mn de la Sagrada à pied), propre à l'intérieur avec bonne literie. A revoir une odeur persistante d'humidité dans la cuisine.\nPoints faibles :\nTrès difficile de se garer gratuitement car très peu de place. Sinon parking payant 10 heures par jour. Bien placé (1,3 kms du métro Alphonse X) mais chemin très pentu. Descente sans problème mais retour difficile."
-      }, 
-      {
-          "_id" : "219622177",
-          "date" : ISODate("2017-12-18T05:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "63650064",
-          "reviewer_name" : "Serena",
-          "comments" : "La casa era molto pulita e grande, il wifi funziona bene. Perfetta per 6 persone perché c'è spazio a sufficienza. La cucina è nuova e con tutto il necessario per cucinare (anche microonde e caffettiera). La metro non è lontana, circa 10 minuti a piedi"
-      }, 
-      {
-          "_id" : "268261978",
-          "date" : ISODate("2018-05-24T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "141535349",
-          "reviewer_name" : "Franci",
-          "comments" : "We had a very nice stay at Alexandra’s apartment. It is on a quiet street but just walking distance to public transportation. The bed was nice and comfy with great pillows! Her neighbor was  very nice and opened up our bottle of wine because we could not find an opener. I  surely recommend her place for your next adventure in this beautiful city."
-      }, 
-      {
-          "_id" : "282371593",
-          "date" : ISODate("2018-06-27T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "24486802",
-          "reviewer_name" : "Tala",
-          "comments" : "NO SHAMPOO OR SOAP even though it says on the listing that there will be shampoo. When I asked her about it she said it wasn’t included and I had to screenshot her own listing to show her what it says. Only hand soap in the bathroom. I know shampoo is not that big of a deal but I specifically did not buy it because it says that we would have some at the apartment.\n\nNO WINE OPENER either. I also messaged her about it and she was sure that it was in the kitchen but then I looked back in some of the reviews and found a couple of them that says they couldn’t find it either. It seems like she doesn’t really know her own listing that well. \n\nWe never actually met Alexandra and checked in with her friend, Anastasia. She checked us in right at 2 pm and was  nice. \n\nThe apartment itself was clean and the couch is actually better than the one in the pictures but some of the decorations were different. No biggie though. \n\nThe only thing about the apartment is there is ONLY ONE FAN. There are 2 bedrooms and 3 sleeping areas but we shared one fan which was impossible. It was very hot in the morning. \n\nParking was a little tricky because of the hills and one way streets but we found a spot by the place. \n\nOverall okay."
-      }, 
-      {
-          "_id" : "283667567",
-          "date" : ISODate("2018-06-30T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "82956237",
-          "reviewer_name" : "雁飞",
-          "comments" : "感谢主人给我们的停车建议｡房屋的布置很美很艺术,尤其是小院子｡十分感谢主人所做的一切!"
-      }, 
-      {
-          "_id" : "300811938",
-          "date" : ISODate("2018-08-03T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "63382786",
-          "reviewer_name" : "Heiko",
-          "comments" : "A simple place on a good place with a nice host. A bit moisty air though and hard to find parking places. A simple hotel with quite the same features would cost less I think....."
-      }, 
-      {
-          "_id" : "310240863",
-          "date" : ISODate("2018-08-19T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "165614323",
-          "reviewer_name" : "Lisa",
-          "comments" : "Appartement très humide, une odeur de moisis persistante même avec les fenêtres ouvertes, murs qui commencent à gonfler, matériel de cuisine rudimentaire, salle de bain qui manque d’aération et odeur désagréable venant des toilettes même après plusieurs nettoyages, terrasse agréable et machine à laver le linge à disposition ce qui est très pratique, appartement tout en haut de Barcelone juste à deux arrêts de bus du parc Guell ce qui est très pratique, mais prévoir au moins 40 minutes de bus pour aller à la plage, appartement qui conviendrai à un groupe de jeunes amis. "
-      }, 
-      {
-          "_id" : "319808292",
-          "date" : ISODate("2018-09-07T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "212186393",
-          "reviewer_name" : "Marius",
-          "comments" : "Good location to stay  two days in Barcelona. Bad smell in the apartment ( smell from old furniture and mold). Imposibility to find  parking nearby ,even if in airbnb we found this location with parking included"
-      }, 
-      {
-          "_id" : "327767216",
-          "date" : ISODate("2018-09-24T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "25879337",
-          "reviewer_name" : "大兔兔兔兔",
-          "comments" : "位置不错,在山坡上,房间布置很温馨,但是霉味很重,也没有驱蚊设施,问房东,房东说她们家没有蚊子"
-      }, 
-      {
-          "_id" : "330133986",
-          "date" : ISODate("2018-09-30T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "40791802",
-          "reviewer_name" : "Katy",
-          "comments" : "Appartement en sous sol sans fenetre humide sur led hauteurs de Barcelone \nTres excentre sans transport en commun aucun commerce \nA déconseiller aux familles \n\nJ"
-      }, 
-      {
-          "_id" : "336338998",
-          "date" : ISODate("2018-10-14T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "212177030",
-          "reviewer_name" : "Malgorzata",
-          "comments" : "Unfortunately, the apartment has an unpleasant smell of rot which is difficult to bear. What's more, the lack of quilts, and the apartment is cold. The infirmity is dirty and damp.The only positive is the location. I do not recommend"
-      }, 
-      {
-          "_id" : "339298935",
-          "date" : ISODate("2018-10-21T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "152791577",
-          "reviewer_name" : "Chantal",
-          "comments" : "situation parfaite pour nous. apprtement très decevant par sa topographie et l odeur d humidité . Alexandra a su être une hôtesse à l écoute et fait des efforts pour nous satisfaire. cela reste insuffisant pour que nous pensions revenir."
-      }, 
-      {
-          "_id" : "343670153",
-          "date" : ISODate("2018-11-01T04:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "74528184",
-          "reviewer_name" : "Katherine",
-          "comments" : "Cute place, well stocked kitchen and bathroom. Quiet and safe neighborhood and close to restaurants and grocery stores. Very close to Park Güell but a bit far from Barcelona city center. Alexandra was great with communicating and very quick to respond."
-      }, 
-      {
-          "_id" : "364175492",
-          "date" : ISODate("2018-12-30T05:00:00.000Z"),
-          "listing_id" : "10558807",
-          "reviewer_id" : "229030750",
-          "reviewer_name" : "Michele",
-          "comments" : "Fue nuestra primera experiencia con Airbnb, \ny fue muy buena. Agradecemos por todo"
-      }
-  ]
-}
-
-/* 3 */
-{
-  "_id" : "10545725",
-  "listing_url" : "https://www.airbnb.com/rooms/10545725",
-  "name" : "Cozy bedroom Sagrada Familia",
-  "summary" : "Cozy bedroom next to the church Sagrada Família a great choice to stay in a residential area away from the crowds while still being at a walking distance to main attractions in Barcelona.",
-  "space" : "Cozy beroom located three minutes from the Sagrada Família in a central zone of Barcelona.  Equiped kitchen.",
-  "description" : "Cozy bedroom next to the church Sagrada Família a great choice to stay in a residential area away from the crowds while still being at a walking distance to main attractions in Barcelona. Cozy beroom located three minutes from the Sagrada Família in a central zone of Barcelona.  Equiped kitchen. I'll be glad to give you some tips according to your taste. Well located on a calm residential area a few blocks away from the city center. Metro on the corner 5 stops away from the Ramblas, Paseo de Gracia and Catalunya square. Restaurants, bars and supermarket around the area.",
-  "neighborhood_overview" : "Well located on a calm residential area a few blocks away from the city center.",
-  "notes" : "",
-  "transit" : "Metro on the corner 5 stops away from the Ramblas, Paseo de Gracia and Catalunya square. Restaurants, bars and supermarket around the area.",
-  "access" : "",
-  "interaction" : "I'll be glad to give you some tips according to your taste.",
-  "house_rules" : "",
-  "property_type" : "Apartment",
-  "room_type" : "Private room",
-  "bed_type" : "Real Bed",
-  "minimum_nights" : "2",
-  "maximum_nights" : "1125",
-  "cancellation_policy" : "flexible",
-  "last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "calendar_last_scraped" : ISODate("2019-03-08T05:00:00.000Z"),
-  "first_review" : ISODate("2016-02-14T05:00:00.000Z"),
-  "last_review" : ISODate("2016-02-14T05:00:00.000Z"),
-  "accommodates" : 2,
-  "bedrooms" : 1,
-  "beds" : 2,
-  "number_of_reviews" : 1,
-  "bathrooms" : NumberDecimal("1.0"),
-  "amenities" : [ 
-      "TV", 
-      "Internet", 
-      "Wifi", 
-      "Kitchen", 
-      "Pets allowed", 
-      "Buzzer/wireless intercom", 
-      "Family/kid friendly", 
-      "Washer", 
-      "Essentials", 
-      "Laptop friendly workspace"
-  ],
-  "price" : NumberDecimal("20.00"),
-  "weekly_price" : NumberDecimal("280.00"),
-  "monthly_price" : NumberDecimal("1080.00"),
-  "cleaning_fee" : NumberDecimal("20.00"),
-  "extra_people" : NumberDecimal("0.00"),
-  "guests_included" : NumberDecimal("1"),
-  "images" : {
-      "thumbnail_url" : "",
-      "medium_url" : "",
-      "picture_url" : "https://a0.muscache.com/im/pictures/953b3c09-adb5-4d1c-a403-b3e61c8fa766.jpg?aki_policy=large",
-      "xl_picture_url" : ""
-  },
-  "host" : {
-      "host_id" : "1929411",
-      "host_url" : "https://www.airbnb.com/users/show/1929411",
-      "host_name" : "Rapha",
-      "host_location" : "Barcelona, Catalonia, Spain",
-      "host_about" : "Hi, I'm from Brazil, but live in Barcelona.\r\nI'm an sportsman, who loves music and is organized.\r\nReally looking foward to a nice deal.\r\nCya,\r\nRapha",
-      "host_thumbnail_url" : "https://a0.muscache.com/im/users/1929411/profile_pic/1332942535/original.jpg?aki_policy=profile_small",
-      "host_picture_url" : "https://a0.muscache.com/im/users/1929411/profile_pic/1332942535/original.jpg?aki_policy=profile_x_medium",
-      "host_neighbourhood" : "el Fort Pienc",
-      "host_is_superhost" : false,
-      "host_has_profile_pic" : true,
-      "host_identity_verified" : true,
-      "host_listings_count" : 1,
-      "host_total_listings_count" : 1,
-      "host_verifications" : [ 
-          "email", 
-          "phone", 
-          "facebook", 
-          "reviews", 
-          "jumio", 
-          "government_id"
-      ]
-  },
-  "address" : {
-      "street" : "Barcelona, Catalunya, Spain",
-      "suburb" : "Eixample",
-      "government_area" : "el Fort Pienc",
-      "market" : "Barcelona",
-      "country" : "Spain",
-      "country_code" : "ES",
-      "location" : {
-          "type" : "Point",
-          "coordinates" : [ 
-              2.17963, 
-              41.40087
-          ],
-          "is_location_exact" : true
-      }
-  },
-  "availability" : {
-      "availability_30" : 0,
-      "availability_60" : 0,
-      "availability_90" : 0,
-      "availability_365" : 0
-  },
-  "review_scores" : {
-      "review_scores_accuracy" : 10,
-      "review_scores_cleanliness" : 10,
-      "review_scores_checkin" : 10,
-      "review_scores_communication" : 10,
-      "review_scores_location" : 10,
-      "review_scores_value" : 10,
-      "review_scores_rating" : 100
-  },
-  "reviews" : [ 
-      {
-          "_id" : "62460002",
-          "date" : ISODate("2016-02-14T05:00:00.000Z"),
-          "listing_id" : "10545725",
-          "reviewer_id" : "50195256",
-          "reviewer_name" : "Miffy",
-          "comments" : "Rapha place is so tidy and the dog there is so friendly. I and my friend had a really good time there. Rapha is such a friendly host and he will always give us some suggestions of restaurants or place to travel. The location of the flat is easy to find and it is just next to the metro station and that is very convenient. The hot tourist spot Sagrada Familia is just next to the flat. We can go to the city centre just by walking. Even though at night, we still feel safe to walk to the apartment from the metro.I strongly recommend people to stay there during staying in Barcelona. "
-      }
-  ]
+    "_id": "10082422",
+    "listingUrl": "https://www.airbnb.com/rooms/10082422",
+    "name": "Nice room in Barcelona Center",
+    "locationDesc": "Nice flat in the central neighboorhood of Eixample.",
+    "spaceDesc": "Hi!  Cozy double bed room in amazing flat next to Passeig de Sant Joan and to metro stop Verdaguer. 3 streets to Sagrada Familia and 4 streets to Passeig de Gracia. Flat located in the center of the city.  View to Sagrada Familia and Torre Agbar. Nice flat in the central neighboorhood of Eixample. Ideal couple or 2 friends. Dreta de l'Eixample",
+    "spaceType": "Apartment",
+    "roomType": "Private room",
+    "cancellation_policy": "flexible",
+    "capacity": 2,
+    "bedrooms": 1,
+    "beds": 2,
+    "bathrooms": "1.0",
+    "amenities": [
+        "Internet",
+        "Wifi",
+        "Kitchen",
+        "Elevator",
+        "Heating",
+        "Washer",
+        "Shampoo",
+        "Hair dryer",
+        "Iron",
+        "Laptop friendly workspace"
+    ],
+    "price": 50,
+    "imgs": [
+        "https://a0.muscache.com/im/pictures/aed1923a-69a6-4614-99d0-fd5c8f41ebda.jpg?aki_policy=large",
+        "https://a0.muscache.com/im/pictures/804b13af-5efd-4f2c-bc39-a408e0ce8c3e.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/0c5c26de-497b-4146-be65-ad9593318b1d.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/0c5c26de-497b-4146-be65-ad9593318b1d.jpg?im_w=720",
+        "https://bat.bing.com/action/0?ti=5187185&Ver=2&mid=4fc82cb2-b2c7-4909-b7a9-d48a1ea9ea9b&sid=9ed4f4c02e3411ebb8fe25a410d8eda3&vid=4fc7ba602cd111eb944957ce4b644617&vids=0&pi=1200101525&lg=he-IL&sw=1280&sh=720&sc=24&tl=Nice%20room%20in%20Barcelona%20Center%20-%20Apartments%20for%20Rent%20in%20Barcelona,%20Catalunya,%20Spain&p=https%3A%2F%2Fwww.airbnb.com%2Frooms%2F10082422%3Fsource_impression_id%3Dp3_1606303092_KbM5YXaugIjvMBrM&r=&lt=3623&evt=pageLoad&msclkid=N&sv=1&rn=583816"
+    ],
+    "host": {
+        "id": "30393403",
+        "url": "https://www.airbnb.com/users/show/30393403",
+        "name": "Anna",
+        "location": "Barcelona, Catalonia, Spain",
+        "about": "I'm Anna, italian. I'm 28, friendly and easygoing.  I love travelling, reading, dancing tango. Can wait to meet new people! :)",
+        "thumbnail": "https://a0.muscache.com/im/users/30393403/profile_pic/1427876639/original.jpg?aki_policy=profile_small",
+        "profileImg": "https://a0.muscache.com/im/users/30393403/profile_pic/1427876639/original.jpg?aki_policy=profile_x_medium",
+        "neighbourhood": "Dreta de l'Eixample",
+        "isSuperhost": false,
+        "identityVerified": false
+    },
+    "address": {
+        "street": "Barcelona, Catalunya, Spain",
+        "city": "Barcelona",
+        "country": "Spain",
+        "country_code": "ES",
+        "location": {
+            "type": "Point",
+            "coordinates": {
+                "lat": 41.40082,
+                "lng": 2.16942
+            }
+        }
+    },
+    "review_scores": {
+        "accuracy": 6,
+        "cleanliness": 7,
+        "checkin": 9,
+        "communication": 9,
+        "location": 6,
+        "value": 5,
+        "rating": 54
+    },
+    "reviews": [
+        {
+            "id": "4765259",
+            "date": "2013-05-24T04:00:00.000Z",
+            "by": {
+                "id": "6435238",
+                "img": "https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i14!2i1008!3i7200!4i256!2m3!1e0!2sm!3i534255806!3m17!2sen!3sIL!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjMzfHMuZTpsfHAudjpvZmYscy50OjN8cy5lOmwuaXxwLmw6MzAscy50OjE3fHMuZTpsLnQuZnxwLmM6I2ZmMjIyMjIyLHMudDoxOXxzLmU6bC50LmZ8cC5jOiNmZjcxNzE3MSxzLnQ6MjB8cy5lOmwudC5mfHAuYzojZmY5OTk5OTkscy50OjE4fHMuZTpsLnQuZnxwLmM6I2ZmNzE3MTcxLHMudDo4MXxzLmU6bC50fHAudjpvZmYscy50OjgyfHMuZTpsLnR8cC52Om9mZixzLnQ6MnxzLmU6bC5pfHAudjpvZmYscy50OjQwfHMuZTpsfHAudjpvZmYscy50OjM1fHMuZTpsfHAudjpvZmYscy50OjM5fHMuZTpsLml8cC52Om9mZixzLnQ6NjV8cC53OjEscy50OjY1fHMuZTpsLnQuZnxwLmM6I2ZmNzE3MTcxLHMudDo2NnxzLmU6bC50LmZ8cC5jOiNmZjcxNzE3MSxzLnQ6NHxzLmU6Zy5mfHAuczotMTAwLHMudDo0fHMuZTpnLnN8cC5zOi0xMDAscy50OjY1fHMuZTpsLml8cC52Om9mZixzLnQ6NjZ8cy5lOmwuaXxwLnM6LTEwMHxwLmw6MTUscy50OjEwNTd8cy5lOmwudHxwLnY6b2ZmLHMudDo2fHMuZTpnLmZ8cC5zOjU1fHAubDo1LHMudDoyfHMuZTpnLmZ8cC5jOiNmZmMyZTVhNyxzLnQ6Mzd8cy5lOmcuZnxwLmM6I2ZmZTRlOGViLHMudDozNnxzLmU6Zy5mfHAuYzojZmZmOGU5ZTcscy50OjM0fHMuZTpnLmZ8cC5jOiNmZmU0ZThlYixzLnQ6Mzh8cy5lOmcuZnxwLmM6I2ZmZTRlOGViLHMudDozNXxzLmU6Zy5mfHAuYzojZmZlNGU4ZWIscy50OjM1fHMuZTpsfHAudjpvZmYscy50OjM5fHMuZTpnLmZ8cC5jOiNmZmI4ZDk5ZixzLnQ6M3xzLmU6bC50LmZ8cC5jOiNmZjk5OTk5OSxzLnQ6NTB8cy5lOmwuaXxwLnY6b2ZmLHMudDo0OXxzLmU6Zy5mfHAuYzojZmZkZGRkZGQscy50OjQ5fHMuZTpnLnN8cC5jOiNmZmIwYjBiMA!4e0!5m1!5f2&key=AIzaSyAytC_TusuhG7kpNQ19hMrCzXDIUjd307o&token=104871",
+                "name": "Jacqui"
+            },
+            "txt": "Our stay was Okay.  The place had a nice view.  Anna was very accommodating with our hotel stay, parking availability and all of our concerns & questions.  She did above and beyond what anyone would want.  He's a man of his word and very professional.  We highly recommend for everyone to stay in all of the places he recommended.  Thank you Anna"
+        },
+        {
+            "id": "4908312",
+            "date": "2013-06-01T04:00:00.000Z",
+            "by": {
+                "id": "3454262",
+                "img": "https://a0.muscache.com/im/pictures/user/badbe002-6e47-49c7-b06d-418636c4991f.jpg?im_w=240",
+                "name": "Khoren"
+            },
+            "txt": "There is a nice cafe neer the residence. other than that it wasn't very good."
+        },
+        {
+            "id": "7099260",
+            "date": "2013-09-06T04:00:00.000Z",
+            "by": {
+                "id": "7038567",
+                "img": "https://a0.muscache.com/im/pictures/user/fb223567-5d20-44db-8737-1323738721fe.jpg?im_w=240",
+                "name": "Nick"
+            },
+            "txt": "This is everything we expected and hoped for in a sub-$100/night place to stay. This definitely isn't the Ritz, and if you're looking for a luxury get-away, you're barking up the wrong tree. However, if you're like we were: first time visitors on a budget with humble taste, then this place is perfect. "
+        }
+    ]
 }
