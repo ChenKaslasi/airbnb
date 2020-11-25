@@ -8,13 +8,15 @@ export const spaceStore = {
         sortBy: ''
     },
     getters: {
-        spaces(state) {
+        spacesForDisplay(state) {
             return state.spaces;
         },
+        
     },
     mutations: {
         setSpaces(state, {spaces}) {
             state.spaces = spaces;
+            console.log(state.spaces,'state spaces')
         },
         setCurrSpace(state,{space}) {
             state.currSpace = space;
@@ -23,11 +25,15 @@ export const spaceStore = {
     actions: {
         async loadSpaces(context) {
             const spaces = await spaceService.getSpaces();
-            context.commit({type: 'setSpaces', spaces})
+            context.commit({type:'setSpaces', spaces})
         },
         async filterSpaces(context,{filterBy}) {
-            const spaces = await spaceService.filterSpaces(filterBy);
-            context.commit({type: 'setSpaces', spaces})
+            console.log('FILTER BY',filterBy);
+            const spaces = await spaceService.query(filterBy);
+            context.commit({type:'setSpaces', spaces})
         },
+
     },
+    computed:{
+    }
 }

@@ -1,23 +1,30 @@
 <template>
   <div class="home">
-    <input type="text">
-    <button @click="goToList">push</button>
-
+    <space-filter  @filter="setFilter" />
   </div>
 </template>
 
 <script>
+import spaceFilter from '../cmps/space-filter.cmp.vue'
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
+    spaceFilter
   },
-  methods:{
-    goToList(){
-      this.$router.push('/NewYork')
+  data() {
+    return {
     }
-  }
-
-}
+  },
+  methods: {
+    setFilter(filterBy) {
+      // this.$store.dispatch({
+      //   type:'filterSpaces',
+      //   filterBy
+      // })
+      this.$router.push(`/${filterBy}`)
+    },
+  },
+};
 </script>
