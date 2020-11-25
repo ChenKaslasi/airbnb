@@ -1,13 +1,27 @@
 <template>
   <div id="app">
     <div id="nav">
+      <space-header></space-header>
       <h1>hi its me</h1>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div> 
-    <router-view/> 
-  </div> 
+      <space-footer></space-footer>
+    </div>
+    <router-view />
+  </div>
 </template>
+
+<script>
+import spaceHeader from "@/cmps/space-header.vue";
+import spaceFooter from "@/cmps/space-footer.vue";
+
+export default {
+  components: {
+    spaceHeader,
+    spaceFooter,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
