@@ -1,4 +1,4 @@
-export const toyStore = {
+export const spaceStore = {
     strict: true,
     state: {
     }
