@@ -1,0 +1,1752 @@
+/* 1 */
+{
+  "_id" : "10091713",
+  "listing_url" : "https://www.airbnb.com/rooms/10091713",
+  "name" : "Surry Hills Studio - Your Perfect Base in Sydney",
+  "summary" : "This spacious, light filled studio has everything you need to enjoy Sydney and is the perfect base for exploring. The harbour is an easy walk, Bondi a short bus trip away.",
+  "space" : "Comfortable studio with a great layout. The bathroom has a full size bath tub and shower. Complete set of kitchen utensils etc for cooking and a full size fridge. The 3 seater sofa and 42' TV mean you can comfortably relax after a day at the beach or exploring.  Large lounge room windows provide harbour views.",
+  "description" : "This spacious, light filled studio has everything you need to enjoy Sydney and is the perfect base for exploring. The harbour is an easy walk, Bondi a short bus trip away. Comfortable studio with a great layout. The bathroom has a full size bath tub and shower. Complete set of kitchen utensils etc for cooking and a full size fridge. The 3 seater sofa and 42' TV mean you can comfortably relax after a day at the beach or exploring.  Large lounge room windows provide harbour views. You have full use of the entire studio and complete privacy during your stay. You have complete privacy during your stay. Surry Hills is a vibrant eclectic community and an amazing place to live, and this studio is in the centre of it all. A fantastic range of small bars and restaurants are on your doorstep, along with Sydney's best breakfasts for the next morning. Central to public transport, busses to Bondi Beach and the city are 50 metres from the front door. Travel Card 'Opal' travel cards work on all Sydne",
+  "neighborhood_overview" : "Surry Hills is a vibrant eclectic community and an amazing place to live, and this studio is in the centre of it all. A fantastic range of small bars and restaurants are on your doorstep, along with Sydney's best breakfasts for the next morning. Central to public transport, busses to Bondi Beach and the city are 50 metres from the front door.",
+  "notes" : "WiFi, Apple TV with Netflix App (for use with your own iTunes / Netflix account), 42' TV, Sound Dock",
+  "transit" : "Travel Card 'Opal' travel cards work on all Sydney public transport (trains, busses, ferries). The card itself is free and can be obtained (and value added) at train stations and most convenience stores and newsagents. Travel fees are capped at $15 / day, no matter how far or often you travel in that one day.  Busses Regular busses to Bondi Beach / City / Opera House etc are 50 metres away.  Trains Central train station is a 10 minute walk. Trains from / to Sydney airport arrive at Central Station and  Museum station (you can catch a train to / from the airport at Central or Museum without changing trains).   Uber Uber is readily available throughout Sydney and very reliable.",
+  "access" : "You have full use of the entire studio and complete privacy during your stay.",
+  "interaction" : "You have complete privacy during your stay.",
+  "house_rules" : "No smoking:  No smoking any substance, including e-cigarettes. Lost Keys / Locked out of Apartment:   If you lose the key to the apartment building itself (i.e., the yellow security key) the cost of replacing it is $250. It will be deducted from your security deposit.  If you lock yourself out of the apartment, it is solely your responsibility to contact a locksmith to open the apartment door for you. You are also solely responsible for the cost of the locksmith, including the cost of replacing the lock mechanism if necessary. If the lock mechanism needs to be replaced by the locksmith,  you must provide 2 copies of the new key.",
+  "property_type" : "Apartment",
+  "room_type" : "Entire home/apt",
+  "bed_type" : "Real Bed",
+  "minimum_nights" : "10",
+  "maximum_nights" : "21",
+  "cancellation_policy" : "strict_14_with_grace_period",
+  "last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "calendar_last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "first_review" : ISODate("2016-12-29T05:00:00.000Z"),
+  "last_review" : ISODate("2018-03-18T04:00:00.000Z"),
+  "accommodates" : 2,
+  "bedrooms" : 0,
+  "beds" : 1,
+  "number_of_reviews" : 64,
+  "bathrooms" : NumberDecimal("1.0"),
+  "amenities" : [ 
+      "TV", 
+      "Wifi", 
+      "Kitchen", 
+      "Elevator", 
+      "Heating", 
+      "Washer", 
+      "Dryer", 
+      "Smoke detector", 
+      "Essentials", 
+      "Shampoo", 
+      "Iron", 
+      "Laptop friendly workspace", 
+      "translation missing: en.hosting_amenity_49", 
+      "translation missing: en.hosting_amenity_50", 
+      "Hot water", 
+      "Bed linens", 
+      "Ethernet connection", 
+      "Other"
+  ],
+  "price" : NumberDecimal("181.00"),
+  "security_deposit" : NumberDecimal("300.00"),
+  "cleaning_fee" : NumberDecimal("50.00"),
+  "extra_people" : NumberDecimal("0.00"),
+  "guests_included" : NumberDecimal("1"),
+  "images" : {
+      "thumbnail_url" : "",
+      "medium_url" : "",
+      "picture_url" : "https://a0.muscache.com/im/pictures/f8eaba4e-d211-42fb-a3ca-887c0ff766f8.jpg?aki_policy=large",
+      "xl_picture_url" : ""
+  },
+  "host" : {
+      "host_id" : "13764143",
+      "host_url" : "https://www.airbnb.com/users/show/13764143",
+      "host_name" : "Ben",
+      "host_location" : "New South Wales, Australia",
+      "host_about" : "Software developer from Sydney, Australia. ",
+      "host_thumbnail_url" : "https://a0.muscache.com/im/pictures/03c4d82b-7e4a-4457-976d-c4e9dfdb13fa.jpg?aki_policy=profile_small",
+      "host_picture_url" : "https://a0.muscache.com/im/pictures/03c4d82b-7e4a-4457-976d-c4e9dfdb13fa.jpg?aki_policy=profile_x_medium",
+      "host_neighbourhood" : "Surry Hills",
+      "host_is_superhost" : false,
+      "host_has_profile_pic" : true,
+      "host_identity_verified" : true,
+      "host_listings_count" : 1,
+      "host_total_listings_count" : 1,
+      "host_verifications" : [ 
+          "email", 
+          "phone", 
+          "google", 
+          "reviews", 
+          "jumio", 
+          "offline_government_id", 
+          "government_id", 
+          "work_email"
+      ]
+  },
+  "address" : {
+      "street" : "Surry Hills, NSW, Australia",
+      "suburb" : "Darlinghurst",
+      "government_area" : "Sydney",
+      "market" : "Sydney",
+      "country" : "Australia",
+      "country_code" : "AU",
+      "location" : {
+          "type" : "Point",
+          "coordinates" : [ 
+              151.21554, 
+              -33.88029
+          ],
+          "is_location_exact" : true
+      }
+  },
+  "availability" : {
+      "availability_30" : 0,
+      "availability_60" : 0,
+      "availability_90" : 0,
+      "availability_365" : 0
+  },
+  "review_scores" : {
+      "review_scores_accuracy" : 10,
+      "review_scores_cleanliness" : 9,
+      "review_scores_checkin" : 10,
+      "review_scores_communication" : 10,
+      "review_scores_location" : 10,
+      "review_scores_value" : 9,
+      "review_scores_rating" : 95
+  },
+  "reviews" : [ 
+      {
+          "_id" : "123549502",
+          "date" : ISODate("2016-12-29T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "68937428",
+          "reviewer_name" : "Charles",
+          "comments" : "Ben's place is in the perfect location. Had a lot of fun staying there."
+      }, 
+      {
+          "_id" : "125437012",
+          "date" : ISODate("2017-01-05T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "24217924",
+          "reviewer_name" : "Lucy",
+          "comments" : "Ben's apartment was perfect for a few days in Sydney - well located, clean, bright and spacious. \nIt is quite big for a studio, and the floorplan gives the feel of a separate kitchen, bedroom and living area. \nA great view, well ventilated and bright. \nBen was a great host, with really good communication. He was very accommodating with check-in and check out times. \nOnly downside is that the apartment doesn't have wifi, so perhaps not ideal for business travellers or longer stays. "
+      }, 
+      {
+          "_id" : "128968642",
+          "date" : ISODate("2017-01-28T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "97332617",
+          "reviewer_name" : "Ed",
+          "comments" : "I enjoyed my stay at Ben's place. Perfect location for public transport either to city (5 mins) or Bondi or Coogee beaches.\nSmall but has everything you need to explore Sydney with and best of all, great city views!"
+      }, 
+      {
+          "_id" : "130424183",
+          "date" : ISODate("2017-02-05T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "29294131",
+          "reviewer_name" : "Angel",
+          "comments" : "The apartment is in a nice building with some cool Art Deco details. Location is good - we pretty much walked to all major sights in city (opera house, darling harbour etc.) and there are some great shops and places to eat nearby (thanks to Ben's suggestions). Apartment has all the stuff you need for a comfortable stay, and Ben is super helpful and excellent in communication. We had such a nice time and would recommend Ben's apartment! "
+      }, 
+      {
+          "_id" : "130717792",
+          "date" : ISODate("2017-02-07T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "10700009",
+          "reviewer_name" : "Melanie",
+          "comments" : "Ben was an excellent host; he met me on time and showed me around the apartment ensuring that I was comfortable and had everything I needed. \nThe apartment itself is a small but comfortable studio with beautiful views of the city. It's located close to Oxford St with access to public transport if needed. Only a short walk to Darlinghurst and the city. Also, a Woolworths Metro within 200m. \nLoved the place and would stay again. \n"
+      }, 
+      {
+          "_id" : "131130017",
+          "date" : ISODate("2017-02-10T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "29768974",
+          "reviewer_name" : "James",
+          "comments" : "Bens apartment is in a great location in Sydney close to great restaurants, museums, bars and shopping - Everything you need. Ben was also very friendly,  helpful and communicative. We would highly recommend ! "
+      }, 
+      {
+          "_id" : "134364016",
+          "date" : ISODate("2017-02-26T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "24911197",
+          "reviewer_name" : "Tyler",
+          "comments" : "Great central studio!"
+      }, 
+      {
+          "_id" : "134744495",
+          "date" : ISODate("2017-02-28T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "52492105",
+          "reviewer_name" : "Roger",
+          "comments" : "Great location for work or holiday, clean, lots to explore in the neighborhood, a stress free stay, thanks Ben"
+      }, 
+      {
+          "_id" : "135713610",
+          "date" : ISODate("2017-03-05T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "9494566",
+          "reviewer_name" : "Brad",
+          "comments" : "Bens apartment was perfect. Great location and everything in Surry Hills, Oxford St and Taylor Sq are walkable. Perfect for Mardi Gra weekend as we watched the parade from the lounge room windows. Would definitely stay here again when in Sydney "
+      }, 
+      {
+          "_id" : "136453889",
+          "date" : ISODate("2017-03-10T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "116232851",
+          "reviewer_name" : "Soohyun",
+          "comments" : "에어비앤비숙소중에  가장 좋았다"
+      }, 
+      {
+          "_id" : "137010409",
+          "date" : ISODate("2017-03-12T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "745600",
+          "reviewer_name" : "Emma",
+          "comments" : "Ben's place is centrally located with a great view of the Sydney skyline. The place looked exactly as it did in the pictures and was the perfect size for the two of us. Ben was a great host -- always quick to respond to my messages and happy to answer any questions. I would highly recommend this place."
+      }, 
+      {
+          "_id" : "137350442",
+          "date" : ISODate("2017-03-14T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "17128500",
+          "reviewer_name" : "Susan",
+          "comments" : "Ben's place was in a great location and close to transit.  We enjoyed the coffee shop downstairs, the shops and theater."
+      }, 
+      {
+          "_id" : "138057203",
+          "date" : ISODate("2017-03-18T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "8364853",
+          "reviewer_name" : "Cheryl",
+          "comments" : "The charming apartment is conveniently located with beautiful view of Sydney Tower and Habour Bridge."
+      }, 
+      {
+          "_id" : "138845716",
+          "date" : ISODate("2017-03-21T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "82412922",
+          "reviewer_name" : "Nadine",
+          "comments" : "Great location. Apartment exactly like pictures. Perfect for two people and nice and clean. Great communication."
+      }, 
+      {
+          "_id" : "139331754",
+          "date" : ISODate("2017-03-24T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "5233230",
+          "reviewer_name" : "Luther",
+          "comments" : "Great location, perfectly positioned for getting into the city or to Bondi. (It's very close to the Darlinghurst nightlife so it can be a bit noisy on weekends, but you can't be in a central location without a little activity!) The apartment is clean and tidy and great for two, with very good shower water pressure. And that gorgeous view across Sydney! "
+      }, 
+      {
+          "_id" : "140126768",
+          "date" : ISODate("2017-03-27T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "5781178",
+          "reviewer_name" : "Talia",
+          "comments" : "Great apartment in a fantastic central location! All the ammenities you could possible need and an added bonus of harbour bridge views!"
+      }, 
+      {
+          "_id" : "141610581",
+          "date" : ISODate("2017-04-03T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "114690044",
+          "reviewer_name" : "Pedro",
+          "comments" : "It was really nice."
+      }, 
+      {
+          "_id" : "142385878",
+          "date" : ISODate("2017-04-08T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "120865671",
+          "reviewer_name" : "Angela",
+          "comments" : "很小巧精致的房间,独立的厨房卫生间,各项设备齐全,居住十分方便｡位置也十分便利,能观望到悉尼大桥和海湾景色｡美中不足的是入住第一晚隔壁房子在举办彻夜的party及高声唱歌,相当打扰睡眠"
+      }, 
+      {
+          "_id" : "144894960",
+          "date" : ISODate("2017-04-16T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "57143266",
+          "reviewer_name" : "Allison",
+          "comments" : "Amazing view, great area and a great studio "
+      }, 
+      {
+          "_id" : "147644751",
+          "date" : ISODate("2017-04-28T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "49683194",
+          "reviewer_name" : "Simon",
+          "comments" : "Great pad!"
+      }, 
+      {
+          "_id" : "148509633",
+          "date" : ISODate("2017-05-01T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "56520266",
+          "reviewer_name" : "Sandy",
+          "comments" : "Totally hip neighborhood and convenient to great food, bars and sights. Ben is very nice and helpful. The apartment comfortable and homey. "
+      }, 
+      {
+          "_id" : "150903540",
+          "date" : ISODate("2017-05-09T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "91025135",
+          "reviewer_name" : "Kirsty",
+          "comments" : "Ben was a great host, his apartment was central to Sydneys busy CBD and near lots of good places to eat. We would highly recommend staying here. "
+      }, 
+      {
+          "_id" : "152072859",
+          "date" : ISODate("2017-05-14T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "57210048",
+          "reviewer_name" : "Waan",
+          "comments" : "Great location, nice view. Clean apartment, comfy bed and strong wifi. Close to everything!"
+      }, 
+      {
+          "_id" : "153115350",
+          "date" : ISODate("2017-05-20T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "122324567",
+          "reviewer_name" : "Tina",
+          "comments" : "風景優美,設施齊全,屋主親切友善,適合情侶居住"
+      }, 
+      {
+          "_id" : "156252041",
+          "date" : ISODate("2017-05-29T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "4104141",
+          "reviewer_name" : "Pauline",
+          "comments" : "L'appartement de Ben est fonctionnel, cosy et très agréable. Ben à été un hôte parfait : bonne communication, présent à notre arrivée pour nous remettre les clés, appartement propre.. bref nous recommandons. Et la vue depuis l'appartement est absolument superbe !!! Coucher et lever de soleil sur Sydney magnifiques !!!"
+      }, 
+      {
+          "_id" : "158248269",
+          "date" : ISODate("2017-06-05T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "58651850",
+          "reviewer_name" : "Yuhan",
+          "comments" : "Ben人非常好,提供了很好的帮助｡房间明亮整洁舒适,在市中心位置,去哪里都可以步行｡乘坐公共交通也很方便｡"
+      }, 
+      {
+          "_id" : "159134226",
+          "date" : ISODate("2017-06-10T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "78734290",
+          "reviewer_name" : "Cassandra",
+          "comments" : "Staying at Ben's place was fantastic! The view was perfect and the apartment itself was great. It was right in the middle of everything and was full of awesome geeky paraphernalia. Ben's guidebook was also very useful and I greatly appreciated having it. I would definitely choose this as a place to stay again if I get a chance to return to Sydney."
+      }, 
+      {
+          "_id" : "160385397",
+          "date" : ISODate("2017-06-14T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "46324753",
+          "reviewer_name" : "Kiri",
+          "comments" : "We loved our stay at Ben's apartment! The only very small negative we can say is the noisyness at night on the weekend BUT you can pop to the pharmacy next door and pick up some earplugs and that solves the problem!! Absolutely LOVED the location and decor of the apartment. Ben was so easy to communicate with and made sure that we were comfortable and had everything we needed :-) If you stay here, it is well worth looking at Ben's suggestions for top spots in the area. We went down the road to Bourke St Bakery everyday (amazing coffee and food!!) and went to the Italian restaurant Vacanza on our last night-simply delicious! We would 100% stay again on our next visit to Sydney :-)"
+      }, 
+      {
+          "_id" : "161111973",
+          "date" : ISODate("2017-06-16T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "7227085",
+          "reviewer_name" : "Tim",
+          "comments" : "A beautiful studio apartment with stunning views in an unbeatable location. Will definitely be staying here again next time. Thanks very much Ben!"
+      }, 
+      {
+          "_id" : "165736686",
+          "date" : ISODate("2017-07-02T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "11584382",
+          "reviewer_name" : "Saiful",
+          "comments" : "Great stay. Great location. Great host."
+      }, 
+      {
+          "_id" : "167772945",
+          "date" : ISODate("2017-07-08T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "112961997",
+          "reviewer_name" : "Janai",
+          "comments" : "Great place to stay! Nice and compact, but enough room for two :)"
+      }, 
+      {
+          "_id" : "169266018",
+          "date" : ISODate("2017-07-12T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "49984861",
+          "reviewer_name" : "Alan",
+          "comments" : "A perfect location to walk to all parts of the city, or to catch well frequented public transport. Many great cafes and quirky shops. Ben's place is the perfect size for a couple and has everything you need for a brief stay. "
+      }, 
+      {
+          "_id" : "170534520",
+          "date" : ISODate("2017-07-15T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "132250277",
+          "reviewer_name" : "Johannes",
+          "comments" : "Clean, cosy and convenient. "
+      }, 
+      {
+          "_id" : "172789770",
+          "date" : ISODate("2017-07-22T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "23898090",
+          "reviewer_name" : "Gianina",
+          "comments" : "It was such a cosy room with a beautiful view out of the window. You can watch the sunrise while sitting on the Sofa and having tee.\nIt's a really good located appartment, too. Lot's of bar, Cafe's....\nWe would definately recommend this accomadation!\n"
+      }, 
+      {
+          "_id" : "174138956",
+          "date" : ISODate("2017-07-25T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "61912890",
+          "reviewer_name" : "Oliver",
+          "comments" : "Ben's place is great, really stunning views of Sydney and a very convenient location. Ben was also very easy to deal with and check in was a breeze. We'll definitely stay here again if we come back to Sydney."
+      }, 
+      {
+          "_id" : "175405643",
+          "date" : ISODate("2017-07-29T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "37747716",
+          "reviewer_name" : "Martina",
+          "comments" : "Warm, light filled studio, compact but has everything you need. View from the loo window is pretty cool. \nAn abundance of eating & drinking places all within an easy walk, (recommend the 'Shakespeare pub' 200 Devonshire st, for their Thursday night fish and chip special).\nAgain handy location for the single or couple travellers, easy key pickup and great communication with Ben."
+      }, 
+      {
+          "_id" : "176823474",
+          "date" : ISODate("2017-07-31T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "36220499",
+          "reviewer_name" : "Judith",
+          "comments" : "Die Wohnung entsprach genau der Beschreibung, die Schlüsselübergabe klappte hervorragend. Die Wohnung war sehr sauber und mit allem Notwendigen ausgestattet. Wir haben uns dort sehr wohl gefühlt und würden sie jederzeit wieder buchen."
+      }, 
+      {
+          "_id" : "182137133",
+          "date" : ISODate("2017-08-14T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "26147994",
+          "reviewer_name" : "Carly",
+          "comments" : "Great spot! Amazing water and bridge views. Lots of great restaurants and bars within walking distance, and the supermarket is really close. An easy walk to the city."
+      }, 
+      {
+          "_id" : "185892474",
+          "date" : ISODate("2017-08-23T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "144515947",
+          "reviewer_name" : "Alex",
+          "comments" : "Was a great stay ! Great view toward the city (can see harbour bridge). Clean and tidy room with great access to public transport"
+      }, 
+      {
+          "_id" : "189500479",
+          "date" : ISODate("2017-09-02T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "163918",
+          "reviewer_name" : "Tracy",
+          "comments" : "I enjoyed my stay at Ben's place. The studio apartment is cute and neat with a nice view. Great location and very convenient. Check in/check out was easy. Ben is helpful. I would love to stay at his place again next time I am in Sydney."
+      }, 
+      {
+          "_id" : "191807343",
+          "date" : ISODate("2017-09-09T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "8526468",
+          "reviewer_name" : "Angela",
+          "comments" : "A fabulous place to stay, such a vibrant area with lots of great places to eat.\nBen was really easy to deal with and great communication. Such great value for money, would highly recommend."
+      }, 
+      {
+          "_id" : "192712383",
+          "date" : ISODate("2017-09-11T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "8526468",
+          "reviewer_name" : "Angela",
+          "comments" : "My partner and I had a great stay at Ben's place. The place is small but just a perfect size for a couple and base for a City weekend. \nThe location is fantastic and so many great little bars at cafes at hand. Very handy having a pharmacy below and also a Metro supermarket a few minutes walk. \nThis really is a great value for money considering the location and Ben is so easy to deal with."
+      }, 
+      {
+          "_id" : "195001001",
+          "date" : ISODate("2017-09-18T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "21253812",
+          "reviewer_name" : "Aude",
+          "comments" : "Very well located studio, very clean and with a beautiful view on the city. It was perfect to visit Sydney as the flat is very near the buses and the center can be easilly acesssed by foot. Ben was very helpful to answer quickly in case of questions. I recommand this location and will return if I come back to Sydney :-)"
+      }, 
+      {
+          "_id" : "200016536",
+          "date" : ISODate("2017-10-03T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "111977458",
+          "reviewer_name" : "Lauren",
+          "comments" : "This was undoubtedly the worst air bnb experience I have ever had.\nThe studio is filled with the hosts things in drawers, it is very noisy, the shower handles fell off and there were a random pair of rusty nail scissors on the floor, we had people knocking on our door in the night and every single day the block smelt like weed from someone smoking inside.\nAbout 6 days into our stay the toilet started leaking - pretty gross when it's leaking on the floor after flushing. I let ben know and he didn't reply. I chased 2 days later and he agreed to come and take a look - afterwards the issue was much worse and the entire floor was covered in water, the shower then also wouldn't turn off. Ben told me he would look into a plumber coming and once again failed to get in touch - I chased and said it was uninhabitable like that .. and Ben then demanded that we leave that very day with no compromise with time to find somewhere else, despite us having 4 nights left and visiting from London. \nAwful experience all around."
+      }, 
+      {
+          "_id" : "204383727",
+          "date" : ISODate("2017-10-17T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "155042249",
+          "reviewer_name" : "Sarah",
+          "comments" : "The host canceled this reservation 7 days before arrival. This is an automated posting."
+      }, 
+      {
+          "_id" : "204384015",
+          "date" : ISODate("2017-10-17T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "69896414",
+          "reviewer_name" : "Mingyu",
+          "comments" : "This place is pretty awesome. It is pretty close to anything you would really need. Within about a 1.5 mile radius (35 min walk) we could really get to any part of town of interest, and anything else uber is always convenient. The place is small and cozy, nothing more you need for your stay. The TV is a smart TV with the youtube app which (we didnt realize till after staying in our other airbnb's without it) was awesome! \n\nThe only thing is, the bed and the couch kind of sunk in. So we ended up sleeping on the ground. Which honestly isnt bad at all, and made my back feel muuuch better the next day. Honestly didnt detract from the experience at all."
+      }, 
+      {
+          "_id" : "205838743",
+          "date" : ISODate("2017-10-22T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "152543582",
+          "reviewer_name" : "Ania",
+          "comments" : "Wow......this met all of our expectations and more. Clean and tidy with fresh sheets on a comfy bed and Sheridan towels. Not to mention the extras that I wont bother to take next time we stay like umbrellas, shopping bags, tea bags, band aids and spare blankets. Perhaps having  a hairdryer available would have lightened my luggage! \nCheck in and check out was easy. Ben was available ,approachable and very helpful. \nThe location was perfect for exploring Sydney. A 20 min stroll down historic Oxford St to Darling Harbour. Many different buses right out the front to Centre Point, Bondi, Circular Quay  just to mention a few. Don't forget to get your Opal card from any newsagent and you can top it up with cash on line! Walking distance to the train to explore further a field.\n The studio apartment on the 7th floor has spectacular views ( the photos don't lie!) and is nestled in a friendly community with many restaurants/cafes/shops/chemists all within walking distance. We will be back for many visits I am sure...thanks again Ben!"
+      }, 
+      {
+          "_id" : "208303089",
+          "date" : ISODate("2017-10-31T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "142280580",
+          "reviewer_name" : "Rowena",
+          "comments" : "We had a great stay at Ben’s place. The location is perfect for exploring Sydney and the apartment had all the amenities we needed, including a well equipped kitchen. We’d definitely stay here again. Ben was quick to respond and he kindly left us some ice lollies, as we had hot weather the first few day!"
+      }, 
+      {
+          "_id" : "209997327",
+          "date" : ISODate("2017-11-06T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "154576398",
+          "reviewer_name" : "Rekha",
+          "comments" : "Ben's place was very comfortable and close to all public transport and commercial points. We had a wonderful stay. Apartment was very well equipped. Ben was also very quick in response for qns we had on any facility at home."
+      }, 
+      {
+          "_id" : "211715787",
+          "date" : ISODate("2017-11-14T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "109039708",
+          "reviewer_name" : "Jessica",
+          "comments" : "Ben was an amazing host who had everything we needed. \nThe apartment has a fantastic view of the city skyline and bridge, as well as everything you out need for a comfortable stay."
+      }, 
+      {
+          "_id" : "213130374",
+          "date" : ISODate("2017-11-19T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "128759159",
+          "reviewer_name" : "Lara",
+          "comments" : "This apartment is in an excellent location to see Sydney and enjoy the area of Surry Hills. A cosy and compact apartment providing everything you need. Ben was very easy to contact and accommodating."
+      }, 
+      {
+          "_id" : "214417780",
+          "date" : ISODate("2017-11-25T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "22126122",
+          "reviewer_name" : "Sarah",
+          "comments" : "Ben’s place is in a lively, busy Sydney neighbourhood. There’s always lots going on and plenty of great places to eat, drink and socialise. We recommend Messina for amazing ice cream and Bourke St Bakery - both within walking distance.\nThe apartment itself is cosy, compact and ideal for solo travellers or couples who don’t need too much space. It’s bright, stylishly decorated and has all the amenities you’ll need for a few days in the city."
+      }, 
+      {
+          "_id" : "215632414",
+          "date" : ISODate("2017-12-01T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "10662532",
+          "reviewer_name" : "Kate",
+          "comments" : "Cute studio apartment with bridge views. Easy walk to Darling Harbor and very friendly and accomodating host. Would definitely recommend Ben's place."
+      }, 
+      {
+          "_id" : "216968176",
+          "date" : ISODate("2017-12-06T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "71629655",
+          "reviewer_name" : "Amelia",
+          "comments" : "Great location, clean apartment, amazing host. Definitely recommend"
+      }, 
+      {
+          "_id" : "218450406",
+          "date" : ISODate("2017-12-12T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "85494179",
+          "reviewer_name" : "Scott",
+          "comments" : "Great apartment close to the centre of town"
+      }, 
+      {
+          "_id" : "219547489",
+          "date" : ISODate("2017-12-17T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "105544039",
+          "reviewer_name" : "Tegan",
+          "comments" : "This is a lovely, clean apartment in a very central location. Close to public transport and everything else we needed (e.g. Supermarket, cafes, restaurants). The apartment is very spacious for two people and the view is amazing, we even had a great view of some fireworks on our last night. I would definitely recommend this place. Ben was also a great host and easy to communicate with!"
+      }, 
+      {
+          "_id" : "222130112",
+          "date" : ISODate("2017-12-29T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "34553914",
+          "reviewer_name" : "Jib Walaipat",
+          "comments" : "Ben's apartment is situated among trendy cafes and bars. It's also only a short walk to a train station, and a longer walk to many tourist attractions. Check-in was easy and the host  was communicative. Weoved our stay. Thank you, Ben!"
+      }, 
+      {
+          "_id" : "224339237",
+          "date" : ISODate("2018-01-02T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "93199897",
+          "reviewer_name" : "Catherine",
+          "comments" : "The view from Ben's place was spectacular!!!"
+      }, 
+      {
+          "_id" : "228073705",
+          "date" : ISODate("2018-01-17T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "131718119",
+          "reviewer_name" : "Eloise",
+          "comments" : "Lovely apartment with everything you need! In an excellent location with many great little restaurants and bars nearby. Grocery store is also just down the road. Close to bus stops that'll take you to all of Sydney's major destinations as well as a 10 min walk from Central Station. Ben was a great host and was super easy to communicate with. Would love to stay here again in the future!"
+      }, 
+      {
+          "_id" : "232444005",
+          "date" : ISODate("2018-02-04T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "129430068",
+          "reviewer_name" : "Tabitha",
+          "comments" : "Worst Airbnb experience ever! On arrival, the apartment was quite grubby and full of host's personal possessions with only 2 drawers left for the two of us over a fortnight. The fridge had half empty jars, food stains were all over the cabinet doors, and the place was dusty.\nWe had a disaster in that we accidentally left the keys in the apartment (that locks behind you!). We were unable to contact Ben for over 2 days as he had left the country without informing us - ending with us out on the street for hours, having to stay in a hostel overnight and eventually paying for a locksmith as we desperately needed our belongings. Ben was not even remotely apologetic once he finally got in contact with us. \nOnce we asked him if it was possible for him to reimburse for the locksmith and other costs, he replied aggressively with snarky and unnecessarily nasty comments about our stay - saying we had left wet towels on the floor when actually we had left one wet towel in the laundry basket that we had used to clean the water from the leaking toilet that was a great inconvenience throughout our stay and has been a complaint from another guest. Also said we raked through his personal belongings which were against his 'rules', when actually we only used a couple of towels from a drawer since he only left us one bath towel for two people for a fortnight. Ben has also attempted to charge us 100AUD regarding a small stain on the bed sheet, which is a completely ridiculous price especially considering the fee that we paid for cleaning.\nFurthermore, we asked where he would like his new keys to be left so he could get back in his apartment - to which eventually he said to 'leave them on the kitchen table'. This obviously doesn't make any sense and he only replied a few hours before our departure so we replied we would leave one of the keys in an envelope in his letterbox under his other mail. Only after we requested reimbursement days after we had left, he replied in a hostile manner that he had to pay for his own locksmith as we didn't leave him his key(?). \nOverall a dreadful experience that we wouldn't like anyone else to go through, as leaving the keys in an apartment when the door locks behind your back could essentially happen to anyone. This could have been handled far more efficiently & pleasantly if the host had actually been a decent person so BEWARE."
+      }, 
+      {
+          "_id" : "238803427",
+          "date" : ISODate("2018-02-27T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "13988353",
+          "reviewer_name" : "Selina",
+          "comments" : "We travelled with a 4 month old baby. Ben's place was a great location, close to everything - shops, food, transport. Ben was a great communicator and offered us a late check out which was perfect."
+      }, 
+      {
+          "_id" : "240499794",
+          "date" : ISODate("2018-03-05T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "155977269",
+          "reviewer_name" : "Kristie",
+          "comments" : "Wonderful location, spectacular views."
+      }, 
+      {
+          "_id" : "241351915",
+          "date" : ISODate("2018-03-08T05:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "26705147",
+          "reviewer_name" : "Andy",
+          "comments" : "The host canceled this reservation 14 days before arrival. This is an automated posting."
+      }, 
+      {
+          "_id" : "244574712",
+          "date" : ISODate("2018-03-18T04:00:00.000Z"),
+          "listing_id" : "10091713",
+          "reviewer_id" : "6403215",
+          "reviewer_name" : "Snowy",
+          "comments" : "Ben was very responsive and the location of the accommodation is convenient.  It can get noisy on the weekend tho... Overall, a great experience to stay at Ben’s place! Thanks!"
+      }
+  ]
+}
+
+/* 2 */
+{
+  "_id" : "10108388",
+  "listing_url" : "https://www.airbnb.com/rooms/10108388",
+  "name" : "Sydney Hyde Park City Apartment (checkin from 6am)",
+  "summary" : "Our city apartment is a bright, comfortable 1 bedroom with 24hr front-desk access. It is conveniently located directly across from Hyde Park and within walking distance of delightful cafes, restaurants, parks, major city attractions and public transport, including Museum Station which has a direct connection to Sydney Airport.",
+  "space" : "SPACE  Comfortable 1 bedroom which has a queen-sized bed, is air conditioned and has a self-contained kitchen, including:  fridge, dishwasher, oven, cooktop, microwave.",
+  "description" : "Our city apartment is a bright, comfortable 1 bedroom with 24hr front-desk access. It is conveniently located directly across from Hyde Park and within walking distance of delightful cafes, restaurants, parks, major city attractions and public transport, including Museum Station which has a direct connection to Sydney Airport. SPACE  Comfortable 1 bedroom which has a queen-sized bed, is air conditioned and has a self-contained kitchen, including:  fridge, dishwasher, oven, cooktop, microwave. SECURITY  Secure 24hour front-desk access with full access to the rooftop area which  has stunning views of Hydepark and the city, and includes: pool, sauna and gym.  Laundry facilities, which are located on the mezzanine level and has coin operated washing machines and dryers. MY AVAILABILITY I am easily contactable at anytime. If I am unable to welcome you personally I will leave the keys to the apartment and any further information marked for your attention at the front desk. AREA Located withi",
+  "neighborhood_overview" : "AREA Located within a vibrant and contemporary part of the city that is seeped in rich history and within walking distance of many attractions including: Hyde Park, St Mary's Cathedral, NSW Art Gallery, The Domaine, The Sydney Museum and less than a 30 minute walk to The Sydney Opera House, Sydney Harbour Bridge, Darling Harbour, Chinese Gardens, Wildlife Parks and Aquarium.  SYDNEY PRIVÉ If you wish discover why Sydney is such an extraordinary place then I would highly recommend  Sydney Privé, which is an exclusive concierge service that specialises in providing personalised tours and luxury experiences for the most discerning traveller. To truly experience Sydney, one must explore the local hideouts,  and there is no better place to do this than in Darlinghurst. Darlinghurst is the heartbeat of the city!  Checkout our airbnb Guidebook for some of our favourite hideouts.  The Guidebook will provide you with website links and actual location.",
+  "notes" : "IMPORTANT:  Our apartment is privately owned and serviced. It is not part of the hotel that is operated from within the building. Internet:  Our internet connection is wifi and dedicated to our apartment. So there is no sharing with other guests and no need to pay additional fees for internet usage.",
+  "transit" : "TRANSPORT Public transport: Easily accessible with buses, trains and taxi's.  Train Station:  Museum Station is 250meters from the apartment, so that approximately 3 minute walk to the station. Airport Museum Station has a direct connection to/from the Sydney International and Domestic airports. The train takes approximately 15 minutes to/from the Sydney airports.",
+  "access" : "SECURITY  Secure 24hour front-desk access with full access to the rooftop area which  has stunning views of Hydepark and the city, and includes: pool, sauna and gym.  Laundry facilities, which are located on the mezzanine level and has coin operated washing machines and dryers.",
+  "interaction" : "MY AVAILABILITY I am easily contactable at anytime. If I am unable to welcome you personally I will leave the keys to the apartment and any further information marked for your attention at the front desk.",
+  "house_rules" : "GENERAL HOUSE RULES: That guests have good behaviour, are responsible for any damage caused and leave the apartment clean and tidy.  That the apartment is only used for 2 guests  and not to be used for parties or events.  That guests are mindful of our neighbours, and adhere to safety and security rules of the building and staff.  Check-in : 2PM Check-out : 10AM EARLY CHECK-IN/CHECK-OUT:  If would like to change your check-in/check-out time, please let us know this information when making your booking.  We will make every effort to accommodate your request, however this may not always be possible as we have the cleaners, fresh linen drops and maintenance scheduled. LOST KEYS AND SECURITY TAG: In the unlikely event that the keys and security-tag are lost or stolen, for security reasons we will need to replace the lock, keys and security-tag. For this reason there is an additional charge of $450.  If you are in this unusual situation please contact me immediately so that I can ensure you",
+  "property_type" : "Apartment",
+  "room_type" : "Entire home/apt",
+  "bed_type" : "Real Bed",
+  "minimum_nights" : "2",
+  "maximum_nights" : "30",
+  "cancellation_policy" : "moderate",
+  "last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "calendar_last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "first_review" : ISODate("2016-06-30T04:00:00.000Z"),
+  "last_review" : ISODate("2019-03-06T05:00:00.000Z"),
+  "accommodates" : 2,
+  "bedrooms" : 1,
+  "beds" : 1,
+  "number_of_reviews" : 109,
+  "bathrooms" : NumberDecimal("1.0"),
+  "amenities" : [ 
+      "TV", 
+      "Wifi", 
+      "Air conditioning", 
+      "Pool", 
+      "Kitchen", 
+      "Gym", 
+      "Elevator", 
+      "Heating", 
+      "Washer", 
+      "Dryer", 
+      "Smoke detector", 
+      "Carbon monoxide detector", 
+      "First aid kit", 
+      "Fire extinguisher", 
+      "Essentials", 
+      "Shampoo", 
+      "Hangers", 
+      "Hair dryer", 
+      "Iron", 
+      "Laptop friendly workspace", 
+      "translation missing: en.hosting_amenity_49", 
+      "translation missing: en.hosting_amenity_50", 
+      "Self check-in", 
+      "Building staff", 
+      "Private living room", 
+      "Hot water", 
+      "Bed linens", 
+      "Extra pillows and blankets", 
+      "Microwave", 
+      "Coffee maker", 
+      "Refrigerator", 
+      "Dishwasher", 
+      "Dishes and silverware", 
+      "Cooking basics", 
+      "Oven", 
+      "Stove", 
+      "Patio or balcony", 
+      "Cleaning before checkout", 
+      "Step-free access", 
+      "Flat path to front door", 
+      "Well-lit path to entrance", 
+      "Step-free access"
+  ],
+  "price" : NumberDecimal("185.00"),
+  "security_deposit" : NumberDecimal("800.00"),
+  "cleaning_fee" : NumberDecimal("120.00"),
+  "extra_people" : NumberDecimal("0.00"),
+  "guests_included" : NumberDecimal("1"),
+  "images" : {
+      "thumbnail_url" : "",
+      "medium_url" : "",
+      "picture_url" : "https://a0.muscache.com/im/pictures/a2e7de4a-6349-4515-acd3-c788d6f2abcf.jpg?aki_policy=large",
+      "xl_picture_url" : ""
+  },
+  "host" : {
+      "host_id" : "16187044",
+      "host_url" : "https://www.airbnb.com/users/show/16187044",
+      "host_name" : "Desireé",
+      "host_location" : "Australia",
+      "host_about" : "At the centre of my life is my beautiful family...home is wherever my family is.\r\n\r\nI enjoy filling my life with positive experiences and love to travel and experience new cultures, to meet new people, to read and just enjoy the beauty and wonders of the 'littlest' things in the world around me and my family. \r\n",
+      "host_response_time" : "within an hour",
+      "host_thumbnail_url" : "https://a0.muscache.com/im/users/16187044/profile_pic/1402737505/original.jpg?aki_policy=profile_small",
+      "host_picture_url" : "https://a0.muscache.com/im/users/16187044/profile_pic/1402737505/original.jpg?aki_policy=profile_x_medium",
+      "host_neighbourhood" : "Darlinghurst",
+      "host_response_rate" : 100,
+      "host_is_superhost" : true,
+      "host_has_profile_pic" : true,
+      "host_identity_verified" : true,
+      "host_listings_count" : 1,
+      "host_total_listings_count" : 1,
+      "host_verifications" : [ 
+          "email", 
+          "phone", 
+          "reviews", 
+          "jumio", 
+          "government_id"
+      ]
+  },
+  "address" : {
+      "street" : "Darlinghurst, NSW, Australia",
+      "suburb" : "Darlinghurst",
+      "government_area" : "Sydney",
+      "market" : "Sydney",
+      "country" : "Australia",
+      "country_code" : "AU",
+      "location" : {
+          "type" : "Point",
+          "coordinates" : [ 
+              151.21346, 
+              -33.87603
+          ],
+          "is_location_exact" : false
+      }
+  },
+  "availability" : {
+      "availability_30" : 5,
+      "availability_60" : 16,
+      "availability_90" : 35,
+      "availability_365" : 265
+  },
+  "review_scores" : {
+      "review_scores_accuracy" : 10,
+      "review_scores_cleanliness" : 10,
+      "review_scores_checkin" : 10,
+      "review_scores_communication" : 10,
+      "review_scores_location" : 10,
+      "review_scores_value" : 10,
+      "review_scores_rating" : 100
+  },
+  "reviews" : [ 
+      {
+          "_id" : "82917761",
+          "date" : ISODate("2016-06-30T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "27775510",
+          "reviewer_name" : "Matt",
+          "comments" : "Friendly, helpful and welcoming hosts. Beautiful and comfortable apartment. Located opposite beautiful Hyde Park and close to Sydney's main attractions and public transport. We enjoyed having Sydney on our doorstep and exploring the city. Can't wait to visit again! Thank you Desiree and Julian. "
+      }, 
+      {
+          "_id" : "96384851",
+          "date" : ISODate("2016-08-22T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3577571",
+          "reviewer_name" : "Chris",
+          "comments" : "Desiree's Airbnb was perfectly appointed. The space is incredibly clean and welcoming. She had everything I needed for work and relaxation. She also provided helpful instructions and was easy to contact for whatever I needed. The location is great - coffee, grocery, dry cleaning, bars, shopping all within minutes. Love this location!"
+      }, 
+      {
+          "_id" : "98208829",
+          "date" : ISODate("2016-08-29T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "64310199",
+          "reviewer_name" : "Scott",
+          "comments" : "The place is perfect for that single or couple who is on a getaway. Great location.  Not to mention your Hostess is impeccable."
+      }, 
+      {
+          "_id" : "98931907",
+          "date" : ISODate("2016-09-02T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "26417940",
+          "reviewer_name" : "Jon",
+          "comments" : "Desireé the host was very friendly and replied quickly to any questions. The apartment was a little noisy from the road outside but it wasn't a big issue. It has obviously been recently renovated and is very clean. There was tea/coffee and milk which was a convenient touch. I would recommend this Airbnb."
+      }, 
+      {
+          "_id" : "100923916",
+          "date" : ISODate("2016-09-11T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "52384943",
+          "reviewer_name" : "Hye Ryoung",
+          "comments" : "If you are looking for room with have the best location and the most comfortable room condition, Desireé's room is just what you looking for. It's exactly same as the pictures, super clean, large enough for 1 or 2 person and you need only 3 mins walk from the Museum Station. It's also close to the mart, convenience store and easy to take a taxi. What I love the most is that it's just near the Hyde Park. It means that you could walk there every morning and night with beautiful view. And comfortable bed, clean and large shower booth, big screen TV with Samsung Smart-hub, big dinning table... everything in room was ready for your perfect trip. In addition, Desireé is really kind, good-hearted host. I couldn't meet her but she always answer kindly to my messages and give help everytime :D Don't miss this room!! "
+      }, 
+      {
+          "_id" : "101528687",
+          "date" : ISODate("2016-09-13T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "13933157",
+          "reviewer_name" : "Anne",
+          "comments" : "Desirée is an excellent host. Quick to respond to questions and most helpful. The accommodation itself is spacious and exceedingly clean/tidy. The location is excellent - near to the Museum train station (direct connection to airport in only 15min) and a very pleasant 15min stroll, via Hyde Park, to Martin's place. I would definitely recommend the accommodation to both business travelers and tourists."
+      }, 
+      {
+          "_id" : "102302564",
+          "date" : ISODate("2016-09-17T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "94739343",
+          "reviewer_name" : "Gabriella",
+          "comments" : "A lovely, clean and spacious apartment right on Hyde Park. We loved the apartment and the little touches - a hand written note and fresh flowers. Thanks for having us, Desiree"
+      }, 
+      {
+          "_id" : "103475158",
+          "date" : ISODate("2016-09-22T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "2091404",
+          "reviewer_name" : "Janine",
+          "comments" : "My daughter and I came to Sydney for her medical school interview.  Desiree was an outstanding host - providing detailed instructions on every stage of our stay, including our last day where she kindly offered for us to check out later than the arranged time.  The apartment was immaculate and really did provide a home away from home. You could seriously just turn up at his place as everything is provided for the guest's use. Desiree thought of all the little special touches - from fresh fruit and sparkling water to chocolates and flowers.  The location is fantastic - walking distance to all that Sydney has to offer.   Her guide book and restaurant recommendations were wonderful.  Highly recommended  - better than any hotel stay!  We  will be back again!  Many thanks Desiree"
+      }, 
+      {
+          "_id" : "104987053",
+          "date" : ISODate("2016-09-29T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "33068288",
+          "reviewer_name" : "Shane",
+          "comments" : "Wow my best Airbnb experience by far. Great location very clean and comfortable. Desireé is a wonderful host and her apartment is just fantastic."
+      }, 
+      {
+          "_id" : "106143437",
+          "date" : ISODate("2016-10-04T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "65679946",
+          "reviewer_name" : "Mai",
+          "comments" : "Really lovely apartment in a really convenient location. The apartment was really well equipped and beautifully maintained. Probably one of the best Airbnb locations we have ever stayed in…thank you so much for everything Desiree!!"
+      }, 
+      {
+          "_id" : "106930818",
+          "date" : ISODate("2016-10-08T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "24385505",
+          "reviewer_name" : "Alex",
+          "comments" : "Absolutely divine! Lovely spotless apartment in a fabulous location."
+      }, 
+      {
+          "_id" : "107989861",
+          "date" : ISODate("2016-10-13T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "25722890",
+          "reviewer_name" : "Ruby",
+          "comments" : "Everything is perfect! Location is great. House was very clean and tidy. Desireé is a very kind, helpful and responsible. Our communication are very smooth, no problem at all. It must be one of my favourite airbnb stay! Thank you for the lovely flowers and chocolates. Highly recommend to stay in Desireé 's place for your next accommodation! "
+      }, 
+      {
+          "_id" : "109494400",
+          "date" : ISODate("2016-10-21T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "25179507",
+          "reviewer_name" : "Stephen",
+          "comments" : "Hi\nWe had such a great time staying with Desiree.  The flat is perfect and centrally located. We couldn't recommend a better host.\nSteve and Lucy "
+      }, 
+      {
+          "_id" : "109997821",
+          "date" : ISODate("2016-10-23T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "38919640",
+          "reviewer_name" : "Alfie",
+          "comments" : "What an amazing apartment! I would highly recommend this apartment! I stayed here with my partner and we had plenty of space. It was in a perfect location right across from Hyde park. I did not use the pool but the apartment does have a roof top heated pool which looked great. Apartment was clean and the bed was comfy. Desireé was a wonderful host and had some lovely touches such as stocking the fridge with beers and provided snacks, fruit and milk etc. the bathroom was also stocked with products and didn't even need to use my own shampoo etc. We also were allowed an early check in and a late check out which was just amazing. I will be staying here again on my next visit. "
+      }, 
+      {
+          "_id" : "111970224",
+          "date" : ISODate("2016-11-03T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "26941228",
+          "reviewer_name" : "Abi",
+          "comments" : "This was a sensational experience from start to finish. Desireé was exceptionally communicative and helpful, across arrival instructions and helpful hints, to being extremely flexible with my check in and departure times from the property. She was wonderfully generous with items left in the fridge for me to help myself to, and even some lovely fresh flowers for me on arrival. It's a gorgeous apartment right in the hub of the city BUT with the bedroom double glazed I had some of the best nights sleeps here I've had in ages. Terrific stay. Best part? Uber wide screen Tv and free NETFLIX! I loved this apartment. Don't hesitate to book."
+      }, 
+      {
+          "_id" : "113807436",
+          "date" : ISODate("2016-11-13T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "13556935",
+          "reviewer_name" : "Bobbie",
+          "comments" : "Desiree certainly knows how to make her guests feel welcome. Fresh flowers and chocolates on arrival is an example. Her attention to detail was very much appreciated and one of my best airbnb experiences to date. She was also quick to respond to all queries. The apartment is as shown in the photos and immaculately clean. Dont hesitate to stay here!"
+      }, 
+      {
+          "_id" : "114350117",
+          "date" : ISODate("2016-11-17T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "13715525",
+          "reviewer_name" : "Mariano",
+          "comments" : "Todo ha sido perfecto! La comodidad del apartamento es aún mejor en vivo que en las fotos. Los detalles y amabilidad de Desiree son grandiosos. Sin duda aconsejo por ubicación y comodidades este apartamento para conocer la preciosa Sydney es perfecto!"
+      }, 
+      {
+          "_id" : "115329842",
+          "date" : ISODate("2016-11-23T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "93269084",
+          "reviewer_name" : "Hilda",
+          "comments" : "Our host Desiree is fantastic she had everything ready for us.  It was so easy we just turned the key and everything was there.  She kept in contact with me to make sure everything was ok which was very thoughtful.  There was fresh roses in the apartment really lovely touch also lots of groceries like tea bags, coffee, milk etc. which was great after a long flight.  There are even bath robes and lovely fluffy towels The apartment is beautiful very luxurious, we loved it.  It's spotlessly clean, great TV, WIFI, everything you need and more. It's a great location. Very easy to walk around from and also Museum station is right on the door step. It was our first visit to Sydney and should we go back I would love to stay here again.  I can't thank Desiree enough. We were absolutely thrilled with it. Truly 5 star."
+      }, 
+      {
+          "_id" : "115751437",
+          "date" : ISODate("2016-11-26T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "64381954",
+          "reviewer_name" : "Reed",
+          "comments" : "A lovely, comfortable, well decorated apartment in a great location. Very friendly host. I can't wait to stay again. "
+      }, 
+      {
+          "_id" : "117101900",
+          "date" : ISODate("2016-12-04T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "90320689",
+          "reviewer_name" : "Andrew",
+          "comments" : "Where do we begin? Desireé is a wonderfully thoughtful host that made our stay so special. The apartment looks exactly as pictured - modern, comfortable and clean. The location is fabulous and central to everything! This apartment does not disappoint! Our only regret is that we didn't stay for longer. We will certainly be back the next time we are in Sydney! Thank you Desireé!"
+      }, 
+      {
+          "_id" : "120347989",
+          "date" : ISODate("2016-12-09T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3950204",
+          "reviewer_name" : "Judith",
+          "comments" : "My parents loved Desirée's flat. She had left a hand written note and ferrero rocher as well as beautiful, fresh flowers to make it a special welcome. A perfectly stocked kitchen and tasty tea made it really homely. It was also spotless clean and the African styled furnishings gave it a memorable touch. The house has friendly reception staff and they were helpful with giving directions. The location is sublime as it overlooks Hyde Park which is really close to both parts of the city centre. We highly recommend the flat and would happily stay again in the future. Thanks!"
+      }, 
+      {
+          "_id" : "121158621",
+          "date" : ISODate("2016-12-14T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "13736624",
+          "reviewer_name" : "Laura",
+          "comments" : "My stay at Desireé's apartment was one of my best experiences yet! She's a phenomenal host and the apartment has everything a traveler could need. It's really a luxury stay. Loved it!!"
+      }, 
+      {
+          "_id" : "125435935",
+          "date" : ISODate("2017-01-05T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "5524726",
+          "reviewer_name" : "Vanessa",
+          "comments" : "Desiree was a fantastic host with a lovely apartment in a great location in Sydney! \n"
+      }, 
+      {
+          "_id" : "126703197",
+          "date" : ISODate("2017-01-13T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "52608629",
+          "reviewer_name" : "Christopher",
+          "comments" : "Centrally located, comfortable, 4 star quality, beautifully decorated apartment with everything you could need including a lovely view of Hyde Park. We thoroughly enjoyed our stay and are already looking forward to staying here again. Desireé was helpful and responsive. We miss it already. "
+      }, 
+      {
+          "_id" : "127752669",
+          "date" : ISODate("2017-01-20T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "27669736",
+          "reviewer_name" : "Aika",
+          "comments" : "Desiree's place was beyond our expectations!! The interior of the home was very clean and modern. The location was perfect for exploring the city, and communication with Desiree was always very clear with quick response. If we ever go back to Sydney we will definitely book with her again!! "
+      }, 
+      {
+          "_id" : "129263649",
+          "date" : ISODate("2017-01-29T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "43886564",
+          "reviewer_name" : "Clara",
+          "comments" : "The apartment is really well located, a stunning view from the rooftop pool on the Anzac Memorial and the Sydney eye tower. Desireé is helpful and kind! \nA really good address!"
+      }, 
+      {
+          "_id" : "129841221",
+          "date" : ISODate("2017-02-02T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "111460786",
+          "reviewer_name" : "Katalin",
+          "comments" : "Loved staying at Your place, great location, 20 min walk to Opera House, close to great shopping and dining area...Thank You for the chocolate and the flowers!!!"
+      }, 
+      {
+          "_id" : "130599209",
+          "date" : ISODate("2017-02-06T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "102765936",
+          "reviewer_name" : "Deborah",
+          "comments" : "Loved this apartment.  It is located across from beautiful Hyde Park.  You can easily walk to the botanical gardens, many museums and art galleries, the opera house and much more.  The apartment itself is beautiful, nicely furnished, has all the amenities you would want including coffee, tea, milk, cookies, fruit and more.  There is a convenience store right next to it.  Desiree could not have been warmer or more helpful. She was available any time we had a question.  We already asked to book another stay and we will recommend her place to friends."
+      }, 
+      {
+          "_id" : "131930618",
+          "date" : ISODate("2017-02-14T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "80245144",
+          "reviewer_name" : "Marie",
+          "comments" : "This is a very nice condo, location was awesome.  We walked everywhere and went to some of the restaurants Desiree recommended, we were not disappointed.  Had a great stay and most certainly would love to do it again. "
+      }, 
+      {
+          "_id" : "132947447",
+          "date" : ISODate("2017-02-19T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "44434344",
+          "reviewer_name" : "Mike",
+          "comments" : "The apartment was perfectly located and very lovely.  It's just as nice as the pics, and Desiree was the perfect host.  The neighborhood is wonderful, and the guidebook Desiree provided was very useful.  Definitely go to Messina at least once for gelato (we went twice).  We also loved the ARTERY gallery, and bought some nice gifts for friends back home and even a cool painting that I could carry on to the plane.  Overall a great experience and a perfect spot to end our trip to Australia in style."
+      }, 
+      {
+          "_id" : "134556522",
+          "date" : ISODate("2017-02-27T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "45516629",
+          "reviewer_name" : "Ines",
+          "comments" : "The appartment is very confortable, very clean and new. It is like it's shown no pictures. Desiree was really helpful and left us the basic stuff for everyday needs, such us coffee, tea, sugar and bathroom supplies. The location is convenient, easy to get from the airport and with lots of buses stops, in a nice area. We had a great time! "
+      }, 
+      {
+          "_id" : "135708219",
+          "date" : ISODate("2017-03-05T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "15755469",
+          "reviewer_name" : "Arbel",
+          "comments" : "This is best place to stay in Sydney! Just few steps to the Hyde Park. Right in the central area which is easy to travel,exploring and food hunting.\nWhen we arrived this beautiful apartment. Everything you see make you feel like home. Because we were there for the Sydney gay and lesbian mardi gras. You can watch the parade at the balcony (Best view ever).\nAnd we thank you for the host making our trip in Sydney unforgettable."
+      }, 
+      {
+          "_id" : "136291613",
+          "date" : ISODate("2017-03-09T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "103339406",
+          "reviewer_name" : "Mirko",
+          "comments" : "Best apartment ever, super central in the heart of Sydney, 100% recommended, check it out!"
+      }, 
+      {
+          "_id" : "136642373",
+          "date" : ISODate("2017-03-11T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "92727298",
+          "reviewer_name" : "Sarah",
+          "comments" : "My husband and I had a wonderful time staying in Desireé's beautiful apartment. Would definitely stay again."
+      }, 
+      {
+          "_id" : "138848087",
+          "date" : ISODate("2017-03-21T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "18197139",
+          "reviewer_name" : "Richard",
+          "comments" : "This is a lovely apartment, in a hotel/serviced apartment building.  For once the pictures really don't do it justice.  The hotel rooms get marked down for being dated in reviews on hotel sites, but this apartment certainly isn't.  It's centrally located: it has Darlinghurst's little strip of restaurants just around the corner, and central Sydney equally close in the other direction.  I was here for a week in March and it (unusually) rained every day, so the 60\" UHD Samsung smart TV with Netflix and Stan (Aussie streaming), as well as Apple TV, was particularly welcome, as was the small gym on the roof.  The pool was less useful, but would be great normally.  Desireé is a very friendly host too.  Highly recommended."
+      }, 
+      {
+          "_id" : "139320556",
+          "date" : ISODate("2017-03-24T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3774958",
+          "reviewer_name" : "Ishara",
+          "comments" : "Desireé’s apartment is the perfect place to explore Sydney city from. Perfectly central to all city sights. The apartment was super clean and neat. It hosts beautiful city views, a quick 5 minute walk to Museum rail station, and a hop to great restaurants and nightlife. The apartment is tastefully decorated with art and books from adventurous travels; furnished and accessorized with absolutely everything that I could require, plus more. I was impressed at the Desireé's thoughtfulness in accommodating her guests needs. Such things as a kind welcome note. Petite chocolates, mini fresh milk packs in the fridge, expresso machine and every conceivable toiletry item one could need inside a bathroom cabinet. Discreetly rolled up extension cords so you never have to look for one to reach the wall socket to charge your digital devices. The bed was comfortable, where sprigs of fragrant lavender greeted us laid upon freshly rolled up towels. We loved our stay and highly recommend Desireé as a host. She communicated well, was always polite and prompt with messaging all required information upon booking. There's no doubt why Desireé has been voted as a super host. You will be delighted."
+      }, 
+      {
+          "_id" : "142140419",
+          "date" : ISODate("2017-04-06T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "119185319",
+          "reviewer_name" : "Annamarie",
+          "comments" : "This is a wonderful place to stay comfortable and clean easy access and very close to Museum Station and  beautiful Hyde Park. The host is marvelous and provided us with so many wonderful amenities. We would definitely stay here again ."
+      }, 
+      {
+          "_id" : "144173346",
+          "date" : ISODate("2017-04-15T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "8036583",
+          "reviewer_name" : "Corey",
+          "comments" : "Desireé is a wonderful host. She's easy to contact and responds promptly when you send her an email. Her place is very comfortable and clean. She let us arrive early and we had no problem staying an extra night. We really appreciated that!! Transport to the city and surrounding areas are very close to her place. Great place to walk around lots to see and do. I would definitely stay again :)"
+      }, 
+      {
+          "_id" : "145595722",
+          "date" : ISODate("2017-04-19T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "76881567",
+          "reviewer_name" : "Fay",
+          "comments" : "Lovely, tastefully designed and very clean apartment in a great location. We had high expectations having read the rave reviews and it certainly did not disappoint. "
+      }, 
+      {
+          "_id" : "147074725",
+          "date" : ISODate("2017-04-24T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "105278846",
+          "reviewer_name" : "Helen",
+          "comments" : "Desiree was the perfect host.  The apartment is just as it is down on the airbnb site.  Desiree answered our many queries and requests super-quickly and she is very approachable and friendly.  The location is really close to all the CBD attractions and public transport.  Desiree added so many extras like a bottle of wine and chocolates to help us celebrate our milestone anniversary. We would highly recommend this listing. Thanks Desiree!\n"
+      }, 
+      {
+          "_id" : "149358540",
+          "date" : ISODate("2017-05-03T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "6025551",
+          "reviewer_name" : "Robert",
+          "comments" : "This apartment is a very nice good place to stay, its in a secure building, The apartment is spotless clean and very well maintained, very comfortable, kitchen is well prepared with stove, oven, fridge, microwave, coffeemaker, watercooker, dishwasser, enough pots and pans etc. Livingroom has a comfortable sofa, salon table, mega big TV with many channels, dining table with 6 chairs, extra lounger, two small balconies, one which has 2 chairs and a table. Bedroom with large bed, desk and big closet, bathroom with sink, shower and toilet. The host had many soaps, shampoos, drinks, coffee, wine and bottled water available for us to use, which was very kind and nice ( Im not sure if this is always there) The host replied always quick to any questions we had. We stayed 8 nights and we will return! Thanks Desiree and Julian!"
+      }, 
+      {
+          "_id" : "151255323",
+          "date" : ISODate("2017-05-12T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "747245",
+          "reviewer_name" : "Lisa",
+          "comments" : "Fabulous apartment in the centre of Sydney, we'll appointed and great facilities, pool, gym and pay laundry downstairs. Apartment is just like the photos. Communication with Desiree was fabulous and nothing was a problem. Nice personal touches when we arrived. A great place to stay "
+      }, 
+      {
+          "_id" : "152506693",
+          "date" : ISODate("2017-05-16T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "149324",
+          "reviewer_name" : "Valerie",
+          "comments" : "Fantastic! Desireé made the entire stay flawless - sent detailed arrival info days before, had keys waiting for us at the front desk, a bottle of wine waiting upon arrival, and a spotless apartment with all possible amenities. Great home base for a vacation. Public transit just across the street, restaurants are within 10 minutes walk, and a taxi stand is available right next door. Highly recommend. "
+      }, 
+      {
+          "_id" : "155259011",
+          "date" : ISODate("2017-05-28T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "49564841",
+          "reviewer_name" : "Dale",
+          "comments" : "Very tidy, modern one bed apartment opposite Hyde Park. The location was superb for transportation, local cafes, local cafes and restaurants. Great Wifi, safe and secure. The host Desiree is very helpful and has a lot of extra bits and pieces to make stay more comfortable. Would stay again. "
+      }, 
+      {
+          "_id" : "158253735",
+          "date" : ISODate("2017-06-05T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "42066890",
+          "reviewer_name" : "Jessica",
+          "comments" : "We had a wonderful stay in Desiree's apartment.  Great location, spotlessly clean and very homely.  Would definitely stay again."
+      }, 
+      {
+          "_id" : "159856310",
+          "date" : ISODate("2017-06-11T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "52471153",
+          "reviewer_name" : "Kathy",
+          "comments" : "If you are heading to Sydney and want a FANTASTIC place that is central and within walking distance to everywhere, especially Darling Harbour, then please stay at Desiree's apartment.  There is everything you could want close by, especially restaurants and public transport, the airport train is just a few meters away. The apartment has everything you could possibly need and more. Desiree's interest and love of people shines through in everything she does; she goes way beyond being a superhost.  Thank you Desiree for making our stay so special and we can't wait to come back, hopefully when the weather is a little kinder."
+      }, 
+      {
+          "_id" : "162441686",
+          "date" : ISODate("2017-06-21T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "128392930",
+          "reviewer_name" : "Mara",
+          "comments" : "Great location! Everything is in walking distance and the supermarket is just around the corner. The hosts are always available and very helpful. The apartment is very clean and safe. Would definitely stay here again!"
+      }, 
+      {
+          "_id" : "164591689",
+          "date" : ISODate("2017-06-28T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "28341665",
+          "reviewer_name" : "Amy",
+          "comments" : "Perfect central apartment, walkable to everything you need and very close to public transportation options as well. Desireé was an absolutely fantastic host, stocking the kitchen with the necessities and even a bottle of wine! She communicated everything up front very clearly and had great recommendations in her guidebook. We were very comfortable in the apartment for our stay and would highly recommend to anyone looking to explore the Sydney area! "
+      }, 
+      {
+          "_id" : "166900440",
+          "date" : ISODate("2017-07-05T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "69981299",
+          "reviewer_name" : "Thao",
+          "comments" : "Desiree and Julian were wonderful hosts. The listing was beautifully decorated. Would absolutely love to stay here again during our next trip to Sydney."
+      }, 
+      {
+          "_id" : "168686088",
+          "date" : ISODate("2017-07-10T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "23929627",
+          "reviewer_name" : "Angus",
+          "comments" : "This is a lovely apartment for a couple. Well fitted out, a few essentials for eating in and decorated with a very tasteful African theme. During the cool winter evenings, the reverse cycle heaters were fantastic. Traffic noise was well muted by the double glass in the bedroom. Desireé was very communicative through our stay and had provided lots of info about Sydney and what to do, where to eat, etc. "
+      }, 
+      {
+          "_id" : "170556011",
+          "date" : ISODate("2017-07-16T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "9235106",
+          "reviewer_name" : "Ric",
+          "comments" : "This is a little treasure in the best part of Sydney! Desiree was a great communicator, checking in with us all through our visit to make sure all was good - and it was great! Lovely sized apartment, beautifully appointed and fully of little things to make our stay memorable. "
+      }, 
+      {
+          "_id" : "189500335",
+          "date" : ISODate("2017-09-02T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "68882132",
+          "reviewer_name" : "Graeme",
+          "comments" : "We spent a very comfortable 8 nights in Desiree's apartment.  It is just as it looks in the pictures.  It is smartly decorated with comfortable furniture and lovely modern kitchen and bathroom.  There is a guest laundry in the building with coin operated machines and you can do a big wash and dry for $4 each.  The apartment is bright and airy and has a nice busy city outlook which we enjoyed.  You can certainly hear the buzz of the city around you but you are right in the CBD so that is to be expected and enjoyed.  The location is fantastic.  You can walk to just about everything in the city centre and trains and buses are only metres away if you want to get around more quickly or go further afield.  Very easy access from the airport by train into Museum station. The host, Desiree, was a pleasure to deal with, excellent communication all the way through.  This is a wonderful little home away from home putting you right into centre of the Sydney action."
+      }, 
+      {
+          "_id" : "192708777",
+          "date" : ISODate("2017-09-11T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "23683916",
+          "reviewer_name" : "Mario",
+          "comments" : "Eine sehr Zentrum nah gelegene Wohnung. Absolut empfehlenswert um Sydney zu entdecken. Man kann optimal zu Fuß in die Innenstadt und läuft nur kurz durch den Hyde Park. Zum Flughafen sind es auch nur 15 Minuten."
+      }, 
+      {
+          "_id" : "193259899",
+          "date" : ISODate("2017-09-13T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "13933157",
+          "reviewer_name" : "Anne",
+          "comments" : "Enjoyable repeat stay."
+      }, 
+      {
+          "_id" : "195805380",
+          "date" : ISODate("2017-09-21T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "28422683",
+          "reviewer_name" : "Shiya",
+          "comments" : "We had a great time here. The host is so generous and thoughtful. One of the best places I've stayed! Highly recommend!!!"
+      }, 
+      {
+          "_id" : "197225880",
+          "date" : ISODate("2017-09-25T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "6394358",
+          "reviewer_name" : "Nolan",
+          "comments" : "Desirees place was awesome. The room was very clean, internet speed was sufficient, and all the goodies that she provides in the room ( extra toiletries, snacks, and even wine in the kitchen and refrigerator were a great bonus.  The location of the condo was very convenient to get around Sydney.  Lots of restaurants and train stations nearby !!!  Desiree was also very quick at responding to our needs and questions . Overall, 5 out of 5 stars for us !!!"
+      }, 
+      {
+          "_id" : "199412050",
+          "date" : ISODate("2017-10-01T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "74924314",
+          "reviewer_name" : "Ivy",
+          "comments" : "The apartment has great convenience to everything. It suits for tourist. Desiree is helpful and warm hearted."
+      }, 
+      {
+          "_id" : "203026080",
+          "date" : ISODate("2017-10-13T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "45829604",
+          "reviewer_name" : "Karen",
+          "comments" : "Fab location near Museum train station. Apartment sparkling clean and so many extras e.g butter, beer, wine, bottled water, cereal etc that were much appreciated. Would definitely recommend this apartment."
+      }, 
+      {
+          "_id" : "206530009",
+          "date" : ISODate("2017-10-26T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "76637502",
+          "reviewer_name" : "Janet",
+          "comments" : "Desiree is an amazing host and had the perfect space for us! It started from wonderful communication to easy early check in. It continued with an immaculate unit that provided us an oasis from our sight seeing. We use Airbnb quite a bit and especially enjoy being able to have a kitchen area for a quick breakfast or meal and morning coffee. The unit was close to grocery, public transport and amenities were as if I had lived there. We were there to celebrate my spouse's 50th birthday and were pleasantly surprised by the nice and thoughtful birthday card. Thank you again and we had a blast!"
+      }, 
+      {
+          "_id" : "207795654",
+          "date" : ISODate("2017-10-30T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3838105",
+          "reviewer_name" : "Benedicte Et Remi",
+          "comments" : "The apartment is perfectly located, easy access and walking distance to all attractions. Spotless clean, well appointed and really comfy, the seperate bedroom was great especialy when you are traveling with a baby !\nThanks again for our great stay :)"
+      }, 
+      {
+          "_id" : "209222000",
+          "date" : ISODate("2017-11-04T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "59949023",
+          "reviewer_name" : "Sue",
+          "comments" : "A super place to stay - well appointed, beautifully furnished with great facilities within the building. Going to Sydney contact Desiree.\n\nSue Hillman"
+      }, 
+      {
+          "_id" : "212046808",
+          "date" : ISODate("2017-11-15T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "2325365",
+          "reviewer_name" : "Riett",
+          "comments" : "The apartment was absolutely as expected. Clean and modern. Lots of great restaurants and shopping close by."
+      }, 
+      {
+          "_id" : "212654397",
+          "date" : ISODate("2017-11-18T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "28203124",
+          "reviewer_name" : "Sofia",
+          "comments" : "Beautiful apartment, clean, modern, nicely decorated. Centrally located, walking distance from everything we wanted to see. Two balconies with awesome views of Hyde Park and Oxford St. We really felt like we were living the Sydney high life. Plenty of towels, bedding, etc, there was even a bunch of shampoo/conditioner/soap to use and coffee, juice and chocolate for us as well. Desiree’s apartment really felt like a home away from home, will definitely visit again next time we’re in Sydney!"
+      }, 
+      {
+          "_id" : "213745185",
+          "date" : ISODate("2017-11-22T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "5628912",
+          "reviewer_name" : "Sheila",
+          "comments" : "Desireé’s place is extremely well located, superbly comfortable and sparklingly clean. We would love to stay here on every future visit to Sydney."
+      }, 
+      {
+          "_id" : "217552448",
+          "date" : ISODate("2017-12-09T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "7764765",
+          "reviewer_name" : "Rachael",
+          "comments" : "This space is great. The size is wonderful for a couple, anything you could need was available. Desireé was so easy to work with. We asked for special accommodations for checking in and out and Desireé was swift in reply as well as considerate in communications! The space is even nicer than it appears in the photos and the location is very convenient to so many attractions."
+      }, 
+      {
+          "_id" : "219571237",
+          "date" : ISODate("2017-12-18T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "138194849",
+          "reviewer_name" : "Tom",
+          "comments" : "This is an amazing place!  LOVED the amenities of coffee, milk, wine bottle, chocolate bar , great TV, lots and lots of towels, and wonderful location.  We didn't use the rooftop pool, but we should have (busy visiting daughter).   Could not have been happier with this choice.  Thank you Desiree."
+      }, 
+      {
+          "_id" : "223852780",
+          "date" : ISODate("2018-01-01T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "25827160",
+          "reviewer_name" : "Mildred",
+          "comments" : "Super great stay here!"
+      }, 
+      {
+          "_id" : "226285311",
+          "date" : ISODate("2018-01-09T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "18997240",
+          "reviewer_name" : "Colleen",
+          "comments" : "This is the perfect location. Just a block from a great transit connection but walkable to the main sites too. \n\nIt’s easy to get anywhere. We took the bus to Coogee and Bondi beaches, to Sydney Fish Market, to Opera House and ferry hub of Circular Quay for the ferry to Manly.  You are also on subway routes too!\n\nThe home is quiet even though the street and park are well used.  It feels super safe to walk in.\n\nThere are great grocery and restaurant options right here...and we were hooked on Greenhouse Coffee just a few blocks down to start our day. We enjoyed the Sydney Festival and walked to their events and free activities. \n\nThe home had lots of lovely touches and thoughtful additions in the bath, the kitchen and a nice collection of books and info."
+      }, 
+      {
+          "_id" : "229094652",
+          "date" : ISODate("2018-01-21T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "5827353",
+          "reviewer_name" : "Zsófi",
+          "comments" : "Very nice, stylish place, close to everything, in  quiet environment. Check in was easy."
+      }, 
+      {
+          "_id" : "230992031",
+          "date" : ISODate("2018-01-29T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "4833356",
+          "reviewer_name" : "Stephen",
+          "comments" : "Stylish decor—thoughtful touches—great communication—\\0perfect location!"
+      }, 
+      {
+          "_id" : "232715698",
+          "date" : ISODate("2018-02-06T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "12104740",
+          "reviewer_name" : "Patrizia",
+          "comments" : "This was our first experience with Airbnb and we have been very lucky to choose Desiree as a host. The apartment is lovely, very clean, confortable and well appointed. The size is perfect for two people and the location is very convenient, in front of Hide Park, easy to be reached by the airport via irport likn train that stops just few steps away. All the main city attractions are at walking distance. Desiree is very kind and supporting. You can easily reach her at any time via e-mail and she answers in a few minutes. Highly  recommended!"
+      }, 
+      {
+          "_id" : "234475159",
+          "date" : ISODate("2018-02-12T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "1964328",
+          "reviewer_name" : "Tom",
+          "comments" : "Great flat in the heart of Sydney. Photos and description exactly as advertised, and host communication was second-to-none! Would recommend if you want to be able to walk anywhere centrally"
+      }, 
+      {
+          "_id" : "236285249",
+          "date" : ISODate("2018-02-18T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "156098679",
+          "reviewer_name" : "Fiona",
+          "comments" : "This place is really good!! It has convenient location, basically you can get everything you need within 10 minuets-walk. The hosts are super kind and thoughtful. Highly recommend!"
+      }, 
+      {
+          "_id" : "237409675",
+          "date" : ISODate("2018-02-23T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "111305679",
+          "reviewer_name" : "Ben",
+          "comments" : "Amazing location, loved the area and easy walk to all major sites. Very nice unit and amazing value."
+      }, 
+      {
+          "_id" : "240485706",
+          "date" : ISODate("2018-03-04T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "165017028",
+          "reviewer_name" : "Mark",
+          "comments" : "Desiree earns a big tick for hospitality and thoughtfulness. The apartment was exactly as described and couldn't have better suited a weekend Mardi Gras getaway.\n\nWe'd definitely recommend this place to others and can't rate Desiree's communication and responsiveness highly enough. The apartment was spotless, had all the mod cons you could wish for, was convenient to transport and perfectly located with awesome views."
+      }, 
+      {
+          "_id" : "241889288",
+          "date" : ISODate("2018-03-10T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "5485604",
+          "reviewer_name" : "Amy",
+          "comments" : "Great communication and thoughtful touches! Will definitely stay together"
+      }, 
+      {
+          "_id" : "255531356",
+          "date" : ISODate("2018-04-21T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3972289",
+          "reviewer_name" : "Vivian",
+          "comments" : "Amazing location, the apartment was exactly how it described.  Desiree was very responsive and check in was easy.  Highly recommended!"
+      }, 
+      {
+          "_id" : "260153531",
+          "date" : ISODate("2018-05-03T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "43200108",
+          "reviewer_name" : "Miguel",
+          "comments" : "Beautiful view, gorgeous apartment, and perfect location. Would definitely stay here again the next time I’m in Sydney! Thanks for the wonderful stay, Desireé!"
+      }, 
+      {
+          "_id" : "264818731",
+          "date" : ISODate("2018-05-14T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "6904660",
+          "reviewer_name" : "Josee-Lina",
+          "comments" : "You will feel at home at Desireé's apartment. Beautifully designed, it is luminous, cosy and perfectly situated in front of Hyde Park; the Museum Station is just a few steps away and many bus stops are just downstairs. It' s easy to go anywhere you wish, thanks to the perfect location.\n\nAnd Desireé is a real superhost: Quick to answer my inquiries, she gave me valuable advice during my stay.\n\n I recommend strongly this apartment: You will enjoy even more your stay in Sydney (and won't want to leave...). Many thanks Desireé!"
+      }, 
+      {
+          "_id" : "266303914",
+          "date" : ISODate("2018-05-20T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "34136908",
+          "reviewer_name" : "Katherine",
+          "comments" : "Desireé and Julian’s apartment was a perfect place to explore Sydney from - and delicious Darlinghurst restaurants nearby. They had thought of everything, and we really appreciated the homely touches. The bed is very comfy, there is plenty of wardrobe space, and a comfy couch when a night in is in order. Despite the location right near Hyde Park, it is very quiet and we were not bothered by any noise during our stay. Desireé and Julian were lovely hosts and we appreciated the clear directions and easy check-in and check-out. We would love to stay here again when we’re in Sydney again!"
+      }, 
+      {
+          "_id" : "269768479",
+          "date" : ISODate("2018-05-28T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "19652047",
+          "reviewer_name" : "Tiffany",
+          "comments" : "I have stayed at Desiree’s place twice now as I travel for work and it’s one of my favourite Sydney accomodation venues. It’s is absolutely spotless, secure, quiet and the most convenient location. Desiree is an excellent and attentive host - this place deserves every great review it gets and more"
+      }, 
+      {
+          "_id" : "277654395",
+          "date" : ISODate("2018-06-17T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "5104154",
+          "reviewer_name" : "Juliet",
+          "comments" : "Desiree's place was very comfortable & was perfectly located for my trip to Sydney. I came for the Sydney Film Festival, and the apartment was well located on Hyde Par, so I could walk to and from the venue. The studio was very comfortable and well stocked too - the little things such as tea, milk, spreads for breakfast etc were thoughtful. Picking up and dropping off the keys were a breeze and whilst I did not meet my host, she was very responsive and helpful. I can highly recommend this place for a city based jaunt. Thanks again Desiree"
+      }, 
+      {
+          "_id" : "281469121",
+          "date" : ISODate("2018-06-25T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "34792630",
+          "reviewer_name" : "Rebecca",
+          "comments" : "Really lovely apartment in a fantastic location. The double glazing in the bedroom and super comfy bed meant we slept like a log, and the rest of the apartment is stylish and very comfortable. As per previous reviews, Desiree's thoughtful touches, excellent communication and brilliant local recommendations really shines and elevates the whole experience to something very special. We stayed with our toddler, and the building/apartment has excellent pram accessibility. "
+      }, 
+      {
+          "_id" : "288493445",
+          "date" : ISODate("2018-07-10T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "11760311",
+          "reviewer_name" : "João",
+          "comments" : "Great apartment in an excellent locations, close to public transportation and countless cafes and dinner spots. Desiree was always super quick to reply and available at all times to meet our requests. We would definitely stay here again if returning to Sydney!"
+      }, 
+      {
+          "_id" : "295146430",
+          "date" : ISODate("2018-07-23T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "170487787",
+          "reviewer_name" : "Terry",
+          "comments" : "A great convenient location to stay for visitors to Sydney with a great host."
+      }, 
+      {
+          "_id" : "299898709",
+          "date" : ISODate("2018-08-01T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "96752801",
+          "reviewer_name" : "Ross",
+          "comments" : "Great location and a very nicely presented apartment."
+      }, 
+      {
+          "_id" : "305125435",
+          "date" : ISODate("2018-08-10T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "155037158",
+          "reviewer_name" : "Bronwyn",
+          "comments" : "Such a great apartment, super host and fantastic holiday!!!  Keeps in contact and replies to messages super fast"
+      }, 
+      {
+          "_id" : "312136096",
+          "date" : ISODate("2018-08-23T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "8905686",
+          "reviewer_name" : "Sean",
+          "comments" : "Desireé’s apartment is great! It's clean, well lit, comfortable, and located in a great part of Sydney. Desireé is a great host and an excellent communicator. I would love to stay here again! "
+      }, 
+      {
+          "_id" : "313702518",
+          "date" : ISODate("2018-08-26T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "11826533",
+          "reviewer_name" : "Zunilka",
+          "comments" : "Do yourself a favour, if this place is free, book it!! Stunning. Thanks so much"
+      }, 
+      {
+          "_id" : "319246488",
+          "date" : ISODate("2018-09-06T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "67048231",
+          "reviewer_name" : "Helen",
+          "comments" : "Wonderful base for my visiting parents. Desireé was so helpful and conscientious and I can’t recommend her apartment enough."
+      }, 
+      {
+          "_id" : "324819945",
+          "date" : ISODate("2018-09-18T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "67048231",
+          "reviewer_name" : "Helen",
+          "comments" : "Desireé was the perfect host for my parents on their return to Sydney after staying in her apartment the previous week. She was fast to respond to queries and the apartment had lots of thoughtful touches and was in a great location. Definitely would use this when they visit again."
+      }, 
+      {
+          "_id" : "329849308",
+          "date" : ISODate("2018-09-29T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "2141875",
+          "reviewer_name" : "Adam",
+          "comments" : "Fantastic unit, very central. Lots of amenities."
+      }, 
+      {
+          "_id" : "333104176",
+          "date" : ISODate("2018-10-06T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "112825219",
+          "reviewer_name" : "Sean",
+          "comments" : "Location, location, location!\n\nIn the heart of the city, close to transport, close to cafes and restaurants and walking distance to CBD.\n\nHotels are good, Airbnb’s are great!"
+      }, 
+      {
+          "_id" : "335315057",
+          "date" : ISODate("2018-10-11T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "25379624",
+          "reviewer_name" : "Karyn",
+          "comments" : "This apartment is a wonderful place to stay in Sydney. It is very stylish and comfortable. The location is near transport, shops, cafes and restaurants. Having access to a kitchen also gave me the option of cooking a light meal if I didn't feel like going out."
+      }, 
+      {
+          "_id" : "339731424",
+          "date" : ISODate("2018-10-22T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "75059289",
+          "reviewer_name" : "Pam",
+          "comments" : "Desiree’s apartment was wonderful. Beautifully furnished, sparkling clean, fabulous location and many thoughtful touches. The location is amazing and i would stay there any time I am in Sydney. Thank you for sharing your home Desireé and your thoughtfulness!"
+      }, 
+      {
+          "_id" : "341036128",
+          "date" : ISODate("2018-10-25T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "22035157",
+          "reviewer_name" : "Stéphanie",
+          "comments" : "Very good location. Incredible host, Desiree helped us out with everything and responded really fast. Everything we needed was at the appartment."
+      }, 
+      {
+          "_id" : "342941547",
+          "date" : ISODate("2018-10-30T04:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "172543899",
+          "reviewer_name" : "Judy",
+          "comments" : "Beautiful rental, perfect location to attractions, busses, restaurants and so much more. Owners go above and beyond."
+      }, 
+      {
+          "_id" : "346489742",
+          "date" : ISODate("2018-11-09T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "2314881",
+          "reviewer_name" : "Lisa",
+          "comments" : "A wonderfully stylish and authentic apartment. Perfect location. Lots of lovely books to read and thoughtful touches. The hosts are fantastic. I would hope to stay there if ever we are in Sydney again."
+      }, 
+      {
+          "_id" : "349271873",
+          "date" : ISODate("2018-11-17T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "19535282",
+          "reviewer_name" : "Nevet",
+          "comments" : "we had such a great stay. the location is super, the host is flexible and accomodating and the appartment is sooooo nice plus, plus ,plus"
+      }, 
+      {
+          "_id" : "350933933",
+          "date" : ISODate("2018-11-20T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "3700308",
+          "reviewer_name" : "Kyle",
+          "comments" : "This flat was absolutely perfect! It was located right across from Hyde Park with a beautiful view. It was very central to everything we wanted to do in Sydney. She also left us chocolate, coffee, milk and other food for us which was so lovely to come to. We traveled very far and were immediately impressed by the lovely accommodation and personal touch of Desiree’s flat. I would highly recommend this apartment if coming to Sydney for a city break!"
+      }, 
+      {
+          "_id" : "352172186",
+          "date" : ISODate("2018-11-24T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "33014705",
+          "reviewer_name" : "Aleks",
+          "comments" : "Wonderfully appointed apartment. Centrally located and a lovely host"
+      }, 
+      {
+          "_id" : "353839476",
+          "date" : ISODate("2018-11-29T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "53907804",
+          "reviewer_name" : "Anne",
+          "comments" : "Desiree’s place was absolutely perfect for our time spent in Sydney. Amazing location and everything you could need! Highly recommend staying here while in Sydney!"
+      }, 
+      {
+          "_id" : "357829570",
+          "date" : ISODate("2018-12-11T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "71873083",
+          "reviewer_name" : "은혜",
+          "comments" : "위치가 매우 좋았고, 청결하고 집도 넓고 쾌적했어요! 그리고 호스트가 매우매우 친절했습니다"
+      }, 
+      {
+          "_id" : "400388868",
+          "date" : ISODate("2019-01-12T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "21864680",
+          "reviewer_name" : "Mary",
+          "comments" : "Desireé apartment is so centrally - ideal location! \nThe apartment is a real home from home & has everything you need.\nDesireé is a super host, very easy to checkin & out. \nWe loved our stay here & didn’t want to leave. :)"
+      }, 
+      {
+          "_id" : "403458039",
+          "date" : ISODate("2019-01-20T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "176191120",
+          "reviewer_name" : "David",
+          "comments" : "My wife and I had a lovely time staying at Desiree’s apartment. Was very close to public transportation to get around the city. Apartment was very clean and comfortable for our stay. Desireé was very prompt in any communication before and during our stay. Highly recommend."
+      }, 
+      {
+          "_id" : "405933232",
+          "date" : ISODate("2019-01-28T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "17795180",
+          "reviewer_name" : "Matthew",
+          "comments" : "This AirBnB is not to be missed! Home was very clean and there were thoughtful touches upon check in. I arrived very late at night and the check in process was quick and easy. The host had amazing and quick responses during my stay - great communication. The apartment has 2 balconies which allow loads of sunlight into the space when the curtains are pulled back. Great location for Ubers, Taxis, walks in the park. I stayed for business and I walked to the CBD within 15 minutes - easy. I will definitely stay again!"
+      }, 
+      {
+          "_id" : "408870752",
+          "date" : ISODate("2019-02-06T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "15652289",
+          "reviewer_name" : "Dave",
+          "comments" : "The moment you enter this Airbnb you realize this is a host who cares.  Chocolate on the coffee table, cold water in the fridge, cereal on the shelf, and roses in the bedroom greeted us.  Nine floors up you can hear the street noise but the bedroom is surprisingly quiet.  The location is near the metro and walkable to the waterfront.  This home and its location were perfect for our 6 night stay.  Would happily return on our next trip to Sydney."
+      }, 
+      {
+          "_id" : "415147375",
+          "date" : ISODate("2019-02-22T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "10933634",
+          "reviewer_name" : "Joyce",
+          "comments" : "This city sized apartment was wonderful.   Very clean, well stocked with most everything you need.   Located around grocery stores, pharmacies, shops, restaurants and bars.  Great location for exploring Sydney,  buses and trains within 5 minutes, walking distance to circular quay. Street noise was remarkably low in the bedroom. The only shortcoming was the internet connection,  very spotty if more than one device was was connected.   We would definitely stay here upon our return to Darlinghurst."
+      }, 
+      {
+          "_id" : "420508856",
+          "date" : ISODate("2019-03-06T05:00:00.000Z"),
+          "listing_id" : "10108388",
+          "reviewer_id" : "35883709",
+          "reviewer_name" : "Joe",
+          "comments" : "I highly recommend Desiree's place to anyone visiting Sydney.  It's convenient, clean, and very comfortable.  Desiree was an outstanding host.  She was communicative, helpful, and went above and beyond.  I hope to return."
+      }
+  ]
+}
+
+/* 3 */
+{
+  "_id" : "10109896",
+  "listing_url" : "https://www.airbnb.com/rooms/10109896",
+  "name" : "THE Place to See Sydney's FIREWORKS",
+  "summary" : "The ultimate way to experience Sydney Harbour; fireworks, the bridge, and the proximity to the city means you can experience everything this city has to offer.  Tucked into the Balmain Peninsula, you're close to parks, pubs, shops, buses, and more!",
+  "space" : "An entertainer's retreat!!  Views of the Sydney Harbour are unparalleled, the house is spacious and modern, the neighbourhood is friendly.  Your bedroom opens out onto a grassy backyard with views of the city and features your own en suite bathroom with shower.",
+  "description" : "The ultimate way to experience Sydney Harbour; fireworks, the bridge, and the proximity to the city means you can experience everything this city has to offer.  Tucked into the Balmain Peninsula, you're close to parks, pubs, shops, buses, and more! An entertainer's retreat!!  Views of the Sydney Harbour are unparalleled, the house is spacious and modern, the neighbourhood is friendly.  Your bedroom opens out onto a grassy backyard with views of the city and features your own en suite bathroom with shower. You'll access all areas except the master bedroom and spare bedrooms, this means the guest room with en suite, garden, kitchen, living, laundry, pantry, and powder room are all yours. We're just a phone call away to assist you with any questions or features of the house, there are many! We're 5 minutes from the bus stops (to the city or to the Balmain East ferry), 4 minutes to a park with tennis courts, and 2 minutes to an iconic Balmain pub, the Bald Rock Hotel.  The grocery store, b",
+  "neighborhood_overview" : "We're 5 minutes from the bus stops (to the city or to the Balmain East ferry), 4 minutes to a park with tennis courts, and 2 minutes to an iconic Balmain pub, the Bald Rock Hotel.  The grocery store, bottle shops, and Darling St boutiques/shops are about 10-15 minutes walk depending on how fast you move :)",
+  "notes" : "We live with our stud dog, and our son; we won't be here during your stay, but if you're allergic to dogs or babies, best to pick another place. :)",
+  "transit" : "Parking is available on the street in front or behind the house.  Buses come every few minutes, in less than 15 minutes you're in the heart of Sydney (QVB in CBD), or take one in the opposite direction and you can hop on a ferry from Balmain East wharf to Circular Quay or Darling Harbour, and experience all the sites Sydney has to offer (Opera House, Luna Park, Barangaroo, Milson's Point, etc.)",
+  "access" : "You'll access all areas except the master bedroom and spare bedrooms, this means the guest room with en suite, garden, kitchen, living, laundry, pantry, and powder room are all yours.",
+  "interaction" : "We're just a phone call away to assist you with any questions or features of the house, there are many!",
+  "house_rules" : "Treat our home in the way you'd expect yours to be looked after.  Be courteous of our neighbours, and our belongings; they may be material but they hold lots of memories for us.  This is our home, not a hotel, please treat it as such.  Rest assured we are in hospitality so you'll be taken care of as best we know how!",
+  "property_type" : "House",
+  "room_type" : "Entire home/apt",
+  "bed_type" : "Real Bed",
+  "minimum_nights" : "2",
+  "maximum_nights" : "1125",
+  "cancellation_policy" : "moderate",
+  "last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "calendar_last_scraped" : ISODate("2019-03-07T05:00:00.000Z"),
+  "accommodates" : 2,
+  "bedrooms" : 1,
+  "beds" : 1,
+  "number_of_reviews" : 0,
+  "bathrooms" : NumberDecimal("2.5"),
+  "amenities" : [ 
+      "TV", 
+      "Cable TV", 
+      "Wifi", 
+      "Air conditioning", 
+      "Kitchen", 
+      "Buzzer/wireless intercom", 
+      "Heating", 
+      "Family/kid friendly", 
+      "Washer", 
+      "Dryer", 
+      "Smoke detector", 
+      "Essentials", 
+      "Shampoo", 
+      "Hangers", 
+      "Hair dryer", 
+      "Iron", 
+      "Laptop friendly workspace"
+  ],
+  "price" : NumberDecimal("250.00"),
+  "security_deposit" : NumberDecimal("400.00"),
+  "cleaning_fee" : NumberDecimal("150.00"),
+  "extra_people" : NumberDecimal("0.00"),
+  "guests_included" : NumberDecimal("1"),
+  "images" : {
+      "thumbnail_url" : "",
+      "medium_url" : "",
+      "picture_url" : "https://a0.muscache.com/im/pictures/aca46512-3f26-432e-8114-e13fa5707217.jpg?aki_policy=large",
+      "xl_picture_url" : ""
+  },
+  "host" : {
+      "host_id" : "6517277",
+      "host_url" : "https://www.airbnb.com/users/show/6517277",
+      "host_name" : "Kristin",
+      "host_location" : "Sydney, New South Wales, Australia",
+      "host_about" : "",
+      "host_thumbnail_url" : "https://a0.muscache.com/im/pictures/a304162e-015b-4e94-a891-84c4355fad39.jpg?aki_policy=profile_small",
+      "host_picture_url" : "https://a0.muscache.com/im/pictures/a304162e-015b-4e94-a891-84c4355fad39.jpg?aki_policy=profile_x_medium",
+      "host_neighbourhood" : "Lilyfield/Rozelle",
+      "host_is_superhost" : false,
+      "host_has_profile_pic" : true,
+      "host_identity_verified" : false,
+      "host_listings_count" : 1,
+      "host_total_listings_count" : 1,
+      "host_verifications" : [ 
+          "email", 
+          "phone", 
+          "reviews", 
+          "jumio", 
+          "offline_government_id", 
+          "government_id"
+      ]
+  },
+  "address" : {
+      "street" : "Rozelle, NSW, Australia",
+      "suburb" : "Lilyfield/Rozelle",
+      "government_area" : "Leichhardt",
+      "market" : "Sydney",
+      "country" : "Australia",
+      "country_code" : "AU",
+      "location" : {
+          "type" : "Point",
+          "coordinates" : [ 
+              151.17956, 
+              -33.86296
+          ],
+          "is_location_exact" : true
+      }
+  },
+  "availability" : {
+      "availability_30" : 0,
+      "availability_60" : 0,
+      "availability_90" : 0,
+      "availability_365" : 0
+  },
+  "review_scores" : {},
+  "reviews" : []
+}
