@@ -22,3 +22,42 @@
     
     
 }
+// layout helpers 
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+
+//   Others
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
