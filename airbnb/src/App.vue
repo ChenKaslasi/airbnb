@@ -1,46 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <!-- <space-header></space-header> -->
-      <h1>hi its me</h1>
+    <space-header />
+    <main>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-      <!-- <space-footer></space-footer> -->
-    </div>
-    <router-view />
+      <router-view />
+    </main>
+    <space-footer />
   </div>
 </template>
 
 <script>
-// import spaceHeader from "@/cmps/space-header.vue";
-// import spaceFooter from "@/cmps/space-footer.vue";
+import spaceHeader from "@/cmps/space-header.cmp.vue";
+import spaceFooter from "@/cmps/space-footer.cmp.vue";
 
 export default {
   components: {
-    // spaceHeader,
-    // spaceFooter,
+    spaceHeader,
+    spaceFooter,
   },
 };
 </script>
 
 <style lang="scss">
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
