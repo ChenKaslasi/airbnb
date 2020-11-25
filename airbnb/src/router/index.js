@@ -17,7 +17,7 @@ const routes = [
     component: spaceList,
   },
   {
-    path: '/:city:id',
+    path: '/:city/:id',
     component: spaceDetails,
   }
 ]
