@@ -1,5 +1,7 @@
 <template>
-  <h1>reviewssss</h1>
+  <section class="review-container">
+    <h1>reviews here</h1>
+  </section>
 </template>
 
 <script>
