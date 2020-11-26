@@ -3,7 +3,7 @@
     <h1>Stays in {{ filterBy }}</h1>
     <section class="card-container">
       <ul>
-        <li v-for="space in getSpaces" :key="space._id">
+        <li class="card" v-for="space in getSpaces" :key="space._id">
           <space-preview :space="space"></space-preview>
         </li>
       </ul>
