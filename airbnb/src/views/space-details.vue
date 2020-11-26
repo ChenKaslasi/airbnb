@@ -7,7 +7,7 @@
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
         <!-- <details-calendar /> -->
-        <details-review />
+        <details-review :reviews="currSpace.reviews" />
       </section>
       <section class="checkout-card">
         <h1>checkout card cmp</h1>
@@ -35,7 +35,7 @@ export default {
     detailsSummery,
     detailsDescription,
     detailsAmenity,
-    // detailsCalendar
+    // detailsCalendar,
     detailsReview
   },
   data() {
