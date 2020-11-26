@@ -10,7 +10,7 @@
         <details-review :reviews="currSpace.reviews" />
       </section>
       <section class="checkout-card">
-        <h1>checkout card cmp</h1>
+        <details-checkout :space="currSpace" />
       </section>
     </section>
 
@@ -28,6 +28,7 @@ import detailsDescription from "../cmps/details-description.vue";
 import detailsAmenity from "../cmps/details-amenity.cmp.vue";
 import detailsCalendar from "../cmps/details-calendar.cmp.vue";
 import detailsReview from "../cmps/details-review.cmp.vue";
+import detailsCheckout from "../cmps/details-checkout.cmp.vue";
 
 export default {
   components: {
@@ -36,7 +37,8 @@ export default {
     detailsDescription,
     detailsAmenity,
     detailsCalendar,
-    detailsReview
+    detailsReview,
+    detailsCheckout
   },
   data() {
     return {
