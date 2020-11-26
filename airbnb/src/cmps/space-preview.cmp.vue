@@ -1,11 +1,12 @@
 <template>
-  <section class="space-preview">
-      <img class="ratio-square" :src="space.imgs[0]" alt="" />
-      <div>{{ space.roomType }} · {{ space.address.city }}</div>
-      <div>{{ space.name }}</div>
-      <div>
-        <span>{{ space.price }}$</span> /night
-      </div>
+  <section class="space-preview card">
+    <img :src="space.imgs[0]" alt="" />
+    <div>󰀄 {{ spaceRate }}</div>
+    <div>{{ space.roomType }} · {{ space.address.city }}</div>
+    <div>{{ space.name }}</div>
+    <div>
+      <span>{{ space.price }}$</span> /night
+    </div>
   </section>
 </template>
 
@@ -14,7 +15,11 @@ export default {
   props: {
     space: Object,
   },
-  computed: {},
+  computed: {
+    spaceRate() {
+      return this.space.reviewScores.rating / 2;
+    },
+  },
 };
 </script>
 

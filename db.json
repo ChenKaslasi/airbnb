@@ -279,14 +279,14 @@
           }
         }
       },
-      "review_scores": {
+      "reviewScores": {
         "accuracy": 6,
         "cleanliness": 7,
         "checkin": 9,
         "communication": 9,
         "location": 6,
         "value": 5,
-        "rating": 54
+        "rating": 7
       },
       "reviews": [
         {
@@ -395,14 +395,14 @@
           "lng": 2.17935
         }
       },
-      "review_scores": {
-        "review_scores_accuracy": 10,
-        "review_scores_cleanliness": 10,
-        "review_scores_checkin": 10,
-        "review_scores_communication": 10,
-        "review_scores_location": 9,
-        "review_scores_value": 9,
-        "review_scores_rating": 98
+      "reviewScores": {
+        "accuracy": 10,
+        "cleanliness": 10,
+        "checkin": 10,
+        "communication": 10,
+        "location": 9,
+        "value": 9,
+        "rating": 9
       },
       "reviews": [
         {
@@ -525,7 +525,7 @@
         "communication": 10,
         "location": 8,
         "value": 8,
-        "rating": 100
+        "rating": 9
       },
       "reviews": [
         {
@@ -594,14 +594,14 @@
           "lng": 40.79962
         }
       },
-      "review_scores": {
+      "reviewScores": {
         "accuracy": 10,
         "cleanliness": 9,
         "checkin": 10,
         "communication": 10,
         "location": 10,
         "value": 10,
-        "rating": 94
+        "rating": 9
       },
       "reviews": [
         {
@@ -675,9 +675,6 @@
           "txt": "Greta was very welcoming and helpful. Prompt email communication.\r\n\r\nA great stay for those in town to see Broadway shows, shopping or sight seeing the West Side. A few minutes walking and I was in Central Park.\r\n\r\nA definite recommendation."
         }
       ]
-    },
-    {
-      "_id": "x7mPGpR"
     }
   ]
 }
