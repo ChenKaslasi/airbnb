@@ -6,7 +6,7 @@
         <details-summery :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
-        <!-- <details-calendar /> -->
+        <details-calendar />
         <details-review :reviews="currSpace.reviews" />
       </section>
       <section class="checkout-card">
@@ -26,7 +26,7 @@ import gallery from "../cmps/space-gallery.cmp";
 import detailsSummery from "../cmps/details-summery.vue";
 import detailsDescription from "../cmps/details-description.vue";
 import detailsAmenity from "../cmps/details-amenity.cmp.vue";
-// import detailsCalendar from "../cmps/details-calendar.cmp.vue";
+import detailsCalendar from "../cmps/details-calendar.cmp.vue";
 import detailsReview from "../cmps/details-review.cmp.vue";
 
 export default {
@@ -35,7 +35,7 @@ export default {
     detailsSummery,
     detailsDescription,
     detailsAmenity,
-    // detailsCalendar,
+    detailsCalendar,
     detailsReview
   },
   data() {
@@ -44,8 +44,8 @@ export default {
     };
   },
   created() {
-    // const spaceId = this.$route.params.id;
-    const spaceId = 1001265;
+    const spaceId = this.$route.params.id;
+    // const spaceId = 1001265;
     spaceService.getById(spaceId).then((space) => (this.currSpace = space));
   },
 };
