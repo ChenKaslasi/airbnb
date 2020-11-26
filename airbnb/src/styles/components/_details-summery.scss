@@ -1,0 +1,12 @@
+.details-summery {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-color: lightgreen;
+  .text {
+    flex: 1;
+  }
+
+  .thumbnail img{
+    border-radius: 50%;
+  }
+}
