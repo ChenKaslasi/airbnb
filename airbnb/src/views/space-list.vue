@@ -2,9 +2,12 @@
   <section class="space-list" v-if="filterBy">
     <h1>Stays in {{ filterBy }}</h1>
     <section>
-      <ul  class="card-container">
+      <ul class="card-container">
         <li v-for="space in getSpaces" :key="space._id">
-          <space-preview :space="space"></space-preview>
+          <space-preview
+            :space="space"
+            @click.native="spaceClicked(space._id)"
+          ></space-preview>
         </li>
       </ul>
     </section>
@@ -31,6 +34,11 @@ export default {
   computed: {
     getSpaces() {
       return this.$store.getters.spacesForDisplay;
+    },
+  },
+  methods: {
+    spaceClicked(id) {
+      this.$router.push(`/${this.filterBy}/${id}`);
     },
   },
 };

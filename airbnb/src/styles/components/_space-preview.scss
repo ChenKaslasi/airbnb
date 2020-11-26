@@ -1,23 +1,41 @@
 .space-preview.card {
-    font-size: rem(14px);
-    font-weight: 400;
-    line-height: rem(20px);
-    letter-spacing: 0.5px;
-    color: #484848;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: rem(10px);
+    // font-size: rem(14px);
+    // font-weight: 400;
+    // line-height: rem(20px);
+    // letter-spacing: 0.3px;
+    // color: #484848;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // padding: rem(10px);
     img {
         width: 100%;
-        border-radius: 10px;
+        object-fit: cover;
+        @include aspect-ratio(150, 300);
+        margin-bottom: em(10px, 14px);
     }
-    span.star{
-    color: #ff385c;
+    span.star {
+        color: #ff385c;
     }
-    span.price{
+    span.price {
         font-weight: 800;
         color: #222222;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    .carousel{
+        border-radius: 10px;
+    }
+    // .el-carousel__indicators--horizontal{
+    //     background-color: red;
+    //     padding: 10px;
+    // }
+    // .el-carousel__indicator--horizontal{
+
+    // }
+    .el-carousel__button{
+        color: red;
     }
 }
