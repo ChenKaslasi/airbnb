@@ -7,7 +7,7 @@
             <img :src="review.by.img" />
             <div class="header-txt">
               <p class="reviewer-name">{{ review.by.name }}</p>
-              <p class="reviewer-date">{{dateForDisplay}}</p>
+              <p class="reviewer-date">{{ dateForDisplay }}</p>
             </div>
           </div>
           <p class="review-txt">{{ review.txt }}</p>
@@ -29,8 +29,8 @@ export default {
       var day = dateObj.getUTCDate();
       var year = dateObj.getUTCFullYear();
 
-       var newdate = year + "/" + month + "/" + day;
-       return newdate
+      var newdate = year + "/" + month + "/" + day;
+      return newdate;
     },
   },
 };
@@ -51,7 +51,7 @@ export default {
       color: #222222;
       text-align: start;
       margin: 40px;
-      width: 400px;
+      width: 500px; //later media query it
       object-fit: contain;
 
       & img {
