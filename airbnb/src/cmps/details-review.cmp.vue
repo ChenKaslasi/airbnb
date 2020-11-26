@@ -7,7 +7,7 @@
 <script>
 export default {
 props: {
-    reviews: Object,
+    reviews: Array,
   },
 }
 </script>

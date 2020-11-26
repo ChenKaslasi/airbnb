@@ -35,7 +35,7 @@ export default {
     detailsSummery,
     detailsDescription,
     detailsAmenity,
-    // detailsCalendar
+    // detailsCalendar,
     detailsReview
   },
   data() {
