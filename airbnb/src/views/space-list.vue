@@ -1,8 +1,8 @@
 <template>
   <section class="space-list" v-if="filterBy">
     <h1>Stays in {{ filterBy }}</h1>
-    <section class="card-container">
-      <ul>
+    <section>
+      <ul  class="card-container">
         <li v-for="space in getSpaces" :key="space._id">
           <space-preview :space="space"></space-preview>
         </li>
