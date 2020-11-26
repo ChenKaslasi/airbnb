@@ -1,11 +1,12 @@
 <template>
   <section class="space-preview card">
     <img :src="space.imgs[0]" alt="" />
-    <div>󰀄 {{ spaceRate }}</div>
+    <div><span class="star">󰀄</span> {{ spaceRate }}
     <div>{{ space.roomType }} · {{ space.address.city }}</div>
     <div>{{ space.name }}</div>
     <div>
-      <span>{{ space.price }}$</span> /night
+      <span class="price">{{ space.price }}$</span> /night
+    </div>
     </div>
   </section>
 </template>

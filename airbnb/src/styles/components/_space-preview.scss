@@ -1,4 +1,9 @@
 .space-preview.card {
+    font-size: rem(14px);
+    font-weight: 400;
+    line-height: rem(20px);
+    letter-spacing: 0.5px;
+    color: #484848;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,5 +12,12 @@
     img {
         width: 100%;
         border-radius: 10px;
+    }
+    span.star{
+    color: #ff385c;
+    }
+    span.price{
+        font-weight: 800;
+        color: #222222;
     }
 }
