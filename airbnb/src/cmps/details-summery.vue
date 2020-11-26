@@ -1,28 +1,20 @@
 <template>
-  <section class="details-summery flex " v-if="space">
-    <div class="text">
-    <div>
-    {{`${space.roomType} hosted by ${space.host.name}`}}
-    </div>
-    <div>
-    {{`${space.capacity} guests · ${space.spaceType} · ${space.beds} bed · ${space.bathrooms} bath`
-}}
-    </div>
-    </div>
+  <section class="details-summery" v-if="space">
+      <span class="title">{{ `${space.roomType} hosted by ${space.host.name}` }}</span>
+      <span class="info">{{`${space.capacity} guests · ${space.spaceType} · ${space.beds} bed · ${space.bathrooms} bath`}}</span>
     <div class="thumbnail">
-      <img :src="space.host.thumbnail" >
+      <img :src="space.host.profileImg" />
     </div>
   </section>
 </template>
 
 <script>
 export default {
-props: {
+  props: {
     space: Object,
   },
-}
+};
 </script>
 
 <style>
-
 </style>

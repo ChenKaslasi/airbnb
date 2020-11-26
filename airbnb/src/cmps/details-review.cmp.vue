@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .review-container {
+  border-top: 1px solid rgb(221, 221, 221);
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;

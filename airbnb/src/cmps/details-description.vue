@@ -2,7 +2,6 @@
   <section class="details-description">
     <p class="location">{{ space.locationDesc }}</p>
     <h3>The space</h3>
-    <!-- Todo: long text cmp  -->
     <p class="space">{{ textToShow }}</p>
     <a class="read-more" @click="isShowAll = !isShowAll">{{ buttonTxt }}</a>
   </section>

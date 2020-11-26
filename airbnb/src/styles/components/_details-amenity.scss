@@ -1,17 +1,41 @@
-.amenities-container {
+.amenity-container {
+  border-top: 1px solid rgb(221, 221, 221);
+  padding: 48px 0;
 
-  .amenities-list {
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-bottom: 24px;
+  }
 
-    .amenity{
-      
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
-      img {
-        width: 24px;
-      }
-      
-      span{
-        margin-inline-start: 5px;
+    .amenity-list {
+      .amenity {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 24px;
+        }
+
+        span {
+          margin-inline-start: 10px;
+          line-height: 20px;
+        }
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }

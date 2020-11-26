@@ -10,7 +10,8 @@
     },
     methods: {
       handleChange(value) {
-        console.log(value)
+        this.$emit('emitChange',value)
+        // console.log(value)
       }
     }
   };
