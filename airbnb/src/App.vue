@@ -6,7 +6,7 @@
       <router-view />
     </main>
     <space-footer />
-  </div>
+  </div> 
 </template>
 
 <script>

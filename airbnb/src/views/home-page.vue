@@ -2,20 +2,23 @@
   <div class="home">
     <div class="hero">
       <space-filter @filter="setFilter" />
-      <div class="home-container">
-        <div class="location-container">
-          <div
-            class="card"
-            v-for="(img, idx) in imgs"
-            :key="idx"
-            @click="bookLocation(img.title)"
-          >
-            <template>
-              <img :src="img.url" />
-              <h3>{{ img.title }}</h3>
-              <p>Book it NOW!</p>
-            </template>
-          </div>
+      <!-- <h1 class="hero-header">Live Anywhere<span>.</span></h1> -->
+      <h1 class="hero-header">Live</h1>
+      <h1 class="hero-header2">Anywhere<span>.</span></h1>
+    </div>
+    <div class="home-container">
+      <div class="location-container">
+        <div
+          class="card"
+          v-for="(img, idx) in imgs"
+          :key="idx"
+          @click="bookLocation(img.title)"
+        >
+          <template>
+            <img :src="img.url" />
+            <h3>{{ img.title }}</h3>
+            <p>Book it NOW!</p>
+          </template>
         </div>
       </div>
     </div>
@@ -63,17 +66,30 @@ export default {
 </script>
 <style lang="scss" scoped>
 .hero {
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
-  // background-color: lightpink;
-  background-image: url("https://img5.goodfon.com/wallpaper/nbig/c/a5/nature-house-lake-mountains-village-saksun-faroe-islands-arc.jpg  ");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.178)),
+    url("https://img5.goodfon.com/wallpaper/nbig/c/a5/nature-house-lake-mountains-village-saksun-faroe-islands-arc.jpg  ");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  & h1 {
+    margin-left: 3%;
+    color: white;
+    font-size: 6rem;
+    font-weight: 100;
+    padding: 20px;
+    &.hero-header2 {
+      font-weight: 800;
+    }
+  }
+  & span {
+    color: #f05;
+    font-size: 4rem;
+  }
 }
 .card {
-  // border: 2px solid black;
   text-align: start;
   & h3 {
     padding: 10px;
@@ -83,7 +99,7 @@ export default {
   }
 }
 .home-container {
-  margin-top: 10px;
+  margin-top: 20px;
   .location-container {
     display: flex;
     flex-wrap: wrap;

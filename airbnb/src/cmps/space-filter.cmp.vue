@@ -24,7 +24,8 @@
           class="search-btn"
           value="Search"
           @click="emitFilter"
-        />
+         />
+         <!-- <img src="file:///C:/Users/Thomy/Downloads/Vacation%20Rentals,%20Homes,%20Experiences%20&%20Places%20-%20Airbnb-3.svg" /> -->
       </form>
     </div>
   </section>
