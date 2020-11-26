@@ -11,6 +11,8 @@
 
 .ratio-card { @include aspect-ratio(100, 80); }
 
+.ratio-list { @include aspect-ratio(100, 66); }
+
 .ratio-poster { @include aspect-ratio(100, 150); }
 
 .home-container{
