@@ -1,17 +1,19 @@
 <template>
   <section class="gallery-container" v-if="space">
-    <div class="top flex column">
+    <div class="top">
       <h1 class="title">{{space.name}}</h1>
-      <div class="info flex">
+      <div class="info">
         <div class="reviews-summery">
-          <span>󰀄</span>
-          <span>{{space.reviewScores.rating}}</span> 
-          <span>{{`(${space.reviews.length})`}}</span>
+          <span class="star">󰀄</span>
+          <span class="rating" >{{space.reviewScores.rating}}</span> 
+          <span class=""> {{`(${space.reviews.length})`}} </span>
         </div>
         <!-- <div class="super-host" v-if="space.host.isSuperhost"> -->
         <div class="super-host" >
-          <span>󰀃Superhost</span>
+          <span class="super">󰀃</span>
+          <span>Superhost</span>
         </div>
+      <router-link class="cityLink" to="/">{{space.address.street}}</router-link>
       </div>
     </div>
     <div class="gallery-grid " >

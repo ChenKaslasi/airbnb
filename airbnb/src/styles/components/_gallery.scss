@@ -1,13 +1,46 @@
 .gallery-container {
-  padding: 28px 40px 0 40px;
+  padding: 24px 40px 0 40px;
   max-width: 1128px;
 
   .top {
     .title {
       font-size: rem(26px);
+      line-height: 30px;
       display: block;
+      font-weight: 600;
+      
     }
   }
+    .info {
+      line-height:20px;
+      margin-top: 1rem;
+      
+
+      .reviews-summery, .super-host{
+        display: inline-block;
+        margin-inline-end: 8px;
+        font-size: 14px;
+        color:#717171
+      }
+
+      .star, .super {
+        color:#ff385c;
+        font-size: 18px;
+        text-align: start;
+        margin-inline-end: 2px;
+      }
+
+      .rating {
+        font-weight: 600;
+        color: initial;
+      }
+
+      .cityLink {
+        color:#717171;
+        font-weight: 600
+      }
+    } 
+      
 }
 
 .gallery-grid {
@@ -16,6 +49,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 8px 8px;
   max-height: 403.5px;
+  margin-top: 24px;
 
   img {
     width: 100%;

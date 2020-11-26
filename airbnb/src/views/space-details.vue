@@ -1,15 +1,15 @@
 <template>
-  <section class="deails-container ">
+  <section class="details-container">
     <gallery :space = currSpace />
     <!-- <pre>{{currSpace}}</pre> -->
-      <section >
+      <!-- <section >
         <section class="main-content"></section>
         <section class="checkout card"></section>
       </section>
 
       <section class="reviews"></section>
       <section class="host"></section>
-      <section class="more"></section>
+      <section class="more"></section> -->
   </section>
 </template>
 
