@@ -19,13 +19,10 @@
           <option value="5">5 guests</option>
         </select>
 
-        <input
-          type="submit"
+        <button
           class="search-btn"
-          value="Search"
           @click="emitFilter"
-         />
-         <!-- <img src="file:///C:/Users/Thomy/Downloads/Vacation%20Rentals,%20Homes,%20Experiences%20&%20Places%20-%20Airbnb-3.svg" /> -->
+         ><div class="rounder"><img class="search-svg" src='../assets/icons/search_m.svg' /></div></button> 
       </form>
     </div>
   </section>
@@ -48,6 +45,9 @@ export default {
 </script>
 
 <style lang="scss">
+.search-svg{
+  height: 22px;
+}
 .cover {
   // background: #cac1bc;
   // position: sticky;
@@ -71,19 +71,25 @@ input[type="search"] {
 
 .flex-form > * {
   border: 0;
-  padding: 10px;
+  padding: 15px;
   line-height: 50px;
   font-size: 20px;
-  border-radius: 0;
+  // border-radius: 0;
   outline: 0;
-  background: #fff;
-  margin-left: 1px;
+  background: rgb(255, 255, 255);
+  // margin-left: 1px;
 }
 
-.flex-form input[type="submit"] {
+.flex-form .search-btn {
   background: #f05;
   color: white;
+  // padding: 15px;
   border-radius:  0px 30px 30px 0px ;
 
 }
+// .rounder{
+  // background-color: aqua;
+  // padding: 8px;
+  // border-radius:  50% ;
+// }
 </style>
