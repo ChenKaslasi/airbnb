@@ -81,18 +81,15 @@ export default {
   .logo-svg{
     margin-left: 30px;
     margin-top: 10px;
-    // background-color: lawngreen;
     height: 40px !important;
     width: 40px !important;
-    // font-size: 60px !important;
     &:hover{
       cursor: pointer;
     }
   }
   .link-container {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    // background-color: aqua;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -122,7 +119,7 @@ export default {
   & h1 {
     margin-left: 3%;
     color: white;
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: 100;
     padding: 20px;
     &.hero-header2 {

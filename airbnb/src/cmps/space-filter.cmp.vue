@@ -61,11 +61,13 @@ export default {
 .flex-form {
   display: flex;
   // width: 100%;
+  max-width: 1000px;
+  max-height: 75px;
 
 }
 
 input[type="search"] {
-  flex-basis: 350px;
+  flex-basis:inherit;
   border-radius: 30px 0px 0px 30px;
 }
 
