@@ -4,8 +4,6 @@
       <div class="home-nav">
         <div class="logo">
           <img class="logo-svg" src="../assets/icons/logo.home.svg" />
-          <svg viewBox="-1 -1 -1 -1" src="../assets/icons/logo.home.svg"></svg>
-
         </div>
         <div class="link-container">
           <a href="/">Home</a> <a href="/#/Barcelona">Explore</a>
@@ -84,9 +82,9 @@ export default {
     margin-left: 30px;
     margin-top: 10px;
     // background-color: lawngreen;
-    // height: 40px !important;
-    // width: 40px !important;
-    font-size: 60px !important;
+    height: 40px !important;
+    width: 40px !important;
+    // font-size: 60px !important;
     &:hover{
       cursor: pointer;
     }
