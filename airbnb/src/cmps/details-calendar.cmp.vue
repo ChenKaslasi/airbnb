@@ -1,13 +1,16 @@
 <template>
-  <h1>host attributes</h1>
+  
 </template>
 
 <script>
-export default {
 
-}
+
+export default {
+  components: {
+   
+  },
+};
 </script>
 
 <style>
-
 </style>
