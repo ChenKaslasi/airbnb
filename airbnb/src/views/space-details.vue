@@ -6,7 +6,7 @@
         <details-summery :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenities :space="currSpace" />
-        <details-calendar />
+        <!-- <details-calendar /> -->
       </section>
       <section class="checkout-card">
         <h1>checkout card cmp</h1>
@@ -25,7 +25,7 @@ import gallery from "../cmps/space-gallery.cmp";
 import detailsSummery from "../cmps/details-summery.vue";
 import detailsDescription from "../cmps/details-description.vue";
 import detailsAmenities from "../cmps/details-amenities.cmp.vue";
-import detailsCalendar from "../cmps/details-calendar.cmp.vue";
+// import detailsCalendar from "../cmps/details-calendar.cmp.vue";
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     detailsSummery,
     detailsDescription,
     detailsAmenities,
-    detailsCalendar
+    // detailsCalendar
   },
   data() {
     return {
