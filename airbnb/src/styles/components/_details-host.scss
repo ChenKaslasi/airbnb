@@ -1,0 +1,41 @@
+.host-container {
+  .top {
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 48px 0;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "img title title"
+      "img info info";
+
+    align-items: center;
+
+    .thumbnail {
+      grid-area: img;
+      margin-inline-end: 10px;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+
+    .title {
+      grid-area: title;
+      font-size: 22px;
+      line-height: 26px;
+      height: 26px;
+    }
+
+    .info {
+      grid-area: info;
+      font-size: 14px;
+      line-height: 18px;
+      color: #717171;
+    }
+
+  }
+
+  
+}

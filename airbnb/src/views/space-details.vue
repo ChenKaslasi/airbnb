@@ -13,11 +13,10 @@
       </section>
     </section>
 
-    <section class="reviews">
+    <section >
       <details-review :reviews="currSpace.reviews" />
-    </section>
-    <section class="host">
-      
+      <detailsMap :space="currSpace" />
+      <detailsHost :space="currSpace" />
     </section>
   </section>
 </template>
@@ -31,6 +30,8 @@ import detailsAmenity from "../cmps/details-amenity.cmp.vue";
 import detailsCalendar from "../cmps/details-calendar.cmp.vue";
 import detailsReview from "../cmps/details-review.cmp.vue";
 import detailsCheckout from "../cmps/details-checkout.cmp.vue";
+import detailsMap from "../cmps/details-map.cmp.vue";
+import detailsHost from "../cmps/details-host.cmp.vue";
 
 export default {
   components: {
@@ -40,7 +41,9 @@ export default {
     detailsAmenity,
     detailsCalendar,
     detailsReview,
-    detailsCheckout
+    detailsCheckout,
+    detailsMap,
+    detailsHost,
   },
   data() {
     return {
