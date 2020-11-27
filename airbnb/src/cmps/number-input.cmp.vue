@@ -1,18 +1,31 @@
 <template>
-  <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
+  <el-input-number class="input-num"
+    v-model="num"
+    @change="handleChange"
+    :min="1"
+    :max="10"
+  ></el-input-number>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        num: 1
-      };
+export default {
+  data() {
+    return {
+      num: 1,
+    };
+  },
+  methods: {
+    handleChange(value) {
+      this.$emit("emitChange", value);
+      // console.log(value)
     },
-    methods: {
-      handleChange(value) {
-        this.$emit('emitChange',value)
-        // console.log(value)
-      }
-    }
-  };
+  },
+};
 </script>
+<style lang="scss" scoped>
+.input-num{
+  // background-color: blue;
+  button{
+    // background-color: brown;
+  }
+}
+</style>

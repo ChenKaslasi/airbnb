@@ -31,8 +31,24 @@
             {{ guestNum }} guest
           </button>
           <div class="modal" v-if="isShown">
-            <p>Adults: <number-input @emitChange="setGuests" /></p>
-            <p>Children: <number-input @emitChange="setGuests" /></p>
+            <div class="container-btns">
+              <div class="btn-container">
+                <div class="txt">Adults:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">+</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">-</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                <div class="txt">Children:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">+</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">-</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <button class="checkout-btn">Check Availability</button>
@@ -43,7 +59,7 @@
 
 <script>
 import vDatePicker from "v-calendar/lib/components/date-picker.umd";
-import numberInput from "./number-input.cmp.vue";
+// import numberInput from "./number-input.cmp.vue";
 
 // import moment from 'moment';
 export default {
@@ -76,32 +92,69 @@ export default {
       this.isShown = !this.isShown;
     },
     setGuests(value) {
-      this.guestNum = value;
+      this.guestNum += value;
       console.log(this.guestNum);
     },
   },
   components: {
     vDatePicker,
-    numberInput,
+    // numberInput,
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .modal {
-  margin: 0 auto;
-  width: 100%;
-  border: 1px solid #717171;
   position: absolute;
-  z-index: 11;
-  top: 140px;
-  left: 0;
-  right: 0;
-  padding: 8px 24px;
-  border: 1px solid #484848;
-  border-radius: 8px;
   background-color: #fff;
+  // top: 0;
+  border: 1px solid #717171;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  .container-btns {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 20;
+
+    .txt {
+      display: flex;
+    }
+    .btns {
+      display: flex;
+      p {
+        margin: 0px 8px;
+      }
+    }
+  }
+  .btn-container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 2px;
+  }
+  .guest-num {
+    display: flex;
+    line-height: 1;
+  }
+  .guest-btn {
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    color: #ddd;
+    background-color: #fff;
+    padding: 3px;
+    height: 24px;
+    width: 24px;
+  }
 }
+.btn-container:nth-last-child(even) {
+  border-bottom: 1px solid #717171;
+}
+
 .guest-modal-btn {
   border: none;
   background-color: transparent;
@@ -119,9 +172,9 @@ export default {
 }
 .checkout-container {
   margin: 0 auto;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
-  // border: 1px solid rgb(221, 221, 221);
   border: none;
   height: 100%;
 
@@ -134,14 +187,13 @@ export default {
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     width: 85%;
-    height: 250px;
+    height: 310px; //height?
     border: none;
     .checkout-header {
       display: flex;
       justify-content: space-between;
       padding-bottom: 8px;
       margin: 5px;
-      // background-color: green;
       .price {
         font-weight: 600;
         font-size: 1.2rem;
@@ -159,6 +211,7 @@ export default {
       }
     }
     .checkout-btn {
+      // position: absolute;
       margin-top: 20px;
       color: #ffffff;
       width: 100%;

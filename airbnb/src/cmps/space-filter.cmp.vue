@@ -4,7 +4,7 @@
       <form class="flex-form">
         <input
           type="search"
-          placeholder="Where do you wanna go?"
+          placeholder="Where To?"
           v-model="filterBy"
         />
         <label class="label-search" for="from">From</label>
@@ -77,6 +77,7 @@ input[type="search"] {
   line-height: 50px;
   font-size: 20px;
   // border-radius: 0;
+  font-family: Circular;
   outline: 0;
   background: rgb(255, 255, 255);
   // margin-left: 1px;
