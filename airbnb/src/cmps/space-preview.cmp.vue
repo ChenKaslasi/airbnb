@@ -8,7 +8,7 @@
       </el-carousel>
     </div>
     <div>
-      <span class="star">󰀄</span> {{ spaceRate }}
+      <span class="star">󰀄</span> {{ spaceRate }} <span class="reviews-count">({{ numOfReviewers }})</span>
       <div>{{ space.roomType }} · {{ space.address.city }}</div>
       <div>{{ spaceName }}</div>
       <div>
@@ -29,10 +29,12 @@ export default {
       if (txt.length > 30) {
         return txt.substring(0, 25) + "...";
       } else return txt;
-      //  return txt
     },
     spaceRate() {
       return this.space.reviewScores.rating / 2;
+    },
+    numOfReviewers() {
+      return this.space.reviews.length;
     },
   },
 };

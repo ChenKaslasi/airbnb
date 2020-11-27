@@ -541,7 +541,7 @@
       ]
     },
     {
-      "id": "1003530",
+      "_id": "1003530",
       "name": "New York City - Upper West Side Apt",
       "listing_url": "https://www.airbnb.com/rooms/1003530",
       "locationDesc": "Murphy bed, optional second bedroom available. Wifi available, Hulu, Netflix, TV Eat-in kitchen. Bathroom with great shower/bath.  Washer/dryer in basement.",
@@ -665,7 +665,7 @@
           "txt": "Hi Greta,\r\nyou have a wonderful place. We had a great time an felt really comfortable - little bit like beeing home in NY :)\r\nEverything worked out pretty good, also the connection to La Guardia Airport was perfect.\r\n\r\nThanks again :)\r\n"
         },
         {
-          "_id": "7464858",
+          "id": "7464858",
           "date": "2013-09-21T04:00:00.000Z",
           "by": {
             "id": "8543724",
