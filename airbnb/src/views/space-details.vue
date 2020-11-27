@@ -1,5 +1,5 @@
 <template>
-  <section class="details-container " v-if="currSpace">
+  <section class="details-container main-layout" v-if="currSpace">
     <gallery :space="currSpace" />
     <section class="flex ">
       <section class="main-content">

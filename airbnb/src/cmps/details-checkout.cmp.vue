@@ -82,8 +82,8 @@ export default {
   border-radius:8px;
 }
 .input-container {
-  // border: 1px solid #717171;
-  border-radius: 8px;
+  border-bottom: 1px solid #717171;
+  border-radius: 8px 8px 0px 0px ; 
   padding: 3px;
   .start-date {
     margin: 0;
@@ -140,7 +140,7 @@ export default {
     border-radius: 12px;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    width: 50%;
+    width: 85%;
     height: 15%;
     .checkout-btn {
       margin-top: 20px;
