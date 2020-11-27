@@ -1,6 +1,8 @@
 <template>
-  <section class="space-header">
-    <h1>Header here!</h1>
+  <section class="header-container main-layout">
+    <div class="content flex align-center">
+    </div>
+
   </section>
 </template>
 

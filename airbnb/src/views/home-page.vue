@@ -109,7 +109,7 @@ export default {
 }
 .hero {
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.178)),
     url("https://img5.goodfon.com/wallpaper/nbig/c/a5/nature-house-lake-mountains-village-saksun-faroe-islands-arc.jpg  ");
   background-position: center;

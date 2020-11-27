@@ -1,45 +1,45 @@
 .host-container {
-  .left {
-    .top {
-      border-top: 1px solid rgb(221, 221, 221);
-      padding: 48px 0 24px 0;
-      display: grid;
-      grid-template-columns: 60px 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "img title title"
-        "img info info";
+  border-top: 1px solid rgb(221, 221, 221);
+  padding-bottom: 48px;
+  .top {
+    padding: 48px 0 24px 0;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "img title title"
+      "img info info";
+    align-items: center;
 
-      align-items: center;
+    .thumbnail {
+      grid-area: img;
+      margin-inline-end: 10px;
 
-      .thumbnail {
-        grid-area: img;
-        margin-inline-end: 10px;
-
-        img {
-          border-radius: 50%;
-          width: 100%;
-        }
+      img {
+        border-radius: 50%;
+        width: 100%;
       }
-
-      .title {
-        grid-area: title;
-        font-size: 22px;
-        line-height: 26px;
-        height: 26px;
-      }
-
-      .info {
-        grid-area: info;
-        font-size: 14px;
-        line-height: 18px;
-        color: #717171;
-      }
-
     }
 
-    .content {
+    .title {
+      grid-area: title;
+      font-size: 22px;
+      line-height: 26px;
+      height: 26px;
+    }
 
+    .info {
+      grid-area: info;
+      font-size: 14px;
+      line-height: 18px;
+      color: #717171;
+    }
+
+  }
+
+  .content {
+    .left {
+      padding-inline-end: 60px ;
       .icons {
         .reviews {
           .star {
@@ -49,26 +49,26 @@
             margin-inline-end: 2px;
           }
         }
-
+  
         .identity {
           margin: 0 12px;
-
+  
           img {
             width: 18px;
             padding-inline-end: 3px;
           }
         }
       }
-
+  
       .text {
         padding-top: 30px;
         line-height: 24px;
-
+        max-width: 50ch;
       }
     }
-
-    .right {
-      
+    .right >* {
+      line-height: 20px;
+      margin-bottom: 8px;
     }
   }
 }
