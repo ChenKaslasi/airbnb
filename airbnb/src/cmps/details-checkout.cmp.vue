@@ -2,7 +2,14 @@
   <section class="checkout-container">
     <div class="checkout-card">
       <section v-if="space">
-        ${{ space.price }}/ night
+        <div class="checkout-header flex">
+          <h3 class="price">${{ space.price }}<span> / night</span></h3>
+          <div>
+            <span class="star">󰀄</span>
+            <span class="rating">{{ ratingForDisplay }}</span>
+            <span class=""> {{ `(${space.reviews.length})` }} </span>
+          </div>
+        </div>
         <div class="checkout-select">
           <v-date-picker v-model="range" is-range>
             <template v-slot="{ inputValue, inputEvents }">
@@ -25,6 +32,7 @@
           </button>
           <div class="modal" v-if="isShown">
             <p>Adults: <number-input @emitChange="setGuests" /></p>
+            <p>Children: <number-input @emitChange="setGuests" /></p>
           </div>
         </div>
         <button class="checkout-btn">Check Availability</button>
@@ -59,6 +67,9 @@ export default {
     priceForDisplay() {
       return this.space.price * this.night;
     },
+    ratingForDisplay() {
+      return this.space.reviewScores.rating / 2;
+    },
   },
   methods: {
     guestModal() {
@@ -77,33 +88,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.checkout-select {
-  border: 1px solid #717171;
-  border-radius:8px;
-}
-.input-container {
-  border-bottom: 1px solid #717171;
-  border-radius: 8px 8px 0px 0px ; 
-  padding: 3px;
-  .start-date {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    padding: 10px;
-    border-right: 1px solid #717171;
-  }
-  .end-date {
-    padding: 10px;
-    width: 100%;
-    border: none;
-  }
-}
 .modal {
+  margin: 0 auto;
+  width: 100%;
   border: 1px solid #717171;
   position: absolute;
   z-index: 11;
-  top: 110px;
+  top: 140px;
   left: 0;
   right: 0;
   padding: 8px 24px;
@@ -126,29 +117,54 @@ export default {
   outline: none;
   width: 100%;
 }
-
 .checkout-container {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(221, 221, 221);
+  // border: 1px solid rgb(221, 221, 221);
+  border: none;
   height: 100%;
+
   .checkout-card {
     position: sticky;
+    top: 0;
     margin: 0 auto;
-    // display: flex;
+    display: flex;
     border-radius: 12px;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
     width: 85%;
-    height: 15%;
+    height: 250px;
+    border: none;
+    .checkout-header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      margin: 5px;
+      // background-color: green;
+      .price {
+        font-weight: 600;
+        font-size: 1.2rem;
+        span {
+          font-size: 0.925rem;
+          font-weight: 400;
+          color: #717171;
+        }
+      }
+      .star {
+        color: #ff385c;
+        font-size: 18px;
+        text-align: start;
+        margin-inline-end: 2px;
+      }
+    }
     .checkout-btn {
       margin-top: 20px;
       color: #ffffff;
       width: 100%;
       line-height: 20px !important;
       font-weight: 600 !important;
-      font-size: 1rem;
+      font-size: rem(16px);
       background-image: radial-gradient(
         circle at center center,
         rgb(255, 56, 92) 0%,
@@ -165,6 +181,28 @@ export default {
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+  .checkout-select {
+    border: 1px solid #717171;
+    border-radius: 8px;
+  }
+  .input-container {
+    border-bottom: 1px solid #717171;
+    border-radius: 8px 8px 0px 0px;
+    padding: 3px;
+    .start-date {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 10px;
+      border-right: 1px solid #717171;
+    }
+    .end-date {
+      padding: 10px;
+      width: 100%;
+      border: none;
     }
   }
 }

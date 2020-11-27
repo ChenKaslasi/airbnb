@@ -5,7 +5,7 @@
       <div class="info">
         <div class="reviews-summery">
           <span class="star">󰀄</span>
-          <span class="rating" >{{space.reviewScores.rating}}</span> 
+          <span class="rating" >{{ratingForDisplay}}</span> 
           <span class=""> {{`(${space.reviews.length})`}} </span>
         </div>
         <div class="super-host" >
@@ -40,6 +40,11 @@ export default {
 props: {
     space: Object,
   },
+  computed:{
+    ratingForDisplay(){
+      return (this.space.reviewScores.rating)/2
+    }
+  }
 }
 </script>
   
