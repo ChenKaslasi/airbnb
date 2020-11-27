@@ -1,5 +1,5 @@
 <template>
-  <section class="space-list main-layout" v-if="filterBy">
+  <section class="space-list main-layout main-content" v-if="filterBy">
     <h1>Stays in {{ filterBy }}</h1>
     <section>
       <ul class="card-container">
