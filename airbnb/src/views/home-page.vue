@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <div class="hero">
+  <div class="home main-layout">
+    <div class="hero full">
       <div class="home-nav">
         <div class="logo">
           <img class="logo-svg" src="../assets/icons/logo.home.svg" />

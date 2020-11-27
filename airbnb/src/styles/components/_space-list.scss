@@ -1,22 +1,22 @@
 .space-list {
-    *{
+    * {
         box-sizing: border-box;
     }
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns:
-        minmax(2rem, 1fr)
-        minmax(auto, 1250px)
-        minmax(2rem, 1fr);
+    // margin-top: 50px;
+    // display: grid;
+    // grid-template-columns:
+    //     minmax(2rem, 1fr)
+    //     minmax(auto, 1250px)
+    //     minmax(2rem, 1fr);
+    // > * {
+    //     grid-column: 2;
+    // }
     h1 {
         font-weight: 800;
         font-size: rem(32px);
         line-height: rem(36px);
         color: #222222;
         margin-bottom: em(30px, 32px);
-    }
-    > * {
-        grid-column: 2;
     }
     .card-container {
         display: grid;
