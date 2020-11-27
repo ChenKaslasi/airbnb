@@ -37,5 +37,19 @@
 
   }
 
-  
+  .content {
+    .reviews {
+      .star {
+        color: #ff385c;
+        font-size: 18px;
+        text-align: start;
+        margin-inline-end: 2px;
+      }
+    }
+    .identity{
+      img{
+        width: 18px;
+      }
+    }
+  }
 }
