@@ -28,7 +28,7 @@ export default {
       if (!this.isShowAll) {
         return "Read more...";
       } else {
-        return "Read Less";
+        return "Read Less...";
       }
     },
   },
