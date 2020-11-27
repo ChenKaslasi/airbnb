@@ -191,13 +191,10 @@
         "city": "Barcelona",
         "country": "Spain",
         "country_code": "ES",
-        "location": {
-          "type": "Point",
           "coordinates": {
             "lat": 41.40082,
             "lng": 2.16942
           }
-        }
       },
       "reviewScores": {
         "accuracy": 6,

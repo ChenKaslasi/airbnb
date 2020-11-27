@@ -8,7 +8,6 @@
           <span class="rating" >{{space.reviewScores.rating}}</span> 
           <span class=""> {{`(${space.reviews.length})`}} </span>
         </div>
-        <!-- <div class="super-host" v-if="space.host.isSuperhost"> -->
         <div class="super-host" >
           <span class="super">󰀃</span>
           <span>Superhost</span>
