@@ -1,22 +1,24 @@
 <template>
   <section class="details-container " v-if="currSpace">
     <gallery :space="currSpace" />
-    <section class="flex">
+    <section class="flex ">
       <section class="main-content">
         <details-summery :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
         <details-calendar :space="currSpace"/>
-        <details-review :reviews="currSpace.reviews" />
       </section>
       <section class="checkout-card">
         <details-checkout :space="currSpace" />
       </section>
     </section>
 
-    <section class="reviews"></section>
-    <section class="host"></section>
-    <section class="more"></section>
+    <section class="reviews">
+      <details-review :reviews="currSpace.reviews" />
+    </section>
+    <section class="host">
+      
+    </section>
   </section>
 </template>
 
