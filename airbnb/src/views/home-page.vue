@@ -1,15 +1,6 @@
 <template>
   <div class="home main-layout">
     <div class="hero full">
-      <div class="home-nav">
-        <div class="logo">
-          <img class="logo-svg" src="../assets/icons/logo.home.svg" />
-        </div>
-        <div class="link-container">
-          <a href="/">Home</a> <a href="/#/Barcelona">Explore</a>
-          <a href="/#/Barcelona">Become a Host</a>
-        </div>
-      </div>
       <space-filter @filter="setFilter" />
       <!-- <h1 class="hero-header">Live Anywhere<span>.</span></h1> -->
       <h1 class="hero-header">Live</h1>
@@ -74,39 +65,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.home-nav {
-  color: #ffffff;
-  display: flex;
-  // background-color: #f65;
-  .logo-svg{
-    margin-left: 30px;
-    margin-top: 10px;
-    height: 40px !important;
-    width: 40px !important;
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  .link-container {
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    & a{
-      margin-right: 60px;
-    }
-  }
-
-  & a {
-    color: #ffffff;
-    text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
+.home {
+  // overflow-x: hidden;
 }
+
 .hero {
   height: 80vh;
   width: 100%;

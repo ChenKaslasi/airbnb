@@ -1,7 +1,12 @@
 .header-container {
+  // position: fixed;
+  background-color: lightgreen;
+  height: 10vh;
 
-  .content{
-    height: 10vh;
-    background-color: lightgray;
+  .logo {
+
+    .logo-svg{
+      width: 32px
+    }
   }
 }
