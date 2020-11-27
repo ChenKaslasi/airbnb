@@ -37,23 +37,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ul {
+  width: 450px;
+}
+ul:nth-last-child(even) {
+  margin-right: 120px;
+}
 .review-container {
+  line-height: 20px;
   border-top: 1px solid rgb(221, 221, 221);
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 30px 0px;
   .card-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
     .review-card {
       color: #222222;
       text-align: start;
-      margin: 40px;
-      width: 500px; //later media query it
+      width: 450px; //later media query it
       object-fit: contain;
+      margin-bottom: 30px;
+      
 
       & img {
         vertical-align: middle;
@@ -85,12 +90,5 @@ export default {
 }
 .review-container > * {
   padding: 10px;
-}
-@media (max-width: 1400px) {
-  .review-card {
-    width: 200px;
-    margin: none;
-    // background-color: cadetblue;
-  }
 }
 </style>

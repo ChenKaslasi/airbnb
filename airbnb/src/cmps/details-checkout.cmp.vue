@@ -111,7 +111,6 @@ export default {
   border: 1px solid #717171;
   width: 90%;
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
   .container-btns {
     display: flex;
@@ -171,23 +170,21 @@ export default {
   width: 100%;
 }
 .checkout-container {
-  margin: 0 auto;
   margin-top: 30px;
   align-items: center;
   justify-content: center;
   border: none;
-  height: 100%;
+  height: 95%;
 
   .checkout-card {
     position: sticky;
     top: 0;
-    margin: 0 auto;
     display: flex;
     border-radius: 12px;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    width: 85%;
-    height: 310px; //height?
+    width: 100%;
+    min-height: 290px; //height?
     border: none;
     .checkout-header {
       display: flex;
@@ -212,7 +209,7 @@ export default {
     }
     .checkout-btn {
       // position: absolute;
-      margin-top: 20px;
+      margin-top: 35px;
       color: #ffffff;
       width: 100%;
       line-height: 20px !important;

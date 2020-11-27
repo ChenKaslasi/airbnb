@@ -22,10 +22,4 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.input-num{
-  // background-color: blue;
-  button{
-    // background-color: brown;
-  }
-}
 </style>
