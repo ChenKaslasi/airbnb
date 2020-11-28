@@ -38,10 +38,11 @@ export default {
 
 <style lang="scss" scoped>
 ul {
-  width: 450px;
+  width: 360px;
+  
 }
 ul:nth-last-child(even) {
-  margin-right: 120px;
+  margin-right: 240px;
 }
 .review-container {
   line-height: 20px;

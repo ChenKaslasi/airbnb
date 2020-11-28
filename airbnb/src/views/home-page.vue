@@ -103,21 +103,25 @@ export default {
   }
 }
 .home-container {
-  margin-top: 20px;
+  margin-top: 40px;
   .location-container {
     display: flex;
     flex-wrap: wrap;
     & .card {
       margin: 0 auto;
-      flex-direction: row;
+      margin-bottom: 20px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+      border-radius: 8px;
+      
       & img {
         width: 307px;
         height: 204px;
-        border-radius: 15px;
+        border-radius: 15px 15px 0px 0px;
       }
       & p {
         color: rgb(136, 134, 134);
         padding-left: 10px;
+        padding-bottom: 7px;
       }
       & :hover {
         cursor: pointer;
