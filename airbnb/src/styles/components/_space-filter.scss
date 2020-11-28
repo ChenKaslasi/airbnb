@@ -12,6 +12,7 @@
 
     .box .location{
       border-right: 1px solid black;
+      padding-inline-start: 10px;
     }
     
     .box .dates{
@@ -20,7 +21,8 @@
 
       .box {
         line-height: 16px;
-        font-size: 12px;
+        font-size: 14px;
+        padding: 10px;
         .title {
           font-weight: 600;
           padding-inline-end: 60px;
