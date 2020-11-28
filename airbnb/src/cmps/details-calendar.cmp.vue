@@ -1,7 +1,7 @@
 <template>
   <section class="calender-contianer">
-    <h2>{{getDates}} nights in {{space.address.city}}</h2>
-    <span>{{getStartDate}} - {{getEndDate}}</span>
+    <h2 v-if="space">{{getDates}} nights in {{space.address.city}}</h2>
+    <span v-if="space">{{getStartDate}} - {{getEndDate}}</span>
     
     <picker class="picker"
       v-model="range"

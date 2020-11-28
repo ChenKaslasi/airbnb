@@ -1,0 +1,62 @@
+.filter-container {
+  margin-top: 100px;
+  cursor: pointer;
+  
+  .wrapper >*:not(:last-child) {
+    
+  }
+
+  .wrapper {
+    border-radius: 30px;
+    background-color: #fff;
+
+    .box .location{
+      border-right: 1px solid black;
+    }
+    
+    .box .dates{
+      border-right: 1px solid black;
+    }
+
+      .box {
+        line-height: 16px;
+        font-size: 12px;
+        .title {
+          font-weight: 600;
+          padding-inline-end: 60px;
+        }
+    
+        .desc {
+          color: #717171;
+          padding-inline-end: 60px;
+        }  
+      }
+    
+  // .location {
+  //   padding: 10px 20px 5px 40px;
+  // }
+  // .date {
+  //   padding: 10px 40px 5px 40px;
+  // }
+  // .guests {
+  //   padding: 10px 40px 5px 40px;
+  // }
+
+    .search-icon {
+      padding: 5px 10px 5px 20px;
+
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: #FF385C;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+  
+}
