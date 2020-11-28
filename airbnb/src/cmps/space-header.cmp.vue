@@ -54,7 +54,6 @@ export default {
       this.colored = currentScrollPosition !== 0;
     },
     setHomePage() {
-      console.log("run");
       this.isHomePage = this.$route.path === "/"
     },
   },
