@@ -49,10 +49,8 @@ export default {
   height: 22px;
 }
 .cover {
-  // background: #cac1bc;
-  // position: sticky;
+  margin-top: 80px;
   width: 100vw;
-  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
