@@ -1,0 +1,30 @@
+.list-filter {
+    .buttons-container {
+        margin-bottom:50px;
+        :not(:last-child){
+            margin-inline-end: 10px;
+        }
+        button {
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid black;
+            outline: none;
+            padding: 0px;
+            border-color: #b0b0b0;
+            border-radius: 30px;
+            color: #222222;
+            padding: rem(8px) rem(16px);
+            font-family: Circular;
+            font-size: 14px;
+            line-height: 18px;
+            background-color: #ffffff;
+        }
+        .el-popper{
+            width: 500px !important;
+            border: 0.5px solid rgba(118, 118, 118, 0.28);
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 37px;
+        }
+    }
+}
