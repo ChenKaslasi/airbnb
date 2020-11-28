@@ -12,6 +12,7 @@
 // COMPONENTS
 @import 'components/main-header';
 @import 'components/main-footer'; 
+@import 'components/space-filter'; 
 @import 'components/space-preview'; 
 @import 'components/details-gallery'; 
 @import 'components/details-summery'; 
@@ -21,7 +22,9 @@
 @import 'components/details-map'; 
 @import 'components/details-host'; 
 
+
 // VIEWS
 @import 'views/home-page';
 @import 'views/list'; 
 @import 'views/details';
+

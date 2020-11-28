@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="cover">
+    <div class="cover ">
       <form class="flex-form">
         <input
           type="search"
