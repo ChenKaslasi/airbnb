@@ -1,16 +1,17 @@
 <template>
   <section
     class="header-container main-layout"
-    :class="{ colorWhite: colored, homePageDisplay: isHomePage }"
+    :class="{ scrollDisplay: isScrolled, homePageDisplay: isHomePage }"
   >
     <div class="content flex align-center justify-between">
       <div class="logo">
         <a href="/" class="logo flex align-center">
-          <img class="logo-svg" src="../assets/icons/logo.svg" />
+          <img class="logo-svg" src="../assets/icons/‏‏logo-pink.svg" />
           <span class="txt">airbnb</span>
         </a>
       </div>
-      <div class="search">
+      <!-- <div class="search" v-hide="!isScrolled && isHomePage"> -->
+      <div class="search" >
         <button class="btn flex align-center">
           <div class="txt">Start your search</div>
           <div class="search-icon">
@@ -19,7 +20,7 @@
         </button>
       </div>
       <div class="link-container flex">
-        <a class="search-link" href="/#">Search</a>
+        <a class="explore" href="/#">Explore</a>
         <a class="become-host" href="/#/Barcelona">Become a Host</a>
         <div class="user-dropdown flex">
           <button class="btn flex justify-around align-center">
@@ -36,9 +37,9 @@
 export default {
   data() {
     return {
-      colored: false,
-      isHomePage: false,
+      isScrolled: false,
       lastScrollPosition: 0,
+      isHomePage: false,
     };
   },
   methods: {
@@ -50,19 +51,19 @@ export default {
       if (currentScrollPosition < 0) {
         return;
       }
-      // if(currentScrollPosition !== 0 && )
-      this.colored = currentScrollPosition !== 0;
+      this.isScrolled = currentScrollPosition !== 0;
     },
+
     setHomePage() {
-      this.isHomePage = this.$route.path === "/"
+      this.isHomePage = this.$route.path === "/";
     },
   },
   created() {
     this.setHomePage();
   },
   watch: {
-    "$route": function () {
-      this.setHomePage()
+    $route: function () {
+      this.setHomePage();
     },
   },
   mounted() {

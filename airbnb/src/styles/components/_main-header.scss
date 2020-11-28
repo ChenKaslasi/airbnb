@@ -27,7 +27,7 @@
   .link-container {
 
     .become-host,
-    .search-link {
+    .explore {
       color: #222222;
       font-size: 14px;
       line-height: 18px;
@@ -40,6 +40,7 @@
         padding: 12px;
         border-radius: 20px;
       }
+
     }
 
     .user-dropdown {
@@ -53,7 +54,7 @@
         padding: 0 8px 0 14px;
         border-radius: 20px;
         outline: none;
-        background: none;
+        background: #fff ;
         border: 1px solid #ddd;
         cursor: pointer;
       }
@@ -68,6 +69,7 @@
         width: 30px;
         pointer-events: none;
       }
+
     }
   }
 
@@ -112,16 +114,49 @@
   }
 }
 
-.colorWhite {
-  background-color: #fff;
-  .search {
-    display: block;
-  }
-
-}
 
 .homePageDisplay {
+    box-shadow: none !important;
+
   .search {
     display: none;
   }
+  .become-host, .explore{
+    color: #fff !important;
+  }
+
+  .logo .txt{
+    color: #fff !important;
+  }
+
+  .logo-svg  {
+    fill: #fff !important;
+  }
+
+  .logo-svg{
+    content:url('../assets/icons/logo-white.svg') !important
+  }
+
 }
+
+
+.scrollDisplay {
+  background-color: #fff;
+
+  .search {
+    display: block;
+    transition: display 0.3s;
+  }
+  .become-host, .explore{
+    color: #222 !important;
+  }
+
+  .logo .txt{
+    color: #FF385C !important;
+  }
+
+  .logo-svg{
+    content:url('../assets/icons/‏‏logo-pink.svg') !important
+  }
+}
+
