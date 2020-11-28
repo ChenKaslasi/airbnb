@@ -1,5 +1,6 @@
 <template>
   <div class="home main-layout">
+    <space-header />
     <div class="hero full">
       <space-filter @filter="setFilter" />
       <!-- <h1 class="hero-header">Live Anywhere<span>.</span></h1> -->
@@ -27,12 +28,15 @@
 
 <script>
 import spaceFilter from "../cmps/space-filter.cmp.vue";
+
+import spaceHeader from "@/cmps/space-header.cmp.vue";
 // @ is an alias to /src
 
 export default {
   name: "Home",
   components: {
     spaceFilter,
+    spaceHeader
   },
   data() {
     return {
@@ -64,9 +68,12 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.home {
+<style lang="scss" >
+
+.search {
+    display: none;
 }
+
 
 .hero {
   height: 80vh;

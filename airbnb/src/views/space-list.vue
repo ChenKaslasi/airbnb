@@ -1,5 +1,6 @@
 <template>
   <section class="space-list main-layout main-content" v-if="filterBy">
+    <space-header />
     <h1>Stays in {{ filterBy }}</h1>
     <section>
       <ul class="card-container">
@@ -16,8 +17,13 @@
 
 <script>
 import spacePreview from "../cmps/space-preview.cmp.vue";
+import spaceHeader from "@/cmps/space-header.cmp.vue";
+
 export default {
-  components: { spacePreview },
+  components: {
+    spaceHeader,
+     spacePreview,
+  },
   data() {
     return {
       filterBy: "",

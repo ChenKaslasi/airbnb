@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <space-header />
+    <!-- <space-header /> -->
     <main>
       <!-- <router-link to="/">Home</router-link> | -->
       <router-view :key="$route.name + ($route.params.id || '')" />
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import spaceHeader from "@/cmps/space-header.cmp.vue";
+// import spaceHeader from "@/cmps/space-header.cmp.vue";
 import spaceFooter from "@/cmps/space-footer.cmp.vue";
 
 export default {
   components: {
-    spaceHeader,
+    // spaceHeader,
     spaceFooter,
   },
 };

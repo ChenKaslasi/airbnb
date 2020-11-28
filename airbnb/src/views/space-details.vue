@@ -1,5 +1,6 @@
 <template>
   <section class="details-container main-layout" v-if="currSpace">
+    <space-header />
     <gallery :space="currSpace" />
     <section class="flex ">
       <section class="main-content">
@@ -23,6 +24,9 @@
 
 <script>
 import spaceService from "../services/space.service.js";
+
+import spaceHeader from "@/cmps/space-header.cmp.vue";
+
 import gallery from "../cmps/space-gallery.cmp";
 import detailsSummery from "../cmps/details-summery.vue";
 import detailsDescription from "../cmps/details-description.vue";
@@ -35,6 +39,7 @@ import detailsHost from "../cmps/details-host.cmp.vue";
 
 export default {
   components: {
+    spaceHeader,
     gallery,
     detailsSummery,
     detailsDescription,
@@ -44,6 +49,7 @@ export default {
     detailsCheckout,
     detailsMap,
     detailsHost,
+    
   },
   data() {
     return {
