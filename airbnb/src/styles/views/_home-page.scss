@@ -1,61 +1,72 @@
+.home {
+  .filter-container {
 
-.hero {
-  height: 80vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.178)),
-    url("https://cdn57.androidauthority.net/wp-content/uploads/2019/12/Home-available-on-BoutiqueHomes.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  & h1 {
-    margin-left: 3%;
-    color: white;
-    font-size: 5rem;
+    .wrapper{
+      font-size: 16px;
+      
+    }
+  }
+
+
+  .hero {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.178)),
+      url("https://cdn57.androidauthority.net/wp-content/uploads/2019/12/Home-available-on-BoutiqueHomes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    & h1 {
+      margin-left: 3%;
+      color: white;
+      font-size: 5rem;
+      margin-top: 20px;
+      font-weight: 100;
+      padding: 20px;
+      &.hero-header2 {
+        font-weight: 800;
+      }
+    }
+    & span {
+      color: #f05;
+      font-size: 4rem;
+    }
+  }
+  .card {
     margin-top: 20px;
-    font-weight: 100;
-    padding: 20px;
-    &.hero-header2 {
+    text-align: start;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+      margin-bottom: 20px;
+      border-radius: 8px ;
+    & h3 {
+      padding: 10px;
+      padding-left: 10px;
       font-weight: 800;
+      font-size: 1.3rem;
     }
   }
-  & span {
-    color: #f05;
-    font-size: 4rem;
-  }
-}
-.card {
-  margin-top: 20px;
-  text-align: start;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    margin-bottom: 20px;
-    border-radius: 8px ;
-  & h3 {
-    padding: 10px;
-    padding-left: 10px;
-    font-weight: 800;
-    font-size: 1.3rem;
-  }
-}
-.home-container {
-  margin-top: 50px;
-  .location-container {
-    display: flex;
-    flex-wrap: wrap;
-    & .card {
-      & img {
-        width: 307px;
-        height: 204px;
-        border-radius: 8px 8px 0px 0px;
-      }
-      & p {
-        color: rgb(136, 134, 134);
-        padding-left: 10px;
-        padding-bottom: 7px;
-      }
-      & :hover {
-        cursor: pointer;
+  .home-container {
+    margin-top: 50px;
+    .location-container {
+      display: flex;
+      flex-wrap: wrap;
+      & .card {
+        & img {
+          width: 307px;
+          height: 204px;
+          border-radius: 8px 8px 0px 0px;
+        }
+        & p {
+          color: rgb(136, 134, 134);
+          padding-left: 10px;
+          padding-bottom: 7px;
+        }
+        & :hover {
+          cursor: pointer;
+        }
       }
     }
   }
 }
+
