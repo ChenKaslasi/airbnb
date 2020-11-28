@@ -1,8 +1,8 @@
 <template>
   <section class="space-list main-layout main-content" v-if="filterBy">
     <space-header />
-    <h1>Stays in {{ filterBy }}</h1>
-    <section>
+    <list-filter :space="filterBy"></list-filter>
+    <div>
       <ul class="card-container">
         <li v-for="space in getSpaces" :key="space._id">
           <space-preview
@@ -11,18 +11,20 @@
           ></space-preview>
         </li>
       </ul>
-    </section>
+    </div>
   </section>
 </template>
 
 <script>
 import spacePreview from "../cmps/space-preview.cmp.vue";
 import spaceHeader from "@/cmps/space-header.cmp.vue";
+import listFilter from "@/cmps/list-filter.cmp.vue";
 
 export default {
   components: {
     spaceHeader,
      spacePreview,
+     listFilter
   },
   data() {
     return {
