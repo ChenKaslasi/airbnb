@@ -50,5 +50,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" >
+
+.search {
+    display: block;
+}
+
 </style>

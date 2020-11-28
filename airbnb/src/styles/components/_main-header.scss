@@ -27,7 +27,7 @@
   .link-container {
 
     .become-host,
-    .explore {
+    .search-link {
       color: #222222;
       font-size: 14px;
       line-height: 18px;
@@ -114,15 +114,14 @@
 
 .colorWhite {
   background-color: #fff;
-  
   .search {
-    visibility: visible;
+    display: block;
   }
 
 }
 
 .homePageDisplay {
-  // .search {
-  //   visibility: hidden;
-  // }
+  .search {
+    display: none;
+  }
 }

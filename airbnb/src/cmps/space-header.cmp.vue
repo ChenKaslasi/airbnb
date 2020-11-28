@@ -19,7 +19,7 @@
         </button>
       </div>
       <div class="link-container flex">
-        <a class="explore" href="/#/Barcelona">Explore</a>
+        <a class="search-link" href="/#">Search</a>
         <a class="become-host" href="/#/Barcelona">Become a Host</a>
         <div class="user-dropdown flex">
           <button class="btn flex justify-around align-center">
