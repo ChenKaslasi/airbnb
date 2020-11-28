@@ -109,7 +109,7 @@ export default {
   background-color: #fff;
   // top: 0;
   border: 1px solid #717171;
-  width: 90%;
+  width: 87%;
   display: flex;
   flex-direction: column;
   .container-btns {
