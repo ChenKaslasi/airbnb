@@ -7,7 +7,7 @@
       <h1 class="hero-header2">Anywhere<span>.</span></h1>
     </div>
     <div class="home-container">
-      <div class="location-container">
+      <div class="location-container flex justify-between">
         <div
           class="card"
           v-for="(img, idx) in imgs"
@@ -61,12 +61,11 @@ export default {
     bookLocation(title) {
       this.$router.push(`/${title}`);
     },
-  },
+  }
 };
 </script>
 <style lang="scss" scoped>
 .home {
-  // overflow-x: hidden;
 }
 
 .hero {
@@ -103,16 +102,11 @@ export default {
   }
 }
 .home-container {
-  margin-top: 40px;
+  margin-top: 50px;
   .location-container {
     display: flex;
     flex-wrap: wrap;
     & .card {
-      margin: 0 auto;
-      margin-bottom: 20px;
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-      border-radius: 8px;
-      
       & img {
         width: 307px;
         height: 204px;
