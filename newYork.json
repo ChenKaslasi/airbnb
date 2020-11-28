@@ -254,15 +254,7 @@
     },
     "txt": "A great experience - Chas was a good communicator so picking up the key went exactly as planned (a good thing for a first timer!), the apartment was just what we needed and the location (and quiet street) really were fabulous.  "
   },
-
-
-
-
-
-
-
-
-
+},
 
 {
   "_id": "103161",
@@ -272,1582 +264,206 @@
   "spaceDesc": "My Apt it's right in the middle of the best and hot spots in the heart of REAL Williamsburg on Bedford Ave. Close to everything. 4 Subway stations (L/G/JMZ) around, same distance all! Very chill and cozy! 2 people only. No kids and pets please. Hi there! This is a cozy and impeccable one bedroom apartment in the heart of Williamsburg on North 1st Street.  One of the hippest and lively neighborhoods in New York City nowadays. Lots of intimate Cafes, Restaurants, Bars, Park, Discoteque, Concert Venues,  and the proximity to the East River gives it its special vibe.  As well as local Designer Stores, Vintage Stores, Apple Store, Whole Foods Supermarket, Sephora, Duane Reade, Food Town Supermarket, Martas Bakery, Maison Premiere, Domino Park, Urban Outfitters, Madewell, JC Crew, Music Hall of Williamsburg, Knitting Factory, Baby's All Right, Rough Trade, Brooklyn Steel, Yoga Studios, Pilates Studio, Spinning Studios, Equinox, Williamsburg Cinema, Nitehawk Cinema, Citi Bank, Citi Bikes, Ban",
   "spaceType": "Apartment",
   "roomType": "Entire home/apt",
-  "cancellation_policy": "strict_14_with_grace_period",
-  "capacity": {
-    "$numberInt": "2"
-  },
-  "bedrooms": {
-    "$numberInt": "1"
-  },
-  "beds": {
-    "$numberInt": "2"
-  },
-  "number_of_reviews": {
-    "$numberInt": "6"
-  },
-  "bathrooms": {
-    "$numberDecimal": "1.0"
-  },
-  "amenities": ["TV", "Internet", "Wifi", "Air conditioning", "Kitchen", "Paid parking off premises", "Free street parking", "Heating", "Smoke detector", "Carbon monoxide detector", "First aid kit", "Essentials", "Shampoo", "24-hour check-in", "Hangers", "Hair dryer", "Iron", "Laptop friendly workspace", "translation missing: en.hosting_amenity_49", "translation missing: en.hosting_amenity_50", "Hot water", "Bed linens", "Extra pillows and blankets", "Ethernet connection", "Coffee maker", "Refrigerator", "Dishes and silverware", "Cooking basics", "Oven", "Luggage dropoff allowed", "Long term stays allowed", "Other"],
-  "price": {
-    "$numberDecimal": "175.00"
-  },
-  "security_deposit": {
-    "$numberDecimal": "300.00"
-  },
-  "cleaning_fee": {
-    "$numberDecimal": "90.00"
-  },
-  "extra_people": {
-    "$numberDecimal": "300.00"
-  },
-  "guests_included": {
-    "$numberDecimal": "2"
-  },
-  "images": {
-    "thumbnail_url": "",
-    "medium_url": "",
-    "picture_url": "https://a0.muscache.com/im/pictures/fc6b432c-c2a2-4995-9427-60c987615bd6.jpg?aki_policy=large",
-    "xl_picture_url": ""
-  },
+  "cancellationPolicy": "strict_14_with_grace_period",
+  "capacity": 2,
+  "bedrooms": 1,
+  "beds": 2,
+  "numberOfReviews": 6,
+  "bathrooms":1,
+  "amenities": [
+    "Air conditioning",
+    "Dryer",
+    "Essentials",
+    "Hangers",
+    "Heating",
+    "Iron",
+    "Kitchen",
+    "Parking",
+    "TV",
+    "Wifi"
+  ],
+  "price":175.00,
+  "imgs": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-103161/original/b3baecd3-a8ba-48e2-85f4-966a5cd89a60.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-103161/original/10a9a61c-8ea0-4121-b1d2-00c2d48a842a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-103161/original/3bbdfb80-02a2-4729-ba15-8e9b7fb23cd1.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-103161/original/2f639adf-8ab2-49a9-b15b-9ddd58906b80.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/miso/Hosting-103161/original/869ca60b-0954-439a-ac3b-9bb23db5eee3.jpeg?im_w=720"
+  ],
   "host": {
-    "host_id": "465278",
-    "host_url": "https://www.airbnb.com/users/show/465278",
-    "host_name": "Ade",
-    "host_location": "Brooklyn, NY",
-    "host_about": "I'm a Photographer and I love music, travel and good food! I speak Spanish, Italian and English! ",
-    "host_response_time": "within a few hours",
-    "host_thumbnail_url": "https://a0.muscache.com/im/users/465278/profile_pic/1379275888/original.jpg?aki_policy=profile_small",
-    "host_picture_url": "https://a0.muscache.com/im/users/465278/profile_pic/1379275888/original.jpg?aki_policy=profile_x_medium",
-    "host_neighbourhood": "Williamsburg",
-    "host_response_rate": {
-      "$numberInt": "100"
-    },
-    "host_is_superhost": true,
-    "host_has_profile_pic": true,
-    "host_identity_verified": false,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "reviews", "offline_government_id", "selfie", "government_id"]
-  },
+    "id": "465278",
+    "name": "Ade",
+    "location": "Brooklyn, NY",
+    "about": "I'm a Photographer and I love music, travel and good food! I speak Spanish, Italian and English! ",
+    "responseTime": "within a few hours",
+    "thumbnail": "https://a0.muscache.com/im/users/465278/profile_pic/1379275888/original.jpg?aki_policy=profile_small",
+    "profileImg": "https://a0.muscache.com/im/users/465278/profile_pic/1379275888/original.jpg?aki_policy=profile_x_medium",
+    "neighbourhood": "Williamsburg",
+    "responseRate":100,
+    "isSuperhost": true,
+    "identityVerified": true,
   "address": {
     "street": "Brooklyn, NY, United States",
     "suburb": "Williamsburg",
-    "government_area": "Williamsburg",
-    "market": "New York",
+    "city": "New York",
     "country": "United States",
-    "country_code": "US",
     "location": {
-      "type": "Point",
-      "coordinates": [{
-        "$numberDouble": "-73.96053"
-      }, {
-        "$numberDouble": "40.71577"
-      }],
-      "is_location_exact": true
+      "coordinates": {
+        "lat": -73.96053,
+        "lng": 40.71577
+      }
     }
   },
-  "availability": {
-    "availability_30": {
-      "$numberInt": "28"
-    },
-    "availability_60": {
-      "$numberInt": "58"
-    },
-    "availability_90": {
-      "$numberInt": "88"
-    },
-    "availability_365": {
-      "$numberInt": "363"
-    }
-  },
-  "review_scores": {
-    "review_scores_accuracy": {
-      "$numberInt": "10"
-    },
-    "review_scores_cleanliness": {
-      "$numberInt": "10"
-    },
-    "review_scores_checkin": {
-      "$numberInt": "10"
-    },
-    "review_scores_communication": {
-      "$numberInt": "10"
-    },
-    "review_scores_location": {
-      "$numberInt": "10"
-    },
-    "review_scores_value": {
-      "$numberInt": "9"
-    },
-    "review_scores_rating": {
-      "$numberInt": "96"
-    }
+  "reviewScores": {
+    "accuracy": 10,
+    "cleanliness": 10,
+    "checkin": 10,
+    "communication": 10,
+    "location": 10,
+    "value": 9,
+    "rating": 96
   },
   "reviews": [{
     "_id": "7465430",
-    "date": {
-      "$date": {
-        "$numberLong": "1379736000000"
-      }
+    "date":  "1379736000000",
+    "by":{
+      "id": "370229",
+      "name": "Martha",
+      "img": "https://a0.muscache.com/im/users/5708346/profile_pic/1364779532/original.jpg?im_w=240"
+
     },
-    "listing_id": "103161",
-    "reviewer_id": "370229",
-    "reviewer_name": "Martha",
     "txt": "Adela's apartment is fantastic – perfectly located in the heart of Williamsburg, very clean, nicely furnished and convenient.\r\nDefinitely one of the best New York apartments I stayed in recently.\r\nAdela was very helpful and easy to communicate with.\r\nHighly recommended!\r\n"
-  }, {
+  },
+   {
     "_id": "7565039",
-    "date": {
-      "$date": {
-        "$numberLong": "1379995200000"
-      }
+    "date": "1379995200000",
+    "by":{
+      "id": "2580811",
+      "name": "Matt",
+      "img":"https://a0.muscache.com/im/pictures/user/1cf6cccd-e656-4cd8-a29f-edfae36875fc.jpg?im_w=240"
+
     },
-    "listing_id": "103161",
-    "reviewer_id": "2580811",
-    "reviewer_name": "Matt",
     "txt": "Ade has an AWESOME apt in Williamsburg -- location is nuts, a reasonable price considering the location, and a great vibe.  Close to about everything in Williamsburg.\r\n\r\nWouldve stayed longer if i couldve."
-  }, {
+  },
+   {
     "_id": "8219422",
-    "date": {
-      "$date": {
-        "$numberLong": "1382328000000"
-      }
+    "date": "1382328000000",
+    "by":{
+      "id": "8803584",
+      "name": "Diego",
+      "img":"https://a0.muscache.com/im/pictures/user/be4c2176-75a8-450e-a033-c4619c99a58a.jpg?im_w=240"
+
     },
-    "listing_id": "103161",
-    "reviewer_id": "8803584",
-    "reviewer_name": "Diego",
     "txt": "Very nice Apt. in the hearth of Williamsburg and Bedford, wich is like the coolest place in Brooklyn, but in a very quiet and safety street. The apt, is in a 4th floor (no elevator) very clean and luminous.\r\n\r\nYou have two subway stations at 10'walk, and is really cool also if you want to bike the city.\r\n\r\nAde is really nice, will let everything ready for you and give some suggestions, se can speak Spanish too and in general all was as I expected, I would def. Recommend this place."
   }, {
     "_id": "8525039",
-    "date": {
-      "$date": {
-        "$numberLong": "1383541200000"
-      }
+    "date":  "1383541200000",
+    "by":{
+      "id": "4632016",
+      "name": "Nir",
+      "img":"https://a0.muscache.com/im/pictures/user/4a0156c4-19d2-405e-8aba-cf6a1ee35f90.jpg?im_w=240"
+
+
     },
-    "listing_id": "103161",
-    "reviewer_id": "4632016",
-    "reviewer_name": "Nir",
     "txt": "The apartment is nice (a bit small). Great location in Williamsburg. Nice bars and restaurants near by. 3 minutes from the subway"
-  }, {
-    "_id": "8668722",
-    "date": {
-      "$date": {
-        "$numberLong": "1384146000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "8834",
-    "reviewer_name": "Maxime",
-    "txt": "Ade was a perfect hote. She was there for everything. Her appartement is nice, clean and the location is perfect. Thank you Ade."
-  }, {
-    "_id": "8768325",
-    "date": {
-      "$date": {
-        "$numberLong": "1384664400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "6546703",
-    "reviewer_name": "Anne",
-    "txt": "Adela's apartment is perfect, just as it looks in the photos, and was immaculately clean. The bed is comfy, the heating is warm ( we stayed in mid November)  and the location is really good, close to all the bars restaurants and shops of the local area but the street is quiet so you will sleep well!  It is only a short walk to the L train subway, and there's also 2 other subway lines a little further walk away so it's easy to travel around the whole of NYC from here. We loved staying here! Adela is easy and quick to communicate with and very kind, she gave us a fantastic list of recommendations for food and other things in the local area. Thank you Adela!"
-  }, {
-    "_id": "9058416",
-    "date": {
-      "$date": {
-        "$numberLong": "1386046800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "5270078",
-    "reviewer_name": "Veronika",
-    "txt": "Ade fue una muy buena anfitriona y super agradable. El departamento mejor de lo que esperaba, mucho mas amplio de lo que mostraban las fotografías y mucho mas acogedor. El departamento mostraba el espiritu  de su anfitriona, mezcla de fotografía y música.\r\nAde was super nice and a very good host. The department was better than I \r\nexpected, much wider than the pictures showed and more cozy. The department \r\nshows Ade's spirit, a mix of photography and music.\r\n"
-  }, {
-    "_id": "9680026",
-    "date": {
-      "$date": {
-        "$numberLong": "1388898000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "9649685",
-    "reviewer_name": "Katerina",
-    "txt": "Ade is an excellent hostess. It was great to meet her upon checking in, and to get her awesome list of local recommendations which we immediately put to use from the fist night. The apartment is in a great location, close to the L train which is a 10min ride into the city. Not that you need to leave Williamsburg, we had some of the best food and drinks there during our NY visit! Ade's place is clean, with an eclectic decor, it's comfortable and surprisingly quiet. Communication with Ade was easy, and everything went very smoothly over our week-long stay. Thanks again for having us, Ade :)"
-  }, {
-    "_id": "10163614",
-    "date": {
-      "$date": {
-        "$numberLong": "1391403600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "8584790",
-    "reviewer_name": "Charles",
-    "txt": "Clean, quiet and perfectly located. From the list of local places of interest, to the willingness of Ade to assist us with any problems during our stay, we felt very well taken care of. I would highly recommend this apartment to anyone wishing to stay in Williamsburg!"
-  }, {
-    "_id": "10889517",
-    "date": {
-      "$date": {
-        "$numberLong": "1394510400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "370229",
-    "reviewer_name": "Martha",
-    "txt": "Ade's apartment is one of my favorites in Williamsburg, cozy, clean, bright and perfectly located steps away from all nice restaurants, bars and subway stop. Highly recommended!"
-  }, {
-    "_id": "11042958",
-    "date": {
-      "$date": {
-        "$numberLong": "1395028800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "159820",
-    "reviewer_name": "Jason+Indhi",
-    "txt": "The reservation was canceled 38 days before arrival. This is an automated posting."
-  }, {
-    "_id": "11097396",
-    "date": {
-      "$date": {
-        "$numberLong": "1395288000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1764381",
-    "reviewer_name": "Martin",
-    "txt": "Lovely little apartment in the heart of Williamsburg.\r\nAde is super nice and really accommodating.\r\nBook it!"
-  }, {
-    "_id": "12943670",
-    "date": {
-      "$date": {
-        "$numberLong": "1400126400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "12125064",
-    "reviewer_name": "Céline",
-    "txt": "Super logement en plein dans williamsburg. Ade est très sympatique et nous a accueilli chaleureusement. Elle nous a aussi donné plein de bonnes adresses de resto et de sorties dans le quartier. L'appartement est bien situé à quelques minutes du métro Bedfort avenue, à un arrêt de métro de Manhattan. Il est pratique, mignon et calme. Le lit est hyper confortable. Il y a même la TV avec Netflix pour regarder des films ou séries. Vraiment parfait, nous recommandons ce lieu. L’appartement de Ade est un super bon plan pour qui veut passer une semaine à  New York au calme. Merci Ade!"
-  }, {
-    "_id": "13343001",
-    "date": {
-      "$date": {
-        "$numberLong": "1401076800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "676707",
-    "reviewer_name": "D. \"Rep\"",
-    "txt": "Adela's place was awesome.  The location could not be beat - close to everything in Williamsburg including the waterfront and both the JMZ and L Trains for easy access to Manhattan.  Her unit is decent sized and quiet.  The bed was very comfortable and the furniture and decorations nice.  It was also very clean.  While I never met her, check in and communication were a breeze.  We would not hesitate to stay at her place again."
-  }, {
-    "_id": "13782997",
-    "date": {
-      "$date": {
-        "$numberLong": "1401854400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "5807634",
-    "reviewer_name": "Julien",
-    "txt": "Ade's apt was really well-decorated, clean & cosy. Besides, it's so well-located in the heart of Williamsburg surrounded with a lot of restaurants and bars and close to Manhattan(1 stop - Metro L Bedford 5-minute walking). If you want to discover Brooklyn, it's the perfect place. Ade will give you the name of all the places she likes around her flat. We had the chance to meet Ade our last day and she'is as her flat : really nice and charming :) She let us leave our luggages very late as our plane was at midnight whereas she has already came back from her trip and was jetlag! Thanks a lot Ade for everything! Do not hesitate to rent her flat"
-  }, {
-    "_id": "14694018",
-    "date": {
-      "$date": {
-        "$numberLong": "1403582400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "15113312",
-    "reviewer_name": "Robert",
-    "txt": "We had a great time staying at Ade's apartment.  The place was very comfortable, exactly like on the photos.  It was a hot week in New York but the air con worked fine.  The bed was comfortable and the decor made you feel instantly at home.  Wifi was excellent and a decent sized TV with Netflix which we didn't use once because there were more exciting things to do.\r\n\r\nAs mentioned, the apartment block is very quiet ... amazing given how close it is to the main road of restaurants, shops and bars of Bedford Avenue.  \r\n\r\nWe walked around day and night in perfectly safe environment.  We took Ade up on some recommended places to eat and they were all great local places, well researched.\r\n\r\nIt was easy walking distance to all points of interest in Williamsburg, from the vintage market to the regular street food festival and East River Ferry, providing access to other parts of Brooklyn, downtown NYC and Governor's Island.  \r\n\r\nThe short walk to different subways meant getting into the city was very fast, particularly areas such as East Village and Park Slope.  We regularly went from the heart of the city back to the apartment within 20-30 minutes, a good escape when the crowds got too much in  Manhattan.\r\n\r\nAde welcomed in and helped us up with the bags on day 1.  There is no lift but compared to subways, a few flights of stairs was not a problem.  Again, on departure day she was very accommodating letting us leave the bags and helping us with getting them down again."
-  }, {
-    "_id": "14937315",
-    "date": {
-      "$date": {
-        "$numberLong": "1404014400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "12438032",
-    "reviewer_name": "Anne",
-    "txt": "Ade's place was terrific.  Its location is lovely in Williamsburg and brilliant for getting in to Manhattan. The apartment is clean and comfortable. Ade is a friendly and helpful host. The top floor location really does make it quiet.  This is a great place to stay, whether you want to spend time in Williamsburg or Manhattan. "
-  }, {
-    "_id": "16744759",
-    "date": {
-      "$date": {
-        "$numberLong": "1406865600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "633848",
-    "reviewer_name": "Julie",
-    "txt": "Ade's apartment was great. We're booking a lot through airbnb and her apartment was definitely a winner. Our collaborator loved to stay there and we'll definitely book it again!"
-  }, {
-    "_id": "17373190",
-    "date": {
-      "$date": {
-        "$numberLong": "1407729600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "17926948",
-    "reviewer_name": "Ruben",
-    "txt": "The place was really great!! Best location ever and very friendly host. Thanks again"
-  }, {
-    "_id": "18015662",
-    "date": {
-      "$date": {
-        "$numberLong": "1408507200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "578691",
-    "reviewer_name": "Pao",
-    "txt": "Location location location: Ade's apartment is perfectly situated in the best part of Williamsburg, making it so easy to hit the bars, the waterfront, and the metro.  With a location this great, you can walk two blocks in any direction and find fantastic food and entertainment.  Super hip Greenpoint is a lovely stroll away, and the East Village is just one stop away on the subway.  Ade's place was the ideal home base for exploring Brooklyn and Manhattan.  Ade herself was very cool, friendly, and helpful throughout the trip."
-  }, {
-    "_id": "18350975",
-    "date": {
-      "$date": {
-        "$numberLong": "1408939200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "3971823",
-    "reviewer_name": "Lara",
-    "txt": "Ade was wonderful! Very responsive, helpful, and accomodating. The apartment was extremely conveniently located in Williambsurg. Pictures were accurate. It was clean and had a nice \"European\" feel to it. "
-  }, {
-    "_id": "19128929",
-    "date": {
-      "$date": {
-        "$numberLong": "1410062400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2764876",
-    "reviewer_name": "Celine",
-    "txt": "I stayed 2 weeks at Ade's apt and had an amazing time. The flat is very well located in brooklyn, close from manhattan. Communication was optimal and Ade made sure to answer all our questions and concern. A must!"
-  }, {
-    "_id": "19325185",
-    "date": {
-      "$date": {
-        "$numberLong": "1410321600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "12416664",
-    "reviewer_name": "Larry",
-    "txt": "We had a wonderful stay at the apartment. Ade was welcoming, the apartment was very clean, well organized and had everything we needed. The location in Williamsburg was perfect. Close to all kinds of great restaurants, shops and bars.  We could not have been happier with our choice of places to stay."
-  }, {
-    "_id": "19669984",
-    "date": {
-      "$date": {
-        "$numberLong": "1410840000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1148793",
-    "reviewer_name": "Amy",
-    "txt": "Ade's place is just perfect! My best airbnb experience so far :)\r\nThe location is great, the apartment is very clean, quiet and comfortable. Water pressure is good, there is beautiful natural light in the main area and the bedroom and a comfy bed/pillows. Ade is friendly, accommodating and all communication was excellent before and during our stay.\r\nI would definitely stay here again! \r\n"
-  }, {
-    "_id": "20183644",
-    "date": {
-      "$date": {
-        "$numberLong": "1411617600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "861470",
-    "reviewer_name": "Nina",
-    "txt": "Had a truly great stay at Adela's flat-amazing spot in Williamsburg, footsteps from everything but really is a quiet space.\r\n\r\nPictures reflect the space perfectly-light and bright with everything you need.\r\n\r\nExcellent communication and support from Adela during our stay-couldn't ask for anything more. "
-  }, {
-    "_id": "20600343",
-    "date": {
-      "$date": {
-        "$numberLong": "1412222400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "7704743",
-    "reviewer_name": "Analia",
-    "txt": "Ade's flat is beatiful, very well located in the real heart if wiñliamsburg and very clean, if you aré going to new York, her place is great and Ade is a really nice person. I highly recommended"
-  }, {
-    "_id": "20907253",
-    "date": {
-      "$date": {
-        "$numberLong": "1412654400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "12818813",
-    "reviewer_name": "Joanna",
-    "txt": "Nice flat, great location. There was a problem getting the keys (had to wait four hours for access), but Ade communicated well and apologized with a bottle of wine! "
-  }, {
-    "_id": "21337720",
-    "date": {
-      "$date": {
-        "$numberLong": "1413345600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2835482",
-    "reviewer_name": "Matan",
-    "txt": "We stayed at Ade's apartment for 8 days and had an excellent experience!\r\nWe decided to live in Williamsburg and we were very happy about it - it is definitely the best neighborhood to live in NYC, full of great cafes, restaurants, shops and bars. And everything is within a few minutes walk from the apartment. The apartment is in a perfect location and although it is in the center of everything, it is still very quiet day and night.\r\nAde was very nice from the first conversation until the end of our visit and made us feel very comfortable about staying at her apartment. We felt that she really wanted that everything will be perfect for us. She even let us leave our luggage at the apartment after checking out.\r\nThe apartment is spacious with lots of windows full of natural light and air. It was also very clean! \r\nI would really recommend staying at Ade's apartment and would  definitely like to stay there again in my next visit."
-  }, {
-    "_id": "21582984",
-    "date": {
-      "$date": {
-        "$numberLong": "1413777600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "16093841",
-    "reviewer_name": "Geri",
-    "txt": "Ade was very welcoming even before I arrived (emailed a list of sites, restaurants, etc.).  Even though my flight was late, she was there to let me in and show me around.  She even helped me carry my bags (up to 4th floor).  The apartment is exactly as pictured in a very good location.  It is clean and comfy with great natural light and ventilation.  We had one minor glitch during my stay which she promptly addressed and left a treat for my inconvenience.  I would definitely recommend staying at Ade's place."
-  }, {
-    "_id": "22014957",
-    "date": {
-      "$date": {
-        "$numberLong": "1414468800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2150345",
-    "reviewer_name": "Stephanie",
-    "txt": "\r\nAde's apartment was exactly as described and she made us feel really  comfortable. Ade was so helpful with tips on local bars and eateries, there are so many just steps away from her apartment. \r\nThe location is also close to gorgeous boutiques and vintage stores and really handy if you want to catch the L train into Manhattan.\r\nWe would definitely recommend her place if you are looking for a great base to visit Brooklyn (and Manhattan) and we would love to come back and stay again!! "
-  }, {
-    "_id": "22234947",
-    "date": {
-      "$date": {
-        "$numberLong": "1414900800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "20930181",
-    "reviewer_name": "Camilla",
-    "txt": "We had a great stay in the apartment and Adela was the best hostess. She gave us recommendations about where to shop and eat and she was very helpful and made sure we had everything we needed. Williamsburg is a fantastic neighbourhood, Close to lower Manhattan but much more quite, but with lots of shops and restaurants. The apartment really is in the best location just of Bedford ave. Located on the fourth floor there are no disturbing street noice. \r\n\r\nWe definitly recommend this apartment and would absolutly stay there again!"
-  }, {
-    "_id": "22522782",
-    "date": {
-      "$date": {
-        "$numberLong": "1415509200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "7418682",
-    "reviewer_name": "Gadi",
-    "txt": "Ade's apartment in Williamsburg was perfect for my needs. It's clean and well decorated, quite roomy (at least compared to NYC hotels), and very convenient. It has a clean, nice shower, a comfortable bed, a roomy sitting area and a writing desk. It also has a small, very practical kitchen that you can use to cook meals when not eating out. There's a medium size flat screen TV in the bedroom, with Netflix, and the internet wifi connection, which is immensely important to me as a tech guy on the go, was lightning fast.\r\n\r\nThe building is a little old and unkept, but don't let that scare you - the apartment is in perfect condition. Do be aware that it's on the 4th floor and the stairwell is quite steep, so don't stay here if you have a disability or very small children.\r\n\r\nThe most wonderful thing about the apartment is the neighbourhood. Williamsburg is charming, and there are numerous cafes, bars and restaurants literally a few steps away. I particularly liked \"Samurai Mama\" and \"Snacky\", check them out if you're into Asian food. There's also the Williamsburg Music Hall and the Knitting Factory - well known venues where you can sample the local rock bands. And, importantly, the streets felt to me safe enough to walk around alone at night.\r\n\r\nThe apartment is a few minutes away from the subway station where you can take the L train to Manhattan - a few stations away.\r\n\r\nAde herself was friendly and very helpful. I found her to be the perfect host - responsive enough when I needed her, but she didn't bother me at all when I didn't.\r\n\r\nI travel to NYC a lot, and I will be more than happy to stay at Ade's again next time I get there.\r\n\r\n\r\n\r\n\r\n"
-  }, {
-    "_id": "23744335",
-    "date": {
-      "$date": {
-        "$numberLong": "1418101200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "10609989",
-    "reviewer_name": "Dani",
-    "txt": "Passei dez dias com meu marido no apartamento de Adela em Williamsburg. Adoramos a experiência! O apartamento é muito bom, aconchegante, confortável e em um ponto excelente, a poucas estações de Manhattan e rodeado de bares e restaurantes incríveis. Adela nos deu ótimas dicas para curtir o bairro. Fomos em praticamente todos os lugares indicados e amamos! Mesmo de longe, Adela estava sempre disponível para nos ajudar. Recomendo muito esse apartamento e, se uma voltar a Nova York, ficarei lá novamente. Gracias Adela! "
-  }, {
-    "_id": "25441115",
-    "date": {
-      "$date": {
-        "$numberLong": "1421384400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "15366708",
-    "reviewer_name": "Mollie",
-    "txt": "We had a lovely time at this sunny apartment. Cosy and in a fantastic location. Ade was not around but was super helpful over the phone/ by email and collecting the key/finding the apartment was all pretty easy. The shower temperature seemed a little temperamental but we figured it out (it seemed to work in sync with the heaters) . All in all a lovely experience though.  Thanks Ade!"
-  }, {
-    "_id": "26207491",
-    "date": {
-      "$date": {
-        "$numberLong": "1423285200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "23475415",
-    "reviewer_name": "Antony And Jessica",
-    "txt": "We stayed in Adela's Williamsburg apartment for 5 nights and had a really great time. Adela was very easy to deal with in the lead up and during our stay, responding promptly to messages, and ready to give recommendations about the neighbourhood in addition to the list provided in the apartment. The apartment is very well presented as in the photographs, very clean and comfortable with good heat, and is located in an ideal spot right in the heart of Williamsburg and just the experience we were after. Would certainly stay here again. "
-  }, {
-    "_id": "28417925",
-    "date": {
-      "$date": {
-        "$numberLong": "1427083200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "9737716",
-    "reviewer_name": "Jamie",
-    "txt": "Ade was a great host who met us on arrival, gave us great suggestions on where to make the most of the neighborhood and was available to answer questions during our stay. The apartment was as it looks in the pics - very clean, great space for a couple and lots of natural light (with blackout blinds if needed). "
-  }, {
-    "_id": "28823789",
-    "date": {
-      "$date": {
-        "$numberLong": "1427688000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1787667",
-    "reviewer_name": "Joe",
-    "txt": "We had a great time staying in Ade's apartment and I would definitely recommend it to others. It's a very clean, comfortable space - just as you see in the pictures - and a really good location on a quiet street just off Bedford Avenue. Also, Ade is a great host, really friendly and easy to deal with, very accommodating and gave us lots of great local recommendations."
-  }, {
-    "_id": "29670536",
-    "date": {
-      "$date": {
-        "$numberLong": "1428724800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "26670179",
-    "reviewer_name": "Rocio",
-    "txt": "El departamento es muy comodo y se encuentra ubicado en el lugar perfecto. Es tal cual se muestra en las fotos. Se encontraba muy muy limpio y adicionalmente cuenta con todo lo necesario para una estadia perfecta. Ade es una anfitriona espectacular con la cual fue muy facil coordinar el ingreso y entrega de las llaves. Adicionalmente se preocupo por informarnos sobre lugares para comer y visitar, y siempre se encontro disponible para consultas. Definitivamente volveria a quedarme aqui y lo recomiendo en un 100%."
-  }, {
-    "_id": "30616603",
-    "date": {
-      "$date": {
-        "$numberLong": "1429934400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "3098773",
-    "reviewer_name": "Jean-Baptiste",
-    "txt": "ADE is a perfect host...she was here when we arrive and when we leave the place, she explains us the neighborood, she calls a cab for us....absolutely perfect ! \r\nthe flat is exactly as describe and it's very quiet wich seems to be rare in NYC...\r\nthe neighborood is Just Wonderfull with a lot of places to go for breakfast lunch diner or to have a drink...but ADE Will explains you that better than me !"
-  }, {
-    "_id": "30992443",
-    "date": {
-      "$date": {
-        "$numberLong": "1430366400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "19173286",
-    "reviewer_name": "Isabell",
-    "txt": "Everything was just perfect! Thanks a lot Ade. She is an incredible perfect host. She answered fast and helped out with infos for that beautiful area! The apartment was clean and spaciously for two people! Highly recommended!! Again - thanks for being such a perfect host!"
-  }, {
-    "_id": "31780542",
-    "date": {
-      "$date": {
-        "$numberLong": "1431230400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "29110078",
-    "reviewer_name": "Alexa",
-    "txt": "Ade was an AMAZING host. We felt very welcome and comfortable in her home for 4 days. Booking was easy, and any questions we had prior to and during our stay were answered promptly (and in a friendly manner)! You cannot beat her hospitality and the charm (as well as location) of her home. Highly recommended. Would definitely want to stay there again - thanks, Ade!"
-  }, {
-    "_id": "32505435",
-    "date": {
-      "$date": {
-        "$numberLong": "1432008000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "28251290",
-    "reviewer_name": "Valerie",
-    "txt": "Ade was great at making us feel welcome, and helping with knowing the neighborhood.  Her apartment was the perfect location to stay.  We went to visit the city, and it was great being so close but not right in Manhattan.  The apartment was really quiet, and perfectly stocked. We really enjoyed our stay and exploring Williamsburg as our home base."
-  }, {
-    "_id": "35458556",
-    "date": {
-      "$date": {
-        "$numberLong": "1434686400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "13193520",
-    "reviewer_name": "Talib",
-    "txt": "We had a great stay.  The apartment looks like the pictures and had everything we needed.  The location places you close to metro stations, bars and some awesome restaurants.  Our host was very friendly.  "
-  }, {
-    "_id": "36179501",
-    "date": {
-      "$date": {
-        "$numberLong": "1435291200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "30046631",
-    "reviewer_name": "Jason",
-    "txt": "Adela was the perfect host. Her communication before and during my stay was excellent. She also recommended some local places to check out and pointed out all the nearby amenities. She couldn't have been any more helpful and she is a really friendly and genuine person.\n\nHer apartment feels really homely and has great character. It's a great reflection of her style and personality. I felt very comfortable staying there.\n\nHer apartment is right on the doorstep of all the action in and around Bedford Ave and really close to the subway too. You couldn't ask for a better location in Williamsburg. If you happen to be from Melbourne you will find Williamsburg is quite like Fitzroy with a similar vibe to Smith/Brunswick Streets.\n\nI have nothing negative at all to say about my whole experience. It truly was perfect in every way. I can't recommend Adela and her apartment highly enough.\n\nTo Adela... thanks for everything. I appreciate it very much! :)"
-  }, {
-    "_id": "38797559",
-    "date": {
-      "$date": {
-        "$numberLong": "1437192000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "11692831",
-    "reviewer_name": "Amanda",
-    "txt": "My dad stayed at Ade's place while visiting me in Brooklyn, and enjoyed it very much. It's in a convenient location, and Ade was very helpful and responsive. Thank you!"
-  }, {
-    "_id": "42329224",
-    "date": {
-      "$date": {
-        "$numberLong": "1439352000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1355974",
-    "reviewer_name": "Erik",
-    "txt": "Adela's apartment was very comfortable and relaxing, a great spot to call home base. It's in a great location, close to everything, and Adela was very friendly and easy to communicate with."
-  }, {
-    "_id": "45815749",
-    "date": {
-      "$date": {
-        "$numberLong": "1441512000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "26090432",
-    "reviewer_name": "Neil",
-    "txt": "The host canceled this reservation 6 days before arrival. This is an automated posting."
-  }, {
-    "_id": "45816445",
-    "date": {
-      "$date": {
-        "$numberLong": "1441512000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "4617284",
-    "reviewer_name": "Kevin",
-    "txt": "The host canceled this reservation 13 days before arrival. This is an automated posting."
-  }, {
-    "_id": "45817041",
-    "date": {
-      "$date": {
-        "$numberLong": "1441512000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "31276284",
-    "reviewer_name": "Sara",
-    "txt": "The host canceled this reservation 20 days before arrival. This is an automated posting."
-  }, {
-    "_id": "50296497",
-    "date": {
-      "$date": {
-        "$numberLong": "1444536000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "14000908",
-    "reviewer_name": "Pauline",
-    "txt": "Super appartement dans le quartier de Williamsburg!! Avec toutes les commodités environnantes: métro, super-marché, restaurants, bars, station vélib..\r\nL'appart est tel que décrit, cosy, spacieux, propre.\r\nAde est adorable, elle a tout fait pour que l'on se sente bien et a toujours été disponible.\r\nNous avons passé un excellent séjour et nous recommandons vivement l'appartement de Ade!!! "
-  }, {
-    "_id": "51196966",
-    "date": {
-      "$date": {
-        "$numberLong": "1445140800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "26360133",
-    "reviewer_name": "Trevor",
-    "txt": "Ade was a fantastic host - very responsive and communicative. The apartment was as advertised - on a very quiet street and spacious for nyc standards. I was here for work so I didn't have much free time, but Ade still sent an extensive list of restaurants and things to explore. I would highly recommend staying here!"
-  }, {
-    "_id": "52345094",
-    "date": {
-      "$date": {
-        "$numberLong": "1446004800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "8986691",
-    "reviewer_name": "Antoine",
-    "txt": "I live near Ade's appartment and I booked it for my parents visiting. Ade appartement is great, bed is really comfortable (even for parents :)) and it is the best location in williamsburg. Ade was easy to communicate with and everything went smoothly "
-  }, {
-    "_id": "60516018",
-    "date": {
-      "$date": {
-        "$numberLong": "1453611600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1320760",
-    "reviewer_name": "Kerry",
-    "txt": "We arrived in NYC late due to a major airline system outage, conveniently happening as a significant snow storm was beginning. Despite these setbacks, Adela could not have been more helpful. Although she was not there to greet us at the apartment as planned (we don't hold it against her - transit and roads were coming to a full stop in NYC!), she kept in constant contact throughout our stay to make sure we were safe and finding what we needed. We're sorry we didn't have a chance to meet her, but very thankful for her hospitality. Adela's apartment is spotless and comfortable, and it provided a great home base during our adventure in snowy New York. It's also very conveniently located near the Williamsburg Bridge."
-  }, {
-    "_id": "60907707",
-    "date": {
-      "$date": {
-        "$numberLong": "1454043600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "5583653",
-    "reviewer_name": "Miguel",
-    "txt": "All was good and as advertised! clean and nice apartment ; ) Ade was very kind and supportive."
-  }, {
-    "_id": "62627833",
-    "date": {
-      "$date": {
-        "$numberLong": "1455512400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "4872064",
-    "reviewer_name": "Jason",
-    "txt": "Ade was an incredible and considerate host."
-  }, {
-    "_id": "62855669",
-    "date": {
-      "$date": {
-        "$numberLong": "1455685200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2034150",
-    "reviewer_name": "Rachel",
-    "txt": "Ade has a perfect Williamsburg apartment -- surrounded by great restaurants, bars, and cafes. It is very close to the L. The apartment is clean and very comfortable for 2 people. Even better, she goes out of her way to be a welcoming and accommodating host. We have come back to her flat multiple times now because it is such a great place to stay. You do need to be able to walk up the 4 flights of stairs, but it is worth it to get to your convenient, quiet, lovely spot in the heart of all the Williamsburg fun. "
-  }, {
-    "_id": "64311981",
-    "date": {
-      "$date": {
-        "$numberLong": "1456894800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "470215",
-    "reviewer_name": "David",
-    "txt": "Ade's apartment was simply perfect. I could go on about how it is clean, well located, quiet, and convenient. But let me highlight that Ade was extremely pleasant to communicate with and very helpful. On this aspect, she was the best host I have ever had (and I have had over 25 or so). \r\nBook this apartment without hesitation.\r\nThanks once again Ade! "
-  }, {
-    "_id": "65425605",
-    "date": {
-      "$date": {
-        "$numberLong": "1457845200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "28781427",
-    "reviewer_name": "Caitlin",
-    "txt": "Ade was fantastic! She left us tons of info and our key swap was super easy. She was incredibly accessible and overall an amazing host. As for the apartment, it was gorgeous. Tons of light, very clean, really nice decor, and very spacious. Would 100% stay again. We loved staying here. "
-  }, {
-    "_id": "66518468",
-    "date": {
-      "$date": {
-        "$numberLong": "1458705600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "27670451",
-    "reviewer_name": "Laura",
-    "txt": "We had a great time at Ade's apartment! It is lovely and a great space for two people. Communication with Ade was great in advance - she was really helpful and always responded right away. One tricky thing is when the heat comes on it is very warm but that made sense because it's hard to regulate these things in the spring. Overall, it was a fantastic experience and we would definitely stay here again! Great location!"
-  }, {
-    "_id": "68967805",
-    "date": {
-      "$date": {
-        "$numberLong": "1460088000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "22110887",
-    "reviewer_name": "Alexandra",
-    "txt": "Me and my boyfriend stayed in Ade's flat for 8 nights and it was great. Best location in Williamsburg, close to bars, shops, restaurants, subway and supermarket. \nThe flat is clean and cool. Looks like the pictures. \nAde is a really good host, she arrange with keys and let us now that we could contact here if we had any questions. When we left she let us leave our bags after check out and helped us book a taxi. \nIf we come back to NY we would definitely stay at Ade's again. \nThanks for everything Ade. "
-  }, {
-    "_id": "70239456",
-    "date": {
-      "$date": {
-        "$numberLong": "1460865600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "41933837",
-    "reviewer_name": "Daniel",
-    "txt": "Great apartment! Amazing location, blocks from the water, blocks from the Bedford L stop, and close to tons of bars and restaurants. The apartment was cozy, clean, and very pleasant to stay in. I would definitely stay again.\n\nAde was a fabulous host. She had detailed instructions about everything regarding the apartment. Whenever I had a question, she promptly responded. She even suggested some shows I attend while in town. Very friendly person and a great host!"
-  }, {
-    "_id": "71254489",
-    "date": {
-      "$date": {
-        "$numberLong": "1461470400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "61846316",
-    "reviewer_name": "Lindsay",
-    "txt": "Ade was a great host.  Easy instructions throughout.  Nice space, 4th floor walk up.  Building is older, good location.  Very clean unit. "
-  }, {
-    "_id": "73672503",
-    "date": {
-      "$date": {
-        "$numberLong": "1462766400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "57067987",
-    "reviewer_name": "Vice",
-    "txt": "Great communication and guidance for guest while on property"
-  }, {
-    "_id": "75145284",
-    "date": {
-      "$date": {
-        "$numberLong": "1463630400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "64152153",
-    "reviewer_name": "Alejandro",
-    "txt": "Ade was a fantastic host and the apartment was great.\r\n\r\nThe place was easy to find with the directions given, and we had no problem getting the keys.\r\nThe place is exactly as shown in the photos, clean and very cozy. The Location is very good, 5 minutes walking from the subway and in a very nice part of Williambsburg, near a lot of cool restaurants and bars, but the street of the apartment is very quiet.\r\nWe met Ade, and was very helpful with advice about the neighborhood and helped us get a taxi to the airport the last day.\r\n\r\nI would definitely come back again.\r\n"
-  }, {
-    "_id": "75766788",
-    "date": {
-      "$date": {
-        "$numberLong": "1463889600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "32794233",
-    "reviewer_name": "Greg",
-    "txt": "The place was extremely clean and as quiet as advertised.  The location is about as good as it gets in Williamsburg.  Ade was very responsive and helpful with anything we needed.  Bed was comfortable.  Great little homebase for exploring the city.  Thanks again."
-  }, {
-    "_id": "76477406",
-    "date": {
-      "$date": {
-        "$numberLong": "1464321600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2546729",
-    "reviewer_name": "Andrew",
-    "txt": "Such a beautiful, well-decorated home. The air conditioner was a real treat with the weather as it was. Quiet, comfortable, and even well set up to work from."
-  }, {
-    "_id": "78370369",
-    "date": {
-      "$date": {
-        "$numberLong": "1465185600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "35350820",
-    "reviewer_name": "Chris",
-    "txt": "Ade's apartment is everything you could want in a stay in Brooklyn. \nThe Apartment is spotlessly clean, and spacious for a 1bd. Small equipped kitchen and fridge if you wished to cook; (not that you'll need to when you are here), but the fridge is handy for cheese from the Bedford Cheese Shop!!!\n\nThe Apt location is absolutely central just off Bedford and close to the local grocery shop (Foodtown). \n\nAde is a great host, communication is prompt and concise and she is very helpful and always checked in with us to see everyone was going ok.\n\nHighly Recommend, we will stay again!!!  "
-  }, {
-    "_id": "79690353",
-    "date": {
-      "$date": {
-        "$numberLong": "1465790400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "41151121",
-    "reviewer_name": "Nancy",
-    "txt": "We had a wonderful long weekend staying in Ade's apartment.  It was just as advertised:  clean, convenient and perfect for two people.  "
-  }, {
-    "_id": "82144670",
-    "date": {
-      "$date": {
-        "$numberLong": "1466913600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "48049539",
-    "reviewer_name": "Rabia",
-    "txt": "Wow, what a lovely place to spend our honeymoon. Ade was a super host, always helpful and flexible with a smile. The appartment was awesome, welcoming and clean. Close to great secondhand shops, grocery shops etc. and metro. \nA lively neighbourhood,where you could always get a tasty bite to eat on our way back. We would definitely  stay at Ade's if we go back to NY, we give her our best and warmest recommendations. "
-  }, {
-    "_id": "89437506",
-    "date": {
-      "$date": {
-        "$numberLong": "1469678400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1871717",
-    "reviewer_name": "Daniel",
-    "txt": "Ade's place is right in the heart of Williamsburg, so the location is great, six short blocks to the L and surrounded by great restaurants and bars.  It's a New York one bedroom, so it's not big, but Ade has done a great job with the space in terms of functionality and aesthetics, and the windows let in a ton of light during the day, so you don't feel cramped.  We stayed during a mid-summer heat wave, so the air-conditioner was key, and even though it doesn't do a great job of cooling down the bedroom, we slept pretty comfortably.  One minor thing to note:  there's no real closet space or drawers to put your belongings.  We're not the type that mind living out of our suitcases, so it didn't necessarily bother us, but I thought it was worth mentioning. \r\n\r\nAde was very quick with her communication, so getting into and checking out of her apartment proved simple and convenient \r\n\r\nI would say this is the perfect place to stay if you want a cute, centrally located Brooklyn home base with easy access to Manhattan and you don't plan on hanging out very much at the apartment... but it's New York, so what the heck are you doing hanging out in an apartment anyway?!?!\r\n"
-  }, {
-    "_id": "100491029",
-    "date": {
-      "$date": {
-        "$numberLong": "1473393600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "86205314",
-    "reviewer_name": "Jessica",
-    "txt": "We had a wonderful time in Williamsburg staying at Ade's place - very clean, tidy and stylish as the pics show! Ade was incredible easy to deal with and provides us with so many tips and places to eat, drink etc in the area! "
-  }, {
-    "_id": "101371985",
-    "date": {
-      "$date": {
-        "$numberLong": "1473739200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "7005939",
-    "reviewer_name": "Kris",
-    "txt": "Adela's place was absolutely perfect for our trip.  The location is ideal and everything was exactly as advertised.  Plus her apartment is just really cool.\n\nAde was responsive in communicating upon check-in and check-out and made our trip stress free.  \n\nHighly recommended.\n\n-Kris"
-  }, {
-    "_id": "101827711",
-    "date": {
-      "$date": {
-        "$numberLong": "1473912000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "8758686",
-    "reviewer_name": "Miriam",
-    "txt": "This is a lovely apartment, and Adela is a great host. It's perfectly located - near the Subway, and the main road which has lots of cool shops and bars. The apartment itself was clean, quiet, and in lovely condition."
-  }, {
-    "_id": "103285516",
-    "date": {
-      "$date": {
-        "$numberLong": "1474430400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "24707729",
-    "reviewer_name": "Daniel",
-    "txt": "Ade is very easy to get in contact with and always happy to help out. Her apartment is in a quiet building off the main street. It's in the perfect spot in Brooklyn/Williamsburg with a less than 5 minute walk to the Subway (L line) which is 3 stops away from Union Square Subway which gets you basically anywhere in Manhattan. There's plenty of cafes, restaurants and nightlife around. Will be coming back here next time in NY!"
-  }, {
-    "_id": "103457608",
-    "date": {
-      "$date": {
-        "$numberLong": "1474516800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2448491",
-    "reviewer_name": "Scott And Erica",
-    "txt": "Staying at Ade's place was super easy and convenient.  Very easy to coordinate arrival.  The apartment was very clean and in a great location."
-  }, {
-    "_id": "104143599",
-    "date": {
-      "$date": {
-        "$numberLong": "1474776000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "9765436",
-    "reviewer_name": "Ewout",
-    "txt": "Ade made sure we felt very comfortable in the appartment. She communicated very well before, during an after our stay. The appartment was clean and met our expectations. Location is perfect if you are looking for a stay in Williamsburg and would like to explore Manhattan as well. Overall I very much recommend Ade's appartment!"
-  }, {
-    "_id": "105625657",
-    "date": {
-      "$date": {
-        "$numberLong": "1475380800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "8359595",
-    "reviewer_name": "Amy",
-    "txt": "We had a great stay at Ade's apartment. Lovely place in a great neighbourhood! Plenty of space for 2 as a base to explore Brooklyn and NYC as subway only a 5 min walk away. We would highly recommend!"
-  }, {
-    "_id": "109910640",
-    "date": {
-      "$date": {
-        "$numberLong": "1477195200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "10392543",
-    "reviewer_name": "Paul",
-    "txt": "absolutely great location - 5 mins walk to L train then 10 into Manhattan. Williamsburg and Brooklyn are (IMO) the best places in New York. Bedford is great but so much more around too. Apartment was clean and nice. Access was easy. Apartment was quiet considering how close it was to the action. Nice fast broadband."
-  }, {
-    "_id": "112603735",
-    "date": {
-      "$date": {
-        "$numberLong": "1478404800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "7267008",
-    "reviewer_name": "Clara",
-    "txt": "I had a great stay at Ade's apartment. Ade was a really attentive host and the location is unbeatable. Thank you Ade!"
-  }, {
-    "_id": "120906998",
-    "date": {
-      "$date": {
-        "$numberLong": "1481518800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "7994775",
-    "reviewer_name": "Khoa",
-    "txt": "I felt right at home at Ade's place. Everything you need is packed on a cozy top floor hideout in Williamsburg. I was lucky enough to visit friends who lived in the city and experienced little slices of everyone's universe that is NY. I am grateful that Ade shared her little slice and  allowed me to set up camp, explore Brooklyn, and have a safe and inspirational place to get lost in my work while I was in NY. "
-  }, {
-    "_id": "123820182",
-    "date": {
-      "$date": {
-        "$numberLong": "1483074000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "16847779",
-    "reviewer_name": "Glenn",
-    "txt": "Williamsburg is a great place to base yourself for a NYC visit and Ade's apartment is the perfect lace to stay \nWe didn't meet Ade ( we were happy to do our own thing)but our communications were timely, access was good and unit was accurately described \nGo for it!"
-  }, {
-    "_id": "124292463",
-    "date": {
-      "$date": {
-        "$numberLong": "1483246800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "80759322",
-    "reviewer_name": "Guy",
-    "txt": "Perfect 1bd in heart of downtown brooklyn. Ade was helpful and responsive and made getting the keys easy.\r\n\r\nEverything we wanted for our weekend stay. The location is really excellent."
-  }, {
-    "_id": "127221463",
-    "date": {
-      "$date": {
-        "$numberLong": "1484542800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "4986647",
-    "reviewer_name": "Luke",
-    "txt": "Ade's place is fantastically located, close to the L-train straight into lower Manhattan. Perfect spot to explore W'burg and Manhattan. \n\nPlace is cosy and homely, with a great level of culture and cool. Everything in the home ran smoothly, the building it's in is lovely. \n\nI'd fully recommend to anyone looking to stay in the area and would do so again myself!\n\n\n"
-  }, {
-    "_id": "131747205",
-    "date": {
-      "$date": {
-        "$numberLong": "1486962000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "6031324",
-    "reviewer_name": "Chet",
-    "txt": "Perfect spot: best possible location, good sized place, super quiet, clean, comfy. I liked it so much I extended my stay!"
-  }, {
-    "_id": "135857266",
-    "date": {
-      "$date": {
-        "$numberLong": "1488776400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "114293670",
-    "reviewer_name": "Kevin",
-    "txt": "Brilliant location - quiet street but on the doorstep of lots of bars, restaurants, shops (and Martha's bakery which is amazing if you have a sweet tooth). Only a 5 minute walk to Bedford Avenue station which is one stop away from the Lower East Side. The flat is perfect for a couple and I would highly recommend Ade who is a great host."
-  }, {
-    "_id": "141539926",
-    "date": {
-      "$date": {
-        "$numberLong": "1491192000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "9776463",
-    "reviewer_name": "Riccardo",
-    "txt": "Great stay! The listing is in a great part of Brooklyn and there was plenty of space inside. The bed is comfortable and Ade was super easy to communicate with. Bathroom was a bit small but it was very clean. Definitely recommend if you are looking to stay in trendy Williamsburg!"
-  }, {
-    "_id": "144737397",
-    "date": {
-      "$date": {
-        "$numberLong": "1492315200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "3116794",
-    "reviewer_name": "Cirocco",
-    "txt": "This very cute apartment was in a great location! Adela was very communicative and sweet."
-  }, {
-    "_id": "151400900",
-    "date": {
-      "$date": {
-        "$numberLong": "1494561600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "384089",
-    "reviewer_name": "Max",
-    "txt": "Ade's place was ideally situated in the heart of Williamsburg and close to the subway."
-  }, {
-    "_id": "152835705",
-    "date": {
-      "$date": {
-        "$numberLong": "1495080000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "5708346",
-    "reviewer_name": "Natalie",
-    "txt": "A lovely apartment in  a great location! Short walk to Bedford Ave Station for a very quick ride into Manhattan. Remarkably quiet spot despite being very close to restaurants, bars and shops on Bedford Ave. Ade was easy to contact and quick to respond to equations and requests."
-  }, {
-    "_id": "154012837",
-    "date": {
-      "$date": {
-        "$numberLong": "1495425600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "13726600",
-    "reviewer_name": "Peter",
-    "txt": "The host canceled this reservation 4 days before arrival. This is an automated posting."
-  }, {
-    "_id": "171449896",
-    "date": {
-      "$date": {
-        "$numberLong": "1500264000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "339857",
-    "reviewer_name": "Evan",
-    "txt": "I live around the corner and rented this place for visitors coming in from out of town.  \n\nAfter the first night, my sister and her husband said \"if we ever move to the city, we'd get a place like this.\"  They loved the building, and loved the neighborhood, and Ade made the process very easy!"
-  }, {
-    "_id": "190940782",
-    "date": {
-      "$date": {
-        "$numberLong": "1504584000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "6887431",
-    "reviewer_name": "Madison",
-    "txt": "Adela was incredibly helpful, kind, and welcoming. She went out of her way to ensure our stay was perfect. Very quiet, clean, and central apartment. Would definitely stay here again!"
-  }, {
-    "_id": "193729176",
-    "date": {
-      "$date": {
-        "$numberLong": "1505361600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "32043769",
-    "reviewer_name": "Filippo",
-    "txt": "Adela's place is a great apartment where to stay.\nit's located in a super comfortable spot, close to the subways, restaurants and clubs.\nAdela is a great host, super kind and available to help you out.\nfor sure will stay again.\nthanks.\n\nf."
-  }, {
-    "_id": "199280250",
-    "date": {
-      "$date": {
-        "$numberLong": "1506830400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "35435591",
-    "reviewer_name": "Ian",
-    "txt": "Ade was very communicative and responsive, and her apartment was exactly what we were looking for. I'd highly recommend staying here to anyone looking to have a great time in Brooklyn or the city. The place was clean and cozy - really can't think of a single complaint."
-  }, {
-    "_id": "201645691",
-    "date": {
-      "$date": {
-        "$numberLong": "1507435200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "34285452",
-    "reviewer_name": "Maureen",
-    "txt": "Great apartment. Quiet and cute while extremely well located in Williamsburg. Ade was wonderful, helpful and quick to respond. Would\nRecommend!"
-  }, {
-    "_id": "206458027",
-    "date": {
-      "$date": {
-        "$numberLong": "1508904000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "149109840",
-    "reviewer_name": "Chris",
-    "txt": "My wife and I definitely recommend. Great apartment and Adela was so helpful and quick with responses. Letting us leave bags until our flight left and check in after midnight when we first arrived with no hesitation. Highly recommend. Ade and her apartment made our trip to NYC that much more enjoyable."
-  }, {
-    "_id": "207582952",
-    "date": {
-      "$date": {
-        "$numberLong": "1509249600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "1656405",
-    "reviewer_name": "Sue",
-    "txt": "I made a last minute booking with Ade, she was super quick to respond. Ade's reviews say it all, but to emphasize: the whole experience was awesome: great location, gorgeous, neat, clean apartment, Ade was available if we needed her throughout. I would highly recommend this place and will be booking with Ade again!"
-  }, {
-    "_id": "210473187",
-    "date": {
-      "$date": {
-        "$numberLong": "1510203600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "15752963",
-    "reviewer_name": "Sophie",
-    "txt": "Ade was a great host, she was excellent in communicating throughout the process and made our stay very comfortable. The apartment is a creative and artsy space which was fun to stay in. Ade also offered to extend our check-out to late afternoon for a fraction of the daily rate which made this very easy prior to travels. Great location within Williamsburg and only a short stroll to the subway which takes approx 10min to get to Manhattan."
-  }, {
-    "_id": "216358887",
-    "date": {
-      "$date": {
-        "$numberLong": "1512277200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "58576229",
-    "reviewer_name": "Lucy",
-    "txt": "We had a nice stay! The space was perfect for us. Love the hostess & neighborhood."
-  }, {
-    "_id": "219727812",
-    "date": {
-      "$date": {
-        "$numberLong": "1513573200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "5491387",
-    "reviewer_name": "Grace",
-    "txt": "Adela's apartment was a great place to stay for 2 weeks. The bed is comfy and there's a blackout shade in the bedroom so we slept very well :) there are lots of cafes and coffee shops in the area, and the L and G trains are only a short walk away. The bathroom is a bit small but we got used to it after a few days."
-  }, {
-    "_id": "223032132",
-    "date": {
-      "$date": {
-        "$numberLong": "1514696400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "40853750",
-    "reviewer_name": "Connor",
-    "txt": "Great place to stay for 1 or 2 people. \nPerfect spot in Williamsburg if you want to be around that area and close to the L. \nGood wifi speed and working desk."
-  }, {
-    "_id": "234401908",
-    "date": {
-      "$date": {
-        "$numberLong": "1518411600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "2698370",
-    "reviewer_name": "James",
-    "txt": "Apartment with hip rock-themed decorations in a fantastic location in Williamsburg. Ade's hospitality and communication was excellent. Checkin was easy. The building itself is in sort of rough shape, but the apartment itself was clean, reasonably quiet, and gets nice and dark when sleeping (a big thing for me). Listing is accurate. Thanks, Ade!"
-  }, {
-    "_id": "236848264",
-    "date": {
-      "$date": {
-        "$numberLong": "1519102800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "15051128",
-    "reviewer_name": "Chris",
-    "txt": "L appart d.Ade est parfaitement situé dans Williamsburg...tout est à proximité et le cœur de Manhattan accessible en métro en 15 à 20 minutes.\nAde a été très disponible et nous faciliter le séjour départ comme arrivée.\nTrès bien pour 2 à 3personnes.\nNous y reviendrons avec grand plaisir..\n\nStéphane"
-  }, {
-    "_id": "238304758",
-    "date": {
-      "$date": {
-        "$numberLong": "1519534800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "52105836",
-    "reviewer_name": "Lindsay",
-    "txt": "Great location, worked well for my dad and brother who were visiting me in Brooklyn. Ade was very quick to respond and made check in super easy. Thank you!!"
-  }, {
-    "_id": "242306167",
-    "date": {
-      "$date": {
-        "$numberLong": "1520744400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "3257244",
-    "reviewer_name": "Arno",
-    "txt": "Ade's apartment was just as described. It is perfectly located in Williamsburg, very close to bedford and all its attractions. The apartment was very clean and super quiet and really gives you a good taste of brooklyn. Ideal for us! Thanks Ade"
-  }, {
-    "_id": "243105094",
-    "date": {
-      "$date": {
-        "$numberLong": "1521000000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "4447431",
-    "reviewer_name": "Derek",
-    "txt": "Great host, very communicative, will def. book again if available!"
-  }, {
-    "_id": "246888637",
-    "date": {
-      "$date": {
-        "$numberLong": "1522036800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "869533",
-    "reviewer_name": "Nina",
-    "txt": "Great spot. Stylish & a very communicative host."
-  }, {
-    "_id": "250031681",
-    "date": {
-      "$date": {
-        "$numberLong": "1522728000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "19381567",
-    "reviewer_name": "Max",
-    "txt": "We had a great stay at Ade's place. It's in a great location and is exactly as pictured/described. Check-in was very simple and Ade was very quick to respond to any questions we had during our stay. No complaints. Thanks!"
-  }, {
-    "_id": "253446772",
-    "date": {
-      "$date": {
-        "$numberLong": "1523678400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "6435535",
-    "reviewer_name": "Daniel",
-    "txt": "Time at Ade's place was fantastic. Ade was incredibly responsive to all questions/requests and was very accommodating. The apartment is as depicted in pictures and is in a great spot, but still quiet (and warm too when cold outside). Definitely recommend."
-  }, {
-    "_id": "256400292",
-    "date": {
-      "$date": {
-        "$numberLong": "1524369600000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "82088983",
-    "reviewer_name": "Mercedes",
-    "txt": "Great place! Recommended. The neighborhood can be a bit loud during weekends at night, but that has nothing to do with the apartment that was very nice. 100% cotton sheets, comfy bed, sunny and spacious."
-  }, {
-    "_id": "277075224",
-    "date": {
-      "$date": {
-        "$numberLong": "1529035200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "15680868",
-    "reviewer_name": "Jakob",
-    "txt": "Great spot, responsive host. Excellent neighborhood, quiet. "
-  }, {
-    "_id": "324674702",
-    "date": {
-      "$date": {
-        "$numberLong": "1537156800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "46597429",
-    "reviewer_name": "Luc",
-    "txt": "Very good communication with Ade!!! The place is right in the middle of everything and you could go easily to Manhattan if you want! Nice, clean and quiet place, the bed is also really comfy!!! Best spot to enjoy a trip to Williamsburg!!!"
-  }, {
-    "_id": "328271894",
-    "date": {
-      "$date": {
-        "$numberLong": "1537848000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "173148738",
-    "reviewer_name": "Jasmin",
-    "txt": "I really enjoyed the apartment. It’s very good located in Williamsburg. You find all you need just around the corner, it’s a few blocks from the waterfront, Brooklyn bridge/Dumbo and also to the metro, if you are interested visiting Manhattan it’s just a few minutes with the train. Although it's in a crowded area, it‘s quiet. I totally recommend this apartment , very clean and filled with nice art pieces. Ade was the perfect host, always helpful and she never let me wait at any time. I was very happy being your guest. Thank you Ade!"
-  }, {
-    "_id": "331093667",
-    "date": {
-      "$date": {
-        "$numberLong": "1538366400000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "6475737",
-    "reviewer_name": "Stephen",
-    "txt": "Great location to experience Williamsburg and the rest of Brooklyn. Communication was prompt and checkin/checkout was easy.  Thank you Ade!"
-  }, {
-    "_id": "334185958",
-    "date": {
-      "$date": {
-        "$numberLong": "1538971200000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "27433027",
-    "reviewer_name": "Andy",
-    "txt": "Good location at a good price.  The apartment is less than a half a block off of Bedford at a location that has a lot of good local bars and restaurants.  We felt very safe though there is a vacant lot that you could walk by on her street.  However, we did not make much of it, but you could walk on the other side of the street if that bothers you.  The street is well lit.  We worried a little about noise given Williamsburg's reputation for hipness.  However, this ended up not being a problem.  Restaurants were still open after 9, but you could still walk into them without reservations.  At night, it was busy enough to feel safe, but it was sparse enough for it to be farely quiet.\n\nGetting into Manhattan can be an issue.  The L train is the only train coming into the neighborhood.  If it isn't running, the closest stop is Marcy at the end of the Williamsburg bridge which is probably a 30 minute walk.  The ferry, which is a bargain, is close and will cross the East River and drop you off at 34th close to the UN Building.  However, it does not run after 9:30 in the evening.\n\nAde's building is a little ratty which you will see in the stairwell.  However, her apartment is perfectly fine.  The bed is comfortable which is nice compared to most Air BNB hosts.  There is a window unit AC for the entire apartment.  Depending on the time of year, I am not sure if it will cool the bedroom well since it's in a different part of the apartment (though there is an oscillating fan there).  We did not have a problem since it was October.  There is no microwave oven.  It is four flights up with pretty large stairs and no elevator.  I would avoid this apartment if you are elderly or handicapped.\n\nWe did not meet Ade which it is getting pretty common not to meet the host.  However, we had no problems.  The process to get the key was easy.  She had recommendations printed and posted in the room, and she was quick to respond to questions by messaging.\n\nFor our purposes, this was a great place to consider if the L train is running.  We would not stay her again if the L train isn't running.  However, if you don't mind working around the ferry schedule and you want to visit Williamsburg and Greenpoint, this will work well for you."
-  }, {
-    "_id": "354879082",
-    "date": {
-      "$date": {
-        "$numberLong": "1543726800000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "42046158",
-    "reviewer_name": "Jeff",
-    "txt": "Great location!"
-  }, {
-    "_id": "414047344",
-    "date": {
-      "$date": {
-        "$numberLong": "1550466000000"
-      }
-    },
-    "listing_id": "103161",
-    "reviewer_id": "39745252",
-    "reviewer_name": "Rachel",
-    "txt": "Ade’s apartment was clean, cozy, and in the heart of Williamsburg. She was always quick to respond and check in was very easy. Would recommend!"
-  }]
-}
+  },
+},
+    
+
+
 
 
 
 {
   "_id": "10332161",
-  "listing_url": "https://www.airbnb.com/rooms/10332161",
+  "listingUrl": "https://www.airbnb.com/rooms/10332161",
   "name": "A large sunny bedroom",
-  "summary": "A large, sunny , affordable and very clean room in a fully renovated 2-bedroom apartment with only 2 mins walk to D train at Bronx.",
-  "space": "",
-  "description": "A large, sunny , affordable and very clean room in a fully renovated 2-bedroom apartment with only 2 mins walk to D train at Bronx.",
-  "neighborhood_overview": "",
-  "notes": "",
-  "transit": "",
-  "access": "",
-  "interaction": "",
-  "house_rules": "",
-  "property_type": "Apartment",
-  "room_type": "Private room",
-  "bed_type": "Real Bed",
-  "minimum_nights": "3",
-  "maximum_nights": "1125",
-  "cancellation_policy": "moderate",
-  "last_scraped": {
-    "$date": {
-      "$numberLong": "1551848400000"
-    }
-  },
-  "calendar_last_scraped": {
-    "$date": {
-      "$numberLong": "1551848400000"
-    }
-  },
-  "first_review": {
-    "$date": {
-      "$numberLong": "1470369600000"
-    }
-  },
-  "last_review": {
-    "$date": {
-      "$numberLong": "1471665600000"
-    }
-  },
-  "accommodates": {
-    "$numberInt": "1"
-  },
-  "bedrooms": {
-    "$numberInt": "1"
-  },
-  "beds": {
-    "$numberInt": "1"
-  },
-  "number_of_reviews": {
-    "$numberInt": "2"
-  },
-  "bathrooms": {
-    "$numberDecimal": "1.0"
-  },
-  "amenities": ["Wifi", "Air conditioning", "Kitchen", "Heating", "Washer", "Dryer", "Smoke detector", "First aid kit", "Essentials", "Lock on bedroom door", "Hangers", "Hair dryer", "Iron", "translation missing: en.hosting_amenity_49", "translation missing: en.hosting_amenity_50"],
-  "price": {
-    "$numberDecimal": "35.00"
-  },
-  "extra_people": {
-    "$numberDecimal": "0.00"
-  },
-  "guests_included": {
-    "$numberDecimal": "1"
-  },
-  "images": {
-    "thumbnail_url": "",
-    "medium_url": "",
-    "picture_url": "https://a0.muscache.com/im/pictures/7e68a65c-562e-42b2-bc6c-c95a87eac969.jpg?aki_policy=large",
-    "xl_picture_url": ""
-  },
+  "locationDesc": "A large, sunny , affordable and very clean room in a fully renovated 2-bedroom apartment with only 2 mins walk to D train at Bronx.",
+  "spaceDesc": "A large, sunny , affordable and very clean room in a fully renovated 2-bedroom apartment with only 2 mins walk to D train at Bronx.",
+  "spaceType": "Apartment",
+  "roomType": "Private room",
+  "cancellationPolicy": "moderate",
+  "capacity": 1,
+  "bedrooms": 1,
+  "beds": 1,
+  "numberOfReviews": 2,
+  "bathrooms":1.0,
+  "amenities": [
+    "Air conditioning",
+    "Dryer",
+    "Essentials",
+    "Hangers",
+    "Heating",
+    "Iron",
+    "Kitchen",
+    "Parking",
+    "TV",
+    "Wifi"
+  ],
+  "price": 35,
+  "imgs": [
+    "https://a0.muscache.com/im/pictures/f47b1f5f-43ed-4363-b126-e0b07f4c7993.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/e188d532-5384-4c86-9007-8f39de065d22.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/c5e3ca5c-dd71-4036-9f04-fc71d7d5cd14.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/47befafb-07a1-469c-9d77-a3a74bb3482b.jpg?im_w=720"
+    "https://a0.muscache.com/im/pictures/368c947d-16a1-43ca-8db8-a67efd614d39.jpg?im_w=720"
+  ],
   "host": {
-    "host_id": "53169195",
-    "host_url": "https://www.airbnb.com/users/show/53169195",
-    "host_name": "Ehssan",
-    "host_location": "New York, New York, United States",
-    "host_about": "",
-    "host_thumbnail_url": "https://a0.muscache.com/im/pictures/c6f4d130-30d3-482c-994b-4a4ea575ac39.jpg?aki_policy=profile_small",
-    "host_picture_url": "https://a0.muscache.com/im/pictures/c6f4d130-30d3-482c-994b-4a4ea575ac39.jpg?aki_policy=profile_x_medium",
-    "host_neighbourhood": "Tremont",
-    "host_is_superhost": false,
-    "host_has_profile_pic": true,
-    "host_identity_verified": true,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "facebook", "reviews", "jumio", "government_id"]
+    "id": "53169195",
+    "name": "Eddie",
+    "location": "New York, New York, United States",
+    "about": "My name is Eddie, i work in the show biz. Ilove Nyc and would love it if you would join me!",
+    "thumbnail": "https://a0.muscache.com/im/pictures/c6f4d130-30d3-482c-994b-4a4ea575ac39.jpg?aki_policy=profile_small",
+    "profileImg": "https://a0.muscache.com/im/pictures/c6f4d130-30d3-482c-994b-4a4ea575ac39.jpg?aki_policy=profile_x_medium",
+    "isSuperhost": false,
+    "identityVerified": true,
   },
   "address": {
     "street": "Bronx, NY, United States",
-    "suburb": "Tremont",
-    "government_area": "Fordham",
-    "market": "New York",
+    "city": "New York",
     "country": "United States",
-    "country_code": "US",
-    "location": {
-      "type": "Point",
-      "coordinates": [{
-        "$numberDouble": "-73.90052"
-      }, {
-        "$numberDouble": "40.85598"
-      }],
-      "is_location_exact": true
+    "coordinates": {
+      "lat": -73.90052,
+      "lng": 40.85598
     }
   },
-  "availability": {
-    "availability_30": {
-      "$numberInt": "0"
-    },
-    "availability_60": {
-      "$numberInt": "0"
-    },
-    "availability_90": {
-      "$numberInt": "0"
-    },
-    "availability_365": {
-      "$numberInt": "0"
-    }
+  "reviewScores": {
+    "accuracy":10,
+    "cleanliness":10,
+    "checkin":9,
+    "communication":9,
+    "location":6,
+    "value":9,
+    "rating":90
   },
-  "review_scores": {
-    "review_scores_accuracy": {
-      "$numberInt": "10"
-    },
-    "review_scores_cleanliness": {
-      "$numberInt": "10"
-    },
-    "review_scores_checkin": {
-      "$numberInt": "9"
-    },
-    "review_scores_communication": {
-      "$numberInt": "9"
-    },
-    "review_scores_location": {
-      "$numberInt": "6"
-    },
-    "review_scores_value": {
-      "$numberInt": "9"
-    },
-    "review_scores_rating": {
-      "$numberInt": "90"
-    }
-  },
-  "reviews": [{
+  "reviews": [
+    {
     "_id": "91468272",
-    "date": {
-      "$date": {
-        "$numberLong": "1470369600000"
-      }
+    "date":  "1470369600000",
+    "by":{
+      "id": "35316156",
+      "name": "Ron",
+      "img":"https://a0.muscache.com/im/pictures/user/02f64f9c-57e9-43c8-ae5b-c444343d5f89.jpg?im_w=240",
     },
-    "listing_id": "10332161",
-    "reviewer_id": "35316156",
-    "reviewer_name": "Ron",
-    "txt": "I had a fantastic stay. I didn't meet Ehssan in person, but he did a great job of making sure his roommate took care of everything I needed and he was extremely hospitable. The place was especially clean, and the room was exactly as pictured and described. Note that there was a block party nearby, so there was some level of noise a couple nights, but it ended at reasonable hours.\r\n\r\nI would DEFINITELY stay here again and recommend it to others."
-  }, {
+    "txt": "I had a fantastic stay. I didn't meet Eddie in person, but he did a great job of making sure his roommate took care of everything I needed and he was extremely hospitable. The place was especially clean, and the room was exactly as pictured and described. Note that there was a block party nearby, so there was some level of noise a couple nights, but it ended at reasonable hours.\r\n\r\nI would DEFINITELY stay here again and recommend it to others."
+  },
+  {
     "_id": "95773716",
-    "date": {
-      "$date": {
-        "$numberLong": "1471665600000"
-      }
+    "date": "1471665600000",
+    "by":{
+      "id": "82945666",
+      "name": "Gabby",
+      "img":"https://a0.muscache.com/im/pictures/user/cf788a2d-0d19-4253-bff5-ef60772c6673.jpg?im_w=240",
     },
-    "listing_id": "10332161",
-    "reviewer_id": "82945666",
-    "reviewer_name": "Gabby",
     "txt": "Excellent accommodation in staying here. A very clean apartment with a friendly and helpful roommate. The bedroom was large, quiet and air conditioned :)"
-  }]
-}
+  }
+]
+},
+
+
+
+
+
 
 
 {
@@ -1855,13 +471,6 @@
   "listing_url": "https://www.airbnb.com/rooms/10542174",
   "name": "Luxury 1-Bdrm in Downtown Brooklyn",
   "summary": "A perfect blend of one of BKLYN's hippest areas with a new, high-rise apartment building. You'll be hard pressed to find a corner unit like this closer the the City. Almost 800 sf of living space with luxury amenities & modern but comfy furnishings.",
-  "space": "The apartment is a well lit corner unit in a brand new, luxury building in Downtown Brooklyn close to the city and Fort Greene Park. With luxury furnishings including a Studio Divani couch and a chef's kitchen, you'll find no other unit like this the area. The bedroom features a comfy queen bed. The bathroom is well equipped and stocked. The kitchen is well equipped with all the tools you need to prepare a meal or a morning cup of coffee or tea.",
-  "description": "A perfect blend of one of BKLYN's hippest areas with a new, high-rise apartment building. You'll be hard pressed to find a corner unit like this closer the the City. Almost 800 sf of living space with luxury amenities & modern but comfy furnishings. The apartment is a well lit corner unit in a brand new, luxury building in Downtown Brooklyn close to the city and Fort Greene Park. With luxury furnishings including a Studio Divani couch and a chef's kitchen, you'll find no other unit like this the area. The bedroom features a comfy queen bed. The bathroom is well equipped and stocked. The kitchen is well equipped with all the tools you need to prepare a meal or a morning cup of coffee or tea. Guests will have access to the apartment, the rooftop lounge, gym, and on-site movie theater. A concierge is available 24x7 to help with security, directions, and packages. If you do have a package or other delivery, make sure it is shipped in care of the host's name. The host will be available by t",
-  "neighborhood_overview": "Downtown Brooklyn serves as the borough's civic and commercial center. Important looking people enter and exit this neighborhood's marble office buildings during business hours. Plenty of adorable shops and knick-knack stalls line Downtown Brooklyn's main avenues, but the neighborhood noticeably settles down after the clock strikes five. Public transit options abound in Downtown Brooklyn, so getting anywhere else from here is a breeze.",
-  "notes": "When you're here, please do not tell the concierge or guests that you are an AirBNB guest. Tell them you are visiting a friend at the apartment if the topic comes up.",
-  "transit": "Downtown Brooklyn has a walk score of 96 of 100, a public transportation score of 100 of 100, and a bike score of 88 of 100 (URL HIDDEN) There are several public parking garages nearby as well as Zip Car lots.  For hourly or daily bike rental, there are tons of Citi Bike rental stations nearby including a block away at Willoughby Street & Fleet Street (URL HIDDEN) For public transportation, Manhattan is just a few stops away by subway -- no more than 10 minutes to the Lower East Side or Chinatown in the city. - A, C, F & R subway at Jay St - MetroTech (0.3 miles) - B, Q, R subway station at DeKalb Av (0.3 miles) - 2, 3 subway station at Hoyt St (0.3 miles) - 2, 3, 4, 5 subway station at Nevins St (0.4 miles) - A, C, G subway station at Hoyt & Schermerhorn (0.4 miles) - R, 2, 3, 4, 5 subway station at Borough Hall (0.4 miles) - G subway station at Fulton St (0.5 miles)",
-  "access": "Guests will have access to the apartment, the rooftop lounge, gym, and on-site movie theater. A concierge is available 24x7 to help with security, directions, and packages. If you do have a package or other delivery, make sure it is shipped in care of the host's name.",
-  "interaction": "The host will be available by telephone, text, email or (SENSITIVE CONTENTS HIDDEN) to help you during your stay.",
   "house_rules": "RESPECT IT & ENJOY IT! NO SMOKING -- this building, per the on-site management and the individual lease agreements, is a 100% SMOKE-FREE ZONE including both private and communal roof-top areas, the unit itself, and any other public areas within the building and the communal property regardless of whether inside or out. You must be totally off of the premises and on public property to smoke. If you're a regular smoker and feel you'll have a hard time following this rule, then we kindly suggest you look into another property. Evidence of smoking will result in a complete forfeit of your security deposit. NOISE: We have a zero-tolerance policy with noise complaints. We ask that you please respect our neighbors and keep noise to a minimum. QUIET HOURS are from 10:00 PM to 8:00 AM (week) and 11:00 PM to 9:00 AM (weekends). NO LARGE GATHERINGS/PARTIES VISITORS: We ask that all guests let us know in advance if you plan on having any visitors during your stay. We do ask that the number of visi",
   "property_type": "Apartment",
   "room_type": "Entire home/apt",
@@ -1938,13 +547,6 @@
     "host_is_superhost": false,
     "host_has_profile_pic": true,
     "host_identity_verified": false,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "jumio", "government_id"]
   },
   "address": {
     "street": "Brooklyn, NY, United States",
@@ -1999,13 +601,6 @@
   "listing_url": "https://www.airbnb.com/rooms/10542174",
   "name": "Luxury 1-Bdrm in Downtown Brooklyn",
   "summary": "A perfect blend of one of BKLYN's hippest areas with a new, high-rise apartment building. You'll be hard pressed to find a corner unit like this closer the the City. Almost 800 sf of living space with luxury amenities & modern but comfy furnishings.",
-  "space": "The apartment is a well lit corner unit in a brand new, luxury building in Downtown Brooklyn close to the city and Fort Greene Park. With luxury furnishings including a Studio Divani couch and a chef's kitchen, you'll find no other unit like this the area. The bedroom features a comfy queen bed. The bathroom is well equipped and stocked. The kitchen is well equipped with all the tools you need to prepare a meal or a morning cup of coffee or tea.",
-  "description": "A perfect blend of one of BKLYN's hippest areas with a new, high-rise apartment building. You'll be hard pressed to find a corner unit like this closer the the City. Almost 800 sf of living space with luxury amenities & modern but comfy furnishings. The apartment is a well lit corner unit in a brand new, luxury building in Downtown Brooklyn close to the city and Fort Greene Park. With luxury furnishings including a Studio Divani couch and a chef's kitchen, you'll find no other unit like this the area. The bedroom features a comfy queen bed. The bathroom is well equipped and stocked. The kitchen is well equipped with all the tools you need to prepare a meal or a morning cup of coffee or tea. Guests will have access to the apartment, the rooftop lounge, gym, and on-site movie theater. A concierge is available 24x7 to help with security, directions, and packages. If you do have a package or other delivery, make sure it is shipped in care of the host's name. The host will be available by t",
-  "neighborhood_overview": "Downtown Brooklyn serves as the borough's civic and commercial center. Important looking people enter and exit this neighborhood's marble office buildings during business hours. Plenty of adorable shops and knick-knack stalls line Downtown Brooklyn's main avenues, but the neighborhood noticeably settles down after the clock strikes five. Public transit options abound in Downtown Brooklyn, so getting anywhere else from here is a breeze.",
-  "notes": "When you're here, please do not tell the concierge or guests that you are an AirBNB guest. Tell them you are visiting a friend at the apartment if the topic comes up.",
-  "transit": "Downtown Brooklyn has a walk score of 96 of 100, a public transportation score of 100 of 100, and a bike score of 88 of 100 (URL HIDDEN) There are several public parking garages nearby as well as Zip Car lots.  For hourly or daily bike rental, there are tons of Citi Bike rental stations nearby including a block away at Willoughby Street & Fleet Street (URL HIDDEN) For public transportation, Manhattan is just a few stops away by subway -- no more than 10 minutes to the Lower East Side or Chinatown in the city. - A, C, F & R subway at Jay St - MetroTech (0.3 miles) - B, Q, R subway station at DeKalb Av (0.3 miles) - 2, 3 subway station at Hoyt St (0.3 miles) - 2, 3, 4, 5 subway station at Nevins St (0.4 miles) - A, C, G subway station at Hoyt & Schermerhorn (0.4 miles) - R, 2, 3, 4, 5 subway station at Borough Hall (0.4 miles) - G subway station at Fulton St (0.5 miles)",
-  "access": "Guests will have access to the apartment, the rooftop lounge, gym, and on-site movie theater. A concierge is available 24x7 to help with security, directions, and packages. If you do have a package or other delivery, make sure it is shipped in care of the host's name.",
-  "interaction": "The host will be available by telephone, text, email or (SENSITIVE CONTENTS HIDDEN) to help you during your stay.",
   "house_rules": "RESPECT IT & ENJOY IT! NO SMOKING -- this building, per the on-site management and the individual lease agreements, is a 100% SMOKE-FREE ZONE including both private and communal roof-top areas, the unit itself, and any other public areas within the building and the communal property regardless of whether inside or out. You must be totally off of the premises and on public property to smoke. If you're a regular smoker and feel you'll have a hard time following this rule, then we kindly suggest you look into another property. Evidence of smoking will result in a complete forfeit of your security deposit. NOISE: We have a zero-tolerance policy with noise complaints. We ask that you please respect our neighbors and keep noise to a minimum. QUIET HOURS are from 10:00 PM to 8:00 AM (week) and 11:00 PM to 9:00 AM (weekends). NO LARGE GATHERINGS/PARTIES VISITORS: We ask that all guests let us know in advance if you plan on having any visitors during your stay. We do ask that the number of visi",
   "property_type": "Apartment",
   "room_type": "Entire home/apt",
@@ -2082,13 +677,6 @@
     "host_is_superhost": false,
     "host_has_profile_pic": true,
     "host_identity_verified": false,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "jumio", "government_id"]
   },
   "address": {
     "street": "Brooklyn, NY, United States",
@@ -2230,13 +818,6 @@
     "host_is_superhost": true,
     "host_has_profile_pic": true,
     "host_identity_verified": false,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "reviews", "offline_government_id", "selfie", "government_id", "identity_manual"]
   },
   "address": {
     "street": "Brooklyn, NY, United States",
@@ -3654,13 +2235,6 @@
     "host_is_superhost": false,
     "host_has_profile_pic": true,
     "host_identity_verified": true,
-    "host_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "1"
-    },
-    "host_verifications": ["email", "phone", "facebook", "reviews", "kba"]
   },
   "address": {
     "street": "New York, NY, United States",
@@ -3925,13 +2499,6 @@
     "host_is_superhost": true,
     "host_has_profile_pic": true,
     "host_identity_verified": true,
-    "host_listings_count": {
-      "$numberInt": "2"
-    },
-    "host_total_listings_count": {
-      "$numberInt": "2"
-    },
-    "host_verifications": ["email", "phone", "facebook", "reviews", "kba"]
   },
   "address": {
     "street": "Brooklyn, NY, United States",

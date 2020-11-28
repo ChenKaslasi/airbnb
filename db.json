@@ -419,8 +419,8 @@
         "id": "11275734",
         "name": "Josh",
         "about": "",
-        "thumbnail_url": "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_small",
-        "picture_url": "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_x_medium",
+        "thumbnail": "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_small",
+        "profileImg": "https://a0.muscache.com/im/users/11275734/profile_pic/1405792127/original.jpg?aki_policy=profile_x_medium",
         "isSuperhost": false,
         "identityVerified": true,
         "responseRate": 90,
@@ -498,7 +498,7 @@
         "name": "Greta",
         "about": "By now I have lived longer in the city than the country however I feel equally at home in each. I like to keep one foot in each and help others to do the same!",
         "thumbnail_url": "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?im_w=240",
-        "picture_url": "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?aki_policy=profile_medium",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?aki_policy=profile_medium",
         "responseRate": 100,
         "responseTime": "Within an hour",
         "isSuperhost": true,
@@ -562,16 +562,6 @@
             "img": "https://a0.muscache.com/im/pictures/user/8f7be50b-ae4e-49d9-8e13-af6cb64c91ab.jpg?im_w=240"
           },
           "txt": "Greta's place is very well located, so close to the MTA 1 line, which takes you up and down Manhattan, which was perfect for me.  It was an easy 3 minute walk and be on your way to anywhere in NY. \r\nThe shower is something else, the best water pressure I have experienced in a long time.\r\nI thought the decor was cool and eclectic, Greta must have an artistic streak. The Murphy bed was comfortable, and the AC unit (not pictured) kept it nice and cool.  \r\nAlthough I didn't meet her, she arranged for a neighbor to meet me and show me in. He was cool and so were any other neighbors that I met. \r\nShe also left a list of suggestions where to shop and eat, along with menus which was helpful when I needed a late night meal. \r\nHighly recommended. \r\n"
-        },
-        {
-          "id": "6933005",
-          "date": "2013-08-31T04:00:00.000Z",
-          "by": {
-            "id": "6067127",
-            "name": "Nicole",
-            "img": "https://a0.muscache.com/im/pictures/user/05e38a90-5798-448e-8ade-b74ef0f2a34c.jpg?im_w=240"
-          },
-          "txt": "I had a wonderful stay at Greta's NYC apartment. The apartment was clean and comfortable. She was a wonderful and informative host. I felt very welcomed in her home."
         },
         {
           "id": "7205029",

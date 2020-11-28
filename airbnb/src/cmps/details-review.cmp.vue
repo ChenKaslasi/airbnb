@@ -1,7 +1,7 @@
 <template>
   <section class="review-container details-conatiner">
     <div class="card-container">
-      <ul v-for="review in reviews" :key="review.id">
+      <ul class="cards" v-for="review in reviews" :key="review.id">
         <li class="review-card">
           <div class="card-header">
             <img :src="review.by.img" />
@@ -37,12 +37,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul {
-  width: 360px;
-  
+.card-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-ul:nth-last-child(even) {
-  margin-right: 240px;
+.cards {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px; 
 }
 .review-container {
   line-height: 20px;
@@ -56,7 +60,7 @@ ul:nth-last-child(even) {
     .review-card {
       color: #222222;
       text-align: start;
-      width: 450px; //later media query it
+      // max-width: 350px; //later media query it
       object-fit: contain;
       margin-bottom: 30px;
       

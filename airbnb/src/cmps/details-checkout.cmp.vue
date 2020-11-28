@@ -1,7 +1,7 @@
 <template>
   <section class="checkout-container">
     <div class="checkout-card">
-      <section v-if="space">
+      <section class="aligner" v-if="space">
         <div class="checkout-header flex">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>
           <div>
@@ -35,17 +35,25 @@
               <div class="btn-container">
                 <div class="txt">Adults:</div>
                 <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">+</button>
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
                   <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">-</button>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
                 </div>
               </div>
               <div class="btn-container">
                 <div class="txt">Children:</div>
                 <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">+</button>
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
                   <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">-</button>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                <div class="txt">Infants:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
                 </div>
               </div>
             </div>
@@ -105,13 +113,20 @@ export default {
 
 <style lang="scss" scoped>
 .modal {
-  position: absolute;
-  background-color: #fff;
-  // top: 0;
-  border: 1px solid #717171;
-  width: 87%;
-  display: flex;
-  flex-direction: column;
+  position: absolute !important;
+    left: 0px !important;
+    // top: 100% !important;
+    z-index: 1 !important;
+    background: rgb(255, 255, 255) !important;
+    border-radius: 32px !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
+    margin-top: 12px !important;
+    margin-left:20px !important;
+    margin-right:20px !important;
+    // max-height: calc(100vh - 220px) !important;
+    overflow: hidden auto !important;
+    padding: 16px 32px !important;
+    width: 90%;
   .container-btns {
     display: flex;
     flex-direction: column;
@@ -120,38 +135,72 @@ export default {
 
     .txt {
       display: flex;
+      font-size: rem(14px) !important;
+      line-height: 20px !important;
+      font-weight: 600 !important;
     }
     .btns {
       display: flex;
+      -webkit-box-align: center !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 104px !important;
+      height: 32px !important;
+      color: rgb(34, 34, 34) !important;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 20px !important;
       p {
         margin: 0px 8px;
       }
     }
   }
   .btn-container {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    padding-top: 8px;
-    padding-bottom: 2px;
+    -webkit-box-pack: justify !important;
+    -webkit-box-align: center !important;
+    color: rgb(34, 34, 34) !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    padding-right: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
   }
   .guest-num {
     display: flex;
     line-height: 1;
   }
   .guest-btn {
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 100%;
-    color: #ddd;
-    background-color: #fff;
-    padding: 3px;
-    height: 24px;
-    width: 24px;
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    -webkit-box-flex: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(176, 176, 176) !important;
+    color: rgb(113, 113, 113) !important;
+    font-family: inherit !important;
+    outline: none !important;
+    touch-action: manipulation !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgb(255, 255, 255) !important;
+    border-radius: 50% !important;
   }
 }
-.btn-container:nth-last-child(even) {
+.btn-container:nth-last-child(2) {
   border-bottom: 1px solid #717171;
+  border-top: 1px solid #717171;
 }
 
 .guest-modal-btn {
