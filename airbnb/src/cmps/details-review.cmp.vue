@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .card-container{
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
 }
 .cards {
