@@ -5,8 +5,47 @@
 
   .logo {
 
-    .logo-svg{
-      width: 32px
+  .link-container {
+
+    .become-host,.explore {
+      color: #222222;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      padding: 12px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #eee;
+        padding: 12px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .user-dropdown {
+    transition: ease box-shadow 1s;
+    :hover{
+      box-shadow: 0px 3px 6px -4px rgba(34,34,34,0.8);
+    }
+
+    .btn {
+      padding: 0 8px 0 14px;
+      border-radius: 20px;
+      outline: none;
+      background: none;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    .hamburger-img {
+      width: 18px;
+      margin-inline-end: 10px;
+      pointer-events: none;
+    }
+    .guest-img {
+      width: 30px;
+      pointer-events: none;
     }
   }
 }
