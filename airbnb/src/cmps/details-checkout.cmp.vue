@@ -178,7 +178,7 @@ export default {
 
   .checkout-card {
     position: sticky;
-    top: 0;
+    top: 100px;
     display: flex;
     border-radius: 12px;
     padding: 24px;

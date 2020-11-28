@@ -79,7 +79,7 @@ export default {
   height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.178)),
-    url("https://img5.goodfon.com/wallpaper/nbig/c/a5/nature-house-lake-mountains-village-saksun-faroe-islands-arc.jpg  ");
+    url("https://cdn57.androidauthority.net/wp-content/uploads/2019/12/Home-available-on-BoutiqueHomes.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,7 +87,8 @@ export default {
   & h1 {
     margin-left: 3%;
     color: white;
-    font-size: 4.5rem;
+    font-size: 5rem;
+    margin-top: 20px;
     font-weight: 100;
     padding: 20px;
     &.hero-header2 {
@@ -100,7 +101,11 @@ export default {
   }
 }
 .card {
+  margin-top: 20px;
   text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    margin-bottom: 20px;
+    border-radius: 8px ;
   & h3 {
     padding: 10px;
     padding-left: 10px;
@@ -117,7 +122,7 @@ export default {
       & img {
         width: 307px;
         height: 204px;
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 8px 8px 0px 0px;
       }
       & p {
         color: rgb(136, 134, 134);
