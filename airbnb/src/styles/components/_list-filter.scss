@@ -1,7 +1,7 @@
 .list-filter {
     .buttons-container {
-        margin-bottom:50px;
-        :not(:last-child){
+        margin-bottom: 50px;
+        :not(:last-child) {
             margin-inline-end: 10px;
         }
         button {
@@ -19,12 +19,6 @@
             font-size: 14px;
             line-height: 18px;
             background-color: #ffffff;
-        }
-        .el-popper{
-            width: 500px !important;
-            border: 0.5px solid rgba(118, 118, 118, 0.28);
-            border-radius: 12px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 37px;
         }
     }
 }
