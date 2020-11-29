@@ -44,7 +44,7 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,10px' } },
+          modifiers: { offset: { offset: '0,20px' } },
         }"
       >
         <div class="guests flex column" slot="reference">
@@ -53,7 +53,7 @@
         </div>
        
        <div class="guest-dropdown ">
-         
+          <el-input-number class="numInput" v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
        </div>
       </popper>
 
@@ -78,6 +78,7 @@ export default {
   data() {
     return {
       filterBy: null,
+      num: 1
     };
   },
   methods: {
@@ -85,6 +86,9 @@ export default {
       this.$emit("filter", this.filterBy);
       console.log("filter", this.filterBy);
     },
+    handleChange(value) {
+        console.log(value)
+      }
   },
 };
 </script>
