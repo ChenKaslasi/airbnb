@@ -35,25 +35,25 @@
               <div class="btn-container">
                 <div class="txt">Adults:</div>
                 <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                  <button class="guest-btn" @click="setAdult(-1)">-</button>
+                  <p>{{ adultCount }}</p>
+                  <button class="guest-btn" @click="setAdult(1)">+</button>
                 </div>
               </div>
               <div class="btn-container">
                 <div class="txt">Children:</div>
                 <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                  <button class="guest-btn" @click="setChildren(-1)">-</button>
+                  <p>{{ childrenCount }}</p>
+                  <button class="guest-btn" @click="setChildren(1)">+</button>
                 </div>
               </div>
               <div class="btn-container">
                 <div class="txt">Infants:</div>
                 <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                  <button class="guest-btn" @click="setInfant(-1)">-</button>
+                  <p>{{ infantCount }}</p>
+                  <button class="guest-btn" @click="setInfant(1)">+</button>
                 </div>
               </div>
             </div>
@@ -78,7 +78,9 @@ export default {
   },
   data() {
     return {
-      guestNum: 1,
+      adultCount: 1,
+      childrenCount: 1,
+      infantCount: 1,
       isShown: false,
       night: null,
       range: {
@@ -99,9 +101,14 @@ export default {
     guestModal() {
       this.isShown = !this.isShown;
     },
-    setGuests(value) {
-      this.guestNum += value;
-      console.log(this.guestNum);
+    setAdult(value) {
+      this.adultCount += value;
+    },
+    setChildren(value) {
+      this.childrenCount += value;
+    },
+    setInfant(value) {
+      this.infantCount += value;
     },
   },
   components: {

@@ -34,14 +34,14 @@
     <!-- </GmapMap> -->
     <GmapMap
       :center="{
-        lng: this.space.address.coordinates.lng,
-        lat: this.space.address.coordinates.lat,
+        lng: space.address.coordinates.lng,
+        lat: space.address.coordinates.lat,
       }"
       :zoom="12"
       map-type-id="terrain"
       style="height: 400px"
     >
-      <gmap-custom-marker>
+      <gmap-custom-marker >
         <img class="marker-img" src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"/>
       </gmap-custom-marker>
     </GmapMap>

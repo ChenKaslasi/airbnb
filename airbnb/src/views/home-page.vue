@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import spaceFilter from "../cmps/space-filter-update.cmp.vue";
+import spaceFilter from "../cmps/space-filter.cmp.vue";
 
 import spaceHeader from "@/cmps/space-header.cmp.vue";
 // @ is an alias to /src

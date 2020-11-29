@@ -85,10 +85,91 @@
   .guest-dropdown {
     background-color: #fff;
     z-index: 500;
+    width: 300px;
+    // checkout modal start
+
+    .modal {
+      position: absolute !important;
+        left: 0px !important;
+        z-index: 1 !important;
+        background: rgb(255, 255, 255) !important;
+        border-radius: 32px !important;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
+        overflow: hidden auto !important;
+        padding: 16px 32px !important;
+        width: 90%;
+      .container-btns {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 20;
     
-    .numInput{
-      border: none;
-      
+        .txt {
+          display: flex;
+          font-size: rem(14px) !important;
+          line-height: 20px !important;
+          font-weight: 600 !important;
+        }
+        .btns {
+          display: flex;
+          -webkit-box-align: center !important;
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+          width: 104px !important;
+          height: 32px !important;
+          color: rgb(34, 34, 34) !important;
+          font-weight: 400 !important;
+          font-size: 16px !important;
+          line-height: 20px !important;
+          p {
+            margin: 0px 8px;
+          }
+        }
+      }
+      .btn-container {
+        -webkit-box-pack: justify !important;
+        -webkit-box-align: center !important;
+        color: rgb(34, 34, 34) !important;
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        padding-right: 4px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+      }
+      .guest-num {
+        display: flex;
+        line-height: 1;
+      }
+      .guest-btn {
+        -webkit-box-pack: center !important;
+        -webkit-box-align: center !important;
+        -webkit-box-flex: 0 !important;
+        width: 32px !important;
+        height: 32px !important;
+        flex-grow: 0 !important;
+        flex-shrink: 0 !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: rgb(176, 176, 176) !important;
+        color: rgb(113, 113, 113) !important;
+        font-family: inherit !important;
+        outline: none !important;
+        touch-action: manipulation !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgb(255, 255, 255) !important;
+        border-radius: 50% !important;
+      }
     }
+
+    // checkout modal end
   }
 }
