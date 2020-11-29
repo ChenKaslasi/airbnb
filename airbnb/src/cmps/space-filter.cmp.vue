@@ -1,6 +1,6 @@
 <template>
   <section class="filter-container flex justify-center align-center">
-    <div class="wrapper flex">
+    <div class="wrapper flex "  @mouseover="colorSearchArea" @mouseleave="unColorSearchArea">
       <popper
         class="box"
         trigger="click"
@@ -11,15 +11,15 @@
       >
         <div class="location flex column" slot="reference">
           <span class="title">Location</span>
-          <span class="desc">Where are you going?</span>
+          <input class="desc" type="text" placeholder="Where are you going?" v-model="filterBy.location">
         </div>
 
         <div class="location-dropdown flex column">
           <span class="header">GATEWAYS</span>
           <div class="loc-btn flex wrap">
-            <div>Barcelona</div>
-            <div>New York</div>
-            <div>Sydney</div>
+            <div @click="setLocation">Barcelona</div>
+            <div @click="setLocation">New York</div>
+            <div @click="setLocation">Sydney</div>
           </div>
         </div>
       </popper>
@@ -40,6 +40,7 @@
       </popper>
 
       <popper
+      data-name="guest"
         class="box"
         trigger="click"
         :options="{
@@ -47,21 +48,59 @@
           modifiers: { offset: { offset: '0,20px' } },
         }"
       >
-        <div class="guests flex column" slot="reference">
-          <span class="title">Guests</span>
-          <span class="desc">Add guests</span>
+        <div data-name="guest" @mouseover="colorSearchArea" @mouseleave="unColorSearchArea" class="guests flex column" slot="reference">
+          <span data-name="guest" class="title">Guests</span>
+          <span data-name="guest" v-if="sumGuests === 0" class="desc">Add guests</span>
+          <span data-name="guest" v-else class="desc">{{sumGuests}} guests</span>
         </div>
        
-       <div class="guest-dropdown ">
-        
+       <div class="guest-dropdown">
+        <div class="modal">
+            <div class="container-btns">
+              <div class="btn-container">
+                <div class="txt flex column">
+                  <span class="title">Adults:</span>
+                  <span class="sub">Ages 13 or above</span>
+                  </div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setAdult(-1)">-</button>
+                  <p>{{ filterBy.adultCount }}</p>
+                  <button class="guest-btn" @click="setAdult(1)">+</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                <div class="txt flex column">
+                  <span class="title">Children:</span>
+                  <span class="sub">Ages 2–12</span>
+                  </div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setChildren(-1)">-</button>
+                  <p>{{ filterBy.childrenCount }}</p>
+                  <button class="guest-btn" @click="setChildren(1)">+</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                 <div class="txt flex column">
+                  <span class="title">Infants:</span>
+                  <span class="sub">Under 2</span>
+                  </div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setInfant(-1)">-</button>
+                  <p>{{ filterBy.infantCount }}</p>
+                  <button class="guest-btn" @click="setInfant(1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
        </div>
       </popper>
-
-      <div class="search-icon flex jusify content align-center" @click="emitFilter">
-        <div class="btn">
-          <img src="../assets/icons/search_m.svg" />
+      
+      <div data-name="search" ref="search" class="search-icon flex jusify content align-center" @click="emitFilter">
+        <div data-name="search" class="btn">
+          <img data-name="search" src="../assets/icons/search_m.svg" />
         </div>
       </div>
+      
     </div>
 
   </section>
@@ -70,17 +109,20 @@
 <script>
 import detailsCalendar from "./details-calendar.cmp.vue";
 import Popper from "vue-popperjs";
-// import VueNumericInput from 'vue-numeric-input';
 
 export default {
   components: {
     detailsCalendar,
     Popper,
-    // VueNumericInput
   },
   data() {
     return {
-      filterBy: null,
+      filterBy: {
+        location: '',
+        adultCount: 0,
+        childrenCount: 0,
+        infantCount: 0,
+      },
     };
   },
   methods: {
@@ -88,19 +130,46 @@ export default {
       this.$emit("filter", this.filterBy);
       console.log("filter", this.filterBy);
     },
+    setAdult(value) {
+      if(this.filterBy.adultCount === 0 && value === -1) return
+      this.filterBy.adultCount += value;
+    },
+    setChildren(value) {
+      if(this.filterBy.childrenCount === 0 && value === -1) return
+      this.filterBy.childrenCount += value;
+    },
+    setInfant(value) {
+      if(this.filterBy.infantCount === 0 && value === -1) return
+      this.filterBy.infantCount += value;
+    },
+    setLocation(ev) {
+      
+      this.filterBy.location = ev.target.textContent
+    },
+    colorSearchArea(ev) {
+      const data = ev.target.getAttribute("data-name");
+        if(data === 'guest') {
+          this.$refs.search.style.cssText = "background-color: #eee"
+        }
+      if(data === 'search' || data !== "guest") {
+        this.$refs.search.style.cssText = "background-color: #fff"
+        return
+      }
+    },
+    unColorSearchArea() {
+      this.$refs.search.style.cssText = "background-color: #fff"
+    }
   },
+  computed: {
+    sumGuests() {
+      return this.filterBy.adultCount + this.filterBy.childrenCount + this.filterBy.infantCount
+    }
+  }
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .calender-contianer {
-  border-top: none;
-  padding: 0;
-  z-index: 500;
+  padding: 0 ;
 }
-
-.counter{
-  background: none;
-}
-    
 </style>
