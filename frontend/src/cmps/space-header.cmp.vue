@@ -11,7 +11,7 @@
         </a>
       </div>
       <!-- <div class="search" v-hide="!isScrolled && isHomePage"> -->
-      <div class="search" >
+      <div class="search">
         <button class="btn flex align-center">
           <div class="txt">Start your search</div>
           <div class="search-icon">
@@ -23,9 +23,18 @@
         <a class="explore" href="/#">Explore</a>
         <a class="become-host" href="/#/Barcelona">Become a Host</a>
         <div class="user-dropdown flex">
-          <button class="btn flex justify-around align-center">
+          <button
+            @click="toggleLogin"
+            class="btn flex justify-around align-center"
+          >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
+            <div v-show="isLoginOpen" class="login-container">
+              <ul class="login-dropdown">
+                <li><button @click="log">Sign up</button></li>
+                <li><button>Log in</button></li>
+              </ul>
+            </div>
           </button>
         </div>
       </div>
@@ -40,6 +49,7 @@ export default {
       isScrolled: false,
       lastScrollPosition: 0,
       isHomePage: false,
+      isLoginOpen: false
     };
   },
   methods: {
@@ -57,6 +67,12 @@ export default {
     setHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
+    toggleLogin() {
+      this.isLoginOpen = !this.isLoginOpen
+    },
+    log(){
+      console.log('mama');
+    }
   },
   created() {
     this.setHomePage();
