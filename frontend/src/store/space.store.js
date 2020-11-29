@@ -20,13 +20,26 @@ export const spaceStore = {
         },
         setCurrSpace(state,{space}) {
             state.currSpace = space;
-        }
+        },
+        addSpace(state, {space}) {
+            state.spaces.push(space)
+        },
+        removeSpace(state, {spaceId}) {
+            state.spaces = state.spaces.filter(space => space._id !== spaceId)
+        },
     },
     actions: {
-        async loadSpaces(context) {
-            const spaces = await spaceService.getSpaces();
-            context.commit({type:'setSpaces', spaces})
+        async addSpace(context, {space}) {
+            space = await SpaceService.add(space)
+            context.commit({type: 'addSpace', space})
+            return space;
         },
+
+        async removeSpace(context, {spaceId}) {
+            await SpaceService.remove(spaceId);
+            context.commit({type: 'removeSpace', spaceId})
+        },
+        
         async filterSpaces(context,{filterBy}) {
             const spaces = await spaceService.query(filterBy);
             context.commit({type:'setSpaces', spaces})
