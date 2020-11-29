@@ -1,34 +1,65 @@
 <template>
   <section class="filter-container flex justify-center align-center">
     <div class="wrapper flex">
-
-      <el-popover class="box" placement="bottom" width="400" trigger="click">
-        <div class="location flex column " slot="reference">
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,20px' } },
+        }"
+      >
+        <div class="location flex column" slot="reference">
           <span class="title">Location</span>
-          <span class="desc">Where are you go...</span>
+          <span class="desc">Where are you going?</span>
         </div>
-        <span> this is popover</span>
-      </el-popover>
 
-      <el-popover class="box" placement="bottom" width="700" height="150" trigger="click">
+        <div class="location-dropdown flex column">
+          <span class="header">GATEWAYS</span>
+          <div class="loc-btn flex wrap">
+            <div>Barcelona</div>
+            <div>New York</div>
+            <div>Sydney</div>
+          </div>
+        </div>
+      </popper>
+
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
+      >
         <div class="dates flex column" slot="reference">
           <span class="title">Dates</span>
           <span class="desc">Check in - Check out</span>
         </div>
         <details-calendar />
-      </el-popover>
+      </popper>
 
-      <el-popover class="box" placement="bottom" width="400" trigger="click">
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
+      >
         <div class="guests flex column" slot="reference">
           <span class="title">Guests</span>
           <span class="desc">Add guests</span>
         </div>
-        <span> this is popover</span>
-      </el-popover>
+       
+       <div class="guest-dropdown ">
+         
+       </div>
+      </popper>
 
-      <div class="search-icon">
+      <div class="search-icon flex jusify content align-center">
         <div class="btn">
-        <img src="../assets/icons/search_m.svg" />
+          <img src="../assets/icons/search_m.svg" />
         </div>
       </div>
     </div>
@@ -37,10 +68,12 @@
 
 <script>
 import detailsCalendar from "./details-calendar.cmp.vue";
+import Popper from "vue-popperjs";
 
 export default {
   components: {
     detailsCalendar,
+    Popper,
   },
   data() {
     return {
@@ -56,9 +89,10 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.el-row {
-  background-color: red;
-  padding: 30px;
+<style lang="scss" scoped>
+.calender-contianer {
+  border-top: none;
+  padding: 0;
+  z-index: 500;
 }
 </style>
