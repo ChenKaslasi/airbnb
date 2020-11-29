@@ -34,21 +34,13 @@
     <!-- </GmapMap> -->
     <GmapMap 
       :center="{
-<<<<<<< HEAD
-        lng: space.address.coordinates.lng,
-        lat: space.address.coordinates.lat,
-=======
         lng : this.space.address.coordinates.lng,
         lat : this.space.address.coordinates.lat,
->>>>>>> ab045a8956d057be1e99f267ddc2f37880abff31
       }"
       :zoom="14"
       map-type-id="terrain"
       style="height: 400px"
     >
-<<<<<<< HEAD
-      <gmap-custom-marker >
-=======
      <gmap-custom-marker 
       v-for="(m, index) in markers" :key="index"
       :position="m.position"
@@ -58,7 +50,6 @@
       }"
       alignment="bottomright"
       >
->>>>>>> ab045a8956d057be1e99f267ddc2f37880abff31
         <img class="marker-img" src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"/>
       </gmap-custom-marker> 
     </GmapMap>
