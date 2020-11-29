@@ -1,35 +1,83 @@
 <template>
-  <section>
-    <div class="cover ">
-      <form class="flex-form">
-        <input
-          type="search"
-          placeholder="Where To?"
-          v-model="filterBy"
-        />
-        <label class="label-search" for="from">From</label>
-        <input type="date" name="from" />
-        <label class="label-search" for="to">To</label>
-        <input type="date" name="to" />
-        <select name="guests" id="guests">
-          <option value="1">1 guest</option>
-          <option value="2">2 guests</option>
-          <option value="3">3 guests</option>
-          <option value="4">4 guests</option>
-          <option value="5">5 guests</option>
-        </select>
+  <section class="filter-container flex justify-center align-center">
+    <div class="wrapper flex">
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,20px' } },
+        }"
+      >
+        <div class="location flex column" slot="reference">
+          <span class="title">Location</span>
+          <span class="desc">Where are you going?</span>
+        </div>
 
-        <button
-          class="search-btn"
-          @click="emitFilter"
-         ><div class="rounder"><img class="search-svg" src='../assets/icons/search_m.svg' /></div></button> 
-      </form>
+        <div class="location-dropdown flex column">
+          <span class="header">GATEWAYS</span>
+          <div class="loc-btn flex wrap">
+            <div>Barcelona</div>
+            <div>New York</div>
+            <div>Sydney</div>
+          </div>
+        </div>
+      </popper>
+
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
+      >
+        <div class="dates flex column" slot="reference">
+          <span class="title">Dates</span>
+          <span class="desc">Check in - Check out</span>
+        </div>
+        <details-calendar />
+      </popper>
+
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,20px' } },
+        }"
+      >
+        <div class="guests flex column" slot="reference">
+          <span class="title">Guests</span>
+          <span class="desc">Add guests</span>
+        </div>
+       
+       <div class="guest-dropdown ">
+        
+       </div>
+      </popper>
+
+      <div class="search-icon flex jusify content align-center" @click="emitFilter">
+        <div class="btn">
+          <img src="../assets/icons/search_m.svg" />
+        </div>
+      </div>
     </div>
+
   </section>
 </template>
 
 <script>
+import detailsCalendar from "./details-calendar.cmp.vue";
+import Popper from "vue-popperjs";
+// import VueNumericInput from 'vue-numeric-input';
+
 export default {
+  components: {
+    detailsCalendar,
+    Popper,
+    // VueNumericInput
+  },
   data() {
     return {
       filterBy: null,
@@ -44,53 +92,15 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.search-svg{
-  height: 22px;
-}
-.cover {
-  margin-top: 80px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+<style lang="css" scoped>
+.calender-contianer {
+  border-top: none;
+  padding: 0;
+  z-index: 500;
 }
 
-.flex-form {
-  display: flex;
-  // width: 100%;
-  max-width: 1000px;
-  max-height: 75px;
-
+.counter{
+  background: none;
 }
-
-input[type="search"] {
-  flex-basis:inherit;
-  border-radius: 30px 0px 0px 30px;
-}
-
-.flex-form > * {
-  border: 0;
-  padding: 15px;
-  line-height: 50px;
-  font-size: 20px;
-  // border-radius: 0;
-  font-family: Circular;
-  outline: 0;
-  background: rgb(255, 255, 255);
-  // margin-left: 1px;
-}
-
-.flex-form .search-btn {
-  background: #f05;
-  color: white;
-  // padding: 15px;
-  border-radius:  0px 30px 30px 0px ;
-
-}
-// .rounder{
-  // background-color: aqua;
-  // padding: 8px;
-  // border-radius:  50% ;
-// }
+    
 </style>

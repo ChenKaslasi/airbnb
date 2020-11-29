@@ -32,18 +32,26 @@
         @click="center = m.position"
       /> -->
     <!-- </GmapMap> -->
-    <GmapMap
+    <GmapMap 
       :center="{
-        lng: this.space.address.coordinates.lng,
-        lat: this.space.address.coordinates.lat,
+        lng : this.space.address.coordinates.lng,
+        lat : this.space.address.coordinates.lat,
       }"
-      :zoom="12"
+      :zoom="14"
       map-type-id="terrain"
       style="height: 400px"
     >
-      <gmap-custom-marker>
+     <gmap-custom-marker 
+      v-for="(m, index) in markers" :key="index"
+      :position="m.position"
+      :marker="{
+        lng : markers[index].position.lng,
+        lat : markers[index].position.lat,
+      }"
+      alignment="bottomright"
+      >
         <img class="marker-img" src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"/>
-      </gmap-custom-marker>
+      </gmap-custom-marker> 
     </GmapMap>
   </section>
 </template>
@@ -59,6 +67,13 @@ export default {
   },
   props: {
     space: Object,
+  },
+  created() {
+    console.log(this.space, "Space");
+    console.log(this.space.address.coordinates.lat, "Lat--------");
+    console.log(this.space.address.coordinates, "coords------");
+    console.log(this.space.address, "adress------");
+    console.log(this.markers[0].address.coordinates.lat);
   },
   data() {
     return {

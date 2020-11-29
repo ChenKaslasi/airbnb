@@ -1,5 +1,6 @@
 {
   "spaces": [
+
     {
       "_id": "10612199",
       "listingUrl": "https://www.airbnb.com/rooms/10612199",
@@ -98,6 +99,124 @@
         }
       ]
     },
+    {
+      "_id": "1068505",
+      "listingUrl": "https://www.airbnb.com/rooms/1068505",
+      "name": "Relaxing and Roomy in Crown Heights",
+      "locationDesc": "This comfortable and spacious room is the middle room of a beautiful 3 bedroom apartment. With 2 doorway exits (one to the hallway and the other to the living room) the room has a unique setup while maintaining complete privacy. There is a skylight on the ceiling allowing for natural light and a ceiling fan for circulation.   The apartment is on the street side of a tree lined street, where natural light filters in throughout most of the day. I am located on the top (3rd floor, walk-up) of a lovely, family-owned brownstone which is located conveniently near numerous train lines (2,3,4,5,A,C, or Shuttle to the B,Q) - a short 20 minute commute to Manhattan. I have enjoyed this vibrant, lively and fun neighborhood for more than 6 years. On the block you can find unique coffee & tea shops with wireless internet, fresh baked goods, friendly bodegas, a couple of bars and EXCELLENT food (Thai, Mexican, Chinese, etc.) and a laundromat on the corner. Just a couple blocks further in either direc",
+      "spaceDesc": "This comfortable and spacious room is the middle room of a beautiful 3 bedroom apartment. With 2 doorway exits (one to the hallway and the other to the living room) the room has a unique setup while maintaining complete privacy. There is a skylight on the ceiling allowing for natural light and a ceiling fan for circulation.   The apartment is on the street side of a tree lined street, where natural light filters in throughout most of the day. I am located on the top (3rd floor, walk-up) of a lovely, family-owned brownstone which is located conveniently near numerous train lines (2,3,4,5,A,C, or Shuttle to the B,Q) - a short 20 minute commute to Manhattan. I have enjoyed this vibrant, lively and fun neighborhood for more than 6 years. On the block you can find unique coffee & tea shops with wireless internet, fresh baked goods, friendly bodegas, a couple of bars and EXCELLENT food (Thai, Mexican, Chinese, etc.) and a laundromat on the corner. Just a couple blocks further in either direc",
+      "spaceType": "Apartment",
+      "roomType": "Private room",
+      "cancellationPolicy": "moderate",
+      "capacity": 2,
+      "bedrooms":1,
+      "beds":1,
+      "numberOfReviews": 46,
+      "bathrooms":1,
+      "amenities": [
+        "Air conditioning",
+        "Essentials",
+        "Hangers",
+        "Heating",
+        "Iron",
+        "Kitchen",
+        "Parking",
+        "TV",
+        "Wifi"
+      ],
+      "price": 50.00,
+      "imgs": [
+        "https://a0.muscache.com/im/pictures/acf0d195-2e73-4756-9f28-e81369a9bf3b.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/d534a3df-c57f-4049-8a80-33184e332d3f.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/970dcbe8-c1ea-4004-9a02-bfe727fa46a4.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6954e4dd-3bba-42e0-8b6b-ccb79b87ca39.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/221a673a-0d8e-4bed-83d1-3b0b5a74df72.jpg?im_w=720"
+      ],
+      "host": {
+        "id": "2128778",
+        "url": "https://www.airbnb.com/users/show/2128778",
+        "name": "Rachael",
+        "location": "Brooklyn, NY",
+        "about": "As a Social Work Community Organizer, Educator and Activist, I spend most of my time working both locally and in other parts of the country/world.  I love the arts and have a background in theatre and music- and an interest in writing poetry. Although I dont drink or party, I am known to work it out on the dance floor! I talk on the phone a lot and am a morning gym person.\n\nI grew up in the midwest and have lived in NYC for about 13 years. Ive been in my current (3 bedroom) apartment for about 12 years and have been doing airbnb for about half of that time! I am in my mid 30's, I work from home and enjoy a friendly, clean, peaceful environment.\n\nIf im home, Im often working in my room/home office. From time to time i host small meetings in my room or living room. Guests are welcome to come and go as they please. Since i have 2 rooms on airbnb i just ask folks to be mindful of other people, shared bathroom and kitchen, etc.  Although i dont normally get to spend a lot of time with guests, I truly enjoy meeting new people and it means so much to me for people to enjoy my home. Given the high rate of gentrification where i live, im also happy to share more about local businesses to support that invest in families who have historically lived in this neighborhood. Feel free to ask!",
+        "responseTime": "within a day",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
+        "responseRate":100,
+        "isSuperhost": true,
+        "identityVerified": true
+      },
+      "address": {
+        "street": "Brooklyn, NY, United States",
+        "city": "New York",
+        "country": "United States",
+        "coordinates": {
+          "lat": 40.67414,
+          "lng": -73.95667
+        }
+      },
+      "reviewScores": {
+        "accuracy": 10,
+        "cleanliness": 10,
+        "checkin": 10,
+        "communication": 10,
+        "location": 10,
+        "value": 9,
+        "rating": 96
+      },
+      "reviews": [{
+        "_id": "4484746",
+        "date": "1367899200000",
+        "by":{
+          "id": "6061475",
+          "name": "Silvia",
+          "img":"https://a0.muscache.com/im/pictures/user/4372a802-7684-4d18-ad96-ff6289d34b9c.jpg?im_w=240"
+    
+        },
+        "txt": "It was great! \r\nRachael`s cosy home is in the middle of Brooklyn and Rachael is just brilliant, full of joy and energy. Just around the corner there are many nice bars and delis. It is such a nice place to be. On our first day we go for a \"little\"walk from R home to and over the Brooklyn Bridge. You can see and look so much on this walk, perfect. We definetely enjoyed our trip to NY and would ever go back to Rachaels home! \r\nSilvi & Jo"
+      },
+       {
+        "_id": "5081248",
+        "date": "1370923200000",
+        "by":{
+          "id": "5983688",
+          "name": "Kathrine Bork",
+          "img":"https://a0.muscache.com/defaults/user_pic-225x225.png?im_w=240"
+        },
+        "txt": "We had 5 wonderful weeks in the cozy brownstone-apartment in Brooklyn. The neighbourhood was amazing, with small cafés etc. with live music and local events on Franklin Ave (Little Zelda's, Cool Pony...), Brooklyn Botanic Garden + Brooklyn Museum + Prospect Park nearby. The apartment had a great kitchen, fully equipped and we sometimes took the dinner with us down to the front stairs on the street. Our room had a small walk-in closet and a bed, we also enjojyed the big living room. Rachael was so sweet. She worked a lot, but we could always ask her about anything. She had a great laughter and we sometimes chit chattet with her in the kitchen. We would definately recommend a stay in this great apartment!"
+      },
+       {
+        "_id": "7288845",
+        "date": "1379131200000",
+        "by":{
+          "id": "1525791",
+          "name": "Dorian",
+          "img":"https://a0.muscache.com/im/pictures/user/71d5560f-6991-44a6-a78d-efc8931bd93a.jpg?im_w=240"
+        },
+        "txt": "Rachael was so wonderful! She really makes the effort to make her spaceDesc friendly and lovely. She so obviously loves where she lives and loves her neighborhood and having others to share it with. It was so much fun and relaxing staying with her and talking about all kinds of things. She's the best and I would happily stay with her again!"
+      },
+      {
+        "_id": "7840236",
+        "date": "1380945600000",
+        "by":{
+          "id": "1645904",
+          "name": "John",
+          "img":"https://a0.muscache.com/im/pictures/user/7fa95ea2-7383-4c52-b99b-f4c0454323ff.jpg?im_w=240"
+        },
+        "txt": "I couldn't recommend staying in Rachael's house more highly. Rachael was very warm and welcoming and almost always available to ask questions of or even just have a chat with.\r\nThe house is in a really great old Brooklyn neighbourhood with plenty of character and some really great cafes, restaurants and vintage stores springing up just around the corner."
+      },
+       {
+        "_id": "9020177",
+        "date": "1385960400000",
+        "by":{
+          "id": "2845999",
+          "name": "Max",
+          "img":"https://a0.muscache.com/im/pictures/user/1f56b1f8-08f7-4818-b43d-e54ce1e86cf9.jpg?im_w=240"
+        },
+        "txt": "I really didn't feel that Rachel's room was adequately represented in the listing. It's very much an interior room, not just by a hall and a living room, but also by a staircase, the bathroom and the kitchen. It's in the center of the apartment. The openings are sheet rocked in, so have no insulation. There is no separation from the owner's unit downstairs. "
+      }
+       ]
+    },
+    
     {
       "_id": "10573225",
       "listingUrl": "https://www.airbnb.com/rooms/10573225",
