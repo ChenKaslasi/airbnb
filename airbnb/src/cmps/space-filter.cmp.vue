@@ -57,7 +57,7 @@
        </div>
       </popper>
 
-      <div class="search-icon flex jusify content align-center">
+      <div class="search-icon flex jusify content align-center" @click="emitFilter">
         <div class="btn">
           <img src="../assets/icons/search_m.svg" />
         </div>
@@ -81,20 +81,12 @@ export default {
   data() {
     return {
       filterBy: null,
-      guestNum: 1,
     };
   },
   methods: {
     emitFilter() {
       this.$emit("filter", this.filterBy);
       console.log("filter", this.filterBy);
-    },
-    handleChange(value) {
-        console.log(value)
-      },
-  setGuests(value) {
-      this.guestNum += value;
-      console.log(this.guestNum);
     },
   },
 };

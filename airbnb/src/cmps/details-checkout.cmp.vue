@@ -28,7 +28,7 @@
             </template>
           </v-date-picker>
           <button class="guest-modal-btn" @click="guestModal">
-            {{ guestNum }} guest
+            {{ adultCount +childrenCount +infantCount }} guest
           </button>
           <div class="modal" v-if="isShown">
             <div class="container-btns">
@@ -79,8 +79,8 @@ export default {
   data() {
     return {
       adultCount: 1,
-      childrenCount: 1,
-      infantCount: 1,
+      childrenCount: 0,
+      infantCount: 0,
       isShown: false,
       night: null,
       range: {
