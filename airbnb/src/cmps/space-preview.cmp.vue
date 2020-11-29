@@ -12,7 +12,7 @@
       <div>{{ space.roomType }} · {{ space.address.city }}</div>
       <div>{{ spaceName }}</div>
       <div>
-        <span class="price">{{ space.price }}$</span> /night
+        <span class="price">${{ space.price }}</span> /night
       </div>
     </div>
   </section>
