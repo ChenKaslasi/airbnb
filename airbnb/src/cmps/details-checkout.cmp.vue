@@ -206,8 +206,8 @@ export default {
   }
 }
 .btn-container:nth-last-child(2) {
-  border-bottom: 1px solid #717171;
-  border-top: 1px solid #717171;
+  border-bottom: 1px solid #9c9a9a;
+  border-top: 1px solid #a3a1a1;
 }
 
 .guest-modal-btn {
@@ -218,7 +218,7 @@ export default {
   padding: 16.5px 20px;
   border-top: transparent;
   border-radius: 0 0 8px 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: Circular;
   font-weight: 600;
   text-align: left;
@@ -258,7 +258,7 @@ export default {
       }
       .star {
         color: #ff385c;
-        font-size: 18px;
+        font-size: 20px;
         text-align: start;
         margin-inline-end: 2px;
       }
@@ -270,9 +270,10 @@ export default {
       width: 100%;
       line-height: 20px !important;
       font-weight: 600 !important;
-      font-size: 17px;
+      font-size: 18px;
       background-image: linear-gradient(to right, #ff385c, #ef305c, #e93568, #ce235b,#ce2d63);
       &:hover{
+        cursor: pointer;
         background-image: radial-gradient(
           circle at center center,
           rgb(255, 56, 92) 0%,
@@ -285,7 +286,7 @@ export default {
 
       }
       border: none;
-      padding: 16px;
+      padding: 22px;
       overflow: hidden !important;
       border-radius: 8px !important;
       &:hover {
@@ -309,11 +310,12 @@ export default {
       padding: 10px;
       border-right: 1px solid #717171;
       font-family: Circular;
-      font-size: 14px;
+      font-size: 16px;
+
     }
     .end-date {
       font-family: Circular;
-      font-size: 14px;
+      font-size: 16px;
       padding: 10px;
       width: 100%;
       border: none;
