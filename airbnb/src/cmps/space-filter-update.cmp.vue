@@ -53,34 +53,7 @@
         </div>
        
        <div class="guest-dropdown ">
-         <div class="modal" v-if="isShown">
-            <div class="container-btns">
-              <div class="btn-container">
-                <div class="txt">Adults:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
-                </div>
-              </div>
-              <div class="btn-container">
-                <div class="txt">Children:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
-                </div>
-              </div>
-              <div class="btn-container">
-                <div class="txt">Infants:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setGuests(1)">-</button>
-                  <p>{{ guestNum }}</p>
-                  <button class="guest-btn" @click="setGuests(-1)">+</button>
-                </div>
-              </div>
-            </div>
-          </div>
+         
        </div>
       </popper>
 
