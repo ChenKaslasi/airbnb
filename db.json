@@ -40,8 +40,8 @@
         "location": "New York, New York, United States",
         "about": "Always available by cell/text",
         "responseTime": "within an hour",
-        "thumbnail": "https://a0.muscache.com/im/pictures/8f1942a1-dde8-4733-aff6-5971a0678594.jpg?aki_policy=profile_small",
-        "profileImg": "https://a0.muscache.com/im/pictures/8f1942a1-dde8-4733-aff6-5971a0678594.jpg?aki_policy=profile_x_medium",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/276613c7-ff80-4c9f-91a7-467c029c0c5e.jpg?im_w=240",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/276613c7-ff80-4c9f-91a7-467c029c0c5e.jpg?im_w=240",
         "neighbourhood": "Harlem",
         "responseRate": 100,
         "isSuperhost": false,
@@ -138,8 +138,8 @@
         "location": "New York, New York, United States",
         "about": "I'm a chief executive at an insurance company in New York City. Educated in cinema at Nyu, I'm into fitness and nutrition. I've lived in the city since enrolling at Parsons in the late 90s.\r\n\r\nIf you're looking for restaurant reservations, boutique fitness studios, or things to do in the city, then just let me know what you're interested in. I'd love to offer some suggestions and help you have a wonderful stay in New York City.",
         "responseTime": "within a day",
-        "thumbnail": "https://a0.muscache.com/im/pictures/e25c220f-afd4-4df0-9c8a-663c2ab695ab.jpg?aki_policy=profile_small",
-        "profileImg": "https://a0.muscache.com/im/pictures/e25c220f-afd4-4df0-9c8a-663c2ab695ab.jpg?aki_policy=profile_x_medium",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/db6818d9-ccda-4881-9789-525287fb2692.jpg?im_w=240",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/db6818d9-ccda-4881-9789-525287fb2692.jpg?im_w=240",
         "responseRate": 93,
         "isSuperhost": true,
         "identityVerified": false
@@ -234,8 +234,8 @@
         "name": "Ashley",
         "location": "New York, New York, United States",
         "about": "I'm an executive at a wellness company in New York City. Educated in Fashion at Parsons, I'm into fitness and nutrition. I've lived in the city since enrolling at Parsons in the late 90s.\r\n\r\nIf you're looking for restaurant reservations, boutique fitness studios, or things to do in the city, then just let me know what you're interested in. I'd love to offer some suggestions and help you have a wonderful stay in New York City.",
-        "thumbnail": "https://a0.muscache.com/im/pictures/afca1b34-30e9-43c0-969b-7b9cf913cb8d.jpg?aki_policy=profile_small",
-        "profileImg": "https://a0.muscache.com/im/pictures/afca1b34-30e9-43c0-969b-7b9cf913cb8d.jpg?aki_policy=profile_x_medium",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/acf167de-12e4-4e10-828a-972f32da70bd.jpg?im_w=240",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/acf167de-12e4-4e10-828a-972f32da70bd.jpg?im_w=240",
         "neighbourhood": "Downtown Brooklyn",
         "isSuperhost": false,
         "identityVerified": false
@@ -889,8 +889,8 @@
         "id": "16022141",
         "name": "Sonia",
         "about": "Soy una persona extrovertida, sociable, sencilla y me gusta conocer a gente nueva.\r\nEntre mis aficiones están el cine, el baile, los paseos por la playa y la montaña y viajar.",
-        "thumbnail": "https://a0.muscache.com/im/pictures/7df7595b-806c-46f4-a4d9-62f41a38393d.jpg?aki_policy=profile_small",
-        "profileImg": "https://a0.muscache.com/im/pictures/7df7595b-806c-46f4-a4d9-62f41a38393d.jpg?aki_policy=profile_x_medium",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/505e6d58-73fc-453c-889e-9c4e1192bd69.jpg?im_w=240",
+        "profileImg": "https://a0.muscache.com/im/pictures/user/505e6d58-73fc-453c-889e-9c4e1192bd69.jpg?im_w=240",
         "isSuperhost": false,
         "identityVerified": false,
         "responseRate": 90,
@@ -1095,7 +1095,7 @@
         "id": "454250",
         "name": "Greta",
         "about": "By now I have lived longer in the city than the country however I feel equally at home in each. I like to keep one foot in each and help others to do the same!",
-        "thumbnail_url": "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?im_w=240",
+        "thumbnail": "https://a0.muscache.com/im/pictures/user/ac353efb-3266-426c-8e33-a84e737dd9b9.jpg?im_w=240",
         "profileImg": "https://a0.muscache.com/im/pictures/user/028ba7ae-1256-4dc0-afa8-cb8ff0b9a04b.jpg?aki_policy=profile_medium",
         "responseRate": 100,
         "responseTime": "Within an hour",
@@ -1107,8 +1107,8 @@
         "city": "New York",
         "country": "United States",
         "coordinates": {
-          "lat": -73.96523,
-          "lng": 40.79962
+          "lat": 40.79962,
+          "lng": -73.96523
         }
       },
       "reviewScores": {

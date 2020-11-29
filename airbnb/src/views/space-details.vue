@@ -4,7 +4,7 @@
     <gallery :space="currSpace" />
     <section class="flex ">
       <section class="main-content">
-        <details-summery :space="currSpace" />
+        <details-summery  v-scroll-to="'#detailsHost'" :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
         <details-calendar :space="currSpace"/>
@@ -17,12 +17,13 @@
     <section >
       <details-review :reviews="currSpace.reviews" />
       <detailsMap :space="currSpace" />
-      <detailsHost :space="currSpace" />
+      <detailsHost id="detailsHost" :space="currSpace" />
     </section>
   </section>
 </template>
 
 <script>
+// import VueScrollTo from 'VueScrollTo'
 import spaceService from "../services/space.service.js";
 
 import spaceHeader from "@/cmps/space-header.cmp.vue";
@@ -55,6 +56,11 @@ export default {
     return {
       currSpace: null,
     };
+  },
+  methods:{
+    // scrollToHost(){
+
+    // }
   },
   created() {
     const spaceId = this.$route.params.id;

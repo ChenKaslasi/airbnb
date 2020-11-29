@@ -26,6 +26,7 @@
       }
     }
 
+
     .box:nth-child(1) {
       padding-left: 30px;
     }
@@ -54,7 +55,36 @@
         }
       }
     }
-
   }
-  
+
+  .location-dropdown {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 10px ;
+    z-index: 500;
+    margin-inline-start: 25px ;
+
+    .header {
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      
+    }
+
+    .loc-btn>*{
+      margin-inline-end: 5px ;
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      font-size: 14px;
+
+    }
+  }
+
+  .guest-dropdown {
+    background-color: #fff;
+    z-index: 500;
+    width: 300px;
+  }
 }

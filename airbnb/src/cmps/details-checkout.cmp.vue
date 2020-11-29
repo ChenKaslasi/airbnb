@@ -211,7 +211,7 @@ export default {
   padding: 16.5px 20px;
   border-top: transparent;
   border-radius: 0 0 8px 8px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Circular;
   font-weight: 600;
   text-align: left;
@@ -263,16 +263,20 @@ export default {
       width: 100%;
       line-height: 20px !important;
       font-weight: 600 !important;
-      font-size: rem(16px);
-      background-image: radial-gradient(
-        circle at center center,
-        rgb(255, 56, 92) 0%,
-        rgb(230, 30, 77) 27.5%,
-        rgb(227, 28, 95) 40%,
-        rgb(215, 4, 102) 57.5%,
-        rgb(189, 30, 89) 75%,
-        rgb(189, 30, 89) 100%
-      ) !important;
+      font-size: 17px;
+      background-image: linear-gradient(to right, #ff385c, #ef305c, #e93568, #ce235b,#ce2d63);
+      &:hover{
+        background-image: radial-gradient(
+          circle at center center,
+          rgb(255, 56, 92) 0%,
+          rgb(230, 30, 77) 27.5%,
+          rgb(227, 28, 95) 40%,
+          rgb(215, 4, 102) 57.5%,
+          rgb(189, 30, 89) 75%,
+          rgb(189, 30, 89) 100%
+        ) !important;
+
+      }
       border: none;
       padding: 16px;
       overflow: hidden !important;
@@ -297,8 +301,12 @@ export default {
       border: none;
       padding: 10px;
       border-right: 1px solid #717171;
+      font-family: Circular;
+      font-size: 14px;
     }
     .end-date {
+      font-family: Circular;
+      font-size: 14px;
       padding: 10px;
       width: 100%;
       border: none;
