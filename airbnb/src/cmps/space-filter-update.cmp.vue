@@ -1,43 +1,88 @@
 <template>
   <section class="filter-container flex justify-center align-center">
     <div class="wrapper flex">
-      <el-popover class="box" placement="bottom" width="350" trigger="click" :visible-arrow="false">
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,20px' } },
+        }"
+      >
         <div class="location flex column" slot="reference">
           <span class="title">Location</span>
           <span class="desc">Where are you going?</span>
         </div>
 
-        <div class="location-dropdown flex column" :offset="30">
-          <span>GATEWAYS</span>
+        <div class="location-dropdown flex column">
+          <span class="header">GATEWAYS</span>
           <div class="loc-btn flex wrap">
-            <el-button round>Round</el-button>
-            <el-button round>Round</el-button>
-            <el-button round>Round</el-button>
+            <div>Barcelona</div>
+            <div>New York</div>
+            <div>Sydney</div>
           </div>
         </div>
-      </el-popover>
+      </popper>
 
-      <el-popover
+      <popper
         class="box"
-        placement="bottom"
-        width="700"
-        height="150"
         trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
       >
         <div class="dates flex column" slot="reference">
           <span class="title">Dates</span>
           <span class="desc">Check in - Check out</span>
         </div>
         <details-calendar />
-      </el-popover>
+      </popper>
 
-      <el-popover class="box" placement="bottom" width="200" trigger="click">
+      <popper
+        class="box"
+        trigger="click"
+        :options="{
+          placement: 'bottom',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
+      >
         <div class="guests flex column" slot="reference">
           <span class="title">Guests</span>
           <span class="desc">Add guests</span>
         </div>
-        <span> this is popover</span>
-      </el-popover>
+       
+       <div class="guest-dropdown ">
+         <div class="modal" v-if="isShown">
+            <div class="container-btns">
+              <div class="btn-container">
+                <div class="txt">Adults:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                <div class="txt">Children:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                </div>
+              </div>
+              <div class="btn-container">
+                <div class="txt">Infants:</div>
+                <div class="btns">
+                  <button class="guest-btn" @click="setGuests(1)">-</button>
+                  <p>{{ guestNum }}</p>
+                  <button class="guest-btn" @click="setGuests(-1)">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+      </popper>
 
       <div class="search-icon flex jusify content align-center">
         <div class="btn">
@@ -45,35 +90,17 @@
         </div>
       </div>
     </div>
-
-
-
- <popper
-    trigger="click"
-    :options="{
-      placement: 'bottom',
-      modifiers: { offset: { offset: '0,10px' } }
-    }">
-    <div class="popper">
-      Popper Content
-    </div>
- 
-    <button slot="reference">
-      Reference Element
-    </button>
-  </popper>
-  
   </section>
 </template>
 
 <script>
 import detailsCalendar from "./details-calendar.cmp.vue";
- import Popper from 'vue-popperjs';
+import Popper from "vue-popperjs";
 
 export default {
   components: {
     detailsCalendar,
-    Popper
+    Popper,
   },
   data() {
     return {
@@ -90,7 +117,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.location-dropdown{
-  border-radius: 12px;
+.calender-contianer {
+  border-top: none;
+  padding: 0;
+  z-index: 500;
 }
 </style>
