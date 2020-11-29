@@ -1,0 +1,107 @@
+{
+  "_id": "1112838",
+  "listing_url": "https://www.airbnb.com/rooms/1112838",
+  "name": "Spacious and quiet duplex apartment in Poble Sec",
+  "locationDesc": "Spacious apartment in a peculiar building in the central neighbourhood of Poble Sec, with patio and terrace, ideal for families with children or groups. Walking distance from center, Montjuïc, Plaza España, Fira Montjuïc/Gran Vía, Sant Antoni, Raval.",
+  "spaceDesc": "Spacious and quiet duplex apartment in the heart of the colourful Poble Sec neighbourhood, with entrance from a peculiar and protected archway. Equipped for 6-7 guests. 3 double rooms, 2 bathrooms, 1 patio, 1 terrace and 1 balcony. First floor: entrance, living-dining room with open kitchen giving onto the patio, chill out corner and a bathroom with shower. Second floor: hall, complete bathroom, 3 bedrooms (2 with double bed, 1 with bunk beds), balcony and terrace. Ideal for families with children and groups. Smoking is not permitted inside the apartment, but it is allowed in the terrace and the patio. Basic rate intended for 4 guests. Children up to 12 years are not calculated as extra guests during low season. Wi-Fi/wired connection (100Mb), washing machine, smart TV, DVD, Nespresso. Kitchen basics.",
+  "spaceType": "Apartment",
+  "roomType": "Entire home/apt",
+  "cancellation_policy": "moderate",
+  "capacity": 7,
+  "bedrooms": 3,
+  "beds": 7,
+  "numberOfReviews": 129,
+  "bathrooms": 2,
+  "amenities": [
+    "Air conditioning",
+    "Essentials",
+    "Hangers",
+    "Heating",
+    "Iron",
+    "Kitchen",
+    "Parking",
+    "TV",
+    "Wifi"
+  ],
+  "price": 130.00,
+  "imgs": [
+    "https://a0.muscache.com/im/pictures/19022972/f955f7a0_original.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/16739064/a45c3ee5_original.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/17348695/85159b53_original.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/35325429/31b71a9b_original.jpg?im_w=720",
+    "https://a0.muscache.com/im/pictures/19022275/1d7abde4_original.jpg?im_w=720"
+  ],
+  "host": {
+    "id": "6107595",
+    "url": "https://www.airbnb.com/users/show/6107595",
+    "name": "Cristina",
+    "location": "Barcelona, Catalonia, Spain",
+    "about": "(ES) Soy mujer, mamá y traductora. Me gusta tener tiempo para pensar, viajar, jugar con mis hijas y descubrir algo nuevo cada día. A veces por trabajo tengo que viajar, y entonces mi amiga Yamila, gran mujer y fantástica anfitriona, amante del campo y fotógrafa de profesión, me ayuda con los huéspedes.\r\n\r\n(EN) I am a woman, a mother and a translator. I like having time to think, to travel, to play with my daughters and to discover something new every day. Sometimes I have to travel because of my job: in those occasions my friend Yamila, great woman and fantastic host, outdoor lover and photographer, helps me out with guests.",
+    "responseTime": "within an hour",
+    "thumbnail": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_small",
+    "pictureImg": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_x_medium",
+    "response_rate": 100,
+    "isSuperhost": true,
+    "identityVerified": true,
+    "address": {
+      "street": "Barcelona, Catalunya, Spain",
+      "city": "Barcelona",
+      "country": "Spain",
+      "coordinates": {
+        "lat": 41.37479,
+        "lng": 2.15566
+      }
+    },
+    "reviewScores": {
+      "accuracy": 10,
+      "cleanliness": 10,
+      "checkin": 10,
+      "communication": 10,
+      "location": 10,
+      "value": 10,
+      "rating": 95
+    },
+    "reviews": [
+      {
+        "_id": "4558132",
+        "date": "1368331200000",
+        "by": {
+          "id": "768849",
+          "name": "Jean-Pierre",
+          "img": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?im_w=240"
+        },
+        "txt": "Yamila appartement was just perfect for us!\r\nThe location in Poble sec is very close to BCN city center and the neighborhood is so quiet without any traffic like everywhere else in the city\r\nThe appartement is very clean, well equipped with very recent furniture, 2 bathrooms, 3 bedrooms, 2 balconies, 1 terrace, large kitchen and lounge.\r\nYamila was a perfect host with us also.\r\nI fully recommend this appartment"
+      },
+      {
+        "_id": "5181484",
+        "date": "1371441600000",
+        "by": {
+          "id": "6146923",
+          "name": "Ove M.",
+          "img": "https://a0.muscache.com/im/pictures/user/ffe34cd5-fa00-4b45-8266-b0209b69afec.jpg?im_w=240"
+        },
+        "txt": "El piso esta muy guay, en una zona muy bien comunicada y con muchos restaurantes y bares cerca. Lo hemos pasado muy bien en este piso y volveriamos a alquilarlo."
+      },
+      {
+        "_id": "5697588",
+        "date": "1373601600000",
+        "by": {
+          "id": "6597264",
+          "name": "Andrew",
+          "img": "https://a0.muscache.com/im/pictures/user/e7929cc5-e026-4c49-8922-73575dafad72.jpg?im_w=240"
+        },
+        "txt": "Awesome accommodations! Huge apartment that was obviously recently renovated and well maintained. The building is in a residential (read: non-touristy) part of Spain so if you are looking for a real taste of local culture this is the place to stay. 2 blocks from the subway and we were downtown in just a couple stops. The apartment is in building with a common courtyard (common for the style). The other people that live in the building were very friendly and helpful answering any questions we had. My son was even able to play with the other children (despite the language barrier). Awesome experience -- would definietly rent again."
+      },
+      {
+        "_id": "12232097",
+        "date": "1398571200000",
+        "by": {
+          "id": "7244993",
+          "name": "Ashley",
+          "img": "https://a0.muscache.com/im/pictures/user/10425a63-06d0-433d-a1ff-2a6dbe6eedcd.jpg?im_w=240"
+        },
+        "txt": "We stayed at Christina´s place for two weeks and were happy with the flat. The location is good: close to metro, and also bakery, convenience store etc is near.\r\nExcellent restaurants also nearby.  "
+      }
+    ]
+  }
+}
