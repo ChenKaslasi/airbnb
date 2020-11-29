@@ -1,6 +1,5 @@
 {
   "spaces": [
-
     {
       "_id": "10612199",
       "listingUrl": "https://www.airbnb.com/rooms/10612199",
@@ -109,10 +108,10 @@
       "roomType": "Private room",
       "cancellationPolicy": "moderate",
       "capacity": 2,
-      "bedrooms":1,
-      "beds":1,
+      "bedrooms": 1,
+      "beds": 1,
       "numberOfReviews": 46,
-      "bathrooms":1,
+      "bathrooms": 1,
       "amenities": [
         "Air conditioning",
         "Essentials",
@@ -141,7 +140,7 @@
         "responseTime": "within a day",
         "thumbnail": "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
         "profileImg": "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
-        "responseRate":100,
+        "responseRate": 100,
         "isSuperhost": true,
         "identityVerified": true
       },
@@ -163,60 +162,59 @@
         "value": 9,
         "rating": 96
       },
-      "reviews": [{
-        "_id": "4484746",
-        "date": "1367899200000",
-        "by":{
-          "id": "6061475",
-          "name": "Silvia",
-          "img":"https://a0.muscache.com/im/pictures/user/4372a802-7684-4d18-ad96-ff6289d34b9c.jpg?im_w=240"
-    
+      "reviews": [
+        {
+          "_id": "4484746",
+          "date": "1367899200000",
+          "by": {
+            "id": "6061475",
+            "name": "Silvia",
+            "img": "https://a0.muscache.com/im/pictures/user/4372a802-7684-4d18-ad96-ff6289d34b9c.jpg?im_w=240"
+          },
+          "txt": "It was great! \r\nRachael`s cosy home is in the middle of Brooklyn and Rachael is just brilliant, full of joy and energy. Just around the corner there are many nice bars and delis. It is such a nice place to be. On our first day we go for a \"little\"walk from R home to and over the Brooklyn Bridge. You can see and look so much on this walk, perfect. We definetely enjoyed our trip to NY and would ever go back to Rachaels home! \r\nSilvi & Jo"
         },
-        "txt": "It was great! \r\nRachael`s cosy home is in the middle of Brooklyn and Rachael is just brilliant, full of joy and energy. Just around the corner there are many nice bars and delis. It is such a nice place to be. On our first day we go for a \"little\"walk from R home to and over the Brooklyn Bridge. You can see and look so much on this walk, perfect. We definetely enjoyed our trip to NY and would ever go back to Rachaels home! \r\nSilvi & Jo"
-      },
-       {
-        "_id": "5081248",
-        "date": "1370923200000",
-        "by":{
-          "id": "5983688",
-          "name": "Kathrine Bork",
-          "img":"https://a0.muscache.com/defaults/user_pic-225x225.png?im_w=240"
+        {
+          "_id": "5081248",
+          "date": "1370923200000",
+          "by": {
+            "id": "5983688",
+            "name": "Kathrine Bork",
+            "img": "https://a0.muscache.com/defaults/user_pic-225x225.png?im_w=240"
+          },
+          "txt": "We had 5 wonderful weeks in the cozy brownstone-apartment in Brooklyn. The neighbourhood was amazing, with small cafés etc. with live music and local events on Franklin Ave (Little Zelda's, Cool Pony...), Brooklyn Botanic Garden + Brooklyn Museum + Prospect Park nearby. The apartment had a great kitchen, fully equipped and we sometimes took the dinner with us down to the front stairs on the street. Our room had a small walk-in closet and a bed, we also enjojyed the big living room. Rachael was so sweet. She worked a lot, but we could always ask her about anything. She had a great laughter and we sometimes chit chattet with her in the kitchen. We would definately recommend a stay in this great apartment!"
         },
-        "txt": "We had 5 wonderful weeks in the cozy brownstone-apartment in Brooklyn. The neighbourhood was amazing, with small cafés etc. with live music and local events on Franklin Ave (Little Zelda's, Cool Pony...), Brooklyn Botanic Garden + Brooklyn Museum + Prospect Park nearby. The apartment had a great kitchen, fully equipped and we sometimes took the dinner with us down to the front stairs on the street. Our room had a small walk-in closet and a bed, we also enjojyed the big living room. Rachael was so sweet. She worked a lot, but we could always ask her about anything. She had a great laughter and we sometimes chit chattet with her in the kitchen. We would definately recommend a stay in this great apartment!"
-      },
-       {
-        "_id": "7288845",
-        "date": "1379131200000",
-        "by":{
-          "id": "1525791",
-          "name": "Dorian",
-          "img":"https://a0.muscache.com/im/pictures/user/71d5560f-6991-44a6-a78d-efc8931bd93a.jpg?im_w=240"
+        {
+          "_id": "7288845",
+          "date": "1379131200000",
+          "by": {
+            "id": "1525791",
+            "name": "Dorian",
+            "img": "https://a0.muscache.com/im/pictures/user/71d5560f-6991-44a6-a78d-efc8931bd93a.jpg?im_w=240"
+          },
+          "txt": "Rachael was so wonderful! She really makes the effort to make her spaceDesc friendly and lovely. She so obviously loves where she lives and loves her neighborhood and having others to share it with. It was so much fun and relaxing staying with her and talking about all kinds of things. She's the best and I would happily stay with her again!"
         },
-        "txt": "Rachael was so wonderful! She really makes the effort to make her spaceDesc friendly and lovely. She so obviously loves where she lives and loves her neighborhood and having others to share it with. It was so much fun and relaxing staying with her and talking about all kinds of things. She's the best and I would happily stay with her again!"
-      },
-      {
-        "_id": "7840236",
-        "date": "1380945600000",
-        "by":{
-          "id": "1645904",
-          "name": "John",
-          "img":"https://a0.muscache.com/im/pictures/user/7fa95ea2-7383-4c52-b99b-f4c0454323ff.jpg?im_w=240"
+        {
+          "_id": "7840236",
+          "date": "1380945600000",
+          "by": {
+            "id": "1645904",
+            "name": "John",
+            "img": "https://a0.muscache.com/im/pictures/user/7fa95ea2-7383-4c52-b99b-f4c0454323ff.jpg?im_w=240"
+          },
+          "txt": "I couldn't recommend staying in Rachael's house more highly. Rachael was very warm and welcoming and almost always available to ask questions of or even just have a chat with.\r\nThe house is in a really great old Brooklyn neighbourhood with plenty of character and some really great cafes, restaurants and vintage stores springing up just around the corner."
         },
-        "txt": "I couldn't recommend staying in Rachael's house more highly. Rachael was very warm and welcoming and almost always available to ask questions of or even just have a chat with.\r\nThe house is in a really great old Brooklyn neighbourhood with plenty of character and some really great cafes, restaurants and vintage stores springing up just around the corner."
-      },
-       {
-        "_id": "9020177",
-        "date": "1385960400000",
-        "by":{
-          "id": "2845999",
-          "name": "Max",
-          "img":"https://a0.muscache.com/im/pictures/user/1f56b1f8-08f7-4818-b43d-e54ce1e86cf9.jpg?im_w=240"
-        },
-        "txt": "I really didn't feel that Rachel's room was adequately represented in the listing. It's very much an interior room, not just by a hall and a living room, but also by a staircase, the bathroom and the kitchen. It's in the center of the apartment. The openings are sheet rocked in, so have no insulation. There is no separation from the owner's unit downstairs. "
-      }
-       ]
+        {
+          "_id": "9020177",
+          "date": "1385960400000",
+          "by": {
+            "id": "2845999",
+            "name": "Max",
+            "img": "https://a0.muscache.com/im/pictures/user/1f56b1f8-08f7-4818-b43d-e54ce1e86cf9.jpg?im_w=240"
+          },
+          "txt": "I really didn't feel that Rachel's room was adequately represented in the listing. It's very much an interior room, not just by a hall and a living room, but also by a staircase, the bathroom and the kitchen. It's in the center of the apartment. The openings are sheet rocked in, so have no insulation. There is no separation from the owner's unit downstairs. "
+        }
+      ]
     },
-    
     {
       "_id": "10573225",
       "listingUrl": "https://www.airbnb.com/rooms/10573225",
@@ -1303,84 +1301,6 @@
       ]
     },
     {
-      "_id": "11153910",
-      "listingUrl": "https://www.airbnb.com/rooms/11153910",
-      "name": "SPACIOUS RAMBLA CATALUÑA",
-      "locationDesc": "Spacious Rambla Cataluña s is located in the city center area, has 130 m ² and is in the 2nd floor in a building with lift . The lines Bus, Train and Metro (L5 and L3) are located just a few meters away.  This apartment can lodge up to 5 persons in",
-      "spaceDesc": "Spacious Rambla Cataluña s is located in the city center area, has 130 m ² and is in the 2nd floor in a building with lift . The lines Bus, Train and Metro (L5 and L3) are located just a few meters away.  This apartment can lodge up to 5 persons in 3 bedrooms: Bedroom 1: 1 single bed (1 people) Bedroom 2: 2 single beds (2 people) Bedroom 3: 1 single beds (1 person) Bedroom 4: 1 single beds (1 person) It has 2 complete bathrooms. The kitchen is equipped with wash machine, dish washer, microwave, coffee machine, oven, icebox and freezer and kettle. For your comfort, the apartment has TV, hairdryer, fans/ aircon, heating and Internet.",
-      "spaceType": "Apartment",
-      "roomType": "Entire home/apt",
-      "cancellationPolicy": "strict_14_with_grace_period",
-      "capacity": 5,
-      "bedrooms": 4,
-      "beds": 5,
-      "numberOfReviews": 1,
-      "bathrooms": 2,
-      "amenities": [
-        "Air conditioning",
-        "Essentials",
-        "Hangers",
-        "Heating",
-        "Iron",
-        "Kitchen",
-        "Parking",
-        "TV",
-        "Wifi"
-      ],
-      "price": "130.00",
-      "imgs": [
-        "https://a0.muscache.com/im/pictures/6a27564f-3743-45ba-9d33-25fe70ac8523.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/406d437c-e146-4653-a41b-27c6b429527f.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/24594e02-b825-438f-b329-ad1b78faf2bc.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/11365c4e-87af-46cb-823f-ce6d0a2dbaa6.jpg?im_w=720",
-        "https://a0.muscache.com/im/pictures/a35d0fdf-e5d5-4f8a-ac6a-a73fc82eb1dc.jpg?im_w=720"
-      ],
-      "host": {
-        "id": "23377306",
-        "url": "https://www.airbnb.com/users/show/23377306",
-        "name": "Celia",
-        "location": "Sabadell, Catalonia, Spain",
-        "about": "I'm 39 years old living inBarcelona. My mother and I live right near Blue Barcelona condos that we rent out all year. We take pride in our properties and are responsive to any of our renters needs. Since we are local, we deal with our guests directly – from key exchanges, to cleaning, to repairs, and anything in between. All of our properties are fully furnished and have all the amenities of home!",
-        "responseTime": "within an hour",
-        "thumbnail": "https://a0.muscache.com/im/pictures/user/80e3a9c4-7397-4edc-92c4-15fa600e92f3.jpg?im_w=240",
-        "profileImg": "https://a0.muscache.com/im/pictures/user/80e3a9c4-7397-4edc-92c4-15fa600e92f3.jpg?im_w=240",
-        "neighbourhood": "L'Antiga Esquerra de l'Eixample",
-        "responseRate": 100,
-        "isSuperhost": false,
-        "identityVerified": false
-      },
-      "address": {
-        "street": "Barcelona, Catalunya, Spain",
-        "city": "Barcelona",
-        "country": "Spain",
-        "coordinates": {
-          "lat": "41.39193",
-          "lng": "2.15255"
-        }
-      },
-      "review_scores": {
-        "accuracy": 8,
-        "cleanliness": 6,
-        "checkin": 8,
-        "communication": 8,
-        "location": 8,
-        "value": 6,
-        "rating": "80"
-      },
-      "reviews": [
-        {
-          "_id": "74934862",
-          "date": "1463457600000",
-          "by": {
-            "id": "33019813",
-            "name": "Sara",
-            "img": "https://a0.muscache.com/im/pictures/user/149eb559-1786-4c57-9901-4bc7bc3770d7.jpg?im_w=240"
-          },
-          "txt": "Very large house, cozy and bright. Celia is helpful and friendly, the house is not very far removed from the Metro to the bus stop, about 10 minutes walk."
-        }
-      ]
-    },
-    {
       "_id": "1112838",
       "listing_url": "https://www.airbnb.com/rooms/1112838",
       "name": "Spacious and quiet duplex apartment in Poble Sec",
@@ -1424,68 +1344,68 @@
         "pictureImg": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_x_medium",
         "response_rate": 100,
         "isSuperhost": true,
-        "identityVerified": true,
-        "address": {
-          "street": "Barcelona, Catalunya, Spain",
-          "city": "Barcelona",
-          "country": "Spain",
-          "coordinates": {
-            "lat": 41.37479,
-            "lng": 2.15566
-          }
+        "identityVerified": true
+      },
+      "address": {
+        "street": "Barcelona, Catalunya, Spain",
+        "city": "Barcelona",
+        "country": "Spain",
+        "coordinates": {
+          "lat": 41.37479,
+          "lng": 2.15566
+        }
+      },
+      "reviewScores": {
+        "accuracy": 10,
+        "cleanliness": 10,
+        "checkin": 10,
+        "communication": 10,
+        "location": 10,
+        "value": 10,
+        "rating": 10
+      },
+      "reviews": [
+        {
+          "_id": "4558132",
+          "date": "1368331200000",
+          "by": {
+            "id": "768849",
+            "name": "Jean-Pierre",
+            "img": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?im_w=240"
+          },
+          "txt": "Yamila appartement was just perfect for us!\r\nThe location in Poble sec is very close to BCN city center and the neighborhood is so quiet without any traffic like everywhere else in the city\r\nThe appartement is very clean, well equipped with very recent furniture, 2 bathrooms, 3 bedrooms, 2 balconies, 1 terrace, large kitchen and lounge.\r\nYamila was a perfect host with us also.\r\nI fully recommend this appartment"
         },
-        "reviewScores": {
-          "accuracy": 10,
-          "cleanliness": 10,
-          "checkin": 10,
-          "communication": 10,
-          "location": 10,
-          "value": 10,
-          "rating": 95
+        {
+          "_id": "5181484",
+          "date": "1371441600000",
+          "by": {
+            "id": "6146923",
+            "name": "Ove M.",
+            "img": "https://a0.muscache.com/im/pictures/user/ffe34cd5-fa00-4b45-8266-b0209b69afec.jpg?im_w=240"
+          },
+          "txt": "El piso esta muy guay, en una zona muy bien comunicada y con muchos restaurantes y bares cerca. Lo hemos pasado muy bien en este piso y volveriamos a alquilarlo."
         },
-        "reviews": [
-          {
-            "_id": "4558132",
-            "date": "1368331200000",
-            "by": {
-              "id": "768849",
-              "name": "Jean-Pierre",
-              "img": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?im_w=240"
-            },
-            "txt": "Yamila appartement was just perfect for us!\r\nThe location in Poble sec is very close to BCN city center and the neighborhood is so quiet without any traffic like everywhere else in the city\r\nThe appartement is very clean, well equipped with very recent furniture, 2 bathrooms, 3 bedrooms, 2 balconies, 1 terrace, large kitchen and lounge.\r\nYamila was a perfect host with us also.\r\nI fully recommend this appartment"
+        {
+          "_id": "5697588",
+          "date": "1373601600000",
+          "by": {
+            "id": "6597264",
+            "name": "Andrew",
+            "img": "https://a0.muscache.com/im/pictures/user/e7929cc5-e026-4c49-8922-73575dafad72.jpg?im_w=240"
           },
-          {
-            "_id": "5181484",
-            "date": "1371441600000",
-            "by": {
-              "id": "6146923",
-              "name": "Ove M.",
-              "img": "https://a0.muscache.com/im/pictures/user/ffe34cd5-fa00-4b45-8266-b0209b69afec.jpg?im_w=240"
-            },
-            "txt": "El piso esta muy guay, en una zona muy bien comunicada y con muchos restaurantes y bares cerca. Lo hemos pasado muy bien en este piso y volveriamos a alquilarlo."
+          "txt": "Awesome accommodations! Huge apartment that was obviously recently renovated and well maintained. The building is in a residential (read: non-touristy) part of Spain so if you are looking for a real taste of local culture this is the place to stay. 2 blocks from the subway and we were downtown in just a couple stops. The apartment is in building with a common courtyard (common for the style). The other people that live in the building were very friendly and helpful answering any questions we had. My son was even able to play with the other children (despite the language barrier). Awesome experience -- would definietly rent again."
+        },
+        {
+          "_id": "12232097",
+          "date": "1398571200000",
+          "by": {
+            "id": "7244993",
+            "name": "Ashley",
+            "img": "https://a0.muscache.com/im/pictures/user/10425a63-06d0-433d-a1ff-2a6dbe6eedcd.jpg?im_w=240"
           },
-          {
-            "_id": "5697588",
-            "date": "1373601600000",
-            "by": {
-              "id": "6597264",
-              "name": "Andrew",
-              "img": "https://a0.muscache.com/im/pictures/user/e7929cc5-e026-4c49-8922-73575dafad72.jpg?im_w=240"
-            },
-            "txt": "Awesome accommodations! Huge apartment that was obviously recently renovated and well maintained. The building is in a residential (read: non-touristy) part of Spain so if you are looking for a real taste of local culture this is the place to stay. 2 blocks from the subway and we were downtown in just a couple stops. The apartment is in building with a common courtyard (common for the style). The other people that live in the building were very friendly and helpful answering any questions we had. My son was even able to play with the other children (despite the language barrier). Awesome experience -- would definietly rent again."
-          },
-          {
-            "_id": "12232097",
-            "date": "1398571200000",
-            "by": {
-              "id": "7244993",
-              "name": "Ashley",
-              "img": "https://a0.muscache.com/im/pictures/user/10425a63-06d0-433d-a1ff-2a6dbe6eedcd.jpg?im_w=240"
-            },
-            "txt": "We stayed at Christina´s place for two weeks and were happy with the flat. The location is good: close to metro, and also bakery, convenience store etc is near.\r\nExcellent restaurants also nearby.  "
-          }
-        ]
-      }
+          "txt": "We stayed at Christina´s place for two weeks and were happy with the flat. The location is good: close to metro, and also bakery, convenience store etc is near.\r\nExcellent restaurants also nearby.  "
+        }
+      ]
     }
   ]
 }

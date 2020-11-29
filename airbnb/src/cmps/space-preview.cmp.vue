@@ -26,8 +26,8 @@ export default {
   computed: {
     spaceName() {
       const txt = this.space.name;
-      if (txt.length > 30) {
-        return txt.substring(0, 25) + "...";
+      if (txt.length > 40) {
+        return txt.substring(0, 37) + "...";
       } else return txt;
     },
     spaceRate() {
