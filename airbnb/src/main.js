@@ -6,6 +6,10 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import * as VueGoogleMaps from 'vue2-google-maps'
+var VueScrollTo = require('vue-scrollto');
+
+Vue.use(VueScrollTo)
+
 
 Vue.use(ElementUI);
 Vue.use(VueGoogleMaps, {

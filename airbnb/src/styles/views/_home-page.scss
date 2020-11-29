@@ -13,16 +13,25 @@
   background-size: cover;
   position: relative;
   & .h1-container{
-    font-size: rem(108px);
+    display: flex;
+    flex-direction: column;
+    font-size: 6.75rem;
     font-weight: 800;
     color: white;
-    margin-top: 300px;
-  }
-  & h1 {
-    margin-left: 2%;
-    padding: 20px;
-    &.hero-header2 {
-      font-weight: 800;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    // position: absolute;
+    & h1 {
+      margin-left: 3%;
+      padding: 20px;
+      &.hero-header2 {
+        font-weight: 800;
+      }
+      & span {
+        color: #f05;
+        font-size: 4rem;
+      }
     }
   }
 
@@ -47,10 +56,7 @@
         font-weight: 800;
       }
     }
-    & span {
-      color: #f05;
-      font-size: 4rem;
-    }
+    
   }
   .card {
     margin-top: 20px;

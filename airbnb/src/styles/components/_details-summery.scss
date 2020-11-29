@@ -15,8 +15,10 @@
     grid-area: img;
     justify-self: end;
     img {
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      width: 100%;
     }
   }
 
