@@ -1,11 +1,11 @@
 .list-filter {
     .buttons-container {
         margin-bottom: 50px;
+        display: flex;
         :not(:last-child) {
             margin-inline-end: 10px;
         }
         button {
-            position: relative;
             cursor: pointer;
             text-align: center;
             border: 1px solid black;
@@ -19,6 +19,14 @@
             font-size: 14px;
             line-height: 18px;
             background-color: #ffffff;
+        }
+        .popper {
+            background: rgb(255, 255, 255);
+            border: 0.5px solid rgba(118, 118, 118, 0.28);
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 37px;
+            padding: rem(10px);
+            // left: 0 !important;
         }
     }
 }

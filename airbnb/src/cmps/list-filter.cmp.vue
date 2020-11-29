@@ -2,42 +2,69 @@
   <section class="list-filter">
     <h1>Stays in {{ space }}</h1>
     <div class="buttons-container">
-        <button>Cancellation flexibility</button>
-        <button>Type of place</button>
-        <button>Price</button>
-      <!-- <el-popover
-        class="modal"
-        placement="bottom-start"
-        :visible-arrow="false"
+      <popper
+        class="mama"
         trigger="click"
-        content="this is content, this is content, this is content"
+        :options="{
+          placement: 'bottom-end',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
       >
-        <el-button slot="reference"> Cancellation flexibility</el-button>
-      </el-popover>
-      <el-popover
-        class="modal"
-        placement="bottom-start"
-        :visible-arrow="false"
+        <div class="popper">
+          Only show stays that offer cancellation flexibility
+          <el-switch
+            v-model="value2"
+            active-color="#222222"
+            inactive-color="#717171"
+          >
+          </el-switch>
+        </div>
+
+        <button slot="reference">Cancellation flexibility</button>
+      </popper>
+      <popper
         trigger="click"
-        content="this is content, this is content, this is content"
+        :options="{
+          placement: 'bottom-end',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
       >
-        <el-button slot="reference"> Type of place</el-button>
-      </el-popover>
-      <el-popover
-        class="modal"
-        placement="bottom-start"
-        :visible-arrow="false"
+        <div class="popper">
+          Only show stays that offer cancellation flexibility
+        </div>
+
+        <button slot="reference">Type of place</button>
+      </popper>
+      <popper
         trigger="click"
-        content="this is content, this is content, this is content"
+        :options="{
+          placement: 'bottom-end',
+          modifiers: { offset: { offset: '0,10px' } },
+        }"
       >
-        <el-button slot="reference">Price</el-button>
-      </el-popover> -->
+        <div class="popper">
+          Only show stays that offer cancellation flexibility
+        </div>
+
+        <button slot="reference">Price</button>
+      </popper>
     </div>
   </section>
 </template>
 
 <script>
+import Popper from "vue-popperjs";
+
 export default {
+  components: {
+    popper: Popper,
+  },
+  data() {
+    return {
+      value1: true,
+      value2: true,
+    };
+  },
   props: {
     space: String,
   },
