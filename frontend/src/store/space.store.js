@@ -30,13 +30,13 @@ export const spaceStore = {
     },
     actions: {
         async addSpace(context, {space}) {
-            space = await SpaceService.add(space)
+            space = await spaceService.add(space)
             context.commit({type: 'addSpace', space})
             return space;
         },
 
         async removeSpace(context, {spaceId}) {
-            await SpaceService.remove(spaceId);
+            await spaceService.remove(spaceId);
             context.commit({type: 'removeSpace', spaceId})
         },
         
