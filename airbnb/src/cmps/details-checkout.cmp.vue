@@ -4,62 +4,87 @@
       <section class="aligner" v-if="space">
         <div class="checkout-header flex">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>
+          <!-- {{range}} -->
           <div>
             <span class="star">󰀄</span>
             <span class="rating">{{ ratingForDisplay }}</span>
             <span class=""> {{ `(${space.reviews.length})` }} </span>
           </div>
         </div>
-        <div class="checkout-select">
-          <v-date-picker v-model="range" is-range>
-            <template v-slot="{ inputValue, inputEvents }">
-              <div class="input-container flex justify-center items-center">
-                <input
-                  :value="inputValue.start"
-                  v-on="inputEvents.start"
-                  class="start-date border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                />
-                <input
-                  :value="inputValue.end"
-                  v-on="inputEvents.end"
-                  class="end-date border px-2 py-1 w-32 rounded focus:outline-none focus:border-indigo-300"
-                />
-              </div>
-            </template>
-          </v-date-picker>
-          <button class="guest-modal-btn" @click="guestModal">
-            {{ adultCount +childrenCount +infantCount }} guest
-          </button>
-          <div class="modal" v-if="isShown">
-            <div class="container-btns">
-              <div class="btn-container">
-                <div class="txt">Adults:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setAdult(-1)">-</button>
-                  <p>{{ adultCount }}</p>
-                  <button class="guest-btn" @click="setAdult(1)">+</button>
+        <form>
+          <div class="checkout-select">
+            <v-date-picker v-model="range" is-range>
+              <template v-slot="{ inputValue, inputEvents }">
+                <div class="input-container flex justify-center items-center">
+                  <input
+                    :value="inputValue.start"
+                    v-on="inputEvents.start"
+                    class="start-date"
+                  />
+                  <input
+                    :value="inputValue.end"
+                    v-on="inputEvents.end"
+                    class="end-date"
+                  />
                 </div>
-              </div>
-              <div class="btn-container">
-                <div class="txt">Children:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setChildren(-1)">-</button>
-                  <p>{{ childrenCount }}</p>
-                  <button class="guest-btn" @click="setChildren(1)">+</button>
+              </template>
+            </v-date-picker>
+            <button class="guest-modal-btn" @click="guestModal">
+              {{ adultCount + childrenCount + infantCount }} guest
+            </button>
+            <div class="modal" v-if="isShown">
+              <div class="container-btns">
+                <div class="btn-container">
+                  <div class="txt">Adults:</div>
+                  <div class="btns">
+                    <button class="guest-btn" @click="setAdult(-1)">-</button>
+                    <p>{{ adultCount }}</p>
+                    <button class="guest-btn" @click="setAdult(1)">+</button>
+                  </div>
                 </div>
-              </div>
-              <div class="btn-container">
-                <div class="txt">Infants:</div>
-                <div class="btns">
-                  <button class="guest-btn" @click="setInfant(-1)">-</button>
-                  <p>{{ infantCount }}</p>
-                  <button class="guest-btn" @click="setInfant(1)">+</button>
+                <div class="btn-container">
+                  <div class="txt">Children:</div>
+                  <div class="btns">
+                    <button class="guest-btn" @click="setChildren(-1)">
+                      -
+                    </button>
+                    <p>{{ childrenCount }}</p>
+                    <button class="guest-btn" @click="setChildren(1)">+</button>
+                  </div>
+                </div>
+                <div class="btn-container">
+                  <div class="txt">Infants:</div>
+                  <div class="btns">
+                    <button class="guest-btn" @click="setInfant(-1)">-</button>
+                    <p>{{ infantCount }}</p>
+                    <button class="guest-btn" @click="setInfant(1)">+</button>
+                  </div>
+                </div>
+                <div class="close-btn">
+                  <p @click="guestModal">Close</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <button class="checkout-btn">Check Availability</button>
+          <button @click="checkDates" class="checkout-btn">
+            Check Availability
+          </button>
+          <div v-if="isCheckingOut" class="reserve-extension">
+            <div class="extension-container">
+              <div class="warning">
+                <small class="payment-warning">You will be charged</small>
+              </div>
+              <div class="payment-desc">
+                <p>{{ adultCount + childrenCount + infantCount }} guest</p>
+                <div class="pricing">
+                  <p>{{ space.price }} X {{ daysForDisplay }}</p>
+                  <p>{{ totalPrice }}</p>
+                </div>
+                <p class="total">Total: {{ totalPrice }}</p>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
     </div>
   </section>
@@ -67,9 +92,8 @@
 
 <script>
 import vDatePicker from "v-calendar/lib/components/date-picker.umd";
-// import numberInput from "./number-input.cmp.vue";
+import moment from "moment";
 
-// import moment from 'moment';
 export default {
   props: {
     space: {
@@ -82,7 +106,8 @@ export default {
       childrenCount: 0,
       infantCount: 0,
       isShown: false,
-      night: null,
+      isCheckingOut: false,
+      nights: null,
       range: {
         start: new Date(2020, 9, 12),
         end: new Date(2020, 9, 16),
@@ -90,14 +115,52 @@ export default {
     };
   },
   computed: {
+    daysForDisplay() {
+      const a = moment(this.range.start);
+      const b = moment(this.range.end);
+      const c = a.from(b, true);
+      const d = c.replace("days", "");
+      const e = parseInt(d);
+      this.updateNight(e);
+      return e + " nights";
+    },
+    totalPrice() {
+      let priceByNights = this.nights * this.space.price;
+      // var n = new Number(1000000);
+      var locale = {
+        style: "currency",
+        currency: "USD",
+      };
+
+      var x = priceByNights.toLocaleString("en-US", locale);
+      console.log(x);
+      return x;
+    },
     priceForDisplay() {
-      return this.space.price * this.night;
+      return this.space.price * this.nights;
     },
     ratingForDisplay() {
       return this.space.reviewScores.rating / 2;
     },
   },
   methods: {
+    updateNight(num) {
+      this.nights = num;
+    },
+    checkDates() {
+      this.isCheckingOut = true;
+      // console.log("START", this.range.start);
+      // console.log("END", this.range.end);
+      // const dayOfMonth = parseInt(moment(this.range.start).format("D"));
+      // console.log(dayOfMonth);
+      // const monthNum = parseInt(moment(this.range.start).format("M"));
+      // console.log(monthNum);
+      // const a = moment(this.range.start)
+      // const b = moment(this.range.end);
+      // const c= a.from(b,true)
+      // console.log(c)
+      // const mothDay=moment(this.range.start).format("MMM Do YY");
+    },
     guestModal() {
       this.isShown = !this.isShown;
     },
@@ -119,206 +182,46 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.modal {
-  position: absolute !important;
-    left: 0px !important;
-    // top: 100% !important;
-    z-index: 1 !important;
-    background: rgb(255, 255, 255) !important;
-    border-radius: 32px !important;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
-    margin-top: 12px !important;
-    margin-left:20px !important;
-    margin-right:20px !important;
-    // max-height: calc(100vh - 220px) !important;
-    overflow: hidden auto !important;
-    padding: 16px 32px !important;
-    width: 90%;
-  .container-btns {
+.reserve-extension {
+  .extension-container {
+    // padding: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    z-index: 20;
-
-    .txt {
-      display: flex;
-      font-size: rem(14px) !important;
-      line-height: 20px !important;
-      font-weight: 600 !important;
+    .warning{
+      small{
+        font-size: 14px;
+        color: #717171;
+      }
     }
-    .btns {
-      display: flex;
-      -webkit-box-align: center !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      width: 104px !important;
-      height: 32px !important;
-      color: rgb(34, 34, 34) !important;
-      font-weight: 400 !important;
-      font-size: 16px !important;
-      line-height: 20px !important;
+    .payment-desc {
+      padding: 10px;
+
+      .pricing {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
       p {
-        margin: 0px 8px;
+        padding: 10px;
+        font-weight: 400;
+        color: rgb(34, 34, 34);
+        display: block;
+        text-align: left;
+        line-height: 20px;
+        padding: 18px 0px 12px;
+      }
+      .total {
+        border-top: 1px solid rgb(221, 221, 221);
+        list-style-type: none;
+        margin: 9px 0px 0px;
+        // padding: 24px 0px 12px;
+        font-weight: 800;
+        font-size: 16px;
       }
     }
-  }
-  .btn-container {
-    -webkit-box-pack: justify !important;
-    -webkit-box-align: center !important;
-    color: rgb(34, 34, 34) !important;
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
-    padding-right: 4px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-  }
-  .guest-num {
-    display: flex;
-    line-height: 1;
-  }
-  .guest-btn {
-    -webkit-box-pack: center !important;
-    -webkit-box-align: center !important;
-    -webkit-box-flex: 0 !important;
-    width: 32px !important;
-    height: 32px !important;
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-    cursor: pointer !important;
-    display: inline-flex !important;
-    margin: 0px !important;
-    padding: 0px !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: rgb(176, 176, 176) !important;
-    color: rgb(113, 113, 113) !important;
-    font-family: inherit !important;
-    outline: none !important;
-    touch-action: manipulation !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: rgb(255, 255, 255) !important;
-    border-radius: 50% !important;
-  }
-}
-.btn-container:nth-last-child(2) {
-  border-bottom: 1px solid #9c9a9a;
-  border-top: 1px solid #a3a1a1;
-}
-
-.guest-modal-btn {
-  border: none;
-  background-color: transparent;
-  color: #717171;
-  margin: 0;
-  padding: 16.5px 20px;
-  border-top: transparent;
-  border-radius: 0 0 8px 8px;
-  font-size: 16px;
-  font-family: Circular;
-  font-weight: 600;
-  text-align: left;
-  outline: none;
-  width: 100%;
-}
-.checkout-container {
-  margin-top: 30px;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  height: 95%;
-
-  .checkout-card {
-    position: sticky;
-    top: 100px;
-    display: flex;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    width: 100%;
-    min-height: 290px; //height?
-    border: none;
-    .checkout-header {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 8px;
-      margin: 5px;
-      .price {
-        font-weight: 600;
-        font-size: 1.2rem;
-        span {
-          font-size: 0.925rem;
-          font-weight: 400;
-          color: #717171;
-        }
-      }
-      .star {
-        color: #ff385c;
-        font-size: 20px;
-        text-align: start;
-        margin-inline-end: 2px;
-      }
-    }
-    .checkout-btn {
-      // position: absolute;
-      margin-top: 35px;
-      color: #ffffff;
-      width: 100%;
-      line-height: 20px !important;
-      font-weight: 600 !important;
-      font-size: 18px;
-      background-image: linear-gradient(to right, #ff385c, #ef305c, #e93568, #ce235b,#ce2d63);
-      &:hover{
-        cursor: pointer;
-        background-image: radial-gradient(
-          circle at center center,
-          rgb(255, 56, 92) 0%,
-          rgb(230, 30, 77) 27.5%,
-          rgb(227, 28, 95) 40%,
-          rgb(215, 4, 102) 57.5%,
-          rgb(189, 30, 89) 75%,
-          rgb(189, 30, 89) 100%
-        ) !important;
-
-      }
-      border: none;
-      padding: 22px;
-      overflow: hidden !important;
-      border-radius: 8px !important;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-  .checkout-select {
-    border: 1px solid #717171;
-    border-radius: 8px;
-  }
-  .input-container {
-    border-bottom: 1px solid #717171;
-    border-radius: 8px 8px 0px 0px;
-    padding: 3px;
-    .start-date {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-      padding: 10px;
-      border-right: 1px solid #717171;
-      font-family: Circular;
-      font-size: 16px;
-
-    }
-    .end-date {
-      font-family: Circular;
-      font-size: 16px;
-      padding: 10px;
-      width: 100%;
-      border: none;
+    .warning {
+      margin: 0 auto;
+      padding-top: 10px ;
     }
   }
 }

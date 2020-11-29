@@ -3,7 +3,7 @@
       <span class="title">{{ `${space.roomType} hosted by ${space.host.name}` }}</span>
       <span class="info">{{`${space.capacity} guests · ${space.spaceType} · ${space.beds} bed · ${space.bathrooms} bath`}}</span>
     <div class="thumbnail">
-      <img :src="space.host.profileImg"  @click="emitHostClick"/>
+      <img :src="space.host.profileImg"  v-scroll-to="'#detailsHost'"  @click="emitHostClick"/>
     </div>
   </section>
 </template>

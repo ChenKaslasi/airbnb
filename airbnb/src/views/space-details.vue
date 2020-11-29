@@ -4,7 +4,7 @@
     <gallery :space="currSpace" />
     <section class="flex ">
       <section class="main-content">
-        <details-summery  v-scroll-to="'#detailsHost'" :space="currSpace" />
+        <details-summery   :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
         <details-calendar :space="currSpace"/>
