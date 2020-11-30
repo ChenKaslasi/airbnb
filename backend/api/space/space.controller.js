@@ -14,6 +14,11 @@ async function getSpaces(req, res) {
     }
 }
 
+async function getSpace(req, res) {
+    const space = await spaceService.getById(req.params.id)
+    res.send(space)
+}
+
 async function deleteSpace(req, res) {
     try {
         await spaceService.remove(req.params.id)
@@ -27,14 +32,15 @@ async function deleteSpace(req, res) {
 async function addSpace(req, res) {
     var space = req.body;
     space = await spaceService.add(space)
-    space.byUser = req.session.space;
-    // TODO - need to find aboutUser
-    space.aboutUser = {}
+    space.bySpace = req.session.space;
+    // TODO - need to find aboutSpace
+    space.aboutSpace = {}
     res.send(space)
 }
 
 module.exports = {
     getSpaces,
+    getSpace,
     deleteSpace,
     addSpace,
 }
