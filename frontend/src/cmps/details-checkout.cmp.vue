@@ -66,9 +66,10 @@
               </div>
             </div>
           </div>
-          <button @click="checkDates" class="checkout-btn">
+          <button @click="checkOut" class="checkout-btn">
             Check Availability
           </button>
+          {{getDates}}
           <div v-if="isCheckingOut" class="reserve-extension">
             <div class="extension-container">
               <div class="warning">
@@ -77,7 +78,7 @@
               <div class="payment-desc">
                 <p>{{ adultCount + childrenCount + infantCount }} guest</p>
                 <div class="pricing">
-                  <p>{{ space.price }} X {{ daysForDisplay }}</p>
+                  <p>{{ space.price }} X {{ getDates }}</p>
                   <p>{{ totalPrice }}</p>
                 </div>
                 <p class="total">Total: {{ totalPrice }}</p>
@@ -108,6 +109,18 @@ export default {
       isShown: false,
       isCheckingOut: false,
       nights: null,
+      order: {
+        createdAt: Date.now(),
+        userId: "",
+        spaceId: "",
+        status: null,
+        totalPrice: null,
+        guests: null,
+        dates: {
+          checkIn: null,
+          checkOut: null,
+        },
+      },
       range: {
         start: new Date(2020, 9, 12),
         end: new Date(2020, 9, 16),
@@ -125,7 +138,7 @@ export default {
       return e + " nights";
     },
     totalPrice() {
-      let priceByNights = this.nights * this.space.price;
+      let priceByNights = this.getDates * this.space.price;
       // var n = new Number(1000000);
       var locale = {
         style: "currency",
@@ -142,24 +155,14 @@ export default {
     ratingForDisplay() {
       return this.space.reviewScores.rating / 2;
     },
+    getDates() {
+      const day = 24 * 60 * 60 * 1000;
+      return Math.round(Math.abs((this.range.start - this.range.end) / day));
+    },
   },
   methods: {
     updateNight(num) {
       this.nights = num;
-    },
-    checkDates() {
-      this.isCheckingOut = true;
-      // console.log("START", this.range.start);
-      // console.log("END", this.range.end);
-      // const dayOfMonth = parseInt(moment(this.range.start).format("D"));
-      // console.log(dayOfMonth);
-      // const monthNum = parseInt(moment(this.range.start).format("M"));
-      // console.log(monthNum);
-      // const a = moment(this.range.start)
-      // const b = moment(this.range.end);
-      // const c= a.from(b,true)
-      // console.log(c)
-      // const mothDay=moment(this.range.start).format("MMM Do YY");
     },
     guestModal() {
       this.isShown = !this.isShown;
@@ -172,6 +175,29 @@ export default {
     },
     setInfant(value) {
       this.infantCount += value;
+    },
+    checkOut() {
+      if (!this.isCheckingOut) return (this.isCheckingOut = true);
+      if (this.isCheckingOut) {
+        console.log("on track");
+        this.addOrder(this.space._id);
+        this.isCheckingOut = !this.isCheckingOut;
+      }
+    },
+    addOrder(spaceId) {
+      const order = JSON.parse(JSON.stringify(this.order));
+      order.spaceId = spaceId;
+      order.status = "pending";
+      order.totalPrice = this.priceForDisplay;
+      order.nights=this.getDates
+      order.guests = this.adultCount + this.childrenCount + this.infantCount;
+      order.dates.checkIn = this.range.start;
+      order.dates.checkOut = this.range.end;
+      console.log("This order!!!", order, "data order", this.order);
+      this.$store.dispatch({
+        type: "addOrder",
+        order: order,
+      });
     },
   },
   components: {
@@ -187,8 +213,8 @@ export default {
     // padding: 10px;
     display: flex;
     flex-direction: column;
-    .warning{
-      small{
+    .warning {
+      small {
         font-size: 14px;
         color: #717171;
       }
@@ -221,7 +247,7 @@ export default {
     }
     .warning {
       margin: 0 auto;
-      padding-top: 10px ;
+      padding-top: 10px;
     }
   }
 }

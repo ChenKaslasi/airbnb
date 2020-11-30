@@ -95,7 +95,7 @@
        </div>
       </popper>
       
-      <div data-name="search" ref="search" class="search-icon flex jusify content align-center" @click="emitFilter">
+      <div data-name="search" ref="search" class="search-icon flex jusify content align-center" @click="filter">
         <div data-name="search" class="btn">
           <img data-name="search" src="../assets/icons/search_m.svg" />
         </div>
@@ -119,16 +119,20 @@ export default {
     return {
       filterBy: {
         location: '',
+        date: {
+          start: '',
+          end: ''
+        },
         adultCount: 0,
         childrenCount: 0,
         infantCount: 0,
       },
     };
-  },
+},
   methods: {
-    emitFilter() {
-      this.$emit("filter", this.filterBy);
-      console.log("filter", this.filterBy);
+    filter() {
+    const filterBy = this.filterBy
+     this.$store.dispatch({ type: "filterSpaces", filterBy });
     },
     setAdult(value) {
       if(this.filterBy.adultCount === 0 && value === -1) return
