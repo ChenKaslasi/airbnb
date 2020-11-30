@@ -68,13 +68,6 @@ export default {
   props: {
     space: Object,
   },
-  created() {
-    console.log(this.space, "Space");
-    console.log(this.space.address.coordinates.lat, "Lat--------");
-    console.log(this.space.address.coordinates, "coords------");
-    console.log(this.space.address, "adress------");
-    console.log(this.markers[0].address.coordinates.lat);
-  },
   data() {
     return {
       markers: [
