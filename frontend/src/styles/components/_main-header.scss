@@ -80,7 +80,7 @@
         text-decoration: none;
         background-color: #ffffff;
         border-radius: 8px;
-        transition: box-shadow 0.2s ease;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px;
         z-index: 1;
         button {
           font-family: Circular;
@@ -91,6 +91,7 @@
           padding: 10px 14px;
           background-color: inherit;
           border: none;
+          outline: none;
           text-align: start;
           text-decoration: none;
           display: block;
