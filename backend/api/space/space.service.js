@@ -15,6 +15,17 @@ async function query(filterBy = {}) {
     }
 }
 
+async function getById(spaceId) {
+    const collection = await dbService.getCollection('space')
+    try {
+        const space = await collection.findOne({ '_id': ObjectId(spaceId) })
+        return space
+    } catch (err) {
+        console.log(`ERROR: while finding space ${spaceId}`)
+        throw err;
+    }
+}
+
 
 async function remove(spaceId) {
     const collection = await dbService.getCollection('space')
@@ -28,8 +39,8 @@ async function remove(spaceId) {
 
 
 async function add(space) {
-    space.byUserId = ObjectId(space.byUserId);
-    space.aboutUserId = ObjectId(space.aboutUserId);
+    space.bySpaceId = ObjectId(space.bySpaceId);
+    space.aboutSpaceId = ObjectId(space.aboutSpaceId);
 
     const collection = await dbService.getCollection('space')
     try {
@@ -48,6 +59,7 @@ function _buildCriteria(filterBy) {
 
 module.exports = {
     query,
+    getById,
     remove,
     add,
     
