@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import { spaceStore } from './space.store.js'
+import userStore from './user.store.js'
 
 Vue.use(Vuex)
 
@@ -14,6 +15,7 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    spaceStore
+    spaceStore,
+    userStore
   }
 })

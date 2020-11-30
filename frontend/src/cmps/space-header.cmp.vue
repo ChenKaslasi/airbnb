@@ -24,32 +24,39 @@
         <a class="become-host" href="/#/Barcelona">Become a Host</a>
         <div class="user-dropdown flex">
           <button
-            @click="toggleLogin"
+            @click="toggleDropdown"
             class="btn flex justify-around align-center"
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div v-show="isLoginOpen" class="login-container">
+            <div v-show="isDropdownOpen" class="login-container">
               <ul class="login-dropdown">
-                <li><button class="sign-up" @click="log">Sign up</button></li>
-                <li><button>Log in</button></li>
+                <li><button class="sign-up">Sign up</button></li>
+                <li><button  @click="toggleLogin">Log in</button></li>
               </ul>
             </div>
           </button>
         </div>
       </div>
     </div>
+    <login v-if="isLoginOpen"></login>
   </section>
 </template>
 
 <script>
+import login from "../cmps/login.cmp.vue";
+
 export default {
+  components: {
+    login,
+  },
   data() {
     return {
       isScrolled: false,
       lastScrollPosition: 0,
       isHomePage: false,
-      isLoginOpen: false
+      isDropdownOpen: false,
+      isLoginOpen: false,
     };
   },
   methods: {
@@ -67,12 +74,12 @@ export default {
     setHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
-    toggleLogin() {
-      this.isLoginOpen = !this.isLoginOpen
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
     },
-    log(){
-      console.log('mama');
-    }
+    toggleLogin() {
+      this.isLoginOpen = !this.isLoginOpen;
+    },
   },
   created() {
     this.setHomePage();

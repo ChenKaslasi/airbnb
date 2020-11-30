@@ -1,4 +1,4 @@
-import httpService from './httpService'
+import httpService from './http.service'
 
 export default {
     login,
@@ -24,12 +24,15 @@ function update(user) {
 }
 
 async function login(userCred) {
+    console.log('user service:', userCred);
     const user = await httpService.post('auth/login', userCred)
-    return _handleLogin(user)
+    return user;
+    // return _handleLogin(user)
 }
 async function signup(userCred) {
     const user = await httpService.post('auth/signup', userCred)
-    return _handleLogin(user)
+    return user
+    // return _handleLogin(user)
 }
 async function logout() {
     await httpService.post('auth/logout');
@@ -37,7 +40,7 @@ async function logout() {
 }
 
 
-function _handleLogin(user) {
-    sessionStorage.setItem('user', JSON.stringify(user))
-    return user;
-}
+// function _handleLogin(user) {
+//     sessionStorage.setItem('user', JSON.stringify(user))
+//     return user;
+// }
