@@ -14,6 +14,13 @@ async function getOrders(req, res) {
     }
 }
 
+async function getOrder(req, res) {
+    const order = await orderService.getById(req.params.id)
+    console.log('order!!!!!!!',order);
+    res.send(order)
+}
+
+
 async function deleteOrder(req, res) {
     try {
         await orderService.remove(req.params.id)
@@ -36,6 +43,7 @@ async function addOrder(req, res) {
 
 module.exports = {
     getOrders,
+    getOrder,
     deleteOrder,
     addOrder
 }

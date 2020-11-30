@@ -15,6 +15,17 @@ async function query(filterBy = {}) {
     }
 }
 
+async function getById(orderId) {
+    const collection = await dbService.getCollection('order')
+    try {
+        const order = await collection.findOne({ '_id': ObjectId(orderId) })
+        return order
+    } catch (err) {
+        console.log(`ERROR: while finding order ${orderId}`)
+        throw err;
+    }
+}
+
 async function remove(orderId) {
     const collection = await dbService.getCollection('order')
     try {
@@ -47,6 +58,7 @@ function _buildCriteria(filterBy) {
 
 module.exports = {
     query,
+    getById,
     remove,
     add
 }
