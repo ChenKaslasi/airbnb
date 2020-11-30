@@ -15,11 +15,7 @@ export default {
         return ajax(endpoint, 'GET', data)
     },
     post(endpoint, data){
-<<<<<<< HEAD
         console.log('http service:', data);
-=======
-        console.log('data line 18',data,endpoint)
->>>>>>> 5b506df5a0948fd643d9a237a0c489c4cfcccc4a
         return ajax(endpoint, 'POST', data)
     },
     put(endpoint, data){
