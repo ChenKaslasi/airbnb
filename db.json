@@ -519,11 +519,9 @@
         "suburb": "Williamsburg",
         "city": "New York",
         "country": "United States",
-        "location": {
-          "coordinates": {
-            "lat": -73.96053,
-            "lng": 40.71577
-          }
+        "coordinates": {
+          "lat": -73.96053,
+          "lng": 40.71577
         }
       },
       "reviewScores": {
@@ -1085,7 +1083,6 @@
       ]
     }
     {
-      "_id": "10021707",
       "name": "Private Room in Bushwick",
       "listing_url": "https://www.airbnb.com/rooms/10021707",
       "locationDesc": "Here exists a very cozy room for rent in a shared 4-bedroom apartment. It is located one block off of the JMZ at Myrtle Broadway.  The neighborhood is diverse and appeals to a variety of people.",

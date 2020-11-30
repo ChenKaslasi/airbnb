@@ -1,11 +1,11 @@
 <template>
   <section class="map-container" v-if="space">
-    <!-- <GmapMap
+    <GmapMap
       :center="{
-        lat: this.space.address.coordinates.lat,
         lng: this.space.address.coordinates.lng,
+        lat: this.space.address.coordinates.lat,
       }"
-      :zoom="12"
+      :zoom="14"
       map-type-id="terrain"
       style="height: 400px"
     >
@@ -13,45 +13,17 @@
         v-for="(m, index) in markers"
         :key="index"
         :position="m.position"
-        :clickable="true"
-        :draggable="true"
-        @click="center = m.position"
-        :marker="marker"
+        :marker="{
+          lng: markers[index].position.lng,
+          lat: markers[index].position.lat,
+        }"
         alignment="bottomright"
-      > -->
-    <!-- <img class="marker" src="https://image.pngaaa.com/0/107000-small.png" /> -->
-    <!-- <img src="../" /> -->
-    <!-- <map-marker></map-marker>
-      </gmap-custom-marker> -->
-    <!-- <GmapMarker
-        :key="index"
-        v-for="(m, index) in markers"
-        :position="m.position"
-        :clickable="true"
-        :draggable="true"
-        @click="center = m.position"
-      /> -->
-    <!-- </GmapMap> -->
-    <GmapMap 
-      :center="{
-        lng : this.space.address.coordinates.lng,
-        lat : this.space.address.coordinates.lat,
-      }"
-      :zoom="14"
-      map-type-id="terrain"
-      style="height: 400px"
-    >
-     <gmap-custom-marker 
-      v-for="(m, index) in markers" :key="index"
-      :position="m.position"
-      :marker="{
-        lng : markers[index].position.lng,
-        lat : markers[index].position.lat,
-      }"
-      alignment="bottomright"
       >
-        <img class="marker-img" src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"/>
-      </gmap-custom-marker> 
+        <img
+          class="marker-img"
+          src="https://www.svgrepo.com/show/22031/home-icon-silhouette.svg"
+        />
+      </gmap-custom-marker>
     </GmapMap>
   </section>
 </template>
