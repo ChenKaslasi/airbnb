@@ -69,6 +69,7 @@
           <button @click="checkOut" class="checkout-btn">
             Check Availability
           </button>
+          {{getDates}}
           <div v-if="isCheckingOut" class="reserve-extension">
             <div class="extension-container">
               <div class="warning">
@@ -77,7 +78,7 @@
               <div class="payment-desc">
                 <p>{{ adultCount + childrenCount + infantCount }} guest</p>
                 <div class="pricing">
-                  <p>{{ space.price }} X {{ daysForDisplay }}</p>
+                  <p>{{ space.price }} X {{ getDates }}</p>
                   <p>{{ totalPrice }}</p>
                 </div>
                 <p class="total">Total: {{ totalPrice }}</p>
@@ -108,7 +109,6 @@ export default {
       isShown: false,
       isCheckingOut: false,
       nights: null,
-
       order: {
         createdAt: Date.now(),
         userId: "",
@@ -121,7 +121,6 @@ export default {
           checkOut: null,
         },
       },
-
       range: {
         start: new Date(2020, 9, 12),
         end: new Date(2020, 9, 16),
@@ -139,7 +138,7 @@ export default {
       return e + " nights";
     },
     totalPrice() {
-      let priceByNights = this.nights * this.space.price;
+      let priceByNights = this.getDates * this.space.price;
       // var n = new Number(1000000);
       var locale = {
         style: "currency",
@@ -155,6 +154,10 @@ export default {
     },
     ratingForDisplay() {
       return this.space.reviewScores.rating / 2;
+    },
+    getDates() {
+      const day = 24 * 60 * 60 * 1000;
+      return Math.round(Math.abs((this.range.start - this.range.end) / day));
     },
   },
   methods: {
@@ -186,6 +189,7 @@ export default {
       order.spaceId = spaceId;
       order.status = "pending";
       order.totalPrice = this.priceForDisplay;
+      order.nights=this.getDates
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
       order.dates.checkIn = this.range.start;
       order.dates.checkOut = this.range.end;
