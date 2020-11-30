@@ -53,7 +53,9 @@ async function add(space) {
 }
 
 function _buildCriteria(filterBy) {
-    const criteria = {};
+    const criteria = {
+        
+    };
     return criteria;
 }
 

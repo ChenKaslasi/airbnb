@@ -519,11 +519,9 @@
         "suburb": "Williamsburg",
         "city": "New York",
         "country": "United States",
-        "location": {
-          "coordinates": {
-            "lat": -73.96053,
-            "lng": 40.71577
-          }
+        "coordinates": {
+          "lat": -73.96053,
+          "lng": 40.71577
         }
       },
       "reviewScores": {
