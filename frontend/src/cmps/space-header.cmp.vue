@@ -31,7 +31,7 @@
             <img class="guest-img" src="../assets/icons/guest.svg" />
             <div v-show="isLoginOpen" class="login-container">
               <ul class="login-dropdown">
-                <li><button @click="log">Sign up</button></li>
+                <li><button class="sign-up" @click="log">Sign up</button></li>
                 <li><button>Log in</button></li>
               </ul>
             </div>
