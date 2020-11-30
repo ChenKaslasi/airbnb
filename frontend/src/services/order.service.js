@@ -7,17 +7,17 @@ export default {
   query
 }
 function getById(orderId) {
-  return httpService.get(`api/order/${orderId}`)
+  return httpService.get(`order/${orderId}`)
 }
 
 function remove(orderId) {
-  return httpService.delete(`api/order/${orderId}`)
+  return httpService.delete(`order/${orderId}`)
 }
 function add(order) {
-  return httpService.post(`api/order`, order)
+  return httpService.post(`order`, order)
 }
 
 function query() {
-    return httpService.get('api/order')
+    return httpService.get('order')
 }
 

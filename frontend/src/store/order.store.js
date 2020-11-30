@@ -28,6 +28,7 @@ export const orderStore = {
     },
     actions: {
         async addOrder(context, {order}) {
+            console.log('STORE ADD ORDER ',order)
             order = await orderService.add(order)
             context.commit({type: 'addOrder', order})
             return order;

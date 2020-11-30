@@ -38,9 +38,8 @@ async function remove(orderId) {
 
 
 async function add(order) {
-    order.byOrderId = ObjectId(order.byOrderId);
-    order.aboutOrderId = ObjectId(order.aboutOrderId);
 
+    console.log('BACKEND ADD',order);
     const collection = await dbService.getCollection('order')
     try {
         await collection.insertOne(order);
