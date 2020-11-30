@@ -6,7 +6,7 @@ export default {
   getById,
   query
 }
-function getById(spaceId) {
+function getById(spaceId) { 
   return httpService.get(`spaces/${spaceId}`)
 }
 
