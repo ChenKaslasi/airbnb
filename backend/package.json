@@ -5,7 +5,7 @@
     "main": "server.js",
     "scripts": {
         "start": "nodemon app.js",
-        "dev": "nodemon app.js"
+        "dev": " nodemon app.js"
     },
     "author": "chen kaslasi",
     "license": "ISC",
