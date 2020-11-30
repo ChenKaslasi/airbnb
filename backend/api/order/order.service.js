@@ -8,16 +8,12 @@ async function query(filterBy = {}) {
     const collection = await dbService.getCollection('order')
     try {
         const orders = await collection.find(criteria).toArray();
-        orders.forEach(order => delete order.password);
-
         return orders
     } catch (err) {
         console.log('ERROR: cannot find orders')
         throw err;
     }
 }
-
-
 
 async function remove(orderId) {
     const collection = await dbService.getCollection('order')

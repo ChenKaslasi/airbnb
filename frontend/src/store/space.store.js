@@ -41,11 +41,11 @@ export const spaceStore = {
         },
         
         async filterSpaces(context,{filterBy}) {
-            const spaces = await spaceService.query(filterBy);
+            const spaces = await spaceService.filter(filterBy);
             context.commit({type:'setSpaces', spaces})
         },
-
     },
     computed:{
+        
     }
 }

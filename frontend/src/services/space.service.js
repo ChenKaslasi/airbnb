@@ -4,7 +4,8 @@ export default {
   add,
   remove,
   getById,
-  query
+  query,
+  filter
 }
 function getById(spaceId) {
   return httpService.get(`api/space/${spaceId}`)
@@ -19,5 +20,10 @@ function add(space) {
 
 function query() {
     return httpService.get('api/space')
+}
+
+function filter(filterBy={}){
+  console.log(filterBy);
+  return httpService.post('api/filter',filterBy)
 }
 
