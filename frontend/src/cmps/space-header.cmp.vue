@@ -31,15 +31,19 @@
             <img class="guest-img" src="../assets/icons/guest.svg" />
             <div v-show="isDropdownOpen" class="login-container">
               <ul class="login-dropdown">
-                <li><button class="sign-up">Sign up</button></li>
-                <li><button  @click="toggleLogin">Log in</button></li>
+                <li>
+                  <button class="sign-up" @click="openModal('signUp')">
+                    Sign up
+                  </button>
+                </li>
+                <li><button @click="openModal('login')">Log in</button></li>
               </ul>
             </div>
           </button>
         </div>
       </div>
     </div>
-    <login v-if="isLoginOpen"></login>
+    <login v-if="isModalOpen" :isLogin="isLogin" @close="closeModal"></login>
   </section>
 </template>
 
@@ -56,7 +60,8 @@ export default {
       lastScrollPosition: 0,
       isHomePage: false,
       isDropdownOpen: false,
-      isLoginOpen: false,
+      isModalOpen: false,
+      isLogin: true,
     };
   },
   methods: {
@@ -77,8 +82,12 @@ export default {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
     },
-    toggleLogin() {
-      this.isLoginOpen = !this.isLoginOpen;
+    openModal(action) {
+      this.isLogin = action === "login" ? true : false;
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
     },
   },
   created() {
