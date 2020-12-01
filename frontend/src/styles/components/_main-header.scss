@@ -7,6 +7,13 @@
   transition: 0.4s;
   width: 100%;
 
+
+  .content {
+    >* {
+      width: 300px;
+    }
+  }
+  
   .logo {
     text-decoration: none;
     cursor: pointer;
@@ -26,6 +33,7 @@
   }
 
   .link-container {
+    
     .become-host,
     .explore {
       color: #222222;

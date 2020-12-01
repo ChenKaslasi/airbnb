@@ -1,7 +1,7 @@
 <template>
   <div class="home main-layout">
     <space-header />
-    <div class="hero full">
+    <div class="hero full main-layout">
       <space-filter @filter="setFilter" />
       <div class="h1-container">
         <h1 class="hero-header">Live</h1>
