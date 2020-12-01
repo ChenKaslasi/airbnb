@@ -18,6 +18,7 @@ export default {
         return ajax(endpoint, 'POST', data)
     },
     put(endpoint, data){
+        console.log(data,'inside put function http')
         return ajax(endpoint, 'PUT', data)
     },
     delete(endpoint, data){

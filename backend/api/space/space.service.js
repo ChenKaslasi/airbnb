@@ -2,6 +2,21 @@ const dbService = require('../../services/db.service')
 const ObjectId = require('mongodb').ObjectId
 
 
+
+async function update(space) {
+    const collection = await dbService.getCollection('space')
+    space._id = ObjectId(space._id);
+    console.log('in be space service',space._id);
+    try {
+        await collection.replaceOne({ "_id": space._id }, { $set: space })//what
+        return space ///update and save work together this is the problem -change later
+    } catch (err) {
+        console.log(`ERROR: cannot update toy ${space._id}`)
+        throw err;
+    }
+}
+
+
 async function query(filterBy = {}) {
     const collection = await dbService.getCollection('space');
     const cratiria = _buildCriteria(filterBy)
@@ -73,4 +88,5 @@ module.exports = {
     getById,
     remove,
     add,
+    update
 }

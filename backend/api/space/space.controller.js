@@ -14,6 +14,14 @@ async function getSpaces(req, res) {
     }
 }
 
+async function updateSpace(req, res) {
+    console.log('in update func');
+    const space = req.body;
+    console.log('req.body SPACEs!--',space);
+    await spaceService.update(space)
+    res.send(space)
+}
+
 async function getSpace(req, res) {
     const space = await spaceService.getById(req.params.id)
     res.send(space)
@@ -51,4 +59,5 @@ module.exports = {
     filterSpace,
     deleteSpace,
     addSpace,
+    updateSpace
 }

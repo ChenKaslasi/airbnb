@@ -18,7 +18,6 @@ function getById(userId) {
 function remove(userId) {
     return httpService.delete(`user/${userId}`)
 }
-
 function update(user) {
     return httpService.put(`user/${user._id}`, user)
 }

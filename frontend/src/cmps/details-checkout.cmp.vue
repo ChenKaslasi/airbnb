@@ -185,7 +185,7 @@ export default {
     addOrder(spaceId) {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
-      order.status = "pendingR!";
+      order.status = "accepted!";
       order.totalPrice = this.priceForDisplay;
       order.nights = this.getDates;
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
@@ -194,6 +194,29 @@ export default {
       this.$store.dispatch({
         type: "addOrder",
         order: order,
+      });
+      let orderMini = {
+        spaceId: spaceId,
+        dates: {
+          checkIn: this.range.start,
+          checkOut: this.range.end,
+        },
+        nights: this.getDates,
+        guests: this.adultCount + this.childrenCount + this.infantCount,
+      };
+      const updateSpace=JSON.parse(JSON.stringify(this.space))
+      console.log(updateSpace)
+      console.log(orderMini, "MINI");
+      if(!updateSpace.orders){
+        updateSpace.orders=[]
+        updateSpace.orders.push(orderMini)
+      }else{
+        updateSpace.orders.push(orderMini)  
+      }
+      console.log('UPDATE SPACE------',updateSpace)
+      this.$store.dispatch({
+        type: "updateSpace",
+        updatedSpace: updateSpace,
       });
     },
   },
@@ -207,12 +230,12 @@ export default {
 <style lang="scss" scoped>
 .disabledBtn {
   background-color: rgb(113, 113, 113) !important;
-  
+
   //  background-color: rgb(176, 176, 176) !important;
   background-image: none !important;
   // background-color:#717171 !important ;
-  &:hover{
-    cursor:not-allowed !important;
+  &:hover {
+    cursor: not-allowed !important;
   }
 }
 .reserve-extension {
