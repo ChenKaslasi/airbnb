@@ -41,9 +41,11 @@
     }
     .form-container {
         padding: 20px 24px;
+        text-align: center;
         .input-container {
             border: 1px solid rgb(165, 165, 165);
             border-radius: 8px;
+            margin-bottom: 10px;
         }
         input {
             padding: 8px;
@@ -52,10 +54,10 @@
             border-radius: 8px;
             border: none;
         }
-        .email-container{
+        .email-container {
             border-bottom: 1px solid rgb(165, 165, 165);
         }
-        .username-container{
+        .username-container {
             border-bottom: 1px solid rgb(165, 165, 165);
         }
     }

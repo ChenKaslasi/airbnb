@@ -29,10 +29,10 @@ export default {
     },
     actions: {
         async login(context, {userCred}) {
-            const user = await userService.login(userCred);
-            console.log(user);
+            const user = await userService.login(userCred)
+            console.log(user)
             context.commit({type: 'setUser', user})
-            return user;
+            return user
         },
         async signup(context, {userCred}) {
             const user = await userService.signup(userCred)
@@ -42,7 +42,7 @@ export default {
         },
         async logout(context) {
             await userService.logout()
-            context.commit({type: 'setUsers', users: []})
+            // context.commit({type: 'setUsers', users: []})
             context.commit({type: 'setUser', user: null})
         },
         async loadUsers(context) {

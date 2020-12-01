@@ -37,6 +37,7 @@
                   </button>
                 </li>
                 <li><button @click="openModal('login')">Log in</button></li>
+                <li><button @click="logout">Log out</button></li>
               </ul>
             </div>
           </button>
@@ -88,6 +89,9 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false;
+    },
+    async logout() {
+      await this.$store.dispatch({ type: "logout" });
     },
   },
   created() {
