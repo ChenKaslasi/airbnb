@@ -10,7 +10,7 @@
       <span class="info">{{ `Joined in March 2013` }}</span>
     </section>
 
-    <section class="content flex">
+    <section v-if="space.reviewScores" class="content flex">
       <section class="left">
         <div class="icons flex">
           <div class="reviews flex">
