@@ -4,7 +4,7 @@
     :class="{ scrollDisplay: isScrolled, homePageDisplay: isHomePage }"
   >
     <div class="content flex align-center justify-between">
-      <div class="logo">
+      <div class="logo flex">
         <a href="/" class="logo flex align-center">
           <img class="logo-svg" src="../assets/icons/‏‏logo-pink.svg" />
           <span class="txt">airbnb</span>
@@ -20,8 +20,8 @@
         </button>
       </div>
       <div class="link-container flex">
-        <a class="explore" href="/#">Explore</a>
-        <a class="become-host" href="/#/Barcelona">Become a Host</a>
+        <a class="explore" href="/#/Barcelona">Explore</a>
+        <a class="become-host" href="/#/host">Become a Host</a>
         <div class="user-dropdown flex">
           <button
             @click="toggleDropdown"
@@ -37,6 +37,7 @@
                   </button>
                 </li>
                 <li><button @click="openModal('login')">Log in</button></li>
+                <li><button @click="logout">Log out</button></li>
               </ul>
             </div>
           </button>
@@ -88,6 +89,9 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false;
+    },
+    async logout() {
+      await this.$store.dispatch({ type: "logout" });
     },
   },
   created() {

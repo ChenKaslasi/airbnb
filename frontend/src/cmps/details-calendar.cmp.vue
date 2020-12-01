@@ -10,7 +10,7 @@
       is-range
       @drag="dragValue = $event; "
       @input="emitDates()"  
-      color="pink"
+    
       :columns="$screens({ default: 1, lg: 2 })"
       
       is-expanded

@@ -16,7 +16,7 @@
         <div class="location flex column" slot="reference">
           <span class="title">Location</span>
           <input
-            class="desc"
+            :class="[{active: filterBy.city.length > 0},'desc']"
             type="text"
             placeholder="Where are you going?"
             v-model="filterBy.city"
@@ -43,7 +43,8 @@
       >
         <div class="dates flex column" slot="reference">
           <span class="title">Dates</span>
-          <span v-if="filterBy.date.start" class="desc"
+          <span v-if="filterBy.date.start" 
+          :class="[{active: filterBy.date.end.length > 0},'desc']"
             >{{ filterBy.date.start }} - {{ filterBy.date.end }}</span
           >
           <span v-else class="desc">Check in - Check out</span>
@@ -57,7 +58,7 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,20px' } },
+          modifiers: { offset: { offset: '0,10px' } },
         }"
       >
         <div
@@ -71,8 +72,8 @@
           <span data-name="guest" v-if="sumGuests === 0" class="desc"
             >Add guests</span
           >
-          <span data-name="guest" v-else class="desc"
-            >{{ sumGuests }} guests</span
+          <span data-name="guest" v-else :class="[{active: sumGuests > 0},'desc']"
+            >{{ sumGuests + (sumGuests === 1 ? ' guest' : ' guests') }} </span
           >
         </div>
 
@@ -157,10 +158,10 @@ export default {
   },
   methods: {
     async filter() {
-      const filterBy = this.filterBy;
+      // const filterBy = this.filterBy;
       const {city,date,adultCount,childrenCount,infantCount,} = this.filterBy;
 
-      this.$store.dispatch({ type: "filterSpaces", filterBy });
+      // this.$store.dispatch({ type: "filterSpaces", filterBy });
       await this.$router.push({
         path: "/city",
         query: {
@@ -221,5 +222,9 @@ export default {
 <style lang="scss" scoped>
 .calender-contianer {
   padding: 0;
+}
+
+.active {
+  color: #222 !important;
 }
 </style>

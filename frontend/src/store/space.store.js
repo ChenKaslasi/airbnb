@@ -33,9 +33,14 @@ export const spaceStore = {
     },
     actions: {
         async addSpace(context, {space}) {
-            space = await spaceService.add(space)
-            context.commit({type: 'addSpace', space})
-            return space;
+            try {
+                space = await spaceService.add(space)
+                context.commit({type: 'addSpace', space})
+                return space;
+            } catch(err) {
+                console.error('Cannot add space', space);
+                throw err;
+            }
         },
 
         async removeSpace(context, {spaceId}) {
