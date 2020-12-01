@@ -65,15 +65,15 @@
           data-name="guest"
           @mouseover="colorSearchArea"
           @mouseleave="unColorSearchArea"
-          :class="[{active: sumGuests > 0},'guests flex column']"
+          class="guests flex column"
           slot="reference"
         >
           <span data-name="guest" class="title">Guests</span>
           <span data-name="guest" v-if="sumGuests === 0" class="desc"
             >Add guests</span
           >
-          <span data-name="guest" v-else class="desc"
-            >{{ sumGuests }} guests</span
+          <span data-name="guest" v-else :class="[{active: sumGuests > 0},'desc']"
+            >{{ sumGuests + (sumGuests === 1 ? ' guest' : ' guests') }} </span
           >
         </div>
 
@@ -226,6 +226,5 @@ export default {
 
 .active {
   color: #222 !important;
-  font-weight: 600;
 }
 </style>
