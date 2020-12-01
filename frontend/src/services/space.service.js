@@ -24,6 +24,6 @@ function query() {
 
 function filter(filterBy={}){
   console.log(filterBy);
-  return httpService.post('filter',filterBy)
+  return httpService.post('space/filter',filterBy)
 }
 
