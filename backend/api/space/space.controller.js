@@ -19,6 +19,11 @@ async function getSpace(req, res) {
     res.send(space)
 }
 
+async function filterSpace(req, res) {
+    const spaces = await spaceService.query(req.body)
+    res.send(spaces)
+}
+
 async function deleteSpace(req, res) {
     try {
         await spaceService.remove(req.params.id)
@@ -28,6 +33,8 @@ async function deleteSpace(req, res) {
         res.status(500).send({ error: 'cannot delete space' })
     }
 }
+
+
 
 async function addSpace(req, res) {
     var space = req.body;
@@ -41,6 +48,7 @@ async function addSpace(req, res) {
 module.exports = {
     getSpaces,
     getSpace,
+    filterSpace,
     deleteSpace,
     addSpace,
 }

@@ -14,16 +14,16 @@ function getById(spaceId) {
 function remove(spaceId) {
   return httpService.delete(`api/space/${spaceId}`)
 }
-function add(space) {
-  return httpService.post(`api/space`, space)
-}
 
 function query() {
-    return httpService.get('api/space')
+  return httpService.get('api/space')
+}
+
+function add(space) {
+  return httpService.post(`api/space/add`, space)
 }
 
 function filter(filterBy={}){
-  console.log(filterBy);
-  return httpService.post('api/filter',filterBy)
+  return httpService.post('api/space/filter',filterBy)
 }
 
