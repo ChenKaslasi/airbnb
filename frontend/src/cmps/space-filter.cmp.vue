@@ -16,7 +16,7 @@
         <div class="location flex column" slot="reference">
           <span class="title">Location</span>
           <input
-            class="desc"
+            :class="[{active: filterBy.city.length > 0},'desc']"
             type="text"
             placeholder="Where are you going?"
             v-model="filterBy.city"
@@ -43,7 +43,8 @@
       >
         <div class="dates flex column" slot="reference">
           <span class="title">Dates</span>
-          <span v-if="filterBy.date.start" class="desc"
+          <span v-if="filterBy.date.start" 
+          :class="[{active: filterBy.date.end.length > 0},'desc']"
             >{{ filterBy.date.start }} - {{ filterBy.date.end }}</span
           >
           <span v-else class="desc">Check in - Check out</span>
@@ -57,14 +58,14 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,20px' } },
+          modifiers: { offset: { offset: '0,10px' } },
         }"
       >
         <div
           data-name="guest"
           @mouseover="colorSearchArea"
           @mouseleave="unColorSearchArea"
-          class="guests flex column"
+          :class="[{active: sumGuests > 0},'guests flex column']"
           slot="reference"
         >
           <span data-name="guest" class="title">Guests</span>
@@ -221,5 +222,10 @@ export default {
 <style lang="scss" scoped>
 .calender-contianer {
   padding: 0;
+}
+
+.active {
+  color: #222 !important;
+  font-weight: 600;
 }
 </style>
