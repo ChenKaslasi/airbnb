@@ -23,13 +23,13 @@ import listFilter from "@/cmps/list-filter.cmp.vue";
 export default {
   components: {
     spaceHeader,
-     spacePreview,
-     listFilter
+    spacePreview,
+    listFilter,
   },
   data() {
     return {
       filterBy: {
-        city: ""
+        city: "",
       },
     };
   },
@@ -55,9 +55,7 @@ export default {
 </script>
 
 <style lang="scss" >
-
 .search {
-    display: block;
+  display: block;
 }
-
 </style>
