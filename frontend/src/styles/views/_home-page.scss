@@ -13,6 +13,7 @@
   background-size: cover;
   position: relative;
   & .h1-container{
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     font-size: 6.75rem;
@@ -23,8 +24,8 @@
     height: 100%;
     // position: absolute;
     & h1 {
-      margin-left: 3%;
       padding: 20px;
+      padding-inline-start: 0;
       &.hero-header2 {
         font-weight: 800;
       }
