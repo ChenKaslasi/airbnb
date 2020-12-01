@@ -32,12 +32,12 @@ async function deleteOrder(req, res) {
 }
 
 async function addOrder(req, res) {
+    console.log('INSIDE ORDER B-E');
     var order = req.body;
-    order.byUserId = req.session.user._id;
+    // order.byUserId = req.session.user._id;
     order = await orderService.add(order)
-    order.byUser = req.session.user;
-    // TODO - need to find aboutUser
-    order.aboutUser = {}
+    // order.byUser = req.session.user;
+    // order.aboutUser = {}
     res.send(order)
 }
 
