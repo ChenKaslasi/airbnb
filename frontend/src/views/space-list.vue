@@ -4,10 +4,10 @@
     <list-filter :space="filterBy"></list-filter>
     <div>
       <ul class="card-container">
-        <li v-for="space in getSpaces" :key="space._id">
+        <li v-for="space in spaces" :key="space._id">
           <space-preview
             :space="space"
-            @click.native="spaceClicked(space._id)"
+            @click.native="spaceSelected(space._id)"
           ></space-preview>
         </li>
       </ul>
@@ -28,13 +28,11 @@ export default {
   },
   data() {
     return {
-      filterBy: {
-        city: "",
-      },
+      filterBy: {},
     };
   },
   async created() {
-    this.filterBy.city = this.$route.query.city;
+    this.filterBy = this.$route.query;
     const filterBy = this.filterBy;
     await this.$store.dispatch({
       type: "filterSpaces",
@@ -42,20 +40,14 @@ export default {
     });
   },
   computed: {
-    getSpaces() {
+    spaces() {
       return this.$store.getters.spacesForDisplay;
     },
   },
   methods: {
-    spaceClicked(id) {
+    spaceSelected(id) {
       this.$router.push(`/${this.filterBy}/${id}`);
     },
   },
 };
 </script>
-
-<style lang="scss" >
-.search {
-  display: block;
-}
-</style>

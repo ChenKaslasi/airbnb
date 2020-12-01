@@ -1,7 +1,8 @@
 .login-cmp {
     position: fixed;
-    top: 40%;
-    left: 41%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-top: 5px;
     padding-bottom: 5px;
     width: 200px;

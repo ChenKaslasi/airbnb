@@ -158,10 +158,10 @@ export default {
   },
   methods: {
     async filter() {
-      const filterBy = this.filterBy;
+      // const filterBy = this.filterBy;
       const {city,date,adultCount,childrenCount,infantCount,} = this.filterBy;
 
-      this.$store.dispatch({ type: "filterSpaces", filterBy });
+      // this.$store.dispatch({ type: "filterSpaces", filterBy });
       await this.$router.push({
         path: "/city",
         query: {
