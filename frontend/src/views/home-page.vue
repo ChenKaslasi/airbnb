@@ -66,7 +66,7 @@ export default {
       this.$router.push(`/${filterBy}`);
     },
     bookLocation(title) {
-      this.$router.push(`/${title}`);
+      this.$router.push({path:'/city',query:{city:title}});
     },
   },
 };

@@ -1,13 +1,18 @@
-
 const dbService = require('../../services/db.service')
 const ObjectId = require('mongodb').ObjectId
 
 
 async function query(filterBy = {}) {
-    const criteria = _buildCriteria(filterBy)
-    const collection = await dbService.getCollection('space')
+    const collection = await dbService.getCollection('space');
+    const cratiria = _buildCriteria(filterBy)
     try {
-        const spaces = await collection.find(criteria).toArray();
+        // const spaces = await collection.find(
+        //     {
+        //     "address.city" : filterBy.city.toString(),
+
+        // }).toArray();
+        // console.log('spaces', spaces);
+        const spaces = await collection.find(cratiria).toArray();
         return spaces
     } catch (err) {
         console.log('ERROR: cannot find spaces')
@@ -18,7 +23,9 @@ async function query(filterBy = {}) {
 async function getById(spaceId) {
     const collection = await dbService.getCollection('space')
     try {
-        const space = await collection.findOne({ '_id': ObjectId(spaceId) })
+        const space = await collection.findOne({
+            '_id': ObjectId(spaceId)
+        })
         return space
     } catch (err) {
         console.log(`ERROR: while finding space ${spaceId}`)
@@ -30,7 +37,9 @@ async function getById(spaceId) {
 async function remove(spaceId) {
     const collection = await dbService.getCollection('space')
     try {
-        await collection.deleteOne({ "_id": ObjectId(spaceId) })
+        await collection.deleteOne({
+            "_id": ObjectId(spaceId)
+        })
     } catch (err) {
         console.log(`ERROR: cannot remove space ${spaceId}`)
         throw err;
@@ -53,18 +62,15 @@ async function add(space) {
 }
 
 function _buildCriteria(filterBy) {
-    const criteria = {
-        
-    };
-    return criteria;
+    if (filterBy.city) {
+        return { "address.city" : filterBy.city.toString()}
+    }
 }
+
 
 module.exports = {
     query,
     getById,
     remove,
     add,
-    
 }
-
-

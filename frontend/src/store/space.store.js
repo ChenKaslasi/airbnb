@@ -11,12 +11,10 @@ export const spaceStore = {
         spacesForDisplay(state) {
             return state.spaces;
         },
-        
     },
     mutations: {
         setSpaces(state, {spaces}) {
             state.spaces = spaces;
-            console.log(state.spaces,'state spaces')
         },
         setCurrSpace(state,{space}) {
             state.currSpace = space;

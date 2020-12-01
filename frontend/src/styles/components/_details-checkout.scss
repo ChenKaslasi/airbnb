@@ -162,6 +162,7 @@
         line-height: 20px !important;
         font-weight: 600 !important;
         font-size: 18px;
+        outline: none !important;
         background-image: linear-gradient(
           to right,
           #ff385c,
@@ -180,7 +181,7 @@
             rgb(215, 4, 102) 57.5%,
             rgb(189, 30, 89) 75%,
             rgb(189, 30, 89) 100%
-          ) !important;
+          ) ;
         }
         border: none;
         padding: 22px;

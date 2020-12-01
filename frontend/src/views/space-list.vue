@@ -28,12 +28,14 @@ export default {
   },
   data() {
     return {
-      filterBy: "",
+      filterBy: {
+        city: ""
+      },
     };
   },
   async created() {
-    const filterBy = this.$route.params.city;
-    this.filterBy = filterBy;
+    this.filterBy.city = this.$route.query.city;
+    const filterBy = this.filterBy;
     await this.$store.dispatch({
       type: "filterSpaces",
       filterBy,

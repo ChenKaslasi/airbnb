@@ -1,6 +1,6 @@
 <template>
   <section class="list-filter">
-    <h1>Stays in {{ space }}</h1>
+    <h1>Stays in {{ space.city }}</h1>
     <div class="buttons-container">
       <popper
         trigger="click"
@@ -115,7 +115,7 @@ export default {
     popper: Popper,
   },
   props: {
-    space: String,
+    space: Object,
   },
   data() {
     return {
@@ -138,7 +138,7 @@ export default {
     focusInput(num) {
       if (num === 1) this.$refs.minInput.focus();
       else this.$refs.maxInput.focus();
-      
+    
     }
   },
 };

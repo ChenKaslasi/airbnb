@@ -1,6 +1,6 @@
 const express = require('express')
 const {requireAuth, requireAdmin} = require('../../middlewares/requireAuth.middleware')
-const {addSpace, getSpace, getSpaces, deleteSpace} = require('./space.controller')
+const {addSpace, getSpace, getSpaces,filterSpace, deleteSpace} = require('./space.controller')
 const router = express.Router()
 
 // middleware that is specific to this router
@@ -8,8 +8,9 @@ const router = express.Router()
 
 router.get('/', getSpaces)
 router.get('/:id', getSpace)
-router.post('/',  requireAuth, addSpace)  //add space
-router.post('/',  requireAuth, addSpace) //filter space
+router.post('/add',  requireAuth, addSpace)  //add space
+// router.post('/filter',  requireAuth, filterSpace) //filter space
+router.post('/filter',  filterSpace) //filter space
 router.delete('/:id',  requireAuth, deleteSpace)
 
 module.exports = router

@@ -8,9 +8,11 @@
       :select-attribute="selectDragAttribute"
       :drag-attribute="selectDragAttribute"
       is-range
-      @drag="dragValue = $event" 
+      @drag="dragValue = $event; "
+      @input="emitDates()"  
       color="pink"
       :columns="$screens({ default: 1, lg: 2 })"
+      
       is-expanded
     >
       <template v-slot:day-popover="{ format }">
@@ -40,11 +42,21 @@ export default {
   data() {
     return {
       dragValue: null,
+      clickCounter: 0,
       range: {
-        start: new Date(),
-        end: new Date().setDate(new Date().getDate() + 2),
+        // start: new Date(),
+        start: null,
+        // end: new Date().setDate(new Date().getDate() + 1),
+        end: null,
       },
     };
+  },
+  methods: {
+    emitDates() {
+      this.clickCounter++
+      if(this.clickCounter < 1) return;
+      this.$emit("emitDates",{start: this.range.start ,end: this.range.end })
+      }
   },
   computed: {
     selectDragAttribute() {
@@ -63,7 +75,7 @@ export default {
       return moment(this.range.start).format('LL')
     },
     getEndDate() {
-      return moment(this.range.end).format('LL')
+    return moment(this.range.end).format('LL')
     }
   }
 };
