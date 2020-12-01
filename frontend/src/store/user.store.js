@@ -1,4 +1,4 @@
-import UserService from '../services/user.service.js'
+import userService from '../services/user.service.js'
 
 var localLoggedinUser = null;
 if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user);
@@ -8,7 +8,7 @@ export default {
         loggedinUser : localLoggedinUser,
         users: []
     },
-    getters: {
+    getters : {
         users(state) {
             return state.users;
         },
@@ -29,32 +29,33 @@ export default {
     },
     actions: {
         async login(context, {userCred}) {
-            const user = await UserService.login(userCred);
+            const user = await userService.login(userCred);
+            console.log(user);
             context.commit({type: 'setUser', user})
             return user;
         },
         async signup(context, {userCred}) {
-            const user = await UserService.signup(userCred)
+            const user = await userService.signup(userCred)
             context.commit({type: 'setUser', user})
             return user;
             
         },
         async logout(context) {
-            await UserService.logout()
+            await userService.logout()
             context.commit({type: 'setUsers', users: []})
             context.commit({type: 'setUser', user: null})
         },
         async loadUsers(context) {
-            const users = await UserService.getUsers();
+            const users = await userService.getUsers();
             context.commit({type: 'setUsers', users})
         },
         async removeUser(context, {userId}) {
-            await UserService.remove(userId);
+            await userService.remove(userId);
             context.commit({type: 'removeUser', userId})
         },
         async updateUser(context, {user}) {
-            user = await UserService.update(user);
+            user = await userService.update(user);
             context.commit({type: 'setUser', user})
-        }
+        },
     }
 }

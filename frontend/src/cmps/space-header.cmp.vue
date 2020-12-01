@@ -24,32 +24,44 @@
         <a class="become-host" href="/#/Barcelona">Become a Host</a>
         <div class="user-dropdown flex">
           <button
-            @click="toggleLogin"
+            @click="toggleDropdown"
             class="btn flex justify-around align-center"
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div v-show="isLoginOpen" class="login-container">
+            <div v-show="isDropdownOpen" class="login-container">
               <ul class="login-dropdown">
-                <li><button class="sign-up" @click="log">Sign up</button></li>
-                <li><button>Log in</button></li>
+                <li>
+                  <button class="sign-up" @click="openModal('signUp')">
+                    Sign up
+                  </button>
+                </li>
+                <li><button @click="openModal('login')">Log in</button></li>
               </ul>
             </div>
           </button>
         </div>
       </div>
     </div>
+    <login v-if="isModalOpen" :isLogin="isLogin" @close="closeModal"></login>
   </section>
 </template>
 
 <script>
+import login from "../cmps/login.cmp.vue";
+
 export default {
+  components: {
+    login,
+  },
   data() {
     return {
       isScrolled: false,
       lastScrollPosition: 0,
       isHomePage: false,
-      isLoginOpen: false
+      isDropdownOpen: false,
+      isModalOpen: false,
+      isLogin: true,
     };
   },
   methods: {
@@ -67,12 +79,16 @@ export default {
     setHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
-    toggleLogin() {
-      this.isLoginOpen = !this.isLoginOpen
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
     },
-    log(){
-      console.log('mama');
-    }
+    openModal(action) {
+      this.isLogin = action === "login" ? true : false;
+      this.isModalOpen = true;
+    },
+    closeModal() {
+      this.isModalOpen = false;
+    },
   },
   created() {
     this.setHomePage();

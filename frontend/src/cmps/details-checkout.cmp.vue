@@ -66,10 +66,14 @@
               </div>
             </div>
           </div>
-          <button @click="checkOut" class="checkout-btn">
+          <button
+            @click="checkOut"
+            ref="btnTxt"
+            :disabled="isDisabled"
+            :class="['checkout-btn', { disabledBtn: isDisabled }]"
+          >
             Check Availability
           </button>
-          {{getDates}}
           <div v-if="isCheckingOut" class="reserve-extension">
             <div class="extension-container">
               <div class="warning">
@@ -93,8 +97,6 @@
 
 <script>
 import vDatePicker from "v-calendar/lib/components/date-picker.umd";
-import moment from "moment";
-
 export default {
   props: {
     space: {
@@ -108,7 +110,7 @@ export default {
       infantCount: 0,
       isShown: false,
       isCheckingOut: false,
-      nights: null,
+      isDisabled: false,
       order: {
         createdAt: Date.now(),
         userId: "",
@@ -128,18 +130,8 @@ export default {
     };
   },
   computed: {
-    daysForDisplay() {
-      const a = moment(this.range.start);
-      const b = moment(this.range.end);
-      const c = a.from(b, true);
-      const d = c.replace("days", "");
-      const e = parseInt(d);
-      this.updateNight(e);
-      return e + " nights";
-    },
     totalPrice() {
       let priceByNights = this.getDates * this.space.price;
-      // var n = new Number(1000000);
       var locale = {
         style: "currency",
         currency: "USD",
@@ -150,13 +142,14 @@ export default {
       return x;
     },
     priceForDisplay() {
-      return this.space.price * this.nights;
+      return this.space.price * this.getDates;
     },
     ratingForDisplay() {
-      return this.space.reviewScores.rating / 2;
+      return this.space.reviewScores.rating / 20;
     },
     getDates() {
       const day = 24 * 60 * 60 * 1000;
+      // console.log(this.range.start-this.range.end)
       return Math.round(Math.abs((this.range.start - this.range.end) / day));
     },
   },
@@ -177,23 +170,27 @@ export default {
       this.infantCount += value;
     },
     checkOut() {
-      if (!this.isCheckingOut) return (this.isCheckingOut = true);
+      if (!this.isCheckingOut) {
+        this.$refs.btnTxt.innerHTML = "Reserve";
+        return (this.isCheckingOut = true);
+      }
       if (this.isCheckingOut) {
         console.log("on track");
         this.addOrder(this.space._id);
         this.isCheckingOut = !this.isCheckingOut;
+        this.$refs.btnTxt.innerHTML = "Reserved!";
+        this.isDisabled = true;
       }
     },
     addOrder(spaceId) {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
-      order.status = "pending";
+      order.status = "pendingR!";
       order.totalPrice = this.priceForDisplay;
-      order.nights=this.getDates
+      order.nights = this.getDates;
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
       order.dates.checkIn = this.range.start;
       order.dates.checkOut = this.range.end;
-      console.log("This order!!!", order, "data order", this.order);
       this.$store.dispatch({
         type: "addOrder",
         order: order,
@@ -208,6 +205,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.disabledBtn {
+  background-color: rgb(113, 113, 113) !important;
+  
+  //  background-color: rgb(176, 176, 176) !important;
+  background-image: none !important;
+  // background-color:#717171 !important ;
+  &:hover{
+    cursor:not-allowed !important;
+  }
+}
 .reserve-extension {
   .extension-container {
     // padding: 10px;
