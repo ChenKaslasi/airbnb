@@ -15,17 +15,16 @@
         <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
           <button class="btn flex align-center">
           <div class="txt">Start your search</div>
-          <!-- <input class="txt" placeholder="Start your search"> -->
           <div class="search-icon">
             <img src="../assets/icons/search_m.svg" />
           </div>
         </button>
         </div>
-        <div v-if="headerWide" class="filter">
+        <div v-if="!headerNarrow" class="filter">
         <space-filter :isHomePage="isHomePage"/>
         </div>
       </div>
-        <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
+        <div @click="toggleFilter" v-if="!headerNarrow"  class="overlay"></div>
 
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
@@ -76,22 +75,17 @@ export default {
       isModalOpen: false,
       isLogin: true,
       headerNarrow: true,
-      headerWide: false
+      previousScroll: null,
     };
   },
   methods: {
     onScroll() {
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      // hendle momentum scrolling on mobile
-      if (currentScrollPosition < 0) {
-        return;
-      }
-      if(currentScrollPosition === 0  && this.headerWide) {
-        this.headerWide = false;
+      this.headerNarrow = true
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      if(currentScrollPosition === 0) {
         this.headerNarrow = true
       }
+
       this.isScrolled = currentScrollPosition !== 0;
     },
 
@@ -109,7 +103,6 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      this.headerWide = !this.headerWide
       this.headerNarrow = !this.headerNarrow
     },
     async logout() {
