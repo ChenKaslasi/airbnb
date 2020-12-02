@@ -14,11 +14,11 @@
       <div  class="search">
         <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
           <button class="btn flex align-center">
-          <div class="txt">Start your search</div>
-          <div class="search-icon">
-            <img src="../assets/icons/search_m.svg" />
-          </div>
-        </button>
+            <div class="txt">Start your search</div>
+            <div class="search-icon">
+              <img src="../assets/icons/search_m.svg" />
+            </div>
+          </button>
         </div>
         <div v-if="!headerNarrow" class="filter">
         <space-filter :isHomePage="isHomePage"/>
@@ -36,8 +36,7 @@
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div v-show="isDropdownOpen" class="login-container">
-              <div class="dropdown-screen"></div>
+            <div v-click-outside="toggleDropdown" v-if="isDropdownOpen" class="login-container">
               <ul class="login-dropdown">
                 <li>
                   <button class="sign-up" @click="openModal('signUp')">
@@ -58,13 +57,12 @@
 
 <script>
 import login from "../cmps/login.cmp.vue";
-import spaceFilter from "../cmps/space-filter.cmp"
-
+import spaceFilter from "../cmps/space-filter.cmp";
 
 export default {
   components: {
     login,
-    spaceFilter
+    spaceFilter,
   },
   data() {
     return {
