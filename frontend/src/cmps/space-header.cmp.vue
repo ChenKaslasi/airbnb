@@ -30,6 +30,7 @@
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
             <div v-show="isDropdownOpen" class="login-container">
+              <div class="dropdown-screen"></div>
               <ul class="login-dropdown">
                 <li>
                   <button class="sign-up" @click="openModal('signUp')">

@@ -10,7 +10,7 @@
     </div>
 
     <div class="home-container">
-      <h2 class="location-header">Our locations:</h2>
+      <h2 class="location-header">Explore locations</h2>
       <div class="card-container">
         <div
           class="card"
@@ -21,7 +21,7 @@
           <template>
             <img :src="img.url" />
             <h3>{{ img.title }}</h3>
-            <p>Book it NOW!</p>
+            <!-- <p>Book it NOW!</p> -->
           </template>
         </div>
       </div>
