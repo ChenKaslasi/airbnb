@@ -3,42 +3,49 @@
     <space-header />
     <div class="form-container">
       <div class="form-hero">
-        <h2>Share your passion for hospitality </h2>
-        <!-- <h2>Become a Host </h2> -->
+        <h2>Share your passion for hospitality-</h2>
+        <h2>Become a Host</h2>
       </div>
       <form class="form" @submit.prevent>
         <div class="input-container">
-          <el-input class="form-input"
+          <input
+            type="text"
+            class="form-input"
             placeholder="Please input your Name"
             v-model="space.fullName"
-            clearable
-            style="padding: 20 15px !important"
-          >
-          </el-input>
-          <el-input class="form-input"
+          />
+          <input
+            type="text"
+            class="form-input"
             placeholder="Please enter a Description"
             v-model="space.spaceDesc"
-            clearable
+          />
+          <input
+            type="number"
+            class="form-input input-num"
+            placeholder="How much will you charge"
+            v-model="space.price"
+          />
+          <input
+            type="number input-num"
+            class="form-input"
+            placeholder="How many bedrooms?"
+            v-model="space.bedrooms"
+          />
+          <select
+            v-model="space.city"
+            class="form-input select-input"
+            placeholder="Location"
           >
-          </el-input>
-          <el-select style="color=red;" v-model="space.city" class="form-input" placeholder="Location">
-            <el-option
-              v-for="currCity in cities"
-              :key="currCity.value"
-              :label="currCity"
-              :value="currCity"
-            >
-            </el-option>
-          </el-select>
-          <el-select class="form-input" v-model="space.bedrooms" placeholder="Bedrooms">
-            <el-option
-              v-for="option in options"
-              :key="option.value"
-              :label="option"
-              :value="option"
-            >
-            </el-option>
-          </el-select>
+            <option value="" disabled selected>Where is your place?</option>
+            <option
+              class="form-input"
+              v-for="city in cities"
+              :key="city"
+              :label="city"
+              :value="city"
+            ></option>
+          </select>
         </div>
         <button class="listing-btn" @click="addSpace">
           Start your Listing
@@ -49,8 +56,6 @@
 </template>
 <script>
 import spaceHeader from "@/cmps/space-header.cmp.vue";
-// import spaceService from '../services/space.service.js'
-// import { spaceService } from "../services/space.service.js";
 export default {
   components: {
     spaceHeader,
@@ -106,8 +111,11 @@ export default {
           bedrooms: this.space.bedrooms,
           beds: this.getBeds,
           bathrooms: this.getBeds, //CHANGE LATER
+          capacity: 10,
+          spaceType: "Apartment",
           amenities: ["Air conditioning", "Essentials", "Hangers", "Heating"],
           price: this.space.price,
+          roomType: "Entire home/apt",
           address: {
             city: this.space.city,
             country: this.getCountry,
@@ -123,11 +131,11 @@ export default {
             identityVerified: true,
           },
           imgs: [
-            "https://a0.muscache.com/im/pictures/acf0d195-2e73-4756-9f28-e81369a9bf3b.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/d534a3df-c57f-4049-8a80-33184e332d3f.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/970dcbe8-c1ea-4004-9a02-bfe727fa46a4.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/6954e4dd-3bba-42e0-8b6b-ccb79b87ca39.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/221a673a-0d8e-4bed-83d1-3b0b5a74df72.jpg?im_w=720",
+            "https://www.pngitem.com/pimgs/m/176-1769258_01-airbnb-airbnb-art-direction-hd-png-download.png",
+            "https://images.squarespace-cdn.com/content/v1/5909f768bf629a1fec7ad9fb/1546535306006-B8Z630M0BZCOZPNSY6TX/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/lorisalessandria_airbnb_home01.png?format=1500w",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ckAc1MBJ46X_BialwmFLM2DMXX3YHGwgxA&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAWifsTblKQ_nMH7024e1ouKnf_EncWG53w&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mWqFEYl_YbRV_xWYqb-pcOGCyBDlKfufFQ&usqp=CAU",
           ],
         };
         console.log("new space", newSpace);
@@ -150,79 +158,77 @@ export default {
 
 
 <style lang="scss" scoped>
-.el-input--suffix .el-input__inner {
-  padding-right:30px ;
-  padding: 50px !important;
-  background-color: chartreuse;
+.input-num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
-.el-input__inner {
-    -webkit-appearance: none;
-    background-color: #FFF;
-    background-image: none;
-    border-radius: 4px;
-    border: 10px solid #DCDFE6  !important;
-    box-sizing: border-box;
-    color: #606266;
-    display: inline-block;
-    font-size: inherit;
-    height: 40px;
-    line-height: 40px;
-    outline: 0;
-    padding: 20 15px !important;
-    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
-    width: 100%;
-}
+
 .host-page {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .form-container {
-
   height: 100%;
   display: flex;
   flex-direction: row;
-  // border: 2px solid black;
   border-radius: 12px;
   background-color: #fff;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
   .form-hero {
     padding-left: 50px;
     font-size: 30px;
+    width: 100%;
+    h2 {
+      padding: 20px;
+    }
   }
   .form {
     padding: 50px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     .input-container {
+      width: 100%;
+      border: 2px solid #dcdfe6;
+      border-top: none;
+      // border-bottom:none;
+      border-radius: 4px;
       display: flex;
       flex-direction: column;
-      .form-input{
-        // data-v-2f4e84ea
-        width: 330px;
+      .form-input {
+        // border-radius: 4px;
+        border: 1px solid #dcdfe6;
+        box-sizing: border-box;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        color: #606266;
+        font-size: inherit;
+        line-height: 40px;
+        outline: 0;
+        padding: 10px 15px;
+        transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        width: 100%;
+        // width: 330px;
         // height: 500px;
         box-sizing: border-box;
-
       }
     }
-    input .el-input__inner{
-      background-color: chartreuse;
-    }
-        // .el-input__inner{
-        //   padding: 22px 15px;
-  
-        // } 
+  }
+  .input-container .select-input[data-v-2f4e84ea] {
+          color:#b7b8bb !important;
+
   }
   .listing-btn {
-    // position: absolute;
-    margin-top: 15px;
+    margin-top: 10px;
     color: #ffffff;
     width: 100%;
     line-height: 20px !important;
@@ -250,7 +256,7 @@ export default {
       );
     }
     border: none;
-    padding: 17px;
+    padding: 25px;
     overflow: hidden !important;
     border-radius: 8px !important;
     &:hover {

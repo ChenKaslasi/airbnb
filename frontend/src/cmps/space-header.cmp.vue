@@ -11,7 +11,7 @@
         </a>
       </div>
 
-      <div  class="search">
+      <div class="search">
         <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
           <button class="btn flex align-center">
           <div class="txt">Start your search</div>
