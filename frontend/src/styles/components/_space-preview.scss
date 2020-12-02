@@ -1,5 +1,5 @@
 .space-preview.card {
-    font-size: rem(14px);
+    font-size: rem(16px);
     font-weight: 400;
     line-height: rem(20px);
     letter-spacing: 0.3px;
@@ -13,6 +13,7 @@
     }
     span.star {
         color: #ff385c;
+        font-size: rem(18px);
     }
     span.price {
         font-weight: 800;
@@ -23,6 +24,10 @@
     }
     &:hover {
         cursor: pointer;
+    }
+    .txt-container{
+       margin-top: 3px;
+       margin-bottom: 3px;
     }
     .carousel {
         border-radius: 10px;

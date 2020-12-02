@@ -66,6 +66,7 @@ export default {
       
 
       & img {
+        object-fit: cover;
         vertical-align: middle;
         width: 50px;
         height: 50px;

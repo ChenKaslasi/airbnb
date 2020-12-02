@@ -10,17 +10,22 @@
           <span class="txt">airbnb</span>
         </a>
       </div>
-      <div  class="search">
-        <div @keyup.esc="toggleFilter"  @click="toggleFilter" :class="{searchNarrow: headerNarrow}" v-if="headerNarrow">
+      <div class="search">
+        <div
+          @keyup.esc="toggleFilter"
+          @click="toggleFilter"
+          :class="{ searchNarrow: headerNarrow }"
+          v-if="headerNarrow"
+        >
           <button class="btn flex align-center">
-          <div class="txt">Start your search</div>
-          <div class="search-icon">
-            <img src="../assets/icons/search_m.svg" />
-          </div>
-        </button>
+            <div class="txt">Start your search</div>
+            <div class="search-icon">
+              <img src="../assets/icons/search_m.svg" />
+            </div>
+          </button>
         </div>
         <div v-if="headerWide" class="filter">
-        <space-filter />
+          <space-filter />
         </div>
         <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
       </div>
@@ -34,8 +39,7 @@
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div v-show="isDropdownOpen" class="login-container">
-              <div class="dropdown-screen"></div>
+            <div v-click-outside="toggleDropdown" v-if="isDropdownOpen" class="login-container">
               <ul class="login-dropdown">
                 <li>
                   <button class="sign-up" @click="openModal('signUp')">
@@ -56,13 +60,12 @@
 
 <script>
 import login from "../cmps/login.cmp.vue";
-import spaceFilter from "../cmps/space-filter.cmp"
-
+import spaceFilter from "../cmps/space-filter.cmp";
 
 export default {
   components: {
     login,
-    spaceFilter
+    spaceFilter,
   },
   data() {
     return {
@@ -73,7 +76,7 @@ export default {
       isModalOpen: false,
       isLogin: true,
       headerNarrow: true,
-      headerWide: false
+      headerWide: false,
     };
   },
   methods: {
@@ -85,9 +88,9 @@ export default {
       if (currentScrollPosition < 0) {
         return;
       }
-      if(currentScrollPosition === 0  && this.headerWide) {
+      if (currentScrollPosition === 0 && this.headerWide) {
         this.headerWide = false;
-        this.headerNarrow = true
+        this.headerNarrow = true;
       }
       this.isScrolled = currentScrollPosition !== 0;
     },
@@ -106,8 +109,8 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      this.headerWide = !this.headerWide
-      this.headerNarrow = !this.headerNarrow
+      this.headerWide = !this.headerWide;
+      this.headerNarrow = !this.headerNarrow;
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
@@ -119,6 +122,7 @@ export default {
   watch: {
     $route: function () {
       this.setHomePage();
+      this.toggleFilter();
     },
   },
   mounted() {
