@@ -1,4 +1,4 @@
-import router from '@/router'
+// import router from '@/router'
 
 const BASE_URL = process.env.NODE_ENV === 'production'
     ? '/api/'
@@ -15,6 +15,7 @@ export default {
         return ajax(endpoint, 'GET', data)
     },
     post(endpoint, data){
+        console.log('IN HTTP',data);
         return ajax(endpoint, 'POST', data)
     },
     put(endpoint, data){
@@ -38,7 +39,8 @@ async function ajax(endpoint, method='get', data=null) {
         return res.data;
     } catch (err) {
         if (err.response.status === 401) {
-            router.push('/');
+            // router.push('/');
+            console.log('ERROR');
         }
         console.log(`Had issues ${method}ing to server`, err)
         throw err;

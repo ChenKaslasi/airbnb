@@ -5,7 +5,7 @@
         <div class="checkout-header flex">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>
           <!-- {{range}} -->
-          <div>
+          <div v-if="space.reviewScores">
             <span class="star">󰀄</span>
             <span class="rating">{{ ratingForDisplay }}</span>
             <span class=""> {{ `(${space.reviews.length})` }} </span>

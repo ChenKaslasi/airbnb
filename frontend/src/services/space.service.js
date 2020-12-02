@@ -16,6 +16,7 @@ function remove(spaceId) {
   return httpService.delete(`space/${spaceId}`)
 }
 function add(space) {
+  console.log('FE SPACE SERVICE!!',space)
   return httpService.post(`space`, space)
 }
 function query() {

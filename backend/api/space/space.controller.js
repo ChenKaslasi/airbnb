@@ -47,9 +47,10 @@ async function deleteSpace(req, res) {
 async function addSpace(req, res) {
     var space = req.body;
     space = await spaceService.add(space)
-    space.bySpace = req.session.space;
+    console.log('in space controller',space)
+    // space.bySpace = req.session.space;
     // TODO - need to find aboutSpace
-    space.aboutSpace = {}
+    // space.aboutSpace = {}
     res.send(space)
 }
 
