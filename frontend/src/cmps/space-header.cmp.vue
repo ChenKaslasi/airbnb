@@ -10,13 +10,9 @@
           <span class="txt">airbnb</span>
         </a>
       </div>
-      <div class="search">
-        <div
-          @keyup.esc="toggleFilter"
-          @click="toggleFilter"
-          :class="{ searchNarrow: headerNarrow }"
-          v-if="headerNarrow"
-        >
+
+      <div  class="search">
+        <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
           <button class="btn flex align-center">
             <div class="txt">Start your search</div>
             <div class="search-icon">
@@ -24,11 +20,12 @@
             </div>
           </button>
         </div>
-        <div v-if="headerWide" class="filter">
-          <space-filter />
+        <div v-if="!headerNarrow" class="filter">
+        <space-filter :isHomePage="isHomePage"/>
         </div>
-        <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
       </div>
+        <div @click="toggleFilter" v-if="!headerNarrow"  class="overlay"></div>
+
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
         <a class="become-host" href="/#/host">Become a Host</a>
@@ -76,26 +73,21 @@ export default {
       isModalOpen: false,
       isLogin: true,
       headerNarrow: true,
-      headerWide: false,
+      previousScroll: null,
     };
   },
   methods: {
     onScroll() {
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
+      this.headerNarrow = true
+      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      if(currentScrollPosition === 0) {
+        this.headerNarrow = true
+      }
 
-      // hendle momentum scrolling on mobile
-      if (currentScrollPosition < 0) {
-        return;
-      }
-      if (currentScrollPosition === 0 && this.headerWide) {
-        this.headerWide = false;
-        this.headerNarrow = true;
-      }
       this.isScrolled = currentScrollPosition !== 0;
     },
 
-    setHomePage() {
+    setIsHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
     toggleDropdown() {
@@ -109,20 +101,18 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      this.headerWide = !this.headerWide;
-      this.headerNarrow = !this.headerNarrow;
+      this.headerNarrow = !this.headerNarrow
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
     },
   },
   created() {
-    this.setHomePage();
+    this.setIsHomePage();
   },
   watch: {
     $route: function () {
-      this.setHomePage();
-      this.toggleFilter();
+      this.setIsHomePage();
     },
   },
   mounted() {
