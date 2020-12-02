@@ -1,5 +1,5 @@
 <template>
-  <section class="filter-container flex justify-center align-center">
+  <section :class="{'scroll-shift': isScrolled }" class="filter-container flex justify-center align-center ">
     <div
       class="wrapper flex"
       @mouseover="colorSearchArea"
@@ -32,7 +32,6 @@
           </div>
         </div>
       </popper>
-
       <popper
         class="box"
         trigger="click"
@@ -142,6 +141,9 @@ export default {
     detailsCalendar,
     Popper,
   },
+  props: {
+    isHomePage: Boolean
+  },
   data() {
     return {
       filterBy: {
@@ -154,9 +156,25 @@ export default {
         childrenCount: 0,
         infantCount: 0,
       },
+      isScrolled: false,
     };
   },
   methods: {
+  onScroll() {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      // hendle momentum scrolling on mobile
+      if (currentScrollPosition < 0) {
+        return;
+      }
+      if(currentScrollPosition === 0  && this.headerWide) {
+        this.headerWide = false;
+        this.headerNarrow = true
+      }
+      this.isScrolled = currentScrollPosition !== 0;
+    },
+
     async filter() {
       // const filterBy = this.filterBy;
       const {city,date,adultCount,childrenCount,infantCount,} = this.filterBy;
@@ -207,6 +225,9 @@ export default {
       this.$refs.search.style.cssText = "background-color: #fff";
     },
   },
+  created() {
+    setInterval(()=>console.log(this.isScrolled),2000)
+  },
   computed: {
     sumGuests() {
       return (
@@ -215,6 +236,12 @@ export default {
         this.filterBy.infantCount
       );
     },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
   },
 };
 </script>

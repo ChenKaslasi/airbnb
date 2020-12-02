@@ -10,20 +10,23 @@
           <span class="txt">airbnb</span>
         </a>
       </div>
+
       <div  class="search">
-        <div @keyup.esc="toggleFilter"  @click="toggleFilter" :class="{searchNarrow: headerNarrow}" v-if="headerNarrow">
+        <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
           <button class="btn flex align-center">
           <div class="txt">Start your search</div>
+          <!-- <input class="txt" placeholder="Start your search"> -->
           <div class="search-icon">
             <img src="../assets/icons/search_m.svg" />
           </div>
         </button>
         </div>
         <div v-if="headerWide" class="filter">
-        <space-filter />
+        <space-filter :isHomePage="isHomePage"/>
         </div>
-        <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
       </div>
+        <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
+
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
         <a class="become-host" href="/#/host">Become a Host</a>
@@ -92,7 +95,7 @@ export default {
       this.isScrolled = currentScrollPosition !== 0;
     },
 
-    setHomePage() {
+    setIsHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
     toggleDropdown() {
@@ -114,11 +117,11 @@ export default {
     },
   },
   created() {
-    this.setHomePage();
+    this.setIsHomePage();
   },
   watch: {
     $route: function () {
-      this.setHomePage();
+      this.setIsHomePage();
     },
   },
   mounted() {
