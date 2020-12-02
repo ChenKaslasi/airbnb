@@ -10,14 +10,19 @@
           <span class="txt">airbnb</span>
         </a>
       </div>
-      <!-- <div class="search" v-hide="!isScrolled && isHomePage"> -->
-      <div class="search">
-        <button class="btn flex align-center">
+      <div  class="search">
+        <div @keyup.esc="toggleFilter"  @click="toggleFilter" :class="{searchNarrow: headerNarrow}" v-if="headerNarrow">
+          <button class="btn flex align-center">
           <div class="txt">Start your search</div>
           <div class="search-icon">
             <img src="../assets/icons/search_m.svg" />
           </div>
         </button>
+        </div>
+        <div v-if="headerWide" class="filter">
+        <space-filter />
+        </div>
+        <div @click="toggleFilter" v-if="headerWide" class="overlay"></div>
       </div>
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
@@ -50,10 +55,13 @@
 
 <script>
 import login from "../cmps/login.cmp.vue";
+import spaceFilter from "../cmps/space-filter.cmp"
+
 
 export default {
   components: {
     login,
+    spaceFilter
   },
   data() {
     return {
@@ -63,6 +71,8 @@ export default {
       isDropdownOpen: false,
       isModalOpen: false,
       isLogin: true,
+      headerNarrow: true,
+      headerWide: false
     };
   },
   methods: {
@@ -73,6 +83,10 @@ export default {
       // hendle momentum scrolling on mobile
       if (currentScrollPosition < 0) {
         return;
+      }
+      if(currentScrollPosition === 0  && this.headerWide) {
+        this.headerWide = false;
+        this.headerNarrow = true
       }
       this.isScrolled = currentScrollPosition !== 0;
     },
@@ -89,6 +103,10 @@ export default {
     },
     closeModal() {
       this.isModalOpen = false;
+    },
+    toggleFilter() {
+      this.headerWide = !this.headerWide
+      this.headerNarrow = !this.headerNarrow
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
@@ -110,6 +128,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

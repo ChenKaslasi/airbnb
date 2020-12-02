@@ -13,7 +13,7 @@
       width: 300px;
     }
   }
-  
+
   .logo {
     text-decoration: none;
     cursor: pointer;
@@ -33,7 +33,7 @@
   }
 
   .link-container {
-    
+
     .become-host,
     .explore {
       color: #222222;
@@ -54,9 +54,7 @@
       transition: ease box-shadow 1s;
       position: relative;
 
-      // :hover {
-      //   box-shadow: 0px 3px 6px -4px rgba(34, 34, 34, 0.8);
-      // }
+
 
       .btn {
         padding: 0 8px 0 14px;
@@ -77,6 +75,7 @@
         width: 30px;
         pointer-events: none;
       }
+
       .login-dropdown {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -92,6 +91,7 @@
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px;
         z-index: 1;
+
         button {
           font-family: Circular;
           font-weight: 400;
@@ -106,11 +106,13 @@
           text-decoration: none;
           display: block;
           width: 100%;
+
           &:hover {
             cursor: pointer;
             background-color: rgba(238, 238, 238, 0.5);
           }
         }
+
         .sign-up {
           font-weight: 600;
           letter-spacing: 0.5px;
@@ -120,12 +122,6 @@
   }
 
   .search {
-    transition: ease box-shadow 1s;
-
-    :hover {
-      cursor: pointer;
-      box-shadow: 0px 3px 6px -4px rgba(34, 34, 34, 0.8);
-    }
 
     .btn {
       padding: 6px 0;
@@ -160,7 +156,40 @@
       }
     }
   }
+
+
+  .filter {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 80px;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // transform: scale(1, 0.5) translate(50%, 100px) !important;
+    // transform-origin: 100px 0% !important;
+    // transition: transform 5s ease
+
+  }
+
+  .filter-container {
+    margin: 0;
+    box-shadow: none;
+
+    .wrapper {
+      border: 1px solid #ddd;
+
+    }
+  }
 }
+
+
+
+// Dynamic class
 
 .homePageDisplay {
   box-shadow: none !important;
@@ -168,6 +197,7 @@
   .search {
     display: none;
   }
+
   .become-host,
   .explore {
     color: #fff !important;
@@ -193,6 +223,7 @@
     display: block;
     transition: display 0.3s;
   }
+
   .become-host,
   .explore {
     color: #222 !important;
@@ -204,5 +235,25 @@
 
   .logo-svg {
     content: url("../assets/icons/‏‏logo-pink.svg") !important;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 180px; //height of overLay -- should match filter height open + header 80px
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.searchNarrow {
+  :hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 6px -4px rgba(34, 34, 34, 0.8);
   }
 }

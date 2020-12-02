@@ -43,7 +43,7 @@
     }
 
     .box:nth-child(3) {
-      width: 190px;
+      width: 160px;
     }
 
     .box:hover:nth-child(3){
@@ -61,7 +61,7 @@
 
     .box {
       line-height: 18px;
-      padding: 14px;
+      padding: 10px;
       position: relative;
       padding-inline-start: 24px;
       
@@ -91,8 +91,7 @@
     // }
 
     .box .guests {
-      width: 140px;
-
+      width: 110px;
     }
 
   }
@@ -256,7 +255,6 @@
 
     
   }
-
 
 }
 
