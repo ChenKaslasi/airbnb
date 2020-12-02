@@ -2,7 +2,6 @@
   <div id="app">
     <!-- <space-header /> -->
     <main>
-      <!-- <router-link to="/">Home</router-link> | -->
       <router-view :key="$route.name + ($route.params.id || '')" />
     </main>
     <space-footer />
