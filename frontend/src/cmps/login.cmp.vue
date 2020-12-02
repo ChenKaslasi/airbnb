@@ -1,30 +1,39 @@
 <template>
   <section class="login-cmp">
-    <header class="login-header">
-      <button @click="emitClose">&#10005;</button>
-      <h2 v-if="isLogin">Log in</h2>
-      <h2 v-else>Sign up</h2>
-    </header>
-    <main>
-      <div class="form-container">
-        <form @submit.prevent="sendUserCred">
-          <div class="input-container">
-            <div v-if="!isLogin" class="username-container">
+    <div class="screen" @click="emitClose">
+      <div class="login-container">
+      <header class="login-header">
+        <button @click="emitClose">&#10005;</button>
+        <h2 v-if="isLogin">Log in</h2>
+        <h2 v-else>Sign up</h2>
+      </header>
+      <main>
+        <img src="@/assets/img/login-profile.png" />
+        <div class="form-container">
+          <form @submit.prevent="sendUserCred">
+            <div class="input-container">
+              <div v-if="!isLogin" class="username-container">
+                <input
+                  v-model="user.username"
+                  type="text"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="email-container">
+                <input v-model="user.email" type="text" placeholder="Email" />
+              </div>
               <input
-                v-model="user.username"
+                v-model="user.password"
                 type="text"
-                placeholder="Username"
+                placeholder="Password"
               />
             </div>
-            <div class="email-container">
-              <input v-model="user.email" type="text" placeholder="Email" />
-            </div>
-            <input v-model="user.password" type="text" placeholder="Password" />
-          </div>
-          <button>Continue</button>
-        </form>
+            <button>Continue</button>
+          </form>
+        </div>
+      </main>
       </div>
-    </main>
+    </div>
   </section>
 </template>
 
