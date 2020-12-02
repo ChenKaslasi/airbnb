@@ -1,7 +1,7 @@
 <template>
   <section class="login-cmp">
-    <div class="screen" @click="emitClose">
-      <div class="login-container">
+    <div class="screen" @click="emitClose"></div>
+    <div class="login-container">
       <header class="login-header">
         <button @click="emitClose">&#10005;</button>
         <h2 v-if="isLogin">Log in</h2>
@@ -32,7 +32,6 @@
           </form>
         </div>
       </main>
-      </div>
     </div>
   </section>
 </template>
