@@ -64,16 +64,6 @@
         width: 30px;
         pointer-events: none;
       }
-
-      .dropdown-screen {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        cursor: auto;
-      }
-
       .login-dropdown {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -88,7 +78,7 @@
         background-color: #ffffff;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 20px;
-        z-index: 1;
+        z-index: 2;
 
         button {
           font-family: Circular;
@@ -166,7 +156,7 @@
     height: 80px;
     top: 80px;
     left: 0;
-    z-index: 100;
+    z-index: 4;
     transform: translate(-50%,-50%);
     background-color: #fff;
     display: flex;
@@ -178,8 +168,6 @@
   .filter-container {
     margin: 0;
     box-shadow: none;
-
-
 
     .wrapper {
       border: 1px solid #ddd;
@@ -247,7 +235,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -265,6 +253,6 @@
 
 .scroll-shift {
   transform-origin: 50% 0% !important;
-  transform: scale(0.4, 0.5) translateY(-130px) !important;
-  transition: transform 250ms ease, opacity 50ms ease 20ms, visibility 0ms 150ms !important
+  transform: scale(0.42, 0.69) translateY(-20px) !important;
+  transition: transform 150ms ease, opacity 50ms ease 20ms, visibility 0ms 150ms !important;
 }

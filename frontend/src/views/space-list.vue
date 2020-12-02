@@ -32,12 +32,23 @@ export default {
     };
   },
   async created() {
+    console.log('created');
     this.filterBy = this.$route.query;
     const filterBy = this.filterBy;
     await this.$store.dispatch({
       type: "filterSpaces",
       filterBy,
     });
+  },
+   watch: {
+    $route: async function() {
+     this.filterBy = this.$route.query;
+    const filterBy = this.filterBy;
+    await this.$store.dispatch({
+      type: "filterSpaces",
+      filterBy,
+    });
+    },
   },
   computed: {
     spaces() {

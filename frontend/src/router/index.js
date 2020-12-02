@@ -7,31 +7,55 @@ import hostPage from '../views/host-page.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: homePage
-  },
-  {
-    path: '/host',
-    name: 'host',
-    component: hostPage,
-  },
-  {
-    path: '/:city',
-    component: spaceList,
-  },
-  {
-    path: '/:city/:id',
-    component: spaceDetails,
-  },
-]
+// const routes = [
+//   {
+//     path: '/',
+//     name: 'Home',
+//     component: homePage
+//   },
+//   {
+//     path: '/host',
+//     name: 'host',
+//     component: hostPage,
+//   },
+//   {
+//     path: '/:city',
+//     component: spaceList,
+//   },
+//   {
+//     path: '/:city/:id',
+//     component: spaceDetails,
+//   },
+// ]
+
+
 
 const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
-  routes
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: homePage
+    },
+    {
+      path: '/host',
+      name: 'host',
+      component: hostPage,
+    },
+    {
+      path: '/:city',
+      component: spaceList,
+    },
+    {
+      path: '/:city/:id',
+      component: spaceDetails,
+    },
+  ],
+  scrollBehavior() {
+    return { x: 0, y: 0 }
+  }
 })
 
 export default router

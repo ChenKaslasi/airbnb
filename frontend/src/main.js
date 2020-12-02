@@ -6,9 +6,12 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import * as VueGoogleMaps from 'vue2-google-maps'
+import vClickOutside from 'v-click-outside'
+
 var VueScrollTo = require('vue-scrollto');
 
 Vue.use(VueScrollTo)
+Vue.use(vClickOutside)
 
 
 Vue.use(ElementUI);
@@ -21,7 +24,7 @@ Vue.use(VueGoogleMaps, {
 })
 
 Vue.config.productionTip = false
- 
+
 import './styles/styles.scss'
 
 new Vue({

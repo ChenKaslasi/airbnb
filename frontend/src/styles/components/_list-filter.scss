@@ -4,6 +4,9 @@
         display: flex;
         justify-content: space-between;
         width: 380px;
+        .btn-container {
+            position: relative;
+        }
         button {
             cursor: pointer;
             text-align: center;
@@ -21,6 +24,8 @@
             background-color: #ffffff;
         }
         .popper {
+            position: absolute;
+            top: 50px;
             background: rgb(255, 255, 255);
             border: 0.5px solid rgba(118, 118, 118, 0.28);
             border-radius: 12px;
@@ -84,6 +89,9 @@
             .popper-content {
                 display: flex;
                 padding: 32px 24px;
+                p{
+                    margin-inline-end: 20px;
+                }
             }
             .popper-footer {
                 display: flex;
@@ -93,8 +101,8 @@
             }
         }
 
-        .cancel-popper {
-            left: 140px !important;
+        .cancel-popper{
+            width: 360px;
         }
 
         .type-popper {
@@ -142,13 +150,12 @@
             }
         }
         .price-popper {
-            left: 102px !important;
             .hyphen {
                 margin: rem(8px);
                 font-style: rem(14px);
                 color: #484848;
             }
-            .popper-content{
+            .popper-content {
                 align-items: center;
             }
             .full-input {
@@ -156,10 +163,10 @@
                 border: 1px solid #222222;
                 border-radius: rem(8px);
                 padding: rem(10px);
-                &.focus{
+                &.focus {
                     border: 2px solid black;
                 }
-                .input-section{
+                .input-section {
                     display: flex;
                     align-items: center;
                     .dollar {
@@ -177,6 +184,9 @@
                 line-height: rem(20px);
                 font-size: rem(16px);
                 color: #222222;
+            }
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
             }
             label {
                 color: rgb(113, 113, 113);
