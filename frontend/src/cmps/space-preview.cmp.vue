@@ -7,9 +7,11 @@
         </el-carousel-item>
       </el-carousel>
     </div>
-    <div v-if="space.reviewScores">
-      <span class="star">󰀄</span> {{ spaceRate }}
-      <span class="reviews-count">({{ numOfReviewers }})</span>
+    <div>
+      <div v-if="space.reviewScores">
+        <span class="star">󰀄</span> {{ spaceRate }}
+        <span class="reviews-count">({{ numOfReviewers }})</span>
+      </div>
       <div class="txt-container">
         <div v-if="space.roomType">
           {{ space.roomType }} · {{ space.address.city }}
