@@ -63,8 +63,8 @@ async function remove(spaceId) {
 
 
 async function add(space) {
-    space.bySpaceId = ObjectId(space.bySpaceId);
-    space.aboutSpaceId = ObjectId(space.aboutSpaceId);
+    // space.bySpaceId = ObjectId(space.bySpaceId);
+    // space.aboutSpaceId = ObjectId(space.aboutSpaceId);
 
     const collection = await dbService.getCollection('space')
     try {

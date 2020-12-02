@@ -3,9 +3,9 @@
     <div class="top">
       <h1 class="title">{{space.name}}</h1>
       <div class="info">
-        <div class="reviews-summery">
+        <div v-if="space.reviewScores" class="reviews-summery">
           <span class="star">󰀄</span>
-          <span class="rating" >{{ratingForDisplay}}</span> 
+          <span  class="rating" >{{ratingForDisplay}}</span> 
           <span class=""> {{`(${space.reviews.length})`}} </span>
         </div>
         <div class="super-host" >

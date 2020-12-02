@@ -8,7 +8,8 @@ const router = express.Router()
 
 router.get('/', getSpaces)
 router.get('/:id', getSpace)
-router.post('/add',  requireAuth, addSpace)  //add space
+router.post('/',  addSpace)  //add space
+// router.post('/',  requireAuth, addSpace)  //add space
 router.put('/:id', updateSpace)
 
 // router.post('/filter',  requireAuth, filterSpace) //filter space
