@@ -1,7 +1,11 @@
 <template>
   <section
     class="header-container main-layout"
-    :class="{ scrollDisplay: isScrolled, homePageDisplay: isHomePage }"
+    :class="{
+      scrollDisplay: isScrolled,
+      homePageDisplay: isHomePage,
+      mobileSearch: isMobileSearch,
+    }"
   >
     <div class="content flex align-center justify-between">
       <div class="logo flex">
@@ -17,15 +21,52 @@
           :class="[{ searchNarrow: headerNarrow }]"
           v-if="headerNarrow"
         >
-          <button class="btn flex align-center">
+          <button v-if="!isMobileSearch" class="btn flex align-center">
             <div class="txt">{{ cityName }}</div>
             <div class="search-icon">
               <img src="../assets/icons/search_m.svg" />
             </div>
           </button>
         </div>
+
         <div v-if="!headerNarrow" class="filter">
           <space-filter :isHomePage="isHomePage" />
+        </div>
+
+        <div class="mobile-search" v-if="isMobileSearch">
+          <div class="search-bar flex">
+            <div ref="backBtn" class="back-btn" @click="toggleMobileSearch"><img src="../assets/icons/back-btn-mobile.svg"></div>
+            <input type="text" placeholder="Where are you going?">
+          </div>
+          <div class="search-boxes">
+            <div @click="selectCity('Barcelona')" class="box flex">
+              <div class="image">
+                <img src="../assets/img/mobile-city-bgc-1.jpg" >
+              </div>
+              <div class="txt flex column justify-center">
+                <div class="top">Barcelona</div>
+                <div class="bottom">Catalunya, Spain</div>
+              </div>
+            </div>
+            <div @click="selectCity('New York')" class="box flex">
+              <div class="image">
+                <img src="../assets/img/mobile-city-bgc-2.jpg" >
+              </div>
+              <div class="txt flex column justify-center">
+                <div class="top">New York</div>
+                <div class="bottom">NY, United States</div>
+              </div>
+            </div>
+            <div @click="selectCity('Sydney')" class="box flex">
+              <div class="image">
+                <img src="../assets/img/mobile-city-bgc-3.jpg" >
+              </div>
+              <div class="txt flex column justify-center">
+                <div class="top">Sydney</div>
+                <div class="bottom">NSW, Australia</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -81,8 +122,8 @@ export default {
       isDropdownOpen: false,
       isModalOpen: false,
       isLogin: true,
+      isMobileSearch: false,
       headerNarrow: true,
-      previousScroll: null,
       cityName: "Start your search",
     };
   },
@@ -112,7 +153,14 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      this.headerNarrow = !this.headerNarrow;
+      if (window.innerWidth > 400) {
+        this.headerNarrow = !this.headerNarrow;
+      } else {
+        this.isMobileSearch = !this.isMobileSearch;
+      }
+    },
+    toggleMobileSearch() {
+      this.isMobileSearch = !this.isMobileSearch ;
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
@@ -120,6 +168,10 @@ export default {
     setCityName() {
       this.cityName = this.$route.query.city;
     },
+    selectCity(cityName) {
+       this.$router.push({path: "/city", query: {city: cityName}});
+      this.$refs.backBtn.click();
+    }
   },
   watch: {
     $route: function () {
@@ -129,11 +181,11 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
-    if (window.innerWidth < 400) {
-      this.isScrolled = true;
-    }
     if (this.$route.query.city) {
       this.setCityName();
+    }
+    if (window.innerWidth < 400) {
+      this.isScrolled = true;
     }
   },
   beforeDestroy() {
