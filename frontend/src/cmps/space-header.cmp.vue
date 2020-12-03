@@ -18,7 +18,7 @@
           v-if="headerNarrow"
         >
           <button class="btn flex align-center">
-            <div class="txt">{{cityName}}</div>
+            <div class="txt">{{ cityName }}</div>
             <div class="search-icon">
               <img src="../assets/icons/search_m.svg" />
             </div>
@@ -83,7 +83,7 @@ export default {
       isLogin: true,
       headerNarrow: true,
       previousScroll: null,
-      cityName: "Start your search"
+      cityName: "Start your search",
     };
   },
   methods: {
@@ -91,11 +91,11 @@ export default {
       this.headerNarrow = true;
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollPosition === 0 ) {
+      if (currentScrollPosition === 0) {
         this.headerNarrow = true;
       }
 
-      this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400
+      this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400;
     },
 
     setIsHomePage() {
@@ -117,9 +117,9 @@ export default {
     async logout() {
       await this.$store.dispatch({ type: "logout" });
     },
-    setCityName() { 
+    setCityName() {
       this.cityName = this.$route.query.city;
-    }
+    },
   },
   watch: {
     $route: function () {
@@ -129,7 +129,10 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
-    if(this.$route.query.city) {
+    if (window.innerWidth < 400) {
+      this.isScrolled = true;
+    }
+    if (this.$route.query.city) {
       this.setCityName();
     }
   },

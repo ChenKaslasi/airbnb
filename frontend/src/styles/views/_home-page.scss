@@ -231,6 +231,9 @@
 }
 
 @include for-mobile-layout {
+  .header-container {
+    
+  }
 
   .logo {
     display: none !important;
