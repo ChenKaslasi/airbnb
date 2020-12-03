@@ -1,20 +1,21 @@
 <template>
   <section class="details-container main-layout" v-if="currSpace">
-    <space-header />
-    <gallery :space="currSpace" />
-    <section class="flex ">
+    <details-header v-if="isNarrowHeader" />
+    <space-header v-if="!isNarrowHeader" />
+    <gallery :space="currSpace"  />
+    <section class="flex main-content-container">
       <section class="main-content">
-        <details-summery   :space="currSpace" />
+        <details-summery :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
-        <details-calendar :space="currSpace"/>
+        <details-calendar :space="currSpace" />
       </section>
       <section class="checkout-card">
         <details-checkout :space="currSpace" />
       </section>
     </section>
 
-    <section >
+    <section>
       <details-review :reviews="currSpace.reviews" />
       <detailsMap :space="currSpace" />
       <detailsHost id="detailsHost" :space="currSpace" />
@@ -27,7 +28,7 @@
 import spaceService from "../services/space.service.js";
 
 import spaceHeader from "@/cmps/space-header.cmp.vue";
-
+import detailsHeader from "../cmps/details-header.cmp.vue";
 import gallery from "../cmps/space-gallery.cmp";
 import detailsSummery from "../cmps/details-summery.vue";
 import detailsDescription from "../cmps/details-description.vue";
@@ -50,21 +51,32 @@ export default {
     detailsCheckout,
     detailsMap,
     detailsHost,
-    
+    detailsHeader,
   },
   data() {
     return {
       currSpace: null,
+      isNarrowHeader: false,
     };
   },
-  methods:{
-    // scrollToHost(){
-
-    // }
+  methods: {
+    handleResize() {
+      if (window.innerWidth > 700) {
+        this.isNarrowHeader = false;
+      } else {
+        this.isNarrowHeader = true;
+      }
+    },
   },
   created() {
     const spaceId = this.$route.params.id;
     spaceService.getById(spaceId).then((space) => (this.currSpace = space));
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResize);
   },
 };
 </script>
