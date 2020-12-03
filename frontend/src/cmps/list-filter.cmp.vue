@@ -102,9 +102,9 @@
     </div>
     <div class="mobile-filter">
       <button @click="toggleFilters">Filters</button>
-      <div class="filters-modal">
+      <div v-show="isFiltersOpen" class="filters-modal">
         <header class="modal-header">
-          <button class="close-btn">&#10005;</button>
+          <button class="close-btn" @click="toggleFilters">&#10005;</button>
           <h2>Filters</h2>
           <button :class="checkDisabled">Clear</button>
         </header>
@@ -123,22 +123,51 @@
             </div>
           </div>
           <div class="type-filter">
-            <label class="container">One
-              <input type="checkbox" checked="checked" />
+            <label class="container">
+              <h2>Entire place</h2>
+              <p>Have a place to yourself</p>
+              <input type="checkbox" v-model="filter.entirePlace" />
               <span class="checkmark"></span>
             </label>
-            <!-- <el-checkbox class="checkBox" v-model="filter.entirePlace"
-              ><h4>Entire place</h4>
-              Have a place to yourself</el-checkbox
-            >
-            <el-checkbox class="checkBox" v-model="filter.privateRoom"
-              ><h4>Private room</h4>
-              Have your own room and share some <br />
-              common spaces</el-checkbox
-            > -->
+            <label class="container">
+              <h2>Private room</h2>
+              <p>Have your own room and share some</p>
+              <input type="checkbox" v-model="filter.privateRoom" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="price-filter">
+            <h2>Price range</h2>
+            <div class="input-container">
+              <label class="price-label" for="minP#"
+                ><p>min price</p>
+                <div>
+                <span>$</span>
+                <input
+                  type="number"
+                  id="minP#"
+                  placeholder="10"
+                  v-model="filter.minPrice"
+                /></div>
+              </label>
+              <span class="hyphen">–</span>
+              <label class="price-label" for="maxP#"
+                ><p>max price</p>
+                <div>
+                <span>$</span>
+                <input
+                  type="number"
+                  id="maxP#"
+                  placeholder="1500+"
+                  v-model="filter.maxPrice"
+                /></div>
+              </label>
+            </div>
           </div>
         </main>
-        <footer class="modal-footer"></footer>
+        <footer class="modal-footer">
+          <button @click="emitFilter(); toggleFilters()" class="submit-btn">Show results</button>
+        </footer>
       </div>
     </div>
   </section>
@@ -180,6 +209,7 @@ export default {
     emitFilter() {
       const filter = JSON.parse(JSON.stringify(this.filter));
       this.$emit("changeFilter", filter);
+      // if(isFiltersOpen)this.isFiltersOpen = !this.isFiltersOpen;
     },
     closePopper() {
       this.isPopperOpen.cancel = false;
