@@ -1,6 +1,7 @@
 .home {
-  @include for-home-layout;
-  @include for-narrow-layout;
+  // @include for-home-layout;
+  // @include for-narrow-layout;
+  @include for-mobile-layout;
 }
 .hero {
   margin-bottom: 60px;
@@ -195,6 +196,12 @@
   }
 
   
+}
+@include for-mobile-layout{
+  body{
+    background-color: cadetblue;
+
+  }
 }
 // Responsive
 
