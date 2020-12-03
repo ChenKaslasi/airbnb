@@ -236,6 +236,9 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
+    if(this.$route.query.city) {
+      this.filterBy.city = this.$route.query.city;
+    }
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);

@@ -12,19 +12,24 @@
       </div>
 
       <div class="search">
-        <div @click="toggleFilter" :class="[{searchNarrow: headerNarrow}]" v-if="headerNarrow">
+        <div
+          @click="toggleFilter"
+          :class="[{ searchNarrow: headerNarrow }]"
+          v-if="headerNarrow"
+        >
           <button class="btn flex align-center">
-            <div class="txt">Start your search</div>
+            <div class="txt">{{cityName}}</div>
             <div class="search-icon">
               <img src="../assets/icons/search_m.svg" />
             </div>
           </button>
         </div>
         <div v-if="!headerNarrow" class="filter">
-        <space-filter :isHomePage="isHomePage"/>
+          <space-filter :isHomePage="isHomePage" />
         </div>
       </div>
-        <div @click="toggleFilter" v-if="!headerNarrow"  class="overlay"></div>
+
+      <div @click="toggleFilter" v-if="!headerNarrow" class="overlay"></div>
 
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
@@ -36,7 +41,11 @@
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
             <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div v-click-outside="toggleDropdown" v-if="isDropdownOpen" class="login-container">
+            <div
+              v-click-outside="toggleDropdown"
+              v-if="isDropdownOpen"
+              class="login-container"
+            >
               <ul class="login-dropdown">
                 <li>
                   <button class="sign-up" @click="openModal('signUp')">
@@ -74,14 +83,16 @@ export default {
       isLogin: true,
       headerNarrow: true,
       previousScroll: null,
+      cityName: "Start your search"
     };
   },
   methods: {
     onScroll() {
-      this.headerNarrow = true
-      const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-      if(currentScrollPosition === 0) {
-        this.headerNarrow = true
+      this.headerNarrow = true;
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition === 0) {
+        this.headerNarrow = true;
       }
 
       this.isScrolled = currentScrollPosition !== 0;
@@ -101,11 +112,14 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      this.headerNarrow = !this.headerNarrow
+      this.headerNarrow = !this.headerNarrow;
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
     },
+    setCityName() { 
+      this.cityName = this.$route.query.city;
+    }
   },
   created() {
     this.setIsHomePage();
@@ -113,13 +127,18 @@ export default {
   watch: {
     $route: function () {
       this.setIsHomePage();
+      this.setCityName();
     },
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
+    if(this.$route.query.city) {
+      this.setCityName();
+    }
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);
   },
+  
 };
 </script>
