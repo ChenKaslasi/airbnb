@@ -23,6 +23,7 @@
     "vue": "^2.6.12",
     "vue-awesome-swiper": "^4.1.1",
     "vue-cal": "^3.9.0",
+    "vue-carousel": "^0.18.0",
     "vue-concise-slider": "^3.4.4",
     "vue-flickity": "^1.2.1",
     "vue-numeric-input": "^1.0.6",

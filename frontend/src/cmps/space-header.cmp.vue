@@ -91,11 +91,11 @@ export default {
       this.headerNarrow = true;
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollPosition === 0) {
+      if (currentScrollPosition === 0 ) {
         this.headerNarrow = true;
       }
 
-      this.isScrolled = currentScrollPosition !== 0;
+      this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400
     },
 
     setIsHomePage() {
