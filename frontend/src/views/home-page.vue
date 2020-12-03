@@ -11,19 +11,16 @@
 
     <div class="home-container">
       <h2 class="location-header">Explore locations</h2>
+
       <div class="card-container">
-        <div
-          class="card"
-          v-for="(img, idx) in imgs"
-          :key="idx"
-          @click="bookLocation(img.title)"
-        >
-          <template>
+        <carousel>
+        <div class="card" v-for="(img, idx) in imgs" :key="idx" @click="bookLocation(img.title)">
+          <slide>
             <img :src="img.url" />
             <h3>{{ img.title }}</h3>
-            <!-- <p>Book it NOW!</p> -->
-          </template>
+           </slide>
         </div>
+        </carousel>
       </div>
     </div>
     <about-us />
@@ -36,6 +33,7 @@ import spaceFilter from "../cmps/space-filter.cmp.vue";
 import aboutUs from "../cmps/about-us.cmp.vue";
 import homeBanner from "../cmps/home-banner.cmp.vue";
 import spaceHeader from "@/cmps/space-header.cmp.vue";
+import { Carousel, Slide } from 'vue-carousel';
 // @ is an alias to /src
 
 export default {
@@ -44,7 +42,9 @@ export default {
     spaceFilter,
     spaceHeader,
     aboutUs,
-    homeBanner
+    homeBanner,
+    Carousel,
+    Slide
   },
   data() {
     return {
