@@ -198,17 +198,67 @@
         padding-bottom: 0px;
       }
     }
-
-  }
-
-  
-}
-@include for-mobile-layout{
-  body{
-    background-color: cadetblue;
-
   }
 }
+<<<<<<< HEAD
+// @include for-mobile-layout{
+//   body{
+//     background-color: cadetblue;
+
+//   }
+// }
 // Responsive
+=======
 
+@include for-mobile-layout{
+  .link-container {
+    display: none;
+  }
 
+  .filter-container {
+    display: none;
+  }
+
+  .about-header {
+    text-align: left !important;
+    margin-top: 40px;
+  }
+>>>>>>> 9d9239ac9b2cb47a43e80a6127ad35f7bbc6c945
+
+  .hero {
+    object-fit: cover;
+    width: 100vw;
+
+    .h1-container {
+      line-height: initial;
+      justify-content: flex-end;
+      padding-bottom: 40px !important;
+      h1 {
+        line-height: 60px;
+        font-size: 50px;
+        padding: 0px ;
+        
+      }
+    }
+  }
+
+  .txt-container {
+    display: flex;
+    flex-wrap: wrap;
+  
+
+    .desc-airbnb, .desc-hosting {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+      margin-bottom: 40px;
+    }
+
+  }
+  .home-banner{
+    
+    .banner-content2 {
+      display: none !important;
+    }
+  }
+}

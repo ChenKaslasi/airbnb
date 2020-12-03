@@ -17,6 +17,12 @@
     background-color: #fff;
   }
 
-  
+  @include for-mobile-layout{
+    // background-color: cadetblue;
+    padding-bottom: 20px;
+    .picker{
+      padding-right: 0px;
+    }
+  }
 }
 
