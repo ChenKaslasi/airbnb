@@ -1,7 +1,7 @@
 <template>
   <section class="space-list main-layout main-content" v-if="filterBy">
     <space-header />
-    <list-filter :space="filterBy"></list-filter>
+    <list-filter @changeFilter="setFilter" :space="filterBy"></list-filter>
     <div>
       <ul class="card-container">
         <li v-for="space in spaces" :key="space._id">
@@ -32,7 +32,7 @@ export default {
     };
   },
   async created() {
-    console.log('created');
+    console.log("created");
     this.filterBy = this.$route.query;
     const filterBy = this.filterBy;
     await this.$store.dispatch({
@@ -40,14 +40,14 @@ export default {
       filterBy,
     });
   },
-   watch: {
-    $route: async function() {
-     this.filterBy = this.$route.query;
-    const filterBy = this.filterBy;
-    await this.$store.dispatch({
-      type: "filterSpaces",
-      filterBy,
-    });
+  watch: {
+    $route: async function () {
+      this.filterBy = this.$route.query;
+      const filterBy = this.filterBy;
+      await this.$store.dispatch({
+        type: "filterSpaces",
+        filterBy,
+      });
     },
   },
   computed: {
@@ -56,6 +56,9 @@ export default {
     },
   },
   methods: {
+    setFilter(filter) {
+    this.$store.commit({ type: "setFilter", filter });
+  },
     spaceSelected(id) {
       this.$router.push(`/${this.filterBy}/${id}`);
     },
