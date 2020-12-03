@@ -9,56 +9,71 @@ export const spaceStore = {
     },
     getters: {
         spacesForDisplay(state) {
-            return state.spaces;
+            if (!state.filterBy) return state.spaces;
+            var { cancel, entirePlace, privateRoom, minPrice, maxPrice } = state.filterBy;
+            console.log(cancel);
+            cancel = (cancel) ? 'flexible' : '';
+            const type = (entirePlace && privateRoom) ? '' : (entirePlace && !privateRoom) ? 'Entire place' : (!entirePlace && privateRoom) ? 'Private room' : '';
+            if (!maxPrice) maxPrice = Infinity
+            return state.spaces.filter(
+                (space) =>
+                    space.price >= minPrice &&
+                    space.price <= maxPrice &&
+                    space.roomType.includes(type) &&
+                    space.cancellationPolicy.includes(cancel)
+            )
         },
     },
     mutations: {
-        setSpaces(state, {spaces}) {
+        setFilter(state, { filter }) {
+            state.filterBy = filter
+        },
+        setSpaces(state, { spaces }) {
             state.spaces = spaces;
         },
-        setCurrSpace(state,{space}) {
+        setCurrSpace(state, { space }) {
             state.currSpace = space;
         },
-        addSpace(state, {space}) {
+        addSpace(state, { space }) {
             state.spaces.push(space)
         },
-        removeSpace(state, {spaceId}) {
+        removeSpace(state, { spaceId }) {
             state.spaces = state.spaces.filter(space => space._id !== spaceId)
         },
-        updateSpace(state,  space ) {
-            console.log('updating in store mutation!! ',space )
+        updateSpace(state, space) {
+            console.log('updating in store mutation!! ', space)
             const idx = state.spaces.findIndex(currSpace => currSpace._id === space._id)
             state.spaces.splice(idx, 1, space)
-          }
+        }
     },
     actions: {
-        async addSpace(context, {space}) {
+        async addSpace(context, { space }) {
             try {
 
                 space = await spaceService.add(space)
-                context.commit({type: 'addSpace', space})
+                context.commit({ type: 'addSpace', space })
                 return space;
-            } catch(err) {
+            } catch (err) {
                 console.error('Cannot add space store', space);
                 throw err;
             }
         },
 
-        async removeSpace(context, {spaceId}) {
+        async removeSpace(context, { spaceId }) {
             await spaceService.remove(spaceId);
-            context.commit({type: 'removeSpace', spaceId})
+            context.commit({ type: 'removeSpace', spaceId })
         },
-        async filterSpaces(context,{filterBy}) {
+        async filterSpaces(context, { filterBy }) {
             const spaces = await spaceService.filter(filterBy);
-            context.commit({type:'setSpaces', spaces})
+            context.commit({ type: 'setSpaces', spaces })
         },
         async updateSpace({ commit }, { updatedSpace }) {
-            console.log(updatedSpace,'space!!');
+            console.log(updatedSpace, 'space!!');
             await spaceService.update(updatedSpace)
             commit({
-              type: 'updateSpace',
-              updatedSpace
+                type: 'updateSpace',
+                updatedSpace
             })
-          },
+        },
     },
 }

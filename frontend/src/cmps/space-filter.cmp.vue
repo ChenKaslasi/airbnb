@@ -225,9 +225,6 @@ export default {
       this.$refs.search.style.cssText = "background-color: #fff";
     },
   },
-  created() {
-    setInterval(()=>console.log(this.isScrolled),2000)
-  },
   computed: {
     sumGuests() {
       return (
