@@ -114,6 +114,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
 
     .btn {
       padding: 6px 0;
@@ -257,3 +258,7 @@
   transform: scale(0.42, 0.69) translateY(-58px) !important;
   transition: transform 250ms ease, opacity 50ms ease 20ms, visibility 0ms 150ms !important;
 }
+
+
+
+// Responsive

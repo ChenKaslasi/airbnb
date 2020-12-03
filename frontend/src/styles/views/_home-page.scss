@@ -123,6 +123,47 @@
 }
 
 
-// Responsive
+@include for-mobile-layout{
+  .link-container {
+    display: none;
+  }
 
+  .filter-container {
+    display: none;
+  }
 
+  .hero {
+    object-fit: cover;
+    width: 100vw;
+
+    .h1-container {
+      line-height: initial;
+      justify-content: flex-end;
+      padding-bottom: 40px !important;
+      h1 {
+        line-height: 60px;
+        font-size: 50px;
+        padding: 0px ;
+        
+      }
+    }
+  }
+
+  .txt-container {
+    display: flex;
+    flex-wrap: wrap;
+  
+
+    .desc-airbnb, .desc-hosting {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+    }
+  }
+  .home-banner{
+    
+    .banner-content2 {
+      display: none !important;
+    }
+  }
+}
