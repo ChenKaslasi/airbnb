@@ -4,7 +4,7 @@
       <div class="footer-content">
         <div class="rights-container">
           <div>
-            © 2020 Airbnb, Inc. All rights reserved
+            © 2020 HomeSeek, Inc. All rights reserved
             <span class="divider rights-divider">·</span>
           </div>
           <ul>

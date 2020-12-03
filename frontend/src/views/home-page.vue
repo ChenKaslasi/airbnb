@@ -26,12 +26,15 @@
         </div>
       </div>
     </div>
+    <about-us />
+    <home-banner />
   </div>
 </template>
 
 <script>
 import spaceFilter from "../cmps/space-filter.cmp.vue";
-
+import aboutUs from "../cmps/about-us.cmp.vue";
+import homeBanner from "../cmps/home-banner.cmp.vue";
 import spaceHeader from "@/cmps/space-header.cmp.vue";
 // @ is an alias to /src
 
@@ -40,6 +43,8 @@ export default {
   components: {
     spaceFilter,
     spaceHeader,
+    aboutUs,
+    homeBanner
   },
   data() {
     return {
@@ -66,7 +71,7 @@ export default {
       this.$router.push(`/${filterBy}`);
     },
     bookLocation(title) {
-      this.$router.push({path:'/city',query:{city:title}});
+      this.$router.push({ path: "/city", query: { city: title } });
     },
   },
 };

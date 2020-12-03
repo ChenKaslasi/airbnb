@@ -7,7 +7,7 @@
       <div class="logo flex">
         <a href="/" class="logo flex align-center">
           <img class="logo-svg" src="../assets/icons/‏‏logo-pink.svg" />
-          <span class="txt">airbnb</span>
+          <span class="txt">HomeSeek</span>
         </a>
       </div>
 
