@@ -7,6 +7,7 @@
     >
       <popper
         class="box"
+        ref="locationBox"
         trigger="click"
         :options="{
           placement: 'bottom',
@@ -34,6 +35,7 @@
       </popper>
       <popper
         class="box"
+        ref="dateBox"
         trigger="click"
         :options="{
           placement: 'bottom',
@@ -53,6 +55,7 @@
 
       <popper
         data-name="guest"
+        ref="guestBox"
         class="box"
         trigger="click"
         :options="{
@@ -176,10 +179,7 @@ export default {
     },
 
     async filter() {
-      // const filterBy = this.filterBy;
       const {city,date,adultCount,childrenCount,infantCount,} = this.filterBy;
-
-      // this.$store.dispatch({ type: "filterSpaces", filterBy });
       await this.$router.push({
         path: "/city",
         query: {

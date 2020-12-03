@@ -24,10 +24,12 @@
 @import 'components/list-filter'; 
 @import 'components/details-checkout'; 
 @import 'components/login'; 
+@import 'components/about-us';
 
 
 // VIEWS
 @import 'views/home-page';
-@import 'views/list'; 
-@import 'views/details';
+@import 'views/list-page'; 
+@import 'views/details-page';
+@import 'views/host-page';
 
