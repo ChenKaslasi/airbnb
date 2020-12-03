@@ -100,6 +100,47 @@
         </div>
       </div>
     </div>
+    <div class="mobile-filter">
+      <button @click="toggleFilters">Filters</button>
+      <div class="filters-modal">
+        <header class="modal-header">
+          <button class="close-btn">&#10005;</button>
+          <h2>Filters</h2>
+          <button :class="checkDisabled">Clear</button>
+        </header>
+        <main class="modal-content">
+          <div class="cancel-filter">
+            <h2>Cancellation flexibility</h2>
+            <div>
+              <p>Only show stays that offer cancellation flexibility</p>
+              <el-switch
+                @change="toggleDisable"
+                v-model="filter.cancel"
+                active-color="#222222"
+                inactive-color="#717171"
+              >
+              </el-switch>
+            </div>
+          </div>
+          <div class="type-filter">
+            <label class="container">One
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <el-checkbox class="checkBox" v-model="filter.entirePlace"
+              ><h4>Entire place</h4>
+              Have a place to yourself</el-checkbox
+            >
+            <el-checkbox class="checkBox" v-model="filter.privateRoom"
+              ><h4>Private room</h4>
+              Have your own room and share some <br />
+              common spaces</el-checkbox
+            > -->
+          </div>
+        </main>
+        <footer class="modal-footer"></footer>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -110,6 +151,7 @@ export default {
   },
   data() {
     return {
+      isFiltersOpen: false,
       isPopperOpen: {
         cancel: false,
         type: false,
@@ -117,7 +159,7 @@ export default {
       },
       isDisabled: true,
       filter: {
-      cancel: false,
+        cancel: false,
         entirePlace: false,
         privateRoom: false,
         minPrice: 0,
@@ -132,6 +174,9 @@ export default {
     },
   },
   methods: {
+    toggleFilters() {
+      this.isFiltersOpen = !this.isFiltersOpen;
+    },
     emitFilter() {
       const filter = JSON.parse(JSON.stringify(this.filter));
       this.$emit("changeFilter", filter);
