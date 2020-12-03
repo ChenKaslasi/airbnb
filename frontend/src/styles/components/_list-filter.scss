@@ -1,4 +1,11 @@
 .list-filter {
+    h1 {
+        font-weight: 800;
+        font-size: rem(32px);
+        line-height: rem(36px);
+        color: #222222;
+        margin-bottom: em(30px, 32px);
+    }
     button {
         cursor: pointer;
         text-align: center;
@@ -16,6 +23,7 @@
         background-color: #ffffff;
     }
     .buttons-container {
+        display: flex;
         margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
@@ -197,7 +205,10 @@
         }
     }
     .mobile-filter {
-        // display: none;
+        display: none;
+        .filters-toggle-btn {
+            margin-bottom: 30px;
+        }
         .filters-modal {
             position: fixed;
             width: 100%;
@@ -217,7 +228,7 @@
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 1px solid rgb(235, 235, 235);
-                padding: 12px 16px;
+                padding: 10px 16px;
                 .close-btn {
                     font-size: rem(20px);
                     // position: absolute;
@@ -255,11 +266,14 @@
                 }
             }
             .modal-content {
+                color: #484848;
                 flex-grow: 1;
-                padding: 50px 24px;
+                padding: 10px 24px;
                 > * {
-                    border-top: 1px solid rgb(235, 235, 235);
-                    padding: 25px 0;
+                    padding: 18px 0;
+                }
+                div:not(:last-child) {
+                    border-bottom: 1px solid rgb(235, 235, 235);
                 }
                 p {
                     font-size: rem(14px);
@@ -267,7 +281,7 @@
                 }
                 h2 {
                     line-height: rem(23px);
-                    margin-bottom: 15px;
+                    margin-bottom: 5px;
                 }
                 .cancel-filter {
                     div {
@@ -277,6 +291,9 @@
                 }
             }
             .type-filter {
+                .container:first-child {
+                    margin-bottom: 25px;
+                }
                 .container {
                     display: block;
                     position: relative;
@@ -298,8 +315,8 @@
                 }
                 .checkmark {
                     position: absolute;
-                    display: flex;
-                    justify-content: center;
+                    // display: flex;
+                    // justify-content: center;
                     align-items: center;
                     top: 50%;
                     right: 0;
@@ -317,12 +334,15 @@
                 }
                 .checkmark:after {
                     content: "";
+                    position: absolute;
                     display: none;
                 }
                 .container input:checked ~ .checkmark:after {
                     display: block;
                 }
                 .container .checkmark:after {
+                    left: 8px;
+                    top: 3px;
                     width: 5px;
                     height: 10px;
                     border: solid white;
@@ -333,9 +353,8 @@
                 }
             }
             .price-filter {
-                border-bottom: 1px solid rgb(235, 235, 235);
                 h2 {
-                    margin-bottom: 20px;
+                    margin-bottom: 5px;
                 }
                 .input-container {
                     display: flex;
@@ -381,7 +400,7 @@
             }
             .modal-footer {
                 border-top: 1px solid rgb(235, 235, 235);
-                padding: 24px 24px;
+                padding: 14px 24px;
                 .submit-btn {
                     color: #ffffff;
                     width: 100%;
@@ -392,7 +411,32 @@
                     border: none;
                     border-radius: 8px;
                     padding: 15px;
-                    background-color: black;
+                    background: rgb(34, 34, 34);
+                    &:hover {
+                        background: rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    @include for-mobile-layout {
+        h1{
+            font-size: 26px;
+        }
+    }
+    @include for-medium-layout {
+        .mobile-filter {
+            display: block;
+        }
+        .buttons-container {
+            display: none;
+        }
+    }
+    @include for-narrow-layout {
+        .filters-modal{
+            .modal-content{
+                > * {
+                    padding: 30px 0;
                 }
             }
         }
