@@ -121,9 +121,6 @@ export default {
       this.cityName = this.$route.query.city;
     }
   },
-  created() {
-    this.setIsHomePage();
-  },
   watch: {
     $route: function () {
       this.setIsHomePage();
@@ -139,6 +136,8 @@ export default {
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);
   },
-  
+  created() {
+    this.setIsHomePage();
+  },
 };
 </script>
