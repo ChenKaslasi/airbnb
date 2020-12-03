@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="mobile-filter">
-      <button @click="toggleFilters">Filters</button>
+      <button class="filters-toggle-btn" @click="toggleFilters">Filters</button>
       <div v-show="isFiltersOpen" class="filters-modal">
         <header class="modal-header">
           <button class="close-btn" @click="toggleFilters">&#10005;</button>
