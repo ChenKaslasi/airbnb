@@ -7,6 +7,7 @@
     >
       <popper
         class="box"
+        ref="locationBox"
         trigger="click"
         :options="{
           placement: 'bottom',
@@ -34,6 +35,7 @@
       </popper>
       <popper
         class="box"
+        ref="dateBox"
         trigger="click"
         :options="{
           placement: 'bottom',
@@ -53,6 +55,7 @@
 
       <popper
         data-name="guest"
+        ref="guestBox"
         class="box"
         trigger="click"
         :options="{
@@ -221,9 +224,6 @@ export default {
     unColorSearchArea() {
       this.$refs.search.style.cssText = "background-color: #fff";
     },
-  },
-  created() {
-    setInterval(()=>console.log(this.isScrolled),2000)
   },
   computed: {
     sumGuests() {
