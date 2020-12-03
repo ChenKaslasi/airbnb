@@ -11,7 +11,7 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,20px' } },
+          modifiers: { offset: { offset: '0,15px' } },
         }"
       >
         <div class="location flex column" slot="reference">
@@ -39,7 +39,7 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,10px' } },
+          modifiers: { offset: { offset: '0,15px' } },
         }"
       >
         <div class="dates flex column" slot="reference">
@@ -60,7 +60,7 @@
         trigger="click"
         :options="{
           placement: 'bottom',
-          modifiers: { offset: { offset: '0,10px' } },
+          modifiers: { offset: { offset: '0,5px' } },
         }"
       >
         <div
