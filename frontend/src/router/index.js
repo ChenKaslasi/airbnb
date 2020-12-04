@@ -5,6 +5,7 @@ import spaceList from '../views/space-list.vue'
 import spaceDetails from '../views/space-details.vue'
 import hostPage from '../views/host-page.vue'
 import userProfile from '../views/user-profile.vue'
+import hostDashboard from '../views/host-dashboard.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,12 @@ const router = new VueRouter({
       name: 'profile',
       component: userProfile,
     },
+    {
+      path: '/host-dashboard',
+      name: 'host-dashboard',
+      component: hostDashboard,
+    },
+
     {
       path: '/:city',
       component: spaceList,

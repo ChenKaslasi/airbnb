@@ -41,9 +41,15 @@ async function addOrder(req, res) {
     res.send(order)
 }
 
+async function filterOrder(req, res) {
+    const order = await orderService.query(req.body)
+    res.send(order)
+}
+
 module.exports = {
     getOrders,
     getOrder,
+    filterOrder,
     deleteOrder,
     addOrder
 }

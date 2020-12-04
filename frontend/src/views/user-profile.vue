@@ -29,7 +29,7 @@ export default {
   },
   created() {
       this.user = this.$store.getters.loggedinUser;
-      this.setOrders(this.user._id)
+      this.setOrders({id:this.user._id})
   },
   methods: {
       async setOrders(filterBy) {
@@ -37,6 +37,7 @@ export default {
         type: "filterOrders",
         filterBy,
       });
+      console.log(this.orders);
       }
   }
 };
