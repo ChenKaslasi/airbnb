@@ -17,6 +17,13 @@
     @content;
   }
 }
+
+@mixin for-medium-layout {
+  @media (max-width: $break-medium) {
+    @content;
+  }
+}
+
 @mixin for-home-layout {
 }
 

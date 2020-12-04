@@ -1,18 +1,8 @@
 .space-list {
     padding-top: 150px;
-    h1 {
-        font-weight: 800;
-        font-size: rem(32px);
-        line-height: rem(36px);
-        color: #222222;
-        margin-bottom: em(30px, 32px);
-    }
     .card-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: 15px;
-    }
-    @include for-mobile-layout {
-        background-color: red;
     }
 }
