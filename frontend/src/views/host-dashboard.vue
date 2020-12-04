@@ -66,23 +66,23 @@
             </div>
           </div>
           <div class="earning-box">
-            <div class="earnings flex">
+            <div class="earnings flex justify-between">
               <div>April earnings</div>
-              <div>2650$</div>
+              <div class="value">2650$</div>
             </div>
-            <div class="views flex">
+            <div class="views flex justify-between">
               <div>30-day views</div>
-              <div>751</div>
+              <div class="value">751</div>
             </div>
           </div>
           <div class="reviews-box">
-            <div class="rating flex">
+            <div class="rating flex justify-between">
               <div>Overall rating</div>
-              <div>4.9 󰀄</div>
+              <div class="value">4.9 󰀄</div>
             </div>
-            <div class="reviews flex">
+            <div class="reviews flex justify-between">
               <div>Total reviews</div>
-              <div>40</div>
+              <div class="value">40</div>
             </div>
           </div>
         </div>

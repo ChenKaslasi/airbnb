@@ -122,12 +122,20 @@
         border-bottom: 1px solid #dddddd;
 
         >* {
-          
+          padding: 10px 0;
         }
       }
 
       .reviews-box {
         padding: 20px 0 ;
+
+        >* {
+          padding: 10px 0;
+        }
+      }
+
+      .value {
+        color: #31af91;
       }
 
     }
