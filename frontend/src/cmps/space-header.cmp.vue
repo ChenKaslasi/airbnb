@@ -110,7 +110,12 @@
         </div>
       </div>
     </div>
-    <login v-if="isModalOpen" :isLogin="isLogin" @close="closeModal"></login>
+    <login
+      v-if="isModalOpen"
+      :isLogin="isLogin"
+      @close="closeModal"
+      @setUser="setLoggedInUser"
+    ></login>
   </section>
 </template>
 
@@ -134,6 +139,7 @@ export default {
       isMobileSearch: false,
       headerNarrow: true,
       cityName: "Start your search",
+      loggedInUser: null,
     };
   },
   methods: {
@@ -147,7 +153,10 @@ export default {
 
       this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400;
     },
-
+    setLoggedInUser(user) {
+      this.loggedInUser = user;
+      console.log(this.loggedInUser);
+    },
     setIsHomePage() {
       this.isHomePage = this.$route.path === "/";
     },

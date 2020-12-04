@@ -36,7 +36,7 @@
       text-decoration: none;
 
       &:hover {
-        background-color: #eee;
+        background-color: rgba(238, 238, 238, 0.4);
         padding: 12px;
         border-radius: 20px;
       }
@@ -45,6 +45,7 @@
     .user-dropdown {
       transition: ease box-shadow 1s;
       position: relative;
+      padding-inline-start: 12px;
       .btn {
         padding: 0 8px 0 14px;
         border-radius: 20px;
@@ -67,7 +68,7 @@
       .login-dropdown {
         padding-top: 5px;
         padding-bottom: 5px;
-        width: 200px;
+        width: 240px;
         position: absolute;
         top: 50px;
         right: 0;
