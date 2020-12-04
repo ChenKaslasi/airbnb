@@ -11,7 +11,7 @@
         <details-calendar :space="currSpace" />
       </section>
       <section >
-        <details-checkout v-if="isMobileDisplay"  @emitClose="closeModal" :space="currSpace" />
+        <details-checkout v-if="isDesktopDisplay"  @emitClose="closeModal" :space="currSpace" />
       </section>
     </section>
 
@@ -61,21 +61,21 @@ export default {
     return {
       currSpace: null,
       isNarrowHeader: false,
-      isMobileDisplay:false,
+      isDesktopDisplay:true,
       isModalOpen:false
     };
   },
   methods: {
     checkOut(){
       console.log('lets get going');
-      this.isMobileDisplay=!this.isMobileDisplay
+      this.isDesktopDisplay=!this.isDesktopDisplay
       this.isModalOpen=!this.isModalOpen
 
     },
     closeModal(){
       console.log('emitted')
       if(this.isModalOpen){
-        this.isMobileDisplay=!this.isMobileDisplay
+        this.isDesktopDisplay=!this.isDesktopDisplay
         this.isModalOpen=!this.isModalOpen
 
         console.log(this.isModalOpen)
@@ -84,16 +84,20 @@ export default {
     },
     handleResize() {
       if (window.innerWidth > 700) {
+        console.log(window.innerWidth);
         this.isNarrowHeader = false;
-        this.isMobileDisplay = true;
+        this.isDesktopDisplay = true;
       } else {
         this.isNarrowHeader = true;
-        this.isMobileDisplay = false;
+        this.isDesktopDisplay = false;
       }
     },
   },
   created() {
-    if (window.innerWidth > 700) this.handleResize();
+    if (window.innerWidth < 700 && this.isDesktopDisplay ){
+      console.log('cond create');
+      this.handleResize();
+    } 
     const spaceId = this.$route.params.id;
     spaceService.getById(spaceId).then((space) => (this.currSpace = space));
   },
