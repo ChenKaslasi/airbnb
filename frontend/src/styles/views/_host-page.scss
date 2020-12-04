@@ -74,6 +74,7 @@
             padding: 10px 15px;
             transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
             min-width: 400px;
+            height: 60px;
             box-sizing: border-box;
           }
         }
@@ -103,5 +104,29 @@
         }
       }
     }
+  }
+}
+@include for-medium-layout{
+  .host-page{
+    .wrapper {
+      justify-content: center;
+      .text{
+        margin-bottom: 0px;
+        margin-top: 10px;
+        padding-right: 20px;
+      }
+      .form-container {
+        max-width: 400px;
+        margin-top: 30px;
+      }
+    }
+    .wrapper .form-container .form .input-container .form-input{
+      min-width: 200px !important;
+    }
+  }
+}
+@include for-medium-layout{
+  .wrapper{
+    position: absolute;
   }
 }

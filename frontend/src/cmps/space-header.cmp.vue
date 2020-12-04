@@ -151,7 +151,7 @@ export default {
         this.headerNarrow = true;
       }
 
-      this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400;
+      this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 800;
     },
     setLoggedInUser(user) {
       this.loggedInUser = user;
@@ -171,7 +171,7 @@ export default {
       this.isModalOpen = false;
     },
     toggleFilter() {
-      if (window.innerWidth > 400) {
+      if (window.innerWidth > 800) {
         this.headerNarrow = !this.headerNarrow;
       } else {
         this.isMobileSearch = !this.isMobileSearch;
@@ -202,7 +202,7 @@ export default {
     if (this.$route.query.city) {
       this.setCityName();
     }
-    if (window.innerWidth < 400) {
+    if (window.innerWidth < 800) {
       this.isScrolled = true;
     }
   },

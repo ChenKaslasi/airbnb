@@ -231,6 +231,17 @@
 }
 
 // responsive
+@include for-medium-layout {
+  .mobileSearch{
+        .search-boxes {
+          .box {
+            & :hover{
+              cursor: pointer;
+            }
+      }
+    }
+  }
+}
 
 @include for-mobile-layout {
   .mobileSearch {
@@ -278,8 +289,10 @@
       }
 
       .search-boxes {
+        
 
         .box {
+         
           padding: 8px 16px 8px 6px;
 
           .image {
@@ -366,7 +379,7 @@
     .banner-content {
       height: 180px !important;
       p {
-        padding-left: 0px;
+        padding-left: 0px !important;
 
       }
     }
