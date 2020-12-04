@@ -3,6 +3,7 @@
     <space-header />
     <header>
       <h1>Trips</h1>
+      <pre>{{orders}}</pre>
     </header>
     <main>
       <!-- <ul class="card-container">
@@ -24,7 +25,7 @@ export default {
   data() {
       return {
           user : null,
-          orders:[]
+          orders:null
       }
   },
   created() {
@@ -33,11 +34,11 @@ export default {
   },
   methods: {
       async setOrders(filterBy) {
+        console.log('filterBy from user-profile cmp : ',filterBy);
            this.orders = await this.$store.dispatch({
         type: "filterOrders",
         filterBy,
       });
-      console.log(this.orders);
       }
   }
 };

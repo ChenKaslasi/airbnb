@@ -7,7 +7,21 @@ async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
     const collection = await dbService.getCollection('order')
     try {
-        const orders = await collection.find(criteria).toArray();
+        // var orders = await collection.find(criteria).toArray();
+        var orders = await collection.find(criteria)
+        orders = await collection.aggregate([
+            {
+                $lookup:
+                {
+                    from: 'space',
+                    localField: '_id',
+                    foreignField: 'spaceId',
+                    as: 'space'
+                }
+            }
+        ]).toArray()
+
+
         return orders
     } catch (err) {
         console.log('ERROR: cannot find orders')

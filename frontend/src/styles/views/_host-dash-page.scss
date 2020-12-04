@@ -1,5 +1,5 @@
 .hostpage-container {
-  margin-top: 100px;
+  margin-top: 120px;
   padding: 0 40px;
   align-items: flex-start;
 
@@ -19,7 +19,7 @@
       }
 
       .bottom {
-        color: #606266
+        color: #606266;
       }
     }
 
@@ -51,11 +51,15 @@
             font-size: 16px;
             color: #fd8e66;
             font-weight: bold;
+
+            span {
+              text-transform: capitalize;
+            }
           }
 
           .expiry {
             line-height: 20px;
-            font-size: 16px;
+            font-size: 14px;
           }
 
           .desc {
@@ -83,7 +87,7 @@
     color: #484848;
 
     .summary-title {
-      font-size: 26px;
+      font-size: 22px;
       font-family: Circular-bold;
       margin-bottom: 20px;
     }

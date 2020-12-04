@@ -114,6 +114,7 @@ export default {
       order: {
         createdAt: Date.now(),
         userId: null,
+        userName: null,
         spaceId: "",
         status: null,
         totalPrice: null,
@@ -138,7 +139,6 @@ export default {
       };
 
       var x = priceByNights.toLocaleString("en-US", locale);
-      console.log(x);
       return x;
     },
     priceForDisplay() {
@@ -155,7 +155,6 @@ export default {
   },
   methods: {
     emitClose(){
-      console.log('heya')
       this.$emit('emitClose')
     },
     updateNight(num) {
@@ -179,7 +178,6 @@ export default {
         return (this.isCheckingOut = true);
       }
       if (this.isCheckingOut) {
-        console.log("on track");
         this.addOrder(this.space._id);
         this.isCheckingOut = !this.isCheckingOut;
         this.$refs.btnTxt.innerHTML = "Reserved!";
@@ -190,6 +188,7 @@ export default {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
       order.status = "accepted!";
+      order.user = JSON.parse(sessionStorage.user);
       order.totalPrice = this.priceForDisplay;
       order.nights = this.getDates;
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
@@ -210,15 +209,12 @@ export default {
         guests: this.adultCount + this.childrenCount + this.infantCount,
       };
       const updateSpace=JSON.parse(JSON.stringify(this.space))
-      console.log(updateSpace)
-      console.log(orderMini, "MINI");
       if(!updateSpace.orders){
         updateSpace.orders=[]
         updateSpace.orders.push(orderMini)
       }else{
         updateSpace.orders.push(orderMini)  
       }
-      console.log('UPDATE SPACE------',updateSpace)
       this.$store.dispatch({
         type: "updateSpace",
         updatedSpace: updateSpace,

@@ -5,6 +5,7 @@ export default {
   remove,
   getById,
   query,
+  filter
 }
 function getById(orderId) {
   return httpService.get(`order/${orderId}`)
@@ -19,4 +20,8 @@ function add(order) {
 
 function query() {
     return httpService.get('order')
+}
+
+function filter(userId={}){
+  return httpService.post('order/filter',userId)
 }

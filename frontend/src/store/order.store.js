@@ -9,12 +9,10 @@ export const orderStore = {
         ordersForDisplay(state) {
             return state.orders;
         },
-        
     },
     mutations: {
         setOrders(state, {orders}) {
             state.orders = orders;
-            console.log(state.orders,'state orders')
         },
         setCurrorder(state,{order}) {
             state.currOrder = order;
@@ -39,10 +37,9 @@ export const orderStore = {
             context.commit({type: 'removeOrder', orderId})
         },
         
-        async filterOrders(context,{filterBy}) {
-            const orders = await orderService.query(filterBy);
+        async filterOrders(context,{userId}) {
+            let orders = await orderService.filter(userId);
             context.commit({type:'setOrders', orders})
         },
     },
-    
 }

@@ -4,16 +4,40 @@
     <section class="hostpage-container main-content flex">
       <div class="reservation">
         <div class="reservation-title">
-          <div class="top">Pending</div>
-          <div class="bottom"><span>5 new items ; 87% response rate</span></div>
+          <div class="top">Pending / Accepted</div>
+          <div class="bottom">
+            <span
+              >{{ orders.length }} new items · {{ getResponseRate }} response
+              rate</span
+            >
+          </div>
         </div>
         <div class="reservation-boxes">
-          <div class="box flex">
+          <div class="box flex" v-for="(order, idx) in orders" :key="idx">
             <div class="image">
-              <img src="https://a0.muscache.com/im/pictures/user/7b1ee769-b250-4160-930f-96f89c5b4db0.jpg?im_w=240"/>
+              <img src="../assets/icons/guest.svg" />
             </div>
             <div class="txt">
-              <div class="name">Request ; Elise</div>
+              <div class="name">
+                Request <span>{{ order.user.username }}</span>
+              </div>
+              <div class="expiry">Expires in 12 hours</div>
+              <div class="desc">
+                {{ order.guests }} {{ order.guests > 1 ? "guests" : "guest" }} ·
+                {{ getDates(order.dates) }} · {{ order.space.name }}
+              </div>
+            </div>
+            <div class="responed">Panding</div>
+          </div>
+
+          <div class="box flex">
+            <div class="image">
+              <img
+                src="https://a0.muscache.com/im/pictures/user/7b1ee769-b250-4160-930f-96f89c5b4db0.jpg?im_w=240"
+              />
+            </div>
+            <div class="txt">
+              <div class="name">Request · Elise</div>
               <div class="expiry">Expires in 2 hours</div>
               <div class="desc">
                 3 guests ; june 21 - june 23 ; stylish Russian Hill APartment
@@ -23,7 +47,9 @@
           </div>
           <div class="box flex">
             <div class="image">
-              <img src="https://a0.muscache.com/im/pictures/user/dd24ff7d-8c11-4038-9ece-17142238410b.jpg?im_w=240" />
+              <img
+                src="https://a0.muscache.com/im/pictures/user/dd24ff7d-8c11-4038-9ece-17142238410b.jpg?im_w=240"
+              />
             </div>
             <div class="txt">
               <div class="name">Request ; Ciela</div>
@@ -36,7 +62,9 @@
           </div>
           <div class="box flex">
             <div class="image">
-              <img src="https://a0.muscache.com/im/pictures/user/63834664-93e1-4048-a06d-34fe490b3c3e.jpg?im_w=240" />
+              <img
+                src="https://a0.muscache.com/im/pictures/user/63834664-93e1-4048-a06d-34fe490b3c3e.jpg?im_w=240"
+              />
             </div>
             <div class="txt">
               <div class="name">Request ; Sabrisa</div>
@@ -52,17 +80,17 @@
       <div class="hosting-summary">
         <div class="summary-title">Hosting summary</div>
         <div class="summary-boxes">
-          <div class="job-box flex justify-between"> 
+          <div class="job-box flex justify-between">
             <div class="txt">
-            <div class="top">Fantastic job ! </div>
-            <div class="bottom">
-              <p>Guests love what you're doing.</p>
-              <p>keep up the great work ! </p>
-            </div>
-            <div class="details">View details</div>
+              <div class="top">Fantastic job !</div>
+              <div class="bottom">
+                <p>Guests love what you're doing.</p>
+                <p>keep up the great work !</p>
+              </div>
+              <div class="details">View details</div>
             </div>
             <div class="image">
-              <img src="../assets/icons/checkmark.svg">
+              <img src="../assets/icons/checkmark.svg" />
             </div>
           </div>
           <div class="earning-box">
@@ -87,21 +115,67 @@
           </div>
         </div>
       </div>
+      <!-- {{this.orders}} -->
     </section>
   </section>
 </template>
 
 <script>
+import spaceService from "../services/space.service.js";
 import spaceHeader from "../cmps/space-header.cmp.vue";
+import moment from "moment";
 export default {
   components: {
     spaceHeader,
+  },
+  data() {
+    return {
+      username: null,
+      orders: [],
+    };
+  },
+  methods: {
+    getDates(dates) {
+      return `${moment(Date(dates.checkIn)).format("ll")} - ${moment(
+        Date(dates.checkOut)
+      ).format("ll")}`;
+    },
+    getSpaceName(spaceId) {
+      console.log(spaceId);
+      return spaceService.getById(spaceId);
+    },
+  },
+  computed: {
+    getResponseRate() {
+      const approved = this.orders.filter((order) =>
+        order.status.includes("accepted")
+      );
+      const responseRate = `${(
+        (approved.length / this.orders.length) *
+        100
+      ).toFixed(0)}%`;
+      return responseRate;
+    },
+  },
+  async created() {
+    const activeUser = JSON.parse(sessionStorage.user) ;
+    this.username = activeUser.username; //get user name
+    const userId = { id: activeUser._id };
+    await this.$store.dispatch({
+      type: "filterOrders",
+      userId,
+    });
+    this.orders = await JSON.parse(
+      JSON.stringify(this.$store.getters.ordersForDisplay)
+    );
+    this.orders.forEach(async function (order) {
+      order.space = await spaceService.getById(order.spaceId);
+    });
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
 </style>>
 
 

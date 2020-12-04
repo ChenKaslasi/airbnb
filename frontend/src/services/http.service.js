@@ -15,7 +15,6 @@ export default {
         return ajax(endpoint, 'GET', data)
     },
     post(endpoint, data){
-        console.log('IN HTTP',data);
         return ajax(endpoint, 'POST', data)
     },
     put(endpoint, data){
@@ -35,7 +34,6 @@ async function ajax(endpoint, method='get', data=null) {
             method,
             data
         })
-        console.log(res.data,'RES 39!!')
         return res.data;
     } catch (err) {
         if (err.response.status === 401) {
