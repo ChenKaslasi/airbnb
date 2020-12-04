@@ -1,7 +1,23 @@
 <template>
   <section class="space-preview card">
     <div class="ratio-list">
-      <el-carousel class="carousel" trigger="click" :autoplay="false">
+      <el-carousel
+        v-if="isNormal"
+        class="carousel"
+        trigger="click"
+        :autoplay="false"
+      >
+        <el-carousel-item v-for="(img, idx) in space.imgs" :key="idx">
+          <img :src="img" />
+        </el-carousel-item>
+      </el-carousel>
+      <el-carousel
+        v-if="isNarrow"
+        class="carousel"
+        trigger="click"
+        :autoplay="false"
+        arrow="always"
+      >
         <el-carousel-item v-for="(img, idx) in space.imgs" :key="idx">
           <img :src="img" />
         </el-carousel-item>
@@ -27,6 +43,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isNarrow: false,
+      isNormal: false,
+    };
+  },
   props: {
     space: Object,
   },
@@ -43,6 +65,27 @@ export default {
     numOfReviewers() {
       return this.space.reviews.length;
     },
+  },
+  created() {
+    this.handleResize();
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth < 700) {
+        this.isNarrow = true;
+        this.isNormal = false;
+      }
+      if (window.innerWidth > 700) {
+        this.isNarrow = false;
+        this.isNormal = true;
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResize);
   },
 };
 </script>
