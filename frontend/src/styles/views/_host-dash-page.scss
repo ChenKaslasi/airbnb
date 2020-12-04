@@ -1,6 +1,7 @@
 .hostpage-container {
   margin-top: 100px;
   padding: 0 40px;
+  align-items: flex-start;
 
   .reservation {
     flex: 2;
@@ -76,28 +77,59 @@
 
   .hosting-summary {
     flex: 1;
-    border: 1px solid black;
+    border: 1px solid #dddddd;
     padding: 30px 20px;
     padding-top: 20px;
+    color: #484848;
 
     .summary-title {
-      color: #484848;
       font-size: 26px;
       font-family: Circular-bold;
       margin-bottom: 20px;
     }
 
-    .summery-boxes {
+    .summary-boxes {
       .job-box {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dddddd;
         .txt {
+          .top {
+            font-size: 16px;
+            font-family: Circular-bold;
+            line-height: 22px;
+            margin-bottom: 6px;
+            color: #484848;
+            letter-spacing: 0.07px;
+          }
+          .bottom {
+            line-height: 20px;
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
         }
-        // Stoped here -Image does not render!
+
         .image {
+          width: 40px;
+
           img {
-            width: 24px
+            width: 100%
           }
         }
       }
+
+      .earning-box {
+        padding: 20px 0 ;
+        border-bottom: 1px solid #dddddd;
+
+        >* {
+          
+        }
+      }
+
+      .reviews-box {
+        padding: 20px 0 ;
+      }
+
     }
   }
 }

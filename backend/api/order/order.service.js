@@ -52,7 +52,6 @@ async function add(order) {
 
 function _buildCriteria(filterBy) {
     if (filterBy) {
-        console.log(filterBy);
         return { "userId" : filterBy.id}
     }
 }

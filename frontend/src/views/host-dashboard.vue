@@ -19,7 +19,7 @@
                 3 guests ; june 21 - june 23 ; stylish Russian Hill APartment
               </div>
             </div>
-            <div class="responed">Respond</div>
+            <div class="responed">Accepted</div>
           </div>
           <div class="box flex">
             <div class="image">
@@ -32,7 +32,7 @@
                 2 guests ; june 25 - june 27 ; stylish Russian Hill APartment
               </div>
             </div>
-            <div class="responed">Respond</div>
+            <div class="responed">Accepted</div>
           </div>
           <div class="box flex">
             <div class="image">
@@ -45,19 +45,19 @@
                 3 guests ; june 29 - june 30 ; stylish Russian Hill APartment
               </div>
             </div>
-            <a class="responed">Respond</a>
+            <a class="responed">Accepted</a>
           </div>
         </div>
       </div>
       <div class="hosting-summary">
         <div class="summary-title">Hosting summary</div>
         <div class="summary-boxes">
-          <div class="job-box"> 
-            <!-- Stoped here -Image does not render! -->
+          <div class="job-box flex justify-between"> 
             <div class="txt">
-            <div class="top">Fantastic job</div>
+            <div class="top">Fantastic job ! </div>
             <div class="bottom">
-              Guests love what you're doing. keep up the great work
+              <p>Guests love what you're doing.</p>
+              <p>keep up the great work ! </p>
             </div>
             <div class="details">View details</div>
             </div>
@@ -66,21 +66,21 @@
             </div>
           </div>
           <div class="earning-box">
-            <div class="earnings">
+            <div class="earnings flex">
               <div>April earnings</div>
               <div>2650$</div>
             </div>
-            <div class="views">
+            <div class="views flex">
               <div>30-day views</div>
               <div>751</div>
             </div>
           </div>
           <div class="reviews-box">
-            <div class="rating">
+            <div class="rating flex">
               <div>Overall rating</div>
               <div>4.9 󰀄</div>
             </div>
-            <div class="reviews">
+            <div class="reviews flex">
               <div>Total reviews</div>
               <div>40</div>
             </div>
