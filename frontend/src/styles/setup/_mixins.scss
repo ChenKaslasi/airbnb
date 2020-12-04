@@ -23,6 +23,11 @@
     @content;
   }
 }
+@mixin for-medium-break-layout {
+  @media (max-width: $break-medium-large) {
+    @content;
+  }
+}
 
 @mixin for-home-layout {
 }
@@ -34,6 +39,11 @@
 }
 
 @mixin for-wide-layout {
+  @media (min-width: $break-wide) {
+    @content;
+  }
+}
+@mixin for-wide-large-layout {
   @media (min-width: $break-wide) {
     @content;
   }

@@ -365,6 +365,10 @@
 
     .banner-content {
       height: 180px !important;
+      p {
+        padding-left: 0px;
+
+      }
     }
 
     .banner-content2 {
@@ -390,6 +394,165 @@
   }
 
 }
+@include for-medium-layout {
+  .mobileSearch {
+    height: 100vh !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px !important;
+
+    .content {
+      align-items: initial;
+    }
+
+    .search {
+      position: relative !important;
+      top: initial;
+      left: initial;
+      transform: none;
+      padding-top: 40px;
+      width: 100%;
+
+
+      .search-bar {
+        margin-bottom: 20px;
+
+        input {
+          font-family: Circular;
+          padding-inline-start: 12px;
+          padding-inline-end: 36px;
+          line-height: 20px;
+          font-size: 16px;
+          border: 0px;
+
+          &:focus {
+            border: none;
+            outline: none !important;
+          }
+        }
+
+        .back-btn {
+          width: 16px;
+
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .search-boxes {
+
+        .box {
+          padding: 8px 16px 8px 6px;
+
+          .image {
+            width: 48px;
+            margin-inline-end: 16px;
+
+            img {
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+
+          .txt {
+            .top {
+              font-size: 16px;
+              line-height: 20px;
+            }
+
+            .bottom {
+              font-size: 12px;
+              line-height: 16px;
+              color: rgb(113, 113, 113)
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .logo {
+    display: none !important;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .filter-container {
+    display: none;
+  }
+
+  .about-header {
+    text-align: left !important;
+  }
+
+  .hero {
+    object-fit: cover;
+    width: 100vw;
+
+    .h1-container {
+      line-height: initial;
+      justify-content: flex-end;
+      padding-bottom: 40px !important;
+
+      h1 {
+        line-height: 60px;
+        font-size: 50px;
+        padding: 0px;
+
+      }
+    }
+  }
+
+  .txt-container {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .desc-airbnb,
+    .desc-hosting {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  .home-banner {
+    margin-top: 0px !important;
+    height: initial !important;
+
+    .banner-content {
+      height: 180px !important;
+    }
+
+    .banner-content2 {
+      display: none !important;
+    }
+
+    button {
+      position: absolute;
+      bottom: 40px;
+      right: 30px;
+      padding: 9px 16px !important;
+      width: initial !important;
+      border-radius: 8px !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      margin-top: 0px !important;
+    }
+
+    h2 {
+      font-size: 22px !important;
+      line-height: 30px;
+    }
+  }
+
+}
+
 
 .card-container {
 
