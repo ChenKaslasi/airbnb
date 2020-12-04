@@ -1,6 +1,6 @@
 .header-container {
   height: 80px;
-  box-shadow: 0px 9px 14px -9px #2222;
+  box-shadow: 0px 9px 14px -9px #2222 ;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -182,8 +182,6 @@
 // Dynamic class
 
 .homePageDisplay {
-  box-shadow: none !important;
-
   .search {
     display: none;
   }
@@ -206,8 +204,13 @@
   }
 }
 
+.noShadow {
+  box-shadow: none !important;
+}
+
 .scrollDisplay {
   background-color: #fff;
+  
 
   .search {
     display: block;

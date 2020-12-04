@@ -5,6 +5,7 @@
       scrollDisplay: isScrolled,
       homePageDisplay: isHomePage,
       mobileSearch: isMobileSearch,
+      noShadow: !isScrolled,
     }"
   >
     <div class="content flex align-center justify-between">
@@ -22,7 +23,8 @@
           v-if="headerNarrow"
         >
           <button v-if="!isMobileSearch" class="btn flex align-center">
-            <div class="txt">{{ cityName }}</div>
+            <div v-if="cityName" class="txt">{{ cityName }}</div>
+            <div v-else class="txt">{{ "Start your search" }}</div>
             <div class="search-icon">
               <img src="../assets/icons/search_m.svg" />
             </div>
@@ -35,13 +37,15 @@
 
         <div class="mobile-search" v-if="isMobileSearch">
           <div class="search-bar flex">
-            <div ref="backBtn" class="back-btn" @click="toggleMobileSearch"><img src="../assets/icons/back-btn-mobile.svg"></div>
-            <input type="text" placeholder="Where are you going?">
+            <div ref="backBtn" class="back-btn" @click="toggleMobileSearch">
+              <img src="../assets/icons/back-btn-mobile.svg" />
+            </div>
+            <input type="text" placeholder="Where are you going?" />
           </div>
           <div class="search-boxes">
             <div @click="selectCity('Barcelona')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-1.jpg" >
+                <img src="../assets/img/mobile-city-bgc-1.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">Barcelona</div>
@@ -50,7 +54,7 @@
             </div>
             <div @click="selectCity('New York')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-2.jpg" >
+                <img src="../assets/img/mobile-city-bgc-2.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">New York</div>
@@ -59,7 +63,7 @@
             </div>
             <div @click="selectCity('Sydney')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-3.jpg" >
+                <img src="../assets/img/mobile-city-bgc-3.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">Sydney</div>
@@ -70,7 +74,12 @@
         </div>
       </div>
 
-      <div @click="toggleFilter" v-if="!headerNarrow" class="overlay"></div>
+      <div
+        ref="overlayEl"
+        @click="toggleFilter"
+        v-if="!headerNarrow"
+        class="overlay"
+      ></div>
 
       <div class="link-container flex">
         <a class="explore" href="/#/Barcelona">Explore</a>
@@ -160,7 +169,7 @@ export default {
       }
     },
     toggleMobileSearch() {
-      this.isMobileSearch = !this.isMobileSearch ;
+      this.isMobileSearch = !this.isMobileSearch;
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
@@ -169,9 +178,9 @@ export default {
       this.cityName = this.$route.query.city;
     },
     selectCity(cityName) {
-       this.$router.push({path: "/city", query: {city: cityName}});
+      this.$router.push({ path: "/city", query: { city: cityName } });
       this.$refs.backBtn.click();
-    }
+    },
   },
   watch: {
     $route: function () {

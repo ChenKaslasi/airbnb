@@ -1,6 +1,7 @@
 <template>
   <section class="list-filter">
-    <h1>Stays in {{ space.city }}</h1>
+    <h1 v-if="space.city">Stays in {{ space.city }}</h1>
+    <h1 v-else>Places to stay for you</h1>
     <div class="buttons-container">
       <div class="btn-container">
         <button @click="togglePopper('cancel')">
