@@ -218,8 +218,5 @@
         border: none;
       }
     }
-    @include for-mobile-layout{
-      display: none;
-      background-color: cadetblue;
-    }
+    
   }

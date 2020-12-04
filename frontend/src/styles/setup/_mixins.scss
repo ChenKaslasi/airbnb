@@ -32,6 +32,11 @@
   }
 }
 
+@mixin for-normal-details{
+  @media (max-width: $break-normal) {
+    @content;
+  }
+}
 /* Media  Mixins */
 
 // aspect ratio mixin
