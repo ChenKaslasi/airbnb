@@ -4,7 +4,7 @@ export default {
   add,
   remove,
   getById,
-  query
+  query,
 }
 function getById(orderId) {
   return httpService.get(`order/${orderId}`)
@@ -20,5 +20,3 @@ function add(order) {
 function query() {
     return httpService.get('order')
 }
-
- 
