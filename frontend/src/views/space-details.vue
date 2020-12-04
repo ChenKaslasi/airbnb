@@ -92,9 +92,12 @@ export default {
     },
   },
   created() {
-    if (window.innerWidth > 700) this.handleResize();
     const spaceId = this.$route.params.id;
     spaceService.getById(spaceId).then((space) => (this.currSpace = space));
+    if (window.innerWidth < 700){
+      console.log('bigger than 700');
+      this.handleResize();
+    } 
   },
   mounted() {
     window.addEventListener("resize", this.handleResize);
