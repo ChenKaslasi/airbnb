@@ -1,7 +1,7 @@
 <template>
-  <section class="checkout-container">
-    <div class="checkout-card">
-      <section class="aligner" v-if="space">
+  <section class="checkout-container"  @click="emitClose" >
+    <div class="checkout-card" @click.stop>
+      <section class="aligner" v-if="space" >
         <div class="checkout-header flex">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>
           <!-- {{range}} -->
@@ -154,6 +154,10 @@ export default {
     },
   },
   methods: {
+    emitClose(){
+      console.log('heya')
+      this.$emit('emitClose')
+    },
     updateNight(num) {
       this.nights = num;
     },
