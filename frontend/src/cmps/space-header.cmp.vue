@@ -35,13 +35,15 @@
 
         <div class="mobile-search" v-if="isMobileSearch">
           <div class="search-bar flex">
-            <div ref="backBtn" class="back-btn" @click="toggleMobileSearch"><img src="../assets/icons/back-btn-mobile.svg"></div>
-            <input type="text" placeholder="Where are you going?">
+            <div ref="backBtn" class="back-btn" @click="toggleMobileSearch">
+              <img src="../assets/icons/back-btn-mobile.svg" />
+            </div>
+            <input type="text" placeholder="Where are you going?" />
           </div>
           <div class="search-boxes">
             <div @click="selectCity('Barcelona')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-1.jpg" >
+                <img src="../assets/img/mobile-city-bgc-1.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">Barcelona</div>
@@ -50,7 +52,7 @@
             </div>
             <div @click="selectCity('New York')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-2.jpg" >
+                <img src="../assets/img/mobile-city-bgc-2.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">New York</div>
@@ -59,7 +61,7 @@
             </div>
             <div @click="selectCity('Sydney')" class="box flex">
               <div class="image">
-                <img src="../assets/img/mobile-city-bgc-3.jpg" >
+                <img src="../assets/img/mobile-city-bgc-3.jpg" />
               </div>
               <div class="txt flex column justify-center">
                 <div class="top">Sydney</div>
@@ -101,7 +103,12 @@
         </div>
       </div>
     </div>
-    <login v-if="isModalOpen" :isLogin="isLogin" @close="closeModal"></login>
+    <login
+      v-if="isModalOpen"
+      :isLogin="isLogin"
+      @close="closeModal"
+      @setUser="setLoggedInUser"
+    ></login>
   </section>
 </template>
 
@@ -125,6 +132,7 @@ export default {
       isMobileSearch: false,
       headerNarrow: true,
       cityName: "Start your search",
+      loggedInUser: null,
     };
   },
   methods: {
@@ -138,7 +146,10 @@ export default {
 
       this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 400;
     },
-
+    setLoggedInUser(user) {
+      this.loggedInUser = user;
+      console.log(this.loggedInUser);
+    },
     setIsHomePage() {
       this.isHomePage = this.$route.path === "/";
     },
@@ -160,7 +171,7 @@ export default {
       }
     },
     toggleMobileSearch() {
-      this.isMobileSearch = !this.isMobileSearch ;
+      this.isMobileSearch = !this.isMobileSearch;
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
@@ -169,9 +180,9 @@ export default {
       this.cityName = this.$route.query.city;
     },
     selectCity(cityName) {
-       this.$router.push({path: "/city", query: {city: cityName}});
+      this.$router.push({ path: "/city", query: { city: cityName } });
       this.$refs.backBtn.click();
-    }
+    },
   },
   watch: {
     $route: function () {

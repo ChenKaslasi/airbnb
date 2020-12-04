@@ -65,6 +65,7 @@ export default {
         type: this.isLogin ? "login" : "signup",
         userCred: this.user,
       });
+      this.$emit('setUser', res)
       if (res.err) {
         console.log("err", res.err);
       }
