@@ -52,12 +52,18 @@
       <div class="hosting-summary">
         <div class="summary-title">Hosting summary</div>
         <div class="summary-boxes">
-          <div class="job-box">
+          <div class="job-box"> 
+            <!-- Stoped here -Image does not render! -->
+            <div class="txt">
             <div class="top">Fantastic job</div>
             <div class="bottom">
               Guests love what you're doing. keep up the great work
             </div>
             <div class="details">View details</div>
+            </div>
+            <div class="image">
+              <img src="../assets/icons/checkmark.svg">
+            </div>
           </div>
           <div class="earning-box">
             <div class="earnings">

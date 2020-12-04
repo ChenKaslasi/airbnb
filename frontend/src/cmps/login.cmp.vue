@@ -14,7 +14,7 @@
             <div class="input-container">
               <div v-if="!isLogin" class="username-container">
                 <input
-                  v-model="user.username"
+                  v-model="user.fullName"
                   type="text"
                   placeholder="Username"
                 />
@@ -44,7 +44,7 @@ export default {
   data() {
     return {
       user: {
-        username: "",
+        fullName: "",
         email: "",
         password: "",
       },
@@ -54,7 +54,7 @@ export default {
   methods: {
     async sendUserCred() {
       if (
-        (!this.isLogin && !this.user.username) ||
+        (!this.isLogin && !this.user.fullName) ||
         !this.user.password ||
         !this.user.email
       ) {

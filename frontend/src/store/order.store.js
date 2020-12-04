@@ -43,7 +43,6 @@ export const orderStore = {
             const orders = await orderService.query(filterBy);
             context.commit({type:'setOrders', orders})
         },
-
     },
     
 }

@@ -1,6 +1,6 @@
 const express = require('express')
 const {requireAuth, requireAdmin} = require('../../middlewares/requireAuth.middleware')
-const {addOrder, getOrders, getOrder, deleteOrder} = require('./order.controller')
+const {addOrder, getOrders, getOrder,filterOrder, deleteOrder} = require('./order.controller')
 const router = express.Router()
 
 // middleware that is specific to this router
@@ -10,6 +10,7 @@ router.get('/', getOrders)
 router.get('/:id', getOrder)
 // router.post('/',  requireAuth, addOrder)
 router.post('/', addOrder)
+router.post('/filter', filterOrder)
 router.delete('/:id',  requireAuth, deleteOrder)
 
 module.exports = router

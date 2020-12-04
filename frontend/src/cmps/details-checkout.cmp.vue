@@ -113,7 +113,7 @@ export default {
       isDisabled: false,
       order: {
         createdAt: Date.now(),
-        userId: "",
+        userId: null,
         spaceId: "",
         status: null,
         totalPrice: null,
@@ -195,6 +195,7 @@ export default {
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
       order.dates.checkIn = this.range.start;
       order.dates.checkOut = this.range.end;
+      order.userId = this.$store.getters.loggedinUser._id;
       this.$store.dispatch({
         type: "addOrder",
         order: order,

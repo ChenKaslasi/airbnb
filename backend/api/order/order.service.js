@@ -51,8 +51,10 @@ async function add(order) {
 }
 
 function _buildCriteria(filterBy) {
-    const criteria = {};
-    return criteria;
+    if (filterBy) {
+        console.log(filterBy);
+        return { "userId" : filterBy.id}
+    }
 }
 
 module.exports = {
