@@ -745,15 +745,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 .svg-trip {
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(221, 221, 221);;
 }
 .order-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
-  justify-content: space-between;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // max-width: 1100px;
+  // margin: 0 auto;
+  // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 15px;
+
   .order-card {
     max-width: 330px;
     width: 100%;

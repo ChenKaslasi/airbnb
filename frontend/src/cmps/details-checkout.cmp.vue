@@ -149,7 +149,8 @@ export default {
       return this.space.price * this.getDates;
     },
     ratingForDisplay() {
-      return this.space.reviewScores.rating / 2;
+      return this.space.reviewScores.rating / 20;
+      // return this.space.reviewScores.rating ;
     },
     getDates() {
       const day = 24 * 60 * 60 * 1000;
