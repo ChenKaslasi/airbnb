@@ -15,7 +15,7 @@ export const orderStore = {
     mutations: {
         setOrders(state, { orders }) {
             console.log('orders!!', orders);
-            state.orders = orders.filter(order => order.userId === localLoggedinUser._id);
+            state.orders = orders
         },
         // filterOrderProfile(state, { orders }) {
         //     console.log(orders[0].userId);
