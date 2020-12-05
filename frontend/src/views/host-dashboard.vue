@@ -173,6 +173,7 @@ export default {
     this.orders = await JSON.parse(
       JSON.stringify(this.$store.getters.ordersForDisplay)
     );
+    this.orders.reverse();
     this.orders.forEach(async function (order) {
       order.space = await spaceService.getById(order.spaceId);
     });

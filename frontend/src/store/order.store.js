@@ -27,7 +27,7 @@ export const orderStore = {
             state.currOrder = order;
         },
         addOrder(state, { order }) {
-            state.orders.push(order)
+            state.orders.unshift(order)
         },
         removeOrder(state, { orderId }) {
             state.orders = state.orders.filter(order => order._id !== orderId)
