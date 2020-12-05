@@ -8,10 +8,10 @@
         <details-summery :space="currSpace" />
         <details-description :space="currSpace" />
         <details-amenity :space="currSpace" />
-        <details-calendar :space="currSpace" />
+        <details-calendar :space="currSpace" @emitDates="setDates" />
       </section>
       <section >
-        <details-checkout v-if="isDesktopDisplay"  @emitClose="closeModal" :space="currSpace" />
+        <details-checkout v-if="isDesktopDisplay"  @emitClose="closeModal" :space="currSpace" :dates="currDates" />
       </section>
     </section>
 
@@ -62,7 +62,8 @@ export default {
       currSpace: null,
       isNarrowHeader: false,
       isDesktopDisplay:true,
-      isModalOpen:false
+      isModalOpen:false,
+      currDates: {start: null, end: null}
     };
   },
   methods: {
@@ -79,7 +80,6 @@ export default {
         this.isModalOpen=!this.isModalOpen
 
         console.log(this.isModalOpen)
-
       }
     },
     handleResize() {
@@ -92,6 +92,10 @@ export default {
         this.isDesktopDisplay = false;
       }
     },
+    setDates({ start, end }) {
+      this.currDates.start = start
+      this.currDates.end = end
+    }, 
   },
   created() {
     if (window.innerWidth < 700 && this.isDesktopDisplay ){

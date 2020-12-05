@@ -11,7 +11,6 @@ export const spaceStore = {
         spacesForDisplay(state) {
             if (!state.filterBy) return state.spaces;
             var { cancel, entirePlace, privateRoom, minPrice, maxPrice } = state.filterBy;
-            console.log(cancel);
             cancel = (cancel) ? 'flexible' : '';
             const type = (entirePlace && privateRoom) ? '' : (entirePlace && !privateRoom) ? 'Entire place' : (!entirePlace && privateRoom) ? 'Private room' : '';
             if (!maxPrice) maxPrice = Infinity
@@ -41,7 +40,6 @@ export const spaceStore = {
             state.spaces = state.spaces.filter(space => space._id !== spaceId)
         },
         updateSpace(state, space) {
-            console.log('updating in store mutation!! ', space)
             const idx = state.spaces.findIndex(currSpace => currSpace._id === space._id)
             state.spaces.splice(idx, 1, space)
         }
@@ -68,7 +66,6 @@ export const spaceStore = {
             context.commit({ type: 'setSpaces', spaces })
         },
         async updateSpace({ commit }, { updatedSpace }) {
-            console.log(updatedSpace, 'space!!');
             await spaceService.update(updatedSpace)
             commit({
                 type: 'updateSpace',

@@ -210,6 +210,8 @@ export default {
     setDates({ start, end }) {
       this.filterBy.date.start = moment(start).format("L");
       this.filterBy.date.end = moment(end).format("L");
+
+      
     },
     colorSearchArea(ev) {
       const data = ev.target.getAttribute("data-name");

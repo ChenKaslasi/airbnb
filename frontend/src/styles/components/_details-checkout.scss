@@ -121,6 +121,7 @@
     justify-content: center;
     border: none;
     height: 95%;
+    max-width: 380px;
   
     .checkout-card {
       position: sticky;
@@ -159,7 +160,7 @@
         margin-top: 35px;
         color: #ffffff;
         width: 100%;
-        line-height: 20px !important;
+        line-height: 14px !important;
         font-weight: 600 !important;
         font-size: 18px;
         outline: none !important;
