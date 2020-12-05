@@ -130,7 +130,7 @@ export default {
       },
       range: {
         start: new Date().getTime(),
-        end:  new Date().setDate(new Date().getDate() + 3),
+        end:  new Date().setDate(new Date().getDate() + 1),
       },
     };
   },

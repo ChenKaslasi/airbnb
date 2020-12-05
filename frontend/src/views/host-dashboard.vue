@@ -136,8 +136,8 @@ export default {
   },
   methods: {
     getDates(dates) {
-      return `${moment(Date(dates.checkIn)).format("ll")} - ${moment(
-        Date(dates.checkOut)
+      return `${moment((dates.checkIn)).format("ll")} - ${moment(
+        (dates.checkOut)
       ).format("ll")}`;
     },
     getSpaceName(spaceId) {
