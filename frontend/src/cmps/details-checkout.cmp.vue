@@ -97,11 +97,15 @@
 
 <script>
 import vDatePicker from "v-calendar/lib/components/date-picker.umd";
+// import moment from 'moment'
 export default {
   props: {
     space: {
       type: Object,
     },
+    dates: {
+      type: Object,
+    }
   },
   data() {
     return {
@@ -125,8 +129,8 @@ export default {
         },
       },
       range: {
-        start: new Date(2020, 9, 12),
-        end: new Date(2020, 9, 16),
+        start: new Date().getTime(),
+        end:  new Date().setDate(new Date().getDate() + 1),
       },
     };
   },
@@ -191,13 +195,15 @@ export default {
       order.imgUrl=this.space.imgs[0]
       order.thumbnail=this.space.imgs[1]
       order.spaceName=this.space.name
-      order.status = "accepted!";
+      order.status = "pending!";
       order.user = JSON.parse(sessionStorage.user);
       order.totalPrice = this.priceForDisplay;
       order.nights = this.getDates;
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
       order.dates.checkIn = this.range.start;
+      console.log(order.dates.checkIn);
       order.dates.checkOut = this.range.end;
+      console.log(order.dates.checkOut);
       order.userId = this.$store.getters.loggedinUser._id;
       this.$store.dispatch({
         type: "addOrder",

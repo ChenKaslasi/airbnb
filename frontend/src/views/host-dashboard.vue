@@ -7,7 +7,7 @@
           <div class="top">Pending / Accepted</div>
           <div class="bottom">
             <span
-              >{{ orders.length }} new items · {{ getResponseRate }} response
+              >{{ orders.length + 3 }} new items · {{ getResponseRate }} response
               rate</span
             >
           </div>
@@ -19,7 +19,7 @@
             </div>
             <div class="txt">
               <div class="name">
-                Request <span>{{ order.user.username }}</span>
+                Request by: <span>{{ order.user.username }}</span>
               </div>
               <div class="expiry">Expires in 12 hours</div>
               <div class="desc">
@@ -27,7 +27,7 @@
                 {{ getDates(order.dates) }} · {{ order.space.name }}
               </div>
             </div>
-            <div class="responed">Panding</div>
+            <div class="responed">Pending</div>
           </div>
 
           <div class="box flex">
@@ -37,7 +37,7 @@
               />
             </div>
             <div class="txt">
-              <div class="name">Request · Elise</div>
+              <div class="name">Request by: Elise</div>
               <div class="expiry">Expires in 2 hours</div>
               <div class="desc">
                 3 guests ; june 21 - june 23 ; stylish Russian Hill APartment
@@ -52,7 +52,7 @@
               />
             </div>
             <div class="txt">
-              <div class="name">Request ; Ciela</div>
+              <div class="name">Request by: Ciela</div>
               <div class="expiry">Expires in 6 hours</div>
               <div class="desc">
                 2 guests ; june 25 - june 27 ; stylish Russian Hill APartment
@@ -67,7 +67,7 @@
               />
             </div>
             <div class="txt">
-              <div class="name">Request ; Sabrisa</div>
+              <div class="name">Request by: Sabrisa</div>
               <div class="expiry">Expires in 12 hours</div>
               <div class="desc">
                 3 guests ; june 29 - june 30 ; stylish Russian Hill APartment
@@ -136,8 +136,8 @@ export default {
   },
   methods: {
     getDates(dates) {
-      return `${moment(Date(dates.checkIn)).format("ll")} - ${moment(
-        Date(dates.checkOut)
+      return `${moment((dates.checkIn)).format("ll")} - ${moment(
+        (dates.checkOut)
       ).format("ll")}`;
     },
     getSpaceName(spaceId) {
@@ -150,8 +150,9 @@ export default {
       const approved = this.orders.filter((order) =>
         order.status.includes("accepted")
       );
+      console.log(this.orders.length);
       const responseRate = `${(
-        (approved.length / this.orders.length) *
+        ((approved.length + 3) / (this.orders.length + 3)) *
         100
       ).toFixed(0)}%`;
       return responseRate;

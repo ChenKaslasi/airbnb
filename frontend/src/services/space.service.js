@@ -23,7 +23,6 @@ function query() {
     return httpService.get('space')
 }
 function update(miniOrder) {
-  console.log(miniOrder,'min!!!!!!!=====');
   return httpService.put(`space/${miniOrder.spaceId}`, miniOrder)
 }
 function filter(filterBy={}){

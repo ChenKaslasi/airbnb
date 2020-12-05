@@ -45,9 +45,7 @@ export default {
       clickCounter: 0,
       range: {
         start: new Date(),
-        // start: null,
         end: new Date().setDate(new Date().getDate() + 1),
-        // end: null,
       },
     };
   },

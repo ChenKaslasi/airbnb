@@ -19,6 +19,22 @@
             placeholder="Please input your Name"
             v-model="space.fullName"
           />
+
+          <!-- delete after -->
+            <input
+            type="text"
+            class="form-input"
+            placeholder="Host Name"
+            v-model="hostName"
+          />
+
+
+
+          <!-- delete after -->
+
+
+
+          
           <input
             type="text"
             class="form-input"
@@ -77,6 +93,9 @@ export default {
       },
       cities: ["Barcelona", "New York", "Sydney"],
       options: [1, 2, 3],
+      // delete after
+      hostName: "",
+      // delete after
     };
   },
   computed: {
@@ -116,12 +135,22 @@ export default {
           spaceDesc: this.space.spaceDesc,
           bedrooms: this.space.bedrooms,
           beds: this.getBeds,
-          bathrooms: this.getBeds, //CHANGE LATER
-          capacity: 10,
+          bathrooms: 2, //CHANGE LATER
+          capacity: 3,
           spaceType: "Apartment",
-          amenities: ["Air conditioning", "Essentials", "Hangers", "Heating"],
+          amenities: [
+            "Air conditioning",
+            "Essentials",
+            "Hangers",
+            "Heating",
+            "Iron",
+            "Kitchen",
+            "Parking",
+            "TV",
+            "Wifi"
+          ],
           price: this.space.price,
-          roomType: "Entire home/apt",
+          roomType: "Entire home",
           address: {
             city: this.space.city,
             country: this.getCountry,
@@ -130,7 +159,8 @@ export default {
           host: {
             id: "u101",
             url: "https://www.airbnb.com/users/show/2128778",
-            name: "Maxwell",
+            // name: this.space.fullName,
+            name: this.hostName,
             profileImg:
               "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
             isSuperhost: true,
