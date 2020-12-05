@@ -45,6 +45,18 @@
             placeholder="About host"
             v-model="aboutHost"
           />
+            <input
+            type="text"
+            class="form-input"
+            placeholder="Room type"
+            v-model="roomType"
+          />
+            <input
+            type="text"
+            class="form-input"
+            placeholder="Cancellation Policy"
+            v-model="cancellationPolicy"
+          />
 
 
 
@@ -124,7 +136,9 @@ export default {
       reviewScores: {rating: null},
       address: {street: ""},
       locationDesc: "",
-      aboutHost: ""
+      aboutHost: "",
+      roomType: "Entire place",
+      cancellationPolicy: "flexible"
       // delete after
     };
   },
@@ -243,6 +257,8 @@ export default {
             }, 
           ],
           spaceType: "Apartment",
+          roomType : this.roomType,
+          cancellationPolicy : this.cancellationPolicy,
           amenities: [
             "Air conditioning",
             "Essentials",
@@ -254,8 +270,7 @@ export default {
             "TV",
             "Wifi"
           ],
-          price: this.space.price,
-          roomType: "Entire home",
+          price: +this.space.price,
           address: {
             city: this.space.city,
             street: this.address.street,
