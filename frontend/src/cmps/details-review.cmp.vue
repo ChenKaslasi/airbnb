@@ -7,7 +7,7 @@
             <img :src="review.by.img" />
             <div class="header-txt">
               <p class="reviewer-name">{{ review.by.name }}</p>
-              <p class="reviewer-date">{{ dateForDisplay }}</p>
+              <p class="reviewer-date">{{ dateForDisplay(review) }}</p>
             </div>
           </div>
           <p class="review-txt">{{ review.txt }}</p>
@@ -18,22 +18,29 @@
 </template>
 
 <script>
+import moment from 'moment'
 export default {
   props: {
     reviews: Array,
   },
-  computed: {
-    dateForDisplay() {
-      var dateObj = new Date();
-      var month = dateObj.getUTCMonth() + 1; //months from 1-12
-      var day = dateObj.getUTCDate();
-      var year = dateObj.getUTCFullYear();
-
-      var newdate = year + "/" + month + "/" + day;
-      return newdate;
-    },
+  methods: {
+    dateForDisplay(review) {
+      return moment(review.date).format('MMMM YYYY')
+    }
   },
-};
+  // computed: {
+    // dateForDisplay() {
+      // var dateObj = new Date();
+      // var month = dateObj.getUTCMonth() + 1; //months from 1-12
+      // var day = dateObj.getUTCDate();
+      // var year = dateObj.getUTCFullYear();
+
+      // var newdate = year + "/" + month + "/" + day;
+      // return newdate;
+      // return moment().format('MMMM YYYY')
+    // },
+  // },
+}
 </script>
 
 <style lang="scss" scoped>
