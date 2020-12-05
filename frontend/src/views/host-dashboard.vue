@@ -27,7 +27,7 @@
                 {{ getDates(order.dates) }} · {{ order.space.name }}
               </div>
             </div>
-            <div class="responed">Panding</div>
+            <div class="responed">Pending</div>
           </div>
 
           <div class="box flex">
