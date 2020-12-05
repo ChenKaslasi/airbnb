@@ -187,6 +187,9 @@ export default {
     addOrder(spaceId) {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
+      order.city = this.space.address.city;
+      order.imgUrl=this.space.imgs[0]
+      order.spaceName=this.space.name
       order.status = "accepted!";
       order.user = JSON.parse(sessionStorage.user);
       order.totalPrice = this.priceForDisplay;
