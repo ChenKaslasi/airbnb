@@ -23,5 +23,6 @@ function query() {
 }
 
 function filter(userId={}){
+  console.log('USERID',userId);
   return httpService.post('order/filter',userId)
 }

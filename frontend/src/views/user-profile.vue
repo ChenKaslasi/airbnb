@@ -3,7 +3,7 @@
     <space-header />
     <header>
       <h1>Trips</h1>
-      <pre>{{orders}}</pre>
+      <pre>{{ orders }}</pre>
     </header>
     <main>
       <!-- <ul class="card-container">
@@ -23,23 +23,25 @@ import spaceHeader from "../cmps/space-header.cmp";
 export default {
   components: { spaceHeader },
   data() {
-      return {
-          user : null,
-          orders:null
-      }
+    return {
+      user: null,
+      orders: null,
+    };
   },
   created() {
-      this.user = this.$store.getters.loggedinUser;
-      this.setOrders({id:this.user._id})
+    this.user = JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
+    console.log("USER", this.user._id);
+    this.setOrders({ id: this.user._id });
   },
   methods: {
-      async setOrders(filterBy) {
-        console.log('filterBy from user-profile cmp : ',filterBy);
-           this.orders = await this.$store.dispatch({
+    async setOrders(filterBy) {
+      console.log("filterBy from user-profile cmp : ", filterBy.id);
+      const filterId=filterBy.id
+      this.orders = await this.$store.dispatch({
         type: "filterOrders",
-        filterBy,
+        filterId,
       });
-      }
-  }
+    },
+  },
 };
 </script>
