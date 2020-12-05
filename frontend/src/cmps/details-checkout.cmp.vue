@@ -189,6 +189,7 @@ export default {
       order.spaceId = spaceId;
       order.city = this.space.address.city;
       order.imgUrl=this.space.imgs[0]
+      order.thumbnail=this.space.imgs[1]
       order.spaceName=this.space.name
       order.status = "accepted!";
       order.user = JSON.parse(sessionStorage.user);
