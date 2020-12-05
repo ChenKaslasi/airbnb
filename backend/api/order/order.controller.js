@@ -42,7 +42,15 @@ async function addOrder(req, res) {
 }
 
 async function filterOrder(req, res) {
+    console.log('req body',req.body);
     const order = await orderService.query(req.body)
+    // console.log(order)
+    res.send(order)
+}
+async function filterOrderProfile(req, res) {
+    console.log('req body',req.body);
+    const order = await orderService.queryProfile(req.body)
+    // console.log('ORDER',order)
     res.send(order)
 }
 
@@ -51,5 +59,6 @@ module.exports = {
     getOrder,
     filterOrder,
     deleteOrder,
-    addOrder
+    addOrder,
+    filterOrderProfile
 }

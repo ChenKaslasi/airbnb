@@ -4,6 +4,7 @@ const ObjectId = require('mongodb').ObjectId
 
 
 async function query(filterBy = {}) {
+    console.log(filterBy,'fil');
     const criteria = _buildCriteria(filterBy)
     const collection = await dbService.getCollection('order')
     try {
@@ -70,8 +71,46 @@ function _buildCriteria(filterBy) {
     }
 }
 
+
+function _buildCriteriaFilter(filterBy) {
+    console.log('lA',filterBy)
+    if (filterBy) {
+        return { "userId" : filterBy._id}
+    }
+}
+
+async function queryProfile(filterBy = {}) {
+    console.log(filterBy,'fil');
+    const criteria = _buildCriteriaFilter(filterBy)
+    const collection = await dbService.getCollection('order')
+    try {
+        // var orders = await collection.find(criteria)
+        var orders = await collection.find(criteria).toArray();
+        // orders = await collection.aggregate([
+        //     {
+        //         $lookup:
+        //         {
+        //             from: 'space',
+        //             localField: '_id',
+        //             foreignField: 'spaceId',
+        //             as: 'space'
+        //         }
+        //     }
+        // ]).toArray()
+
+
+        return orders
+    } catch (err) {
+        console.log('ERROR: cannot find orders')
+        throw err;
+    }
+}
+
+
+
 module.exports = {
     query,
+    queryProfile,
     getById,
     remove,
     add

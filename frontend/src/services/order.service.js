@@ -5,7 +5,8 @@ export default {
   remove,
   getById,
   query,
-  filter
+  filter,
+  filterProfile
 }
 function getById(orderId) {
   return httpService.get(`order/${orderId}`)
@@ -23,5 +24,11 @@ function query() {
 }
 
 function filter(userId={}){
+  console.log('USERID',userId);
   return httpService.post('order/filter',userId)
+}
+async function filterProfile(userId={}){
+  let userIdProf= {'_id': userId}
+  var httpReq= await httpService.post('order/filter/profile',userIdProf)
+  return  httpReq
 }
