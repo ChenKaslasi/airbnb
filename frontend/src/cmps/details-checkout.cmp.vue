@@ -11,7 +11,7 @@
             <span class=""> {{ `(${space.reviews.length})` }} </span>
           </div>
         </div>
-        <form>
+        <form @submit.prevent>
           <div class="checkout-select">
             <v-date-picker v-model="range" is-range>
               <template v-slot="{ inputValue, inputEvents }">
@@ -29,7 +29,7 @@
                 </div>
               </template>
             </v-date-picker>
-            <button class="guest-modal-btn" @click="guestModal">
+            <button class="guest-modal-btn" @click.stop="guestModal">
               {{ adultCount + childrenCount + infantCount }} guest
             </button>
             <div class="modal" v-if="isShown">
