@@ -22,9 +22,9 @@
               <div class="email-container">
                 <input v-model="user.email" type="text" placeholder="Email" />
               </div>
-              <input
+              <input 
                 v-model="user.password"
-                type="text"
+                type="password"
                 placeholder="Password"
               />
             </div>

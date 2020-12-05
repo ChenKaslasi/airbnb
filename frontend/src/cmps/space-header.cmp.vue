@@ -104,6 +104,7 @@
                 </li>
                 <li v-if="!loggedInUser"><button @click="openModal('login')">Log in</button></li>
                 <li v-if="loggedInUser" ><button @click="logout">Log out</button></li>
+                <li v-if="loggedInUser"><button @click="hostDashboard">Dashboard</button></li>
               </ul>
             </div>
           </button>
@@ -183,7 +184,11 @@ export default {
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
-      this.loggedInUser = null
+      this.loggedInUser = null;
+      await this.$router.push('/')
+    },
+    hostDashboard() {
+      this.$router.push('/host-dashboard')
     },
     setCityName() {
       this.cityName = this.$route.query.city;
@@ -212,6 +217,9 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   created() {
+    if(sessionStorage.user) {
+      this.loggedInUser = sessionStorage.user
+    }
     this.setIsHomePage();
   },
 };
