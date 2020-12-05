@@ -42,7 +42,7 @@ props: {
   },
   computed:{
     ratingForDisplay(){
-      return (this.space.reviewScores.rating)/20
+      return (this.space.reviewScores.rating)/2
     }
   }
 }
