@@ -69,9 +69,10 @@ export default {
       if (res.err) {
         console.log("err", res.err);
       }
+      await this.emitClose()
     },
     emitClose() {
-      this.$emit("close", close);
+      this.$emit("close");
     },
   },
 };

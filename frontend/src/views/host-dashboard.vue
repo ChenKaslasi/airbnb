@@ -158,6 +158,10 @@ export default {
     },
   },
   async created() {
+    if(!sessionStorage.user) {
+      this.$router.push('/')
+      return
+    }
     const activeUser = JSON.parse(sessionStorage.user) ;
     this.username = activeUser.username; //get user name
     const userId = { id: activeUser._id };

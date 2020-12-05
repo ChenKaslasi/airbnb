@@ -97,13 +97,13 @@
               class="login-container"
             >
               <ul class="login-dropdown">
-                <li>
+                <li v-if="!loggedInUser">
                   <button class="sign-up" @click="openModal('signUp')">
                     Sign up
                   </button>
                 </li>
-                <li><button @click="openModal('login')">Log in</button></li>
-                <li><button @click="logout">Log out</button></li>
+                <li v-if="!loggedInUser"><button @click="openModal('login')">Log in</button></li>
+                <li v-if="loggedInUser" ><button @click="logout">Log out</button></li>
               </ul>
             </div>
           </button>
@@ -168,6 +168,7 @@ export default {
       this.isModalOpen = true;
     },
     closeModal() {
+      console.log('close modal ?');
       this.isModalOpen = false;
     },
     toggleFilter() {
@@ -182,6 +183,7 @@ export default {
     },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
+      this.loggedInUser = null
     },
     setCityName() {
       this.cityName = this.$route.query.city;
