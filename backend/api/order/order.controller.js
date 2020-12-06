@@ -31,6 +31,13 @@ async function deleteOrder(req, res) {
     }
 }
 
+async function updateOrder(req, res) {
+    const order = req.body;
+    await orderService.update(order)
+    res.send(order)
+}
+
+
 async function addOrder(req, res) {
     console.log('INSIDE ORDER B-E');
     var order = req.body;
@@ -60,5 +67,6 @@ module.exports = {
     filterOrder,
     deleteOrder,
     addOrder,
-    filterOrderProfile
+    filterOrderProfile,
+    updateOrder
 }
