@@ -146,6 +146,7 @@ export default {
   },
   methods: {
     goToTrips() {
+      console.log(this.loggedInUser);
       this.$router.push(`/profile/${this.loggedInUser._id}`)
     },
     onScroll() {
@@ -158,8 +159,8 @@ export default {
 
       this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 800;
     },
-    setLoggedInUser(user) {
-      this.loggedInUser = user;
+    setLoggedInUser() {
+      this.loggedInUser =  JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
       console.log(this.loggedInUser);
     },
     setIsHomePage() {
@@ -221,9 +222,7 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   created() {
-    if(sessionStorage.user) {
-      this.loggedInUser = sessionStorage.user
-    }
+    this.loggedInUser =  JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
     this.setIsHomePage();
   },
 };
