@@ -15,7 +15,7 @@
         <div class="reservation-boxes">
           <div class="box flex" v-for="(order, idx) in orders" :key="idx">
             <div class="image">
-              <img src="../assets/icons/guest.svg" />
+              <img :src="order.user.userImg" />
             </div>
             <div class="txt">
               <div class="name">
