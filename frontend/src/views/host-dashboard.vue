@@ -7,8 +7,8 @@
           <div class="top">Pending / Accepted</div>
           <div class="bottom">
             <span
-              >{{ orders.length + 3 }} new items · {{ getResponseRate }} response
-              rate</span
+              >{{ orders.length + 3 }} new items ·
+              {{ getResponseRate }} response rate</span
             >
           </div>
         </div>
@@ -116,8 +116,10 @@
               <div class="value">40</div>
             </div>
           </div>
+          <host-svg />
         </div>
       </div>
+
       <!-- {{this.orders}} -->
     </section>
   </section>
@@ -126,10 +128,12 @@
 <script>
 import spaceService from "../services/space.service.js";
 import spaceHeader from "../cmps/space-header.cmp.vue";
+import hostSvg from "../cmps/host-svg.cmp.vue";
 import moment from "moment";
 export default {
   components: {
     spaceHeader,
+    hostSvg,
   },
   data() {
     return {
@@ -139,8 +143,8 @@ export default {
   },
   methods: {
     getDates(dates) {
-      return `${moment((dates.checkIn)).format("ll")} - ${moment(
-        (dates.checkOut)
+      return `${moment(dates.checkIn).format("ll")} - ${moment(
+        dates.checkOut
       ).format("ll")}`;
     },
     getSpaceName(spaceId) {
@@ -162,11 +166,11 @@ export default {
     },
   },
   async created() {
-    if(!sessionStorage.user) {
-      this.$router.push('/')
-      return
+    if (!sessionStorage.user) {
+      this.$router.push("/");
+      return;
     }
-    const activeUser = JSON.parse(sessionStorage.user) ;
+    const activeUser = JSON.parse(sessionStorage.user);
     this.username = activeUser.username; //get user name
     const userId = { id: activeUser._id };
     await this.$store.dispatch({

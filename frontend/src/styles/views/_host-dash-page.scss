@@ -24,16 +24,14 @@
     }
 
     .reservation-boxes {
-
       .box {
         margin-top: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #dddddd;
-
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
         .image {
           margin-inline-end: 20px;
           flex: 1;
-
           img {
             object-fit: cover;
             vertical-align: middle;
@@ -42,33 +40,27 @@
             border-radius: 50%;
           }
         }
-
         .txt {
           flex: 9;
-
           .name {
             line-height: 20px;
             font-size: 16px;
-            color: #fd8e66;
+            color: #ff385c;
             font-weight: bold;
-
             span {
               text-transform: capitalize;
             }
           }
-
           .expiry {
             line-height: 20px;
             font-size: 14px;
           }
-
           .desc {
             line-height: 16px;
             font-size: 12px;
             color: #bbb
           }
         }
-
         .responed {
           flex: 2;
           color: #008489;
@@ -78,13 +70,12 @@
       }
     }
   }
-
   .hosting-summary {
     flex: 1;
     border: 1px solid #dddddd;
     padding: 30px 20px;
-    padding-top: 20px;
     color: #484848;
+    border-radius: 12px;
 
     .summary-title {
       font-size: 22px;
