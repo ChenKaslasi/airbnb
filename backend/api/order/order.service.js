@@ -51,6 +51,18 @@ async function remove(orderId) {
     }
 }
 
+async function update(order) {
+    const collection = await dbService.getCollection('order')
+    order._id = ObjectId(order._id);
+
+    try {
+        await collection.replaceOne({ _id: order._id }, { $set: order })
+        return order
+    } catch (err) {
+        console.log(`ERROR: cannot update order ${order._id}`)
+        throw err;
+    }
+}
 
 async function add(order) {
 
@@ -113,7 +125,8 @@ module.exports = {
     queryProfile,
     getById,
     remove,
-    add
+    add,
+    update
 }
 
 

@@ -65,7 +65,41 @@
           flex: 2;
           color: #008489;
           cursor: pointer;
-
+          .dash-btn-container{
+            display: flex;
+            button{
+              cursor: pointer ;
+              display: inline-block ;
+              margin: 0px ;
+              position: relative ;
+              text-align: center ;
+              text-decoration: none ;
+              width: auto ;
+              touch-action: manipulation ;
+              font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
+              font-size: 14px ;
+              line-height: 20px ;
+              font-weight: 600 ;
+              border-radius: 8px ;
+              border-width: 1px ;
+              border-style: solid ;
+              outline: none ;
+              padding: 10px 14px ;
+              transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s ;
+              border-color: rgb(34, 34, 34) ;
+              background: rgb(255, 255, 255) ;
+              color: rgb(34, 34, 34) ;
+            }
+            .reject{
+              background-color: rgb(245, 30, 30);
+              margin-right: 8px;
+              border-radius: 8px;
+            }
+            .accept{
+              background-color: rgb(36, 194, 105);
+              border-radius: 8px;
+            } 
+          }
         }
       }
     }
@@ -76,6 +110,7 @@
     padding: 30px 20px;
     color: #484848;
     border-radius: 12px;
+    margin-top: 72px;
 
     .summary-title {
       font-size: 22px;

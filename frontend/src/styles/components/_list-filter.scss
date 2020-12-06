@@ -276,12 +276,13 @@
             .modal-content {
                 color: #484848;
                 flex-grow: 1;
-                padding: 10px 24px;
+                padding: 50px 24px;
                 > * {
-                    padding: 18px 0;
-                }
-                div:not(:last-child) {
+                    padding: 20px 0;
                     border-bottom: 1px solid rgb(235, 235, 235);
+                }
+                div:first-child {
+                    border-top: 1px solid rgb(235, 235, 235);
                 }
                 p {
                     font-size: rem(14px);
@@ -362,7 +363,7 @@
             }
             .price-filter {
                 h2 {
-                    margin-bottom: 5px;
+                    margin-bottom: 20px;
                 }
                 .input-container {
                     display: flex;
