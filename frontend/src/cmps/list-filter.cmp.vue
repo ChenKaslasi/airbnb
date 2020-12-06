@@ -8,7 +8,7 @@
           Cancellation flexibility
         </button>
         <div
-          v-click-outside="closePopper"
+          v-click-outside="emitFilter"
           v-if="isPopperOpen.cancel"
           class="popper cancel-popper"
         >
@@ -23,7 +23,9 @@
             </el-switch>
           </div>
           <div class="popper-footer">
-            <button :class="checkDisabled">Clear</button>
+            <button :class="checkCancelDisabled" @click="clear('cancel')">
+              Clear
+            </button>
             <button class="btn save-btn" @click="emitFilter">Save</button>
           </div>
         </div>
@@ -31,7 +33,8 @@
       <div class="btn-container">
         <button @click="togglePopper('type')">Type of place</button>
         <div
-          v-click-outside="closePopper"
+          @change="toggleDisable"
+          v-click-outside="emitFilter"
           v-if="isPopperOpen.type"
           class="popper type-popper"
         >
@@ -47,7 +50,9 @@
             >
           </div>
           <div class="popper-footer">
-            <button :class="checkDisabled">Clear</button>
+            <button :class="checkTypeDisabled" @click="clear('type')">
+              Clear
+            </button>
             <button class="btn save-btn" @click="emitFilter">Save</button>
           </div>
         </div>
@@ -55,7 +60,7 @@
       <div class="btn-container">
         <button @click="togglePopper('price')">Price</button>
         <div
-          v-click-outside="closePopper"
+          v-click-outside="emitFilter"
           v-if="isPopperOpen.price"
           class="popper price-popper"
         >
@@ -67,6 +72,7 @@
               <div class="input-section">
                 <span class="dollar">$</span
                 ><input
+                  @input="toggleDisable"
                   ref="minInput"
                   type="number"
                   id="maxP"
@@ -84,6 +90,7 @@
               <div class="input-section">
                 <span class="dollar">$</span
                 ><input
+                  @input="toggleDisable"
                   ref="maxInput"
                   type="number"
                   id="maxP"
@@ -95,7 +102,9 @@
             </div>
           </div>
           <div class="popper-footer">
-            <button :class="checkDisabled">Clear</button>
+            <button :class="checkPriceDisabled" @click="clear('price')">
+              Clear
+            </button>
             <button class="btn save-btn" @click="emitFilter">Save</button>
           </div>
         </div>
@@ -107,7 +116,9 @@
         <header class="modal-header">
           <button class="close-btn" @click="toggleFilters">&#10005;</button>
           <h2>Filters</h2>
-          <button :class="checkDisabled">Clear</button>
+          <button :class="checkGeneralDisabled" @click="clear('general')">
+            Clear
+          </button>
         </header>
         <main class="modal-content">
           <div class="cancel-filter">
@@ -127,13 +138,13 @@
             <label class="container">
               <h2>Entire place</h2>
               <p>Have a place to yourself</p>
-              <input type="checkbox" v-model="filter.entirePlace" />
+              <input type="checkbox" v-model="filter.entirePlace" @change="toggleDisable"/>
               <span class="checkmark"></span>
             </label>
             <label class="container">
               <h2>Private room</h2>
               <p>Have your own room and share some</p>
-              <input type="checkbox" v-model="filter.privateRoom" />
+              <input type="checkbox" v-model="filter.privateRoom" @change="toggleDisable"/>
               <span class="checkmark"></span>
             </label>
           </div>
@@ -143,31 +154,43 @@
               <label class="price-label" for="minP#"
                 ><p>min price</p>
                 <div>
-                <span>$</span>
-                <input
-                  type="number"
-                  id="minP#"
-                  placeholder="10"
-                  v-model="filter.minPrice"
-                /></div>
+                  <span>$</span>
+                  <input
+                  @input="toggleDisable"
+                    type="number"
+                    id="minP#"
+                    placeholder="10"
+                    v-model="filter.minPrice"
+                  />
+                </div>
               </label>
               <span class="hyphen">–</span>
               <label class="price-label" for="maxP#"
                 ><p>max price</p>
                 <div>
-                <span>$</span>
-                <input
-                  type="number"
-                  id="maxP#"
-                  placeholder="1500+"
-                  v-model="filter.maxPrice"
-                /></div>
+                  <span>$</span>
+                  <input
+                  @input="toggleDisable"
+                    type="number"
+                    id="maxP#"
+                    placeholder="1500+"
+                    v-model="filter.maxPrice"
+                  />
+                </div>
               </label>
             </div>
           </div>
         </main>
         <footer class="modal-footer">
-          <button @click="emitFilter(); toggleFilters()" class="submit-btn">Show results</button>
+          <button
+            @click="
+              emitFilter();
+              toggleFilters();
+            "
+            class="submit-btn"
+          >
+            Show results
+          </button>
         </footer>
       </div>
     </div>
@@ -187,32 +210,70 @@ export default {
         type: false,
         price: false,
       },
-      isDisabled: true,
+      isDisabled: {
+        cancel: true,
+        type: true,
+        price: true,
+        general: true,
+      },
       filter: {
         cancel: false,
         entirePlace: false,
         privateRoom: false,
         minPrice: 0,
-        maxPrice: Infinity,
+        maxPrice: null,
       },
     };
   },
   computed: {
-    checkDisabled() {
-      if (this.isDisabled) return "clear-btn disabled";
+    checkCancelDisabled() {
+      if (this.isDisabled.cancel) return "clear-btn disabled";
+      else return "clear-btn";
+    },
+    checkTypeDisabled() {
+      if (this.isDisabled.type) return "clear-btn disabled";
+      else return "clear-btn";
+    },
+    checkPriceDisabled() {
+      if (this.isDisabled.price) return "clear-btn disabled";
+      else return "clear-btn";
+    },
+    checkGeneralDisabled() {
+      if (this.isDisabled.general) return "clear-btn disabled";
       else return "clear-btn";
     },
   },
   methods: {
+    clear(value) {
+      if (value === "cancel") {
+        this.filter.cancel = false;
+        this.isDisabled.cancel = true;
+      }
+      if (value === "type") {
+        this.filter.entirePlace = false;
+        this.filter.privateRoom = false;
+        this.isDisabled.type = true;
+      }
+      if (value === "price") {
+        this.filter.minPrice = 0;
+        this.filter.maxPrice = null;
+        this.isDisabled.price = true;
+      }
+      if (value === "general") {
+        this.filter.cancel = false;
+        this.filter.entirePlace = false;
+        this.filter.privateRoom = false;
+        this.filter.minPrice = 0;
+        this.filter.maxPrice = null;
+        this.isDisabled.general = true;
+      }
+    },
     toggleFilters() {
       this.isFiltersOpen = !this.isFiltersOpen;
     },
     emitFilter() {
       const filter = JSON.parse(JSON.stringify(this.filter));
       this.$emit("changeFilter", filter);
-      // if(isFiltersOpen)this.isFiltersOpen = !this.isFiltersOpen;
-    },
-    closePopper() {
       this.isPopperOpen.cancel = false;
       this.isPopperOpen.type = false;
       this.isPopperOpen.price = false;
@@ -235,7 +296,16 @@ export default {
       }
     },
     toggleDisable() {
-      this.isDisabled = !this.isDisabled;
+      if (!this.filter.cancel) this.isDisabled.cancel = true;
+      else this.isDisabled.cancel = false;
+      if (!this.filter.entirePlace && !this.filter.privateRoom)
+        this.isDisabled.type = true;
+      else this.isDisabled.type = false;
+      if (!this.filter.minPrice && !this.filter.maxPrice)
+        this.isDisabled.price = true;
+      else this.isDisabled.price = false;
+      if(!this.filter.cancel && !this.filter.entirePlace && !this.filter.privateRoom && !this.filter.minPrice && !this.filter.maxPrice) this.isDisabled.general = true;
+      else this.isDisabled.general = false;
     },
     focusInput(num) {
       if (num === 1) this.$refs.minInput.focus();
