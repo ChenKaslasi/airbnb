@@ -164,7 +164,7 @@ export default {
     },
     getCords() {
       if (this.space.city === "Barcelona") return { lat: 41.40082, lng: 2.16942 };
-      else if (this.space.city === "New York") return "United States";
+      else if (this.space.city === "New York") return  { lat: 40.67414, lng: -73.95667 };
       else return { lat: -33.865143, lng: 151.2099 };
     },
   },
@@ -246,14 +246,44 @@ export default {
           capacity: 3,
           reviews: [
             {
-            id : "70538677",
-            date : "2016-04-18T04:00:00.000Z",
+            id : "70534343327772377",
+            date : "2020-09-18T04:00:00.000Z",
             by : {
-                id : "37843205",
-                name : "Diego",
-                img : "https://a0.muscache.com/im/users/37843205/profile_pic/1436326105/original.jpg?im_w=240"
+                id : "37843211as05",
+                name : "David",
+                img : "https://a0.muscache.com/im/pictures/user/af91fcd2-6faa-48bb-883d-3b9f86a1a7d3.jpg?im_w=240"
             },
-            "txt" : "The host canceled this reservation 44 days before arrival. This is an automated posting."
+            "txt" : "Incredible HomeSeek. Literally one of the best I've booked."
+            }, 
+            {
+            id : "7054532212123677",
+            date : "2019-10-18T04:00:00.000Z",
+            by : {
+                id : "378ds4320511",
+                name : "Or",
+                img : "https://a0.muscache.com/im/pictures/user/bffe5ad3-4877-4932-8918-ef6580529d8f.jpg?im_w=240"
+            },
+            "txt" : "Great place, freshly painted and well decorated, amazing location."
+            }, 
+            {
+            id : "7053212236773390",
+            date : "2016-04-20T04:00:00.000Z",
+            by : {
+                id : "37284sa3205",
+                name : "Ben",
+                img : "https://a0.muscache.com/im/pictures/user/d3dc08f5-7a35-40c8-9e9e-04c759aa51f0.jpg?im_w=240"
+            },
+            "txt" : "Excellent, secure, clean, well equipped apartment with lots of room and comfortable couch and so useful having a washing machine and drying area over rear balcony "
+            }, 
+            {
+            id : "7053212236773390",
+            date : "2016-04-20T04:00:00.000Z",
+            by : {
+                id : "37284sa3205",
+                name : "Ben",
+                img : "https://a0.muscache.com/im/pictures/user/d3dc08f5-7a35-40c8-9e9e-04c759aa51f0.jpg?im_w=240"
+            },
+            "txt" : "Excellent, secure, clean, well equipped apartment with lots of room and comfortable couch and so useful having a washing machine and drying area over rear balcony "
             }, 
           ],
           spaceType: "Apartment",
@@ -278,12 +308,12 @@ export default {
             coordinates: this.getCords,
           },
           host: {
-            id: "u101",
+            id: "u10127",
             url: "https://www.airbnb.com/users/show/2128778",
             // name: this.space.fullName,
             name: this.hostName,
             profileImg:
-              "https://a0.muscache.com/im/pictures/user/f6c7bc12-dca4-48d1-8b1a-d6d0ad27e84c.jpg?im_w=240",
+              "https://a0.muscache.com/im/pictures/user/b039a458-1dd5-4d46-951b-ab7ba1528fd1.jpg?im_w=240",
             isSuperhost: true,
             identityVerified: true,
             responseRate : 90,
@@ -291,11 +321,11 @@ export default {
             about: this.aboutHost
           },
           imgs: [
-            "https://www.pngitem.com/pimgs/m/176-1769258_01-airbnb-airbnb-art-direction-hd-png-download.png",
-            "https://images.squarespace-cdn.com/content/v1/5909f768bf629a1fec7ad9fb/1546535306006-B8Z630M0BZCOZPNSY6TX/ke17ZwdGBToddI8pDm48kPTrHXgsMrSIMwe6YW3w1AZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p52bY8kZn6Mpkp9xtPUVLhvLurswpbKwwoDWqBh58NLxQZMhB36LmtxTXHHtLwR3w/lorisalessandria_airbnb_home01.png?format=1500w",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ckAc1MBJ46X_BialwmFLM2DMXX3YHGwgxA&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAWifsTblKQ_nMH7024e1ouKnf_EncWG53w&usqp=CAU",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6mWqFEYl_YbRV_xWYqb-pcOGCyBDlKfufFQ&usqp=CAU",
+            "https://a0.muscache.com/im/pictures/04f93055-7b1a-48ad-a8ef-9abd29a0eed8.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/3007e044-9b47-4f43-85fc-f54bb5a0e11a.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/78c4e072-9437-41ba-bfed-dcfbd794da41.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/df0c056c-709b-46be-a03c-5f46c4e76d2c.jpg?im_w=720",
+            "https://a0.muscache.com/im/pictures/9c67f112-a777-4a61-ada8-42199748adad.jpg?im_w=720",
           ],
         };
         console.log("new space", newSpace);
