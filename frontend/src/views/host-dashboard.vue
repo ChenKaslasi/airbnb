@@ -38,9 +38,10 @@
             </div>
             <div class="txt">
               <div class="name">Request by: Elise</div>
-              <div class="expiry">Expires in 2 hours</div>
+              <!-- <div class="expiry">Expires in 2 hours</div> -->
+              <div class="expiry">Expired</div>
               <div class="desc">
-                3 guests ; june 21 - june 23 ; stylish Russian Hill APartment
+                3 guests ; november 16 - november 19 ; Resort-like living in Williamsburg
               </div>
             </div>
             <div class="responed">Accepted</div>
@@ -53,9 +54,10 @@
             </div>
             <div class="txt">
               <div class="name">Request by: Ciela</div>
-              <div class="expiry">Expires in 6 hours</div>
+              <!-- <div class="expiry">Expires in 6 hours</div> -->
+              <div class="expiry">Expired</div>
               <div class="desc">
-                2 guests ; june 25 - june 27 ; stylish Russian Hill APartment
+                2 guests ; november 03 - november 07 ; Resort-like living in Williamsburg
               </div>
             </div>
             <div class="responed">Accepted</div>
@@ -68,9 +70,10 @@
             </div>
             <div class="txt">
               <div class="name">Request by: Sabrisa</div>
-              <div class="expiry">Expires in 12 hours</div>
+              <!-- <div class="expiry">Expires in 12 hours</div> -->
+              <div class="expiry">Expired</div>
               <div class="desc">
-                3 guests ; june 29 - june 30 ; stylish Russian Hill APartment
+                3 guests ; october 29 - october 30 ; Resort-like living in Williamsburg
               </div>
             </div>
             <a class="responed">Accepted</a>
@@ -95,7 +98,7 @@
           </div>
           <div class="earning-box">
             <div class="earnings flex justify-between">
-              <div>April earnings</div>
+              <div>November earnings</div>
               <div class="value">2650$</div>
             </div>
             <div class="views flex justify-between">
