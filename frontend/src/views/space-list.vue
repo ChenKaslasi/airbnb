@@ -3,7 +3,7 @@
     <space-header />
     <list-filter @changeFilter="setFilter" :space="filterBy"></list-filter>
     <div>
-      <ul class="card-container">
+      <ul class="list-card-container">
         <li v-for="space in spaces" :key="space._id">
           <space-preview
             :space="space"
