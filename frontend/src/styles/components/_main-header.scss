@@ -264,7 +264,21 @@
 }
 
 
-.notifiction {
-  background-color: red;
+.notifictionAlert {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 5px 7px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 8px;
+  font-weight: 600;
+  transition: ease all 0.1s;
+
+  &::after{
+    content: "1"
+  }
 }
+
 // Responsive

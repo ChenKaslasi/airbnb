@@ -230,6 +230,7 @@ export default {
         type: "updateSpace",
         updatedSpace: updateSpace,
       });
+      console.log('from checkout');
       this.$emit("emitCheckoutEvent")
     },
   },

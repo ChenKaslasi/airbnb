@@ -87,11 +87,11 @@
         <div class="user-dropdown flex">
           <button
             @click="toggleDropdown"
-            @notifictionEvent="setNotifiction"
             class="btn flex justify-around align-center"
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
-            <img :class="{notifiction: isNotifictionShown}" class="guest-img" src="../assets/icons/guest.svg" />
+            <img class="guest-img" src="../assets/icons/guest.svg" />
+            <div :class="{notifictionAlert:notifictionStatus}"></div>
             <div
               v-click-outside="toggleDropdown"
               v-if="isDropdownOpen"
@@ -131,6 +131,9 @@ export default {
     login,
     spaceFilter,
   },
+  props: {
+    notifictionStatus: Boolean
+  },
   data() {
     return {
       isScrolled: false,
@@ -143,8 +146,6 @@ export default {
       headerNarrow: true,
       cityName: "Start your search",
       loggedInUser: null,
-      isNotifictionShown : false,
-      notifictionCounter: 0,
 
     };
   },
@@ -198,11 +199,6 @@ export default {
     hostDashboard() {
       this.$router.push('/host-dashboard')
     },
-    setNotifiction() {
-      console.log('here ?');
-      this.isNotifictionShown = !this.isNotifictionShown;
-      this.notifictionCounter++;
-    },
 
 
     // --------------------------------------------
@@ -216,16 +212,14 @@ export default {
     },
   },
   watch: {
-    $route: function () {
+    $route() {
       this.setIsHomePage();
       this.setCityName();
     },
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
-    if (this.$route.query.city) {
-      this.setCityName();
-    }
+   
 // --------------------------------------------
 
     if (window.innerWidth < 800) {
@@ -240,6 +234,9 @@ export default {
       this.loggedInUser = sessionStorage.user
     }
     this.setIsHomePage();
+     if (this.$route.query.city) {
+      this.setCityName();
+    }
   },
 
   // -------------------------------------------------------

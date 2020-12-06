@@ -1,7 +1,7 @@
 <template>
   <section  class="details-container main-layout" v-if="currSpace">
     <details-header v-if="isNarrowHeader" />
-    <space-header v-if="!isNarrowHeader" />
+    <space-header v-if="!isNarrowHeader" :notifictionStatus="isNotifictionShown" />
     <gallery :space="currSpace" />
     <section class="flex main-content-container">
       <section class="main-content">
@@ -11,7 +11,7 @@
         <details-calendar :space="currSpace" @emitDates="setDates" />
       </section>
       <section >
-        <details-checkout v-if="isDesktopDisplay" @emitCheckout="setNotifiction"  @emitClose="closeModal" :space="currSpace" :dates="currDates" />
+        <details-checkout v-if="isDesktopDisplay" @emitCheckoutEvent="setNotifiction"  @emitClose="closeModal" :space="currSpace" :dates="currDates" />
       </section>
     </section>
 
@@ -63,7 +63,9 @@ export default {
       isNarrowHeader: false,
       isDesktopDisplay:true,
       isModalOpen:false,
-      currDates: {start: null, end: null}
+      currDates: {start: null, end: null},
+      isNotifictionShown: false,
+      notifictionCounter: 0,
     };
   },
   methods: {
@@ -74,7 +76,9 @@ export default {
 
     },
     setNotifiction() {
-      this.$emit("notifictionEvent")
+      console.log('from details');
+      this.isNotifictionShown = !this.isNotifictionShown;
+      this.notifictionCounter++;
     },
     closeModal(){
       console.log('emitted')
