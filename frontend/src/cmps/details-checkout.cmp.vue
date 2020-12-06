@@ -205,10 +205,10 @@ export default {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
       order.city = this.space.address.city;
-      order.imgUrl = this.space.imgs[0];
-      order.thumbnail = this.space.imgs[1];
-      order.spaceName = this.space.name;
-      order.status = "pending!";
+      order.imgUrl=this.space.imgs[0]
+      order.thumbnail=this.space.imgs[1]
+      order.spaceName=this.space.name
+      order.status = "Pending";
       order.user = JSON.parse(sessionStorage.user);
       order.totalPrice = this.priceForDisplay;
       order.nights = this.getDates;

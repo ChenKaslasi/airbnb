@@ -27,7 +27,11 @@
                 {{ getDates(order.dates) }} · {{ order.space.name }}
               </div>
             </div>
-            <div class="responed">Pending</div>
+            <div class="responed"> {{ order.status }} </div>
+            <div class="container-dash-btn" v-if="order.status===`Pending`">
+              <button class="accept" @click="acceptOrder(order)">accept</button>
+              <button class="reject" @click="rejectOrder(order)">reject</button>
+            </div>
           </div>
 
           <div class="box flex">
@@ -41,7 +45,8 @@
               <!-- <div class="expiry">Expires in 2 hours</div> -->
               <div class="expiry">Expired</div>
               <div class="desc">
-                3 guests ; november 16 - november 19 ; Resort-like living in Williamsburg
+                3 guests ; november 16 - november 19 ; Resort-like living in
+                Williamsburg
               </div>
             </div>
             <div class="responed">Accepted</div>
@@ -57,7 +62,8 @@
               <!-- <div class="expiry">Expires in 6 hours</div> -->
               <div class="expiry">Expired</div>
               <div class="desc">
-                2 guests ; november 03 - november 07 ; Resort-like living in Williamsburg
+                2 guests ; november 03 - november 07 ; Resort-like living in
+                Williamsburg
               </div>
             </div>
             <div class="responed">Accepted</div>
@@ -73,7 +79,8 @@
               <!-- <div class="expiry">Expires in 12 hours</div> -->
               <div class="expiry">Expired</div>
               <div class="desc">
-                3 guests ; october 29 - october 30 ; Resort-like living in Williamsburg
+                3 guests ; october 29 - october 30 ; Resort-like living in
+                Williamsburg
               </div>
             </div>
             <a class="responed">Accepted</a>
@@ -142,6 +149,23 @@ export default {
     };
   },
   methods: {
+    acceptOrder(order) {
+      const updatedOrder = JSON.parse(JSON.stringify(order));
+      updatedOrder.status = "Accepted";
+      this.$store.dispatch({
+        type: "updateOrder",
+        updatedOrder: updatedOrder,
+      });
+    },
+    rejectOrder(order) {
+      console.log("reject", order);
+      const updatedOrder = JSON.parse(JSON.stringify(order));
+      updatedOrder.status = "Rejected";
+      this.$store.dispatch({
+        type: "updateOrder",
+        updatedOrder: updatedOrder,
+      });
+    },
     getDates(dates) {
       return `${moment(dates.checkIn).format("ll")} - ${moment(
         dates.checkOut

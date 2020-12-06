@@ -6,7 +6,8 @@ export default {
   getById,
   query,
   filter,
-  filterProfile
+  filterProfile,
+  update
 }
 function getById(orderId) {
   return httpService.get(`order/${orderId}`)
@@ -21,6 +22,9 @@ function add(order) {
 
 function query() {
     return httpService.get('order')
+}
+function update(order) {
+  return httpService.put(`order/${order._id}`, order)
 }
 
 function filter(userId={}){
