@@ -104,6 +104,7 @@
                 </li>
                 <li v-if="!loggedInUser"><button @click="openModal('login')">Log in</button></li>
                 <li v-if="loggedInUser" ><button @click="logout">Log out</button></li>
+                <li v-if="loggedInUser"><button @click="goToTrips">Trips</button></li>
                 <li v-if="loggedInUser"><button @click="hostDashboard">Dashboard</button></li>
               </ul>
             </div>
@@ -144,6 +145,9 @@ export default {
     };
   },
   methods: {
+    goToTrips() {
+      this.$router.push(`/profile/${this.loggedInUser._id}`)
+    },
     onScroll() {
       this.headerNarrow = true;
       const currentScrollPosition =

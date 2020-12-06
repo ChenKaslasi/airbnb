@@ -748,18 +748,11 @@ export default {
   border-top: 1px solid rgb(221, 221, 221);;
 }
 .order-container {
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // max-width: 1100px;
-  // margin: 0 auto;
-  // justify-content: space-between;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 15px;
 
   .order-card {
-    max-width: 330px;
     width: 100%;
     margin-bottom: 20px;
 
@@ -767,7 +760,6 @@ export default {
     border-radius: 12px;
     .card-img {
       width: 100%;
-      height: 250px;
       border-radius: 12px 12px 0px 0px;
     }
     .order-dates {
