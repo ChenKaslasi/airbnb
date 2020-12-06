@@ -1,7 +1,7 @@
 <template>
-  <section class="checkout-container"  @click="emitClose" >
+  <section class="checkout-container" @click="emitClose">
     <div class="checkout-card" @click.stop>
-      <section class="aligner" v-if="space" >
+      <section class="aligner" v-if="space">
         <div class="checkout-header flex">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>
           <!-- {{range}} -->
@@ -13,7 +13,19 @@
         </div>
         <form @submit.prevent>
           <div class="checkout-select">
-            <v-date-picker v-model="range" is-range>
+            <v-date-picker
+              v-model="range"
+              is-range
+              :min-date="new Date()"
+              :disabled-dates="[
+                { start: new Date(2020, 11, 15), end: new Date(2020, 11, 18) },
+                { start: new Date(2020, 11, 20), end: new Date(2020, 11, 22) },
+                { start: new Date(2020, 11, 30), end: new Date(2021, 0, 2) },
+                { start: new Date(2021, 0, 4), end: new Date(2021, 0, 5) },
+                { start: new Date(2021, 0, 14), end: new Date(2021, 0, 15) },
+                { start: new Date(2021, 0, 24), end: new Date(2021, 0, 28) },
+              ]"
+            >
               <template v-slot="{ inputValue, inputEvents }">
                 <div class="input-container flex justify-center items-center">
                   <input
@@ -105,7 +117,7 @@ export default {
     },
     dates: {
       type: Object,
-    }
+    },
   },
   data() {
     return {
@@ -130,7 +142,7 @@ export default {
       },
       range: {
         start: new Date().getTime(),
-        end:  new Date().setDate(new Date().getDate() + 1),
+        end: new Date().setDate(new Date().getDate() + 1),
       },
     };
   },
@@ -159,8 +171,8 @@ export default {
     },
   },
   methods: {
-    emitClose(){
-      this.$emit('emitClose')
+    emitClose() {
+      this.$emit("emitClose");
     },
     updateNight(num) {
       this.nights = num;
@@ -193,9 +205,9 @@ export default {
       const order = JSON.parse(JSON.stringify(this.order));
       order.spaceId = spaceId;
       order.city = this.space.address.city;
-      order.imgUrl=this.space.imgs[0]
-      order.thumbnail=this.space.imgs[1]
-      order.spaceName=this.space.name
+      order.imgUrl = this.space.imgs[0];
+      order.thumbnail = this.space.imgs[1];
+      order.spaceName = this.space.name;
       order.status = "pending!";
       order.user = JSON.parse(sessionStorage.user);
       order.totalPrice = this.priceForDisplay;
@@ -219,19 +231,19 @@ export default {
         nights: this.getDates,
         guests: this.adultCount + this.childrenCount + this.infantCount,
       };
-      const updateSpace=JSON.parse(JSON.stringify(this.space))
-      if(!updateSpace.orders){
-        updateSpace.orders=[]
-        updateSpace.orders.push(orderMini)
-      }else{
-        updateSpace.orders.push(orderMini)  
+      const updateSpace = JSON.parse(JSON.stringify(this.space));
+      if (!updateSpace.orders) {
+        updateSpace.orders = [];
+        updateSpace.orders.push(orderMini);
+      } else {
+        updateSpace.orders.push(orderMini);
       }
       this.$store.dispatch({
         type: "updateSpace",
         updatedSpace: updateSpace,
       });
-      console.log('from checkout');
-      this.$emit("emitCheckoutEvent")
+      console.log("from checkout");
+      this.$emit("emitCheckoutEvent");
     },
   },
   components: {
