@@ -32,6 +32,10 @@ export const orderStore = {
         removeOrder(state, { orderId }) {
             state.orders = state.orders.filter(order => order._id !== orderId)
         },
+        updateOrder(state, order) {
+            const idx = state.orders.findIndex(currOrder => currOrder._id === order._id)
+            state.orders.splice(idx, 1, order)
+        }
     },
     actions: {
         async addOrder(context, { order }) {
@@ -56,6 +60,13 @@ export const orderStore = {
             let orders = await orderService.filterProfile(filterId);
             console.log('Orders!!', orders);
             context.commit({ type: 'setOrders', orders })
+        },
+        async updateOrder({ commit }, { updatedOrder }) {
+            await orderService.update(updatedOrder)
+            commit({
+                type: 'updateOrder',
+                updatedOrder
+            })
         },
     },
 }
