@@ -1,8 +1,10 @@
 <template>
-  <section  class="details-container main-layout" v-if="currSpace">
-    <details-header v-if="isNarrowHeader" />
+    <section class="details-container main-layout" >
+      <div class="loader" v-if="!currSpace"><img src="../assets/img/loader.gif"></div>
+      <details-header v-if="isNarrowHeader" />
     <space-header v-if="!isNarrowHeader" :notifictionStatus="isNotifictionShown" />
-    <gallery :space="currSpace" />
+    <div v-if="currSpace">
+      <gallery :space="currSpace" />
     <section class="flex main-content-container">
       <section class="main-content">
         <details-summery :space="currSpace" />
@@ -15,13 +17,15 @@
       </section>
     </section>
 
-    <section>
+    <section >
       <details-review :reviews="currSpace.reviews" />
       <detailsMap :space="currSpace" />
       <detailsHost id="detailsHost"  :space="currSpace" />
     </section>
-    <details-footer @emitChange="checkOut" :space="currSpace" v-if="isNarrowHeader" />
-  </section>
+    </div>
+    <details-footer @emitChange="checkOut" :space="currSpace" v-if="isNarrowHeader"/>
+    <space-footer v-if="currSpace" />
+    </section>
 </template>
 
 <script>
@@ -42,6 +46,8 @@ import detailsMap from "../cmps/details-map.cmp.vue";
 import detailsHost from "../cmps/details-host.cmp.vue";
 import detailsFooter from "../cmps/details-footer.cmp.vue";
 
+import spaceFooter from "@/cmps/space-footer.cmp.vue";
+
 export default {
   components: {
     spaceHeader,
@@ -56,6 +62,7 @@ export default {
     detailsHost,
     detailsHeader,
     detailsFooter,
+    spaceFooter
   },
   data() {
     return {

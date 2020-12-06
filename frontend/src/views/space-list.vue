@@ -1,8 +1,9 @@
 <template>
-  <section class="space-list main-layout main-content" v-if="filterBy">
+  <section class="space-list main-layout main-content" >
     <space-header />
-    <list-filter @changeFilter="setFilter" :space="filterBy"></list-filter>
-    <div>
+    <div class="loader" v-if="isLoading"><img src="../assets/img/loader.gif"></div>
+    <list-filter v-if="filterBy && !isLoading" @changeFilter="setFilter" :space="filterBy"></list-filter>
+    <div >
       <ul class="list-card-container">
         <li v-for="space in spaces" :key="space._id">
           <space-preview
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       filterBy: {},
+      isLoading: true
     };
   },
   async created() {
@@ -39,6 +41,7 @@ export default {
       type: "filterSpaces",
       filterBy,
     });
+    this.isLoading = false
   },
   watch: {
     $route: async function () {
