@@ -90,8 +90,9 @@
             class="btn flex justify-around align-center"
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
-            <img class="guest-img" src="../assets/icons/guest.svg" />
-            <div :class="{notifictionAlert:notifictionStatus}"></div>
+            <img v-if="loggedInUser" class="guest-img" :src="loggedInUser.userImg" />
+            <img v-else class="guest-img" src="../assets/icons/guest.svg" />
+            <div :class="{ notifictionAlert: notifictionStatus }"></div>
             <div
               v-click-outside="toggleDropdown"
               v-if="isDropdownOpen"
@@ -103,10 +104,18 @@
                     Sign up
                   </button>
                 </li>
-                <li v-if="!loggedInUser"><button @click="openModal('login')">Log in</button></li>
-                <li v-if="loggedInUser" ><button @click="logout">Log out</button></li>
-                <li v-if="loggedInUser"><button @click="goToTrips">Trips</button></li>
-                <li v-if="loggedInUser"><button @click="hostDashboard">Dashboard</button></li>
+                <li v-if="!loggedInUser">
+                  <button @click="openModal('login')">Log in</button>
+                </li>
+                <li v-if="loggedInUser">
+                  <button @click="logout">Log out</button>
+                </li>
+                <li v-if="loggedInUser">
+                  <button @click="goToTrips">Trips</button>
+                </li>
+                <li v-if="loggedInUser">
+                  <button @click="hostDashboard">Dashboard</button>
+                </li>
               </ul>
             </div>
           </button>
@@ -132,7 +141,7 @@ export default {
     spaceFilter,
   },
   props: {
-    notifictionStatus: Boolean
+    notifictionStatus: Boolean,
   },
   data() {
     return {
@@ -146,12 +155,11 @@ export default {
       headerNarrow: true,
       cityName: "Start your search",
       loggedInUser: null,
-
     };
   },
   methods: {
     goToTrips() {
-      this.$router.push(`/profile/${this.loggedInUser._id}`)
+      this.$router.push(`/profile/${this.loggedInUser._id}`);
     },
     onScroll() {
       this.headerNarrow = true;
@@ -178,7 +186,7 @@ export default {
       this.isModalOpen = true;
     },
     closeModal() {
-      console.log('close modal ?');
+      console.log("close modal ?");
       this.isModalOpen = false;
     },
     toggleFilter() {
@@ -194,19 +202,18 @@ export default {
     async logout() {
       await this.$store.dispatch({ type: "logout" });
       this.loggedInUser = null;
-      await this.$router.push('/')
+      // await this.$router.push("/");
     },
     hostDashboard() {
-      this.$router.push('/host-dashboard')
+      this.$router.push("/host-dashboard");
     },
-
 
     // --------------------------------------------
     // methods:
-      selectCity(cityName) {
-        this.$router.push({ path: "/city", query: { city: cityName } });
-        this.$refs.backBtn.click();
-      },
+    selectCity(cityName) {
+      this.$router.push({ path: "/city", query: { city: cityName } });
+      this.$refs.backBtn.click();
+    },
     setCityName() {
       this.cityName = this.$route.query.city;
     },
@@ -219,8 +226,8 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
-   
-// --------------------------------------------
+
+    // --------------------------------------------
 
     if (window.innerWidth < 800) {
       this.isScrolled = true;
@@ -230,15 +237,14 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   created() {
-    if(sessionStorage.user) {
-      this.loggedInUser = sessionStorage.user
+    if (sessionStorage.user) {
+      this.loggedInUser = JSON.parse(sessionStorage.user);
     }
     this.setIsHomePage();
-     if (this.$route.query.city) {
+    if (this.$route.query.city) {
       this.setCityName();
     }
   },
-
 
   // -------------------------------------------------------
 };
