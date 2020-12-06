@@ -3,7 +3,7 @@
     <div class="banner-content">
       <h2>“The world belongs to those who let go.”</h2>
       <p>-Lao Tzu</p>
-      <button @click="goToCity">Lets go</button>
+      <button @click="goToCity">Let's go</button>
     </div>
     <div class="banner-content2">
       <h2>“Don't forget your coat”</h2>

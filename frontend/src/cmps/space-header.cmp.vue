@@ -87,10 +87,11 @@
         <div class="user-dropdown flex">
           <button
             @click="toggleDropdown"
+            @notifictionEvent="setNotifiction"
             class="btn flex justify-around align-center"
           >
             <img class="hamburger-img" src="../assets/icons/hamburger.svg" />
-            <img class="guest-img" src="../assets/icons/guest.svg" />
+            <img :class="{notifiction: isNotifictionShown}" class="guest-img" src="../assets/icons/guest.svg" />
             <div
               v-click-outside="toggleDropdown"
               v-if="isDropdownOpen"
@@ -142,11 +143,13 @@ export default {
       headerNarrow: true,
       cityName: "Start your search",
       loggedInUser: null,
+      isNotifictionShown : false,
+      notifictionCounter: 0,
+
     };
   },
   methods: {
     goToTrips() {
-      console.log(this.loggedInUser);
       this.$router.push(`/profile/${this.loggedInUser._id}`)
     },
     onScroll() {
@@ -159,8 +162,8 @@ export default {
 
       this.isScrolled = currentScrollPosition !== 0 || window.innerWidth < 800;
     },
-    setLoggedInUser() {
-      this.loggedInUser =  JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
+    setLoggedInUser(user) {
+      this.loggedInUser = user;
       console.log(this.loggedInUser);
     },
     setIsHomePage() {
@@ -195,12 +198,21 @@ export default {
     hostDashboard() {
       this.$router.push('/host-dashboard')
     },
+    setNotifiction() {
+      console.log('here ?');
+      this.isNotifictionShown = !this.isNotifictionShown;
+      this.notifictionCounter++;
+    },
+
+
+    // --------------------------------------------
+    // methods:
+      selectCity(cityName) {
+        this.$router.push({ path: "/city", query: { city: cityName } });
+        this.$refs.backBtn.click();
+      },
     setCityName() {
       this.cityName = this.$route.query.city;
-    },
-    selectCity(cityName) {
-      this.$router.push({ path: "/city", query: { city: cityName } });
-      this.$refs.backBtn.click();
     },
   },
   watch: {
@@ -214,6 +226,8 @@ export default {
     if (this.$route.query.city) {
       this.setCityName();
     }
+// --------------------------------------------
+
     if (window.innerWidth < 800) {
       this.isScrolled = true;
     }
@@ -222,8 +236,12 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   created() {
-    this.loggedInUser =  JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
+    if(sessionStorage.user) {
+      this.loggedInUser = sessionStorage.user
+    }
     this.setIsHomePage();
   },
+
+  // -------------------------------------------------------
 };
 </script>

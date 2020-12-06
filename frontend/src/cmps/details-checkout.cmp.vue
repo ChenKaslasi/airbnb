@@ -230,6 +230,7 @@ export default {
         type: "updateSpace",
         updatedSpace: updateSpace,
       });
+      this.$emit("emitCheckoutEvent")
     },
   },
   components: {

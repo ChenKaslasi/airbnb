@@ -11,7 +11,7 @@
         <details-calendar :space="currSpace" @emitDates="setDates" />
       </section>
       <section >
-        <details-checkout v-if="isDesktopDisplay"  @emitClose="closeModal" :space="currSpace" :dates="currDates" />
+        <details-checkout v-if="isDesktopDisplay" @emitCheckout="setNotifiction"  @emitClose="closeModal" :space="currSpace" :dates="currDates" />
       </section>
     </section>
 
@@ -72,6 +72,9 @@ export default {
       this.isDesktopDisplay=!this.isDesktopDisplay
       this.isModalOpen=!this.isModalOpen
 
+    },
+    setNotifiction() {
+      this.$emit("notifictionEvent")
     },
     closeModal(){
       console.log('emitted')
