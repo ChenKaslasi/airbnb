@@ -211,7 +211,7 @@ export default {
     // --------------------------------------------
     // methods:
     selectCity(cityName) {
-      this.$router.push({ path: "/city", query: { city: cityName } });
+      this.$router.push({ path: "/city", query: { city: cityName }});
       this.$refs.backBtn.click();
     },
     setCityName() {
@@ -220,8 +220,8 @@ export default {
   },
   watch: {
     $route() {
-      this.setIsHomePage();
       this.setCityName();
+      this.setIsHomePage();
     },
   },
   mounted() {
