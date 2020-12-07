@@ -28,8 +28,9 @@
               </div>
             </div>
             <div class="container-dash-btn" v-if="order.status===`Pending`">
-              <button class="accept" @click="acceptOrder(order)">accept</button>
-              <button class="reject" @click="rejectOrder(order)">reject</button>
+              <p class="newAccept" @click="acceptOrder(order)" >accept </p> / <p class="newReject" @click="rejectOrder(order)"> reject </p>
+              <!-- <button class="accept" @click="acceptOrder(order)">accept</button>
+              <button class="reject" @click="rejectOrder(order)">reject</button> -->
             </div>
             <!-- <div class="responed" v-if="order.status !== `Pending`"> {{ order.status }} </div> -->
             <div class="responed" v-else> {{ order.status}} </div>
