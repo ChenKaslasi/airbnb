@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5cac1a39ac2fe093e6e2402d3c02fc8e.js"
+  "/precache-manifest.2c4e802647abde322fcd051c23472b6b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "airbnb"});
