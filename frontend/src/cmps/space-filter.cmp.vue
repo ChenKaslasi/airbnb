@@ -1,5 +1,8 @@
 <template>
-  <section :class="{'scroll-shift': isScrolled }" class="filter-container flex justify-center align-center ">
+  <section
+    :class="{ 'scroll-shift': isScrolled }"
+    class="filter-container flex justify-center align-center"
+  >
     <div
       class="wrapper flex"
       @mouseover="colorSearchArea"
@@ -17,7 +20,7 @@
         <div class="location flex column" slot="reference">
           <span class="title">Location</span>
           <input
-            :class="[{active: filterBy.city.length > 0},'desc']"
+            :class="[{ active: filterBy.city.length > 0 }, 'desc']"
             type="text"
             placeholder="Where are you going?"
             v-model="filterBy.city"
@@ -44,8 +47,9 @@
       >
         <div class="dates flex column" slot="reference">
           <span class="title">Dates</span>
-          <span v-if="filterBy.date.start" 
-          :class="[{active: filterBy.date.end.length > 0},'desc']"
+          <span
+            v-if="filterBy.date.start"
+            :class="[{ active: filterBy.date.end.length > 0 }, 'desc']"
             >{{ filterBy.date.start }} - {{ filterBy.date.end }}</span
           >
           <span v-else class="desc">Check in - Check out</span>
@@ -74,9 +78,12 @@
           <span data-name="guest" v-if="sumGuests === 0" class="desc"
             >Add guests</span
           >
-          <span data-name="guest" v-else :class="[{active: sumGuests > 0},'desc']"
-            >{{ sumGuests + (sumGuests === 1 ? ' guest' : ' guests') }} </span
-          >
+          <span
+            data-name="guest"
+            v-else
+            :class="[{ active: sumGuests > 0 }, 'desc']"
+            >{{ sumGuests + (sumGuests === 1 ? " guest" : " guests") }}
+          </span>
         </div>
 
         <div class="guest-dropdown">
@@ -145,7 +152,7 @@ export default {
     Popper,
   },
   props: {
-    isHomePage: Boolean
+    isHomePage: Boolean,
   },
   data() {
     return {
@@ -163,7 +170,7 @@ export default {
     };
   },
   methods: {
-  onScroll() {
+    onScroll() {
       const currentScrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
 
@@ -171,15 +178,21 @@ export default {
       if (currentScrollPosition < 0) {
         return;
       }
-      if(currentScrollPosition === 0  && this.headerWide) {
+      if (currentScrollPosition === 0 && this.headerWide) {
         this.headerWide = false;
-        this.headerNarrow = true
+        this.headerNarrow = true;
       }
       this.isScrolled = currentScrollPosition !== 0;
     },
 
     async filter() {
-      const {city,date,adultCount,childrenCount,infantCount} = this.filterBy;
+      const {
+        city,
+        date,
+        adultCount,
+        childrenCount,
+        infantCount,
+      } = this.filterBy;
       await this.$router.push({
         path: "/city",
         query: {
@@ -210,8 +223,6 @@ export default {
     setDates({ start, end }) {
       this.filterBy.date.start = moment(start).format("L");
       this.filterBy.date.end = moment(end).format("L");
-
-      
     },
     colorSearchArea(ev) {
       const data = ev.target.getAttribute("data-name");
@@ -238,7 +249,7 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.onScroll);
-    if(this.$route.query.city) {
+    if (this.$route.query.city) {
       this.filterBy.city = this.$route.query.city;
     }
   },

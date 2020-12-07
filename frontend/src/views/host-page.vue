@@ -21,7 +21,7 @@
           />
 
           <!-- delete after -->
-            <input
+            <!-- <input
             type="text"
             class="form-input"
             placeholder="Host Name"
@@ -58,7 +58,7 @@
             v-model="cancellationPolicy"
           />
 
-
+ -->
 
 
 
