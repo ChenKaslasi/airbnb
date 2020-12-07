@@ -13,6 +13,7 @@
         </li>
       </ul>
     </div>
+    <space-footer v-if="!isLoading" />
   </section>
 </template>
 
@@ -21,11 +22,14 @@ import spacePreview from "../cmps/space-preview.cmp.vue";
 import spaceHeader from "@/cmps/space-header.cmp.vue";
 import listFilter from "@/cmps/list-filter.cmp.vue";
 
+import spaceFooter from "@/cmps/space-footer.cmp.vue";
+
 export default {
   components: {
     spaceHeader,
     spacePreview,
     listFilter,
+    spaceFooter
   },
   data() {
     return {

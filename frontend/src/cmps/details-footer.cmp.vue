@@ -1,6 +1,6 @@
 <template>
   <div class="narrow-footer-container">
-    <div class="content-container">
+    <div class="content-container" v-if="space">
       <div class="rating-price">
         <div class="price">
           <h3 class="price">${{ space.price }}<span> / night</span></h3>

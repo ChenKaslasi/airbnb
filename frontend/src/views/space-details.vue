@@ -24,7 +24,7 @@
     </section>
     </div>
     <details-footer @emitChange="checkOut" :space="currSpace" v-if="isNarrowHeader"/>
-    <space-footer v-if="currSpace" />
+    <space-footer v-if="currSpace && !isNarrowHeader" />
     </section>
 </template>
 
@@ -45,7 +45,6 @@ import detailsCheckout from "../cmps/details-checkout.cmp.vue";
 import detailsMap from "../cmps/details-map.cmp.vue";
 import detailsHost from "../cmps/details-host.cmp.vue";
 import detailsFooter from "../cmps/details-footer.cmp.vue";
-
 import spaceFooter from "@/cmps/space-footer.cmp.vue";
 
 export default {

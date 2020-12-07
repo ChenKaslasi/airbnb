@@ -1,6 +1,6 @@
 .hostpage-container {
   margin-top: 120px;
-  padding: 0 40px;
+  // padding: 0 40px;
   align-items: flex-start;
 
   .reservation {
@@ -68,18 +68,40 @@
         }
           .container-dash-btn{
             display: flex;
+            align-items: center;
+            color: #008489;
             button{
               display:inline-block;
-	
-            
+            }
+            .newAccept{
+              background: none;
+              border: none;
+              color: rgba(28, 190, 131, 1) ;
+              margin-right: 5px;
+              cursor: pointer;
+              &:hover{
+                transition: 500ms;
+                font-size: 20px;
+              }
+            }
+            .newReject{
+              background: none;
+              border: none;
+              color: red;
+              margin-left: 5px;
+              cursor: pointer;
+              &:hover{
+                transition: 500ms;
+                font-size: 20px;
+              }
             }
 
-            button:hover{
-            	color:rgba(255, 255, 255, 1);
-            	background-color:rgba(28, 190, 131, 1);
-            	background-position: -100% 100%;
+            // button:hover{
+            	// color:rgba(255, 255, 255, 1);
+            	// background-color:rgba(28, 190, 131, 1);
+            // 	background-position: -100% 100%;
 
-            }
+            // }
             .reject{
                 outline: none;
                 cursor: pointer;

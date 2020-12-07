@@ -25,6 +25,7 @@
     </div>
     <about-us />
     <home-banner />
+    <space-footer/>
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import spaceFilter from "../cmps/space-filter.cmp.vue";
 import aboutUs from "../cmps/about-us.cmp.vue";
 import homeBanner from "../cmps/home-banner.cmp.vue";
 import spaceHeader from "@/cmps/space-header.cmp.vue";
+import spaceFooter from "@/cmps/space-footer.cmp.vue";
 import { Carousel, Slide } from 'vue-carousel';
 // @ is an alias to /src
 
@@ -44,7 +46,8 @@ export default {
     aboutUs,
     homeBanner,
     Carousel,
-    Slide
+    Slide,
+    spaceFooter
   },
   data() {
     return {
