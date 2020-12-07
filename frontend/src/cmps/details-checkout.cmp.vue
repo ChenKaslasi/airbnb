@@ -242,7 +242,8 @@ export default {
         type: "updateSpace",
         updatedSpace: updateSpace,
       });
-      console.log("from checkout");
+      console.log('isHost' ,order.user.isHost);
+      
       this.$emit("emitCheckoutEvent");
     },
   },

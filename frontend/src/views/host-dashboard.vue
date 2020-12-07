@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="reservation-boxes">
-          <div class="box flex" v-for="(order, idx) in orders" :key="idx">
+          <div class="box flex" v-for="(order, counter) in orders" :key="counter">
             <div class="image">
               <img :src="order.user.userImg" />
             </div>
@@ -27,11 +27,12 @@
                 {{ getDates(order.dates) }} · {{ order.space.name }}
               </div>
             </div>
-            <div class="responed"> {{ order.status }} </div>
             <div class="container-dash-btn" v-if="order.status===`Pending`">
               <button class="accept" @click="acceptOrder(order)">accept</button>
               <button class="reject" @click="rejectOrder(order)">reject</button>
             </div>
+            <!-- <div class="responed" v-if="order.status !== `Pending`"> {{ order.status }} </div> -->
+            <div class="responed" v-else> {{ order.status}} </div>
           </div>
 
           <div class="box flex">
@@ -146,18 +147,26 @@ export default {
     return {
       username: null,
       orders: [],
+      isAccpted: false,
+      isRejected: false,
+      counter: 0,
     };
   },
   methods: {
     acceptOrder(order) {
+      order.status = "Accepted";
       const updatedOrder = JSON.parse(JSON.stringify(order));
       updatedOrder.status = "Accepted";
       this.$store.dispatch({
         type: "updateOrder",
         updatedOrder: updatedOrder,
       });
+      this.isAccpted = true
+      this.counter++
+      
     },
     rejectOrder(order) {
+      order.status = "Rejected";
       console.log("reject", order);
       const updatedOrder = JSON.parse(JSON.stringify(order));
       updatedOrder.status = "Rejected";
@@ -165,6 +174,8 @@ export default {
         type: "updateOrder",
         updatedOrder: updatedOrder,
       });
+      this.isRejected = true
+      this.counter++
     },
     getDates(dates) {
       return `${moment(dates.checkIn).format("ll")} - ${moment(
@@ -179,7 +190,7 @@ export default {
   computed: {
     getResponseRate() {
       const approved = this.orders.filter((order) =>
-        order.status.includes("accepted")
+        order.status.includes("Accepted")
       );
       console.log(this.orders.length);
       const responseRate = `${(
