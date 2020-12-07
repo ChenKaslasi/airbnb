@@ -179,7 +179,7 @@ export default {
     },
 
     async filter() {
-      const {city,date,adultCount,childrenCount,infantCount,} = this.filterBy;
+      const {city,date,adultCount,childrenCount,infantCount} = this.filterBy;
       await this.$router.push({
         path: "/city",
         query: {

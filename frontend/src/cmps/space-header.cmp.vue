@@ -220,8 +220,8 @@ export default {
   },
   watch: {
     $route() {
-      this.setIsHomePage();
       this.setCityName();
+      this.setIsHomePage();
     },
   },
   mounted() {
