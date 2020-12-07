@@ -38,7 +38,6 @@ export default {
     };
   },
   async created() {
-    console.log("created");
     this.filterBy = this.$route.query;
     const filterBy = this.filterBy;
     await this.$store.dispatch({
@@ -67,7 +66,8 @@ export default {
     this.$store.commit({ type: "setFilter", filter });
   },
     spaceSelected(id) {
-      this.$router.push(`/${this.filterBy}/${id}`);
+      console.log(this.filterBy);
+      this.$router.push(`/${this.filterBy.city}/${id}`);
     },
   },
 };

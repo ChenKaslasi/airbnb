@@ -4,7 +4,7 @@ import homePage from '../views/home-page.vue'
 import spaceList from '../views/space-list.vue'
 import spaceDetails from '../views/space-details.vue'
 import hostPage from '../views/host-page.vue'
-import userProfile from '../views/user-profile.vue'
+import userTrips from '../views/user-trips.vue'
 import hostDashboard from '../views/host-dashboard.vue'
 
 Vue.use(VueRouter)
@@ -24,9 +24,9 @@ const router = new VueRouter({
       component: hostPage,
     },
     {
-      path: '/profile/:id',
-      name: 'profile',
-      component: userProfile,
+      path: '/trips',
+      name: 'trips',
+      component: userTrips,
     },
     {
       path: '/host-dashboard',

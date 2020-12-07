@@ -14,7 +14,6 @@ export const orderStore = {
     },
     mutations: {
         setOrders(state, { orders }) {
-            console.log('orders!!', orders);
             state.orders = orders
         },
         // filterOrderProfile(state, { orders }) {
@@ -50,15 +49,11 @@ export const orderStore = {
         },
 
         async filterOrders(context, { filterId }) {
-            console.log(filterId);
             let orders = await orderService.filter(filterId);
-            console.log('Orders!!', orders);
             context.commit({ type: 'setOrders', orders })
         },
         async filterProfile(context, { filterId }) {
-            console.log(filterId);
             let orders = await orderService.filterProfile(filterId);
-            console.log('Orders!!', orders);
             context.commit({ type: 'setOrders', orders })
         },
         async updateOrder({ commit }, { updatedOrder }) {

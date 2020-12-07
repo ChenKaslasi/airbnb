@@ -159,7 +159,7 @@ export default {
   },
   methods: {
     goToTrips() {
-      this.$router.push(`/profile/${this.loggedInUser._id}`);
+      this.$router.push('/trips');
     },
     onScroll() {
       this.headerNarrow = true;
