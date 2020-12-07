@@ -1,5 +1,5 @@
 <template>
-  <section class="user-profile main-layout main-content">
+  <section class="user-trips main-layout main-content">
     <space-header />
     <header>
       <h1>Trips</h1>
@@ -42,12 +42,13 @@ export default {
   },
   created() {
     this.user = JSON.parse(JSON.stringify(this.$store.getters.loggedinUser));
-    console.log("USER", this.user._id);
     this.setOrdersProfile({ id: this.user._id });
   },
   computed: {
     ordersForDisplay() {
-      return this.$store.getters.ordersForDisplay;
+      const orders = JSON.parse(JSON.stringify(this.$store.getters.ordersForDisplay));
+      return orders.reverse();
+      // return this.$store.getters.ordersForDisplay;
     },
   },
   methods: {

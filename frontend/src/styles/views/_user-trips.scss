@@ -1,4 +1,4 @@
-.user-profile {
+.user-trips {
     padding-top: 120px;
     background-image: url();
     h1 {
@@ -61,9 +61,15 @@
                     text-align: start;
                 }
                 .order-btn{
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 12px;
                     display: flex;
                     cursor: pointer;
                     align-items: center;
+                    &:hover {
+                        background: rgb(247, 247, 247);
+                    }
                     span{
                         font-size: rem(13px);
                         font-weight: 800;

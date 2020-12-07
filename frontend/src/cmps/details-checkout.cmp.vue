@@ -154,7 +154,6 @@ export default {
     },
     getDates() {
       const day = 24 * 60 * 60 * 1000;
-      // console.log(this.range.start-this.range.end)
       return Math.round(Math.abs((this.range.start - this.range.end) / day));
     },
   },
@@ -202,9 +201,7 @@ export default {
       order.nights = this.getDates;
       order.guests = this.adultCount + this.childrenCount + this.infantCount;
       order.dates.checkIn = this.range.start;
-      console.log(order.dates.checkIn);
       order.dates.checkOut = this.range.end;
-      console.log(order.dates.checkOut);
       order.userId = this.$store.getters.loggedinUser._id;
       this.$store.dispatch({
         type: "addOrder",
@@ -230,7 +227,6 @@ export default {
         type: "updateSpace",
         updatedSpace: updateSpace,
       });
-      console.log('from checkout');
       this.$emit("emitCheckoutEvent")
     },
   },

@@ -26,7 +26,6 @@ function update(miniOrder) {
   return httpService.put(`space/${miniOrder.spaceId}`, miniOrder)
 }
 function filter(filterBy={}){
-  console.log(filterBy);
   return httpService.post('space/filter',filterBy)
 }
 
