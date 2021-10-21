@@ -1,4 +1,4 @@
-.card-container{
+.card-container-reviews{
     display: flex;
     // align-items: center;
     justify-content: space-between;
@@ -13,7 +13,7 @@
     line-height: 20px;
     border-top: 1px solid rgb(221, 221, 221);
     padding: 30px 0px;
-    .card-container {
+    .card-container-reviews {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -64,7 +64,7 @@
     }
 }
 @include for-wide-large-layout{
-    .card-container{
+    .card-container-reviews-reviews{
         max-width: 1050px;
         .cards{
             max-width: 450px;

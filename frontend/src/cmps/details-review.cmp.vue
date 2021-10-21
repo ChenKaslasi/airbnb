@@ -1,6 +1,6 @@
 <template>
   <section class="review-container details-conatiner">
-    <div class="card-container">
+    <div class="card-container-reviews">
       <ul class="cards" v-for="review in reviews" :key="review.id">
         <li class="review-card">
           <div class="card-header">
